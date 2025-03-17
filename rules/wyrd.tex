@@ -1,0 +1,681 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{todo}
+
+\newcommand{\FudgeDie}[1]{
+    \tikz\draw[thick] (0,0) rectangle (0.3,0.3) node[pos=.5] {\small\textbf{\textcolor{black}{#1}}};
+    \hspace{-8pt}
+}
+\newcommand{\FudgeRes}[4]{%
+    \FudgeDie{#1}\FudgeDie{#2}\FudgeDie{#3}\FudgeDie{#4}
+}
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+\title{The Wyrd Engine}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter%
+
+\chapter{The Wyrd Engine Core Mechanics}
+
+
+\DndDropCapLine{T}{he} Wyrd Engine is a lightweight, narrative-driven tabletop roleplaying system designed for quick character creation, streamlined play, and minimal bookkeeping. It aims to provide a simple yet flexible framework that new players can easily pick up while still offering enough depth to engage experienced groups. The system leans into storytelling and improvisation, ensuring that the mechanics never overshadow the unfolding drama of the game.
+
+Unlike more complex RPG systems that emphasise character progression, detailed mechanics, and long-term development, the Wyrd Engine is built for episodic or one-shot adventures where characters are meant to be jumped into and played immediately. This makes it ideal for groups with varying levels of experience, casual game nights, convention settings, or groups that enjoy shifting between different settings and tones without committing to long-term character advancement. By focusing on scene-based resolution, simple skills and traits, and intuitive conflict resolution, the Wyrd Engine keeps the story moving forward while maintaining a satisfying level of challenge and tension.
+
+While the system lacks deep specialisation mechanics, its flexibility allows players to create compelling, unique characters through traits, skills, and equipment that influence their play style. Success in the Wyrd Engine isn’t dictated by meticulous number-crunching but rather by player ingenuity, teamwork, and the creative use of their abilities. Every character is designed to be compelling and memorable right from the start, ensuring they have the tools to make an impact within the narrative. The result is a game that emphasises momentum, character-driven storytelling, and high-action scenarios without getting bogged down in excessive rules.
+
+\section{Conflict resolution at a glance}
+
+\DndDropCapLine{W}{henever} characters encounter an obstacle—be it an unsolvable riddle, a desperate struggle to escape a flooded sewer or a battle against a coven of deadly necromancers—they must find a way to overcome the challenge. Whether through wit, skill, or sheer determination, resolving conflicts is at the heart of the game, driving the story forward and shaping the fate of the characters.
+
+With The Wyrd Engine, all conflict resolution follows this pattern:
+
+\begin{DndReadAloud}{Steps in conflict resolution}
+	\begin{itemize}
+		\item Roll four Fudge Dice (\textbf{4dF}).
+		      Each die has \textbf{+ (plus), - (minus), and 0 (blank) faces}. Add up the plusses and minuses.
+		\item The roll result is added to a relevant \textbf{Skill} modifier.
+		\item If relevant, \textbf{Traits} can be applied as bonuses.
+		\item The final result is compared against a \textbf{difficulty rating (DR)} to determine success or failure.
+	\end{itemize}
+	\begin{center}
+		\textbf{4dF} + \textbf{Skill} + \textbf{Trait} $\geq$ \textbf{DR}.	
+	\end{center}
+\end{DndReadAloud}
+
+This will always be the general pattern for resolving conflicts, only differing in which skills and traits are involved, how the difficulty rating is determined, and what the consequences of success or failure will be.
+
+\section{Skills}
+
+\DndDropCapLine{I}{n} The Wyrd Engine, skills represent a character’s proficiency in various actions, from keen observation and quick reflexes to mastery in combat or persuasion. Whenever a character attempts a significant action where success is uncertain, they roll \textbf{4dF} and add their relevant skill modifier. The total is then compared against a \textbf{difficulty rating (DR)} set by the Game Master (GM) or an opposed roll from another character.
+
+Characters begin with a defined set of skill ranks, representing their strengths and weaknesses. Unlike systems with extensive skill lists, The Wyrd Engine keeps skills broad and flexible, allowing them to cover a wide range of related actions. For instance, a character with a high \textbf{Athletics} skill might use it to outrun pursuers, climb treacherous cliffs, or leap between rooftops. Similarly, depending on the character's background, Lore could represent expertise in ancient history, arcane knowledge, or scientific principles.
+
+The list of skills a character can have will depend on the setting in which the game is taking place, and there is not a fixed list of skills for all Wyrd games. Generally, you should feel free to make up your own skills---remembering to keep them broad in scope---and decide between player and GM when a skill is applicable. If you like, though, you can make more detailed skill lists if that is more to your taste. In the sidebar, you can see an example of this from \emph{The Grand Casebook} setting, a Victorian/Steampunk/Gothic Horror setting.
+
+\begin{DndSidebar}[float=!b]{Skills in \emph{The Grand Casebook}}
+\subsection*{Investigation \& Knowledge}  
+\begin{itemize}
+    \item \emph{Investigate} – Analysing crime scenes, following leads, searching for hidden clues.
+    \item \emph{Lore} – Understanding history, science, the occult, and the unnatural.
+    \item \emph{Notice} – Spotting details, sensing danger, and staying aware of surroundings.
+\end{itemize}
+
+\subsection*{Social \& Influence}  
+\begin{itemize}
+    \item \emph{Rapport} – Gaining trust, persuading, and negotiating.
+    \item \emph{Deceive} – Lying, creating convincing cover stories, and disguises.
+    \item \emph{Provoke} – Intimidation, interrogation, and getting a reaction from others.
+    \item \emph{Contacts} – Knowing the right people, gathering information through connections.
+\end{itemize}
+
+\subsection*{Physical \& Dexterity}  
+\begin{itemize}
+    \item \emph{Athletics} – Running, jumping, climbing, and escaping dangerous situations.
+    \item \emph{Stealth} – Moving unseen, tailing a suspect, sneaking into restricted areas.
+    \item \emph{Fight} – Engaging in hand-to-hand combat, fencing, or using melee weapons.
+    \item \emph{Shoot} – Firearms, throwing weapons, and ranged combat.
+\end{itemize}
+
+\subsection*{Resilience \& Mental Fortitude}  
+\begin{itemize}
+    \item \emph{Will} – Resisting fear, staying composed under pressure, enduring mental strain.
+    \item \emph{Physique} – Strength, endurance, and the ability to withstand injury or exhaustion.
+\end{itemize}
+
+\subsection*{Mechanical \& Practical Skills}  
+\begin{itemize}
+    \item \emph{Burglary} – Lockpicking, safecracking, and breaking into places unseen.
+    \item \emph{Resources} – Access to wealth, favours, or valuable possessions.
+    \item \emph{Crafts} – Repairing devices, modifying tools, or working with mechanical systems.
+\end{itemize}
+\end{DndSidebar}
+
+When a character lacks a skill, they roll with a default modifier of 0, relying solely on luck and circumstance. This ensures that even untrained characters have a chance—however slim—of succeeding in tasks outside their expertise.
+
+Let us throw the character \emph{Inspector Julian Hargrave} (see sidebar) into some difficult situations and see how he can use his skills to resolve them.
+
+\begin{DndSidebar}[float=!t]{Example Character}
+\subsection{Inspector Julian Hargrave}
+\emph{Determined and methodical, Inspector Julian Hargrave is a seasoned detective in The Grand Casebook. His years of experience have made him an expert at uncovering the truth, though his rigid approach sometimes clashes with the unpredictable nature of crime-solving.}
+\subsubsection*{Skills}
+\begin{itemize}
+    \item \textbf{Great (+3):} Investigate
+    \item \textbf{Good (+2):} Notice, Rapport
+    \item \textbf{Fair (+1):} Will, Provoke, Athletics
+    \item \textbf{Average (+0):} Stealth, Burglary, Shoot, Resources
+\end{itemize}
+\end{DndSidebar}
+
+\subsection{Skills in Action}
+
+\subsubsection{Analysing a Crime Scene}
+\textbf{Situation:} A renowned socialite has been found dead in her study. The room appears to suggest suicide, but something about the scene seems off. Julian examines the area for inconsistencies.
+
+\textbf{Difficulty Rating:} \emph{Good (+2)} – The crime scene is staged well, but subtle clues remain for an expert to notice.
+
+\begin{DndReadAloud}{}
+Julian rolls \textbf{4dF +3 (Investigate)} and gets
+		\textbf{\FudgeRes{+}{+}{-}{} +3 (Investigate)}.		
+	A total of +4. Since he exceeds the DR, he notices an overturned chair that contradicts the suicide setup. A closer look reveals a footprint near the window, suggesting an intruder.
+\end{DndReadAloud}
+
+\subsubsection{Spotting an Ambush}
+\textbf{Situation:} Julian follows a suspect through the fog-laden streets when he hears an unusual shuffle behind him. Is someone trailing him?
+
+\textbf{Difficulty Rating:} \emph{Fair (+1)} – The follower is cautious but not an expert in stealth.
+
+\begin{DndReadAloud}{}
+Julian rolls \textbf{4dF +2 (Notice)} and gets 
+\textbf{\FudgeRes{+}{-}{-}{} +2 (Notice)}.
+A total of +1, meeting the DR. He catches the reflection of a blade in a shop window just in time to evade an ambush.
+\end{DndReadAloud}
+
+\subsubsection{Gaining a Witness’ Trust}
+\textbf{Situation:} A frightened maid refuses to discuss her employer’s illicit dealings. Julian must convince her to cooperate.
+
+\textbf{Difficulty Rating:} \emph{Good (+2)} – She is hesitant but not impossible to persuade.
+
+\begin{DndReadAloud}{}
+Julian rolls \textbf{4dF +2 (Rapport)} and gets 
+\textbf{\FudgeRes{+}{-}{-}{-} +2 (Rapport)}.
+  A total of +0. A failure. His direct approach only increases her anxiety. He must change his tactics or offer protection to try again.
+\end{DndReadAloud}
+
+\subsubsection{Intimidating a Thief}
+\textbf{Situation:} A pickpocket is caught red-handed. Instead of arresting him, Julian wants to frighten him into revealing who he works for.
+
+\textbf{Difficulty Rating:} \emph{Fair (+1)} – The thief is young and inexperienced but used to trouble.
+
+\begin{DndReadAloud}{}
+\textbf{Resolution:} Julian rolls \textbf{4dF +1 (Provoke)} and gets
+\textbf{\FudgeRes{+}{+}{ }{ } +1 (Provoke)}.
+A total of +3. He exceeds the DR, causing the thief to stammer out the name of a notorious smuggler before running off.
+\end{DndReadAloud}
+
+\section{Traits}
+
+\DndDropCapLine{I}{n} \emph{The Wyrd Engine}, Traits represent unique abilities, specialised knowledge, or personal characteristics that distinguish characters and items from one another. Unlike skills, which define general competence, Traits provide a \emph{mechanical advantage} or \emph{narrative permission} in certain situations.
+
+Each player character has exactly \textbf{three Traits}, carefully chosen to enhance their strengths or reflect their backstory. Non-player characters and monsters can have fewer or far more traits. Traits are broader than skills and allow a character to \emph{break} or \emph{bend} normal rules in ways that make them feel distinct.
+
+Items can also have traits (but not skills). This is a way to add game-mechanic flavour to non-creatures and replaces weapon bonuses and similar mechanisms in other role-playing rule sets.
+
+\subsection{How Traits Work}
+
+Traits function in the following ways:
+
+\begin{itemize}
+    \item \textbf{Situational Bonus:} A Trait can provide a \emph{+2 bonus} to any relevant skill check if it clearly applies.
+    \item \textbf{Expanded Capabilities:} A Trait may allow a character to attempt actions that others simply \emph{cannot}, such as deciphering an ancient language or crafting elaborate mechanical devices.
+    \item \textbf{Once per Scene/Session Special Ability:} Some Traits grant a powerful ability that can be used once per scene or once per session, such as instantly escaping a locked room or declaring an old friend in the right place at the right time.
+\end{itemize}
+
+Traits \emph{do not stack}—if multiple Traits apply to a roll, the player must choose which one to use.
+
+\subsection{Creating Effective Traits}
+
+When designing Traits, they should:
+\begin{itemize}
+    \item Be \emph{broad} enough to be useful in multiple situations.
+    \item Be \emph{specific} enough to define a unique aspect of the character.
+    \item Provide a \emph{clear mechanical or narrative benefit}.
+\end{itemize}
+
+Traits can reflect personality, training, supernatural gifts, or anything else that defines a character’s abilities. Below are examples of well-crafted Traits:
+
+\begin{DndSidebar}[float=!t]{Example Traits}
+    \begin{itemize}
+        \item \textbf{Master Duelist} – Gain \emph{+2 to Fight} when using a rapier or fencing techniques.
+        \item \textbf{Shadow Walker} – Can move silently even in well-lit areas, allowing \emph{Stealth rolls in places others couldn’t}.
+        \item \textbf{Unshakable Will} – Once per session, completely ignore the effects of fear, mind control, or intimidation.
+        \item \textbf{Underworld Connections} – Gain \emph{+2 to Contacts} when dealing with criminals, smugglers, or fences.
+        \item \textbf{Inventive Genius} – Can craft \emph{unique gadgets} with Crafts that would be impossible for an ordinary engineer.
+    \end{itemize}
+\end{DndSidebar}
+
+\subsection{Using Traits in Play}
+\begin{DndSidebar}[float=!t]{Example Character}
+\subsection{Felix Cavendish}
+\emph{A brilliant but erratic inventor-for-hire, Felix Cavendish is both a mechanical genius and a walking disaster. His creations are revolutionary—when they don’t explode. A rogue innovator who skirts the edges of legality, he thrives on the challenge of solving impossible problems with machines that push the limits of science.}
+
+\subsubsection*{Skills}
+\begin{itemize}
+    \item \textbf{Great (+3):} Crafts
+    \item \textbf{Good (+2):} Investigate, Resources
+    \item \textbf{Fair (+1):} Lore, Will, Contacts
+    \item \textbf{Average (+0):} Notice, Stealth, Deceive, Athletics
+\end{itemize}
+
+\subsubsection*{Traits}
+\begin{itemize}
+    \item \textbf{Master Tinkerer} – \emph{Gain +2 to Crafts when repairing or modifying machinery.}
+    \item \textbf{Unstable Prototype} – \emph{Once per session, declare an experimental gadget with an unpredictable effect.}
+    \item \textbf{A Calculated Risk} – \emph{Use Will instead of Athletics when escaping dangerous situations.}
+\end{itemize}
+\end{DndSidebar}
+\begin{DndSidebar}[float=!b]{Example Character}
+\subsection{Isadora "Isa" Lovelace}
+\emph{A renowned spiritualist and occult investigator, Isa Lovelace walks the thin line between science and the supernatural. Some believe she is merely an expert in human nature, while others whisper that she truly communes with forces beyond the veil. With piercing intuition and an enigmatic presence, she seeks knowledge that others fear to uncover.}
+
+\subsubsection*{Skills}
+\begin{itemize}
+    \item \textbf{Great (+3):} Empathy
+    \item \textbf{Good (+2):} Investigate, Lore
+    \item \textbf{Fair (+1):} Rapport, Will, Notice
+    \item \textbf{Average (+0):} Stealth, Deceive, Resources, Contacts
+\end{itemize}
+
+\subsubsection*{Traits}
+\begin{itemize}
+    \item \textbf{A Glimpse Beyond the Veil} – \emph{Gain +2 to Empathy when sensing the emotions of the deceased.}
+    \item \textbf{Foreboding Intuition} – \emph{Once per session, declare a warning based on an unseen force.}
+    \item \textbf{The Cards Never Lie} – \emph{Use Lore instead of Investigate when predicting an outcome.}
+\end{itemize}
+\end{DndSidebar}
+\begin{DndSidebar}[float=!b]{Example Character}
+\subsection{Cornelius "Corny" Flint}
+\emph{A silver-tongued thief and a master of misdirection, Cornelius Flint moves between high society and the criminal underworld with effortless charm. He lives by one rule—if someone is foolish enough to leave their wealth unguarded, it deserves a new owner. While he prefers to talk his way out of danger, he always has an escape plan ready when words fail.}
+
+\subsubsection*{Skills}
+\begin{itemize}
+    \item \textbf{Great (+3):} Deceive
+    \item \textbf{Good (+2):} Burglary, Rapport
+    \item \textbf{Fair (+1):} Athletics, Stealth, Notice
+    \item \textbf{Average (+0):} Contacts, Fight, Will, Resources
+\end{itemize}
+
+\subsubsection*{Traits}
+\begin{itemize}
+    \item \textbf{Master of Misdirection} – \emph{Gain +2 to Deceive when distracting someone in conversation.}
+    \item \textbf{Sleight of Hand} – \emph{Once per session, declare you have already lifted a small item unnoticed.}
+    \item \textbf{Always an Escape Plan} – \emph{Use Burglary instead of Athletics when escaping confinement.}
+\end{itemize}
+\end{DndSidebar}
+
+\subsubsection{Example 1: Applying a +2 Bonus}
+\begin{DndReadAloud}{}
+\textbf{Situation:} Felix Cavendish, an eccentric inventor, is attempting to repair a damaged mechanical safe under a tight time limit. His player wants to use his Trait \emph{“Inventive Genius”}.
+
+\textbf{Difficulty Rating:} The GM sets the repair difficulty at \textbf{Great (+3)}, as the damage is severe.
+
+    \textbf{Resolution:} Felix rolls \textbf{4dF + his Crafts skill (+3)}. He rolls a result of \textbf{+1}. Normally, his total would be \textbf{+4} (Success with a Minor Cost). However, because his Trait \emph{Inventive Genius} applies, he adds an additional \textbf{+2}, bringing his final result to \textbf{+6} (Success with Style). The safe is repaired flawlessly and even runs more efficiently than before.
+\end{DndReadAloud}
+
+\subsubsection{Example 2: Expanded Capabilities}
+\begin{DndReadAloud}{}
+\textbf{Situation:} Isadora Lovelace, a gifted spiritualist, wants to communicate with a recently deceased victim in order to uncover clues about a murder. Normally, the \textbf{Lore} skill wouldn’t allow this.
+
+\textbf{Trait:} \emph{“A Glimpse Beyond the Veil”} allows her to attempt supernatural interactions.
+
+Since her Trait permits it, the GM allows a roll using \textbf{Lore}. The outcome determines how much information she can extract.
+\end{DndReadAloud}
+
+\subsubsection{Example 3: Once Per Session Ability}
+\begin{DndReadAloud}{}
+\textbf{Situation:} Cornelius Flint, a silver-tongued rogue, has been cornered in an alley by the city watch. Escape seems impossible.
+
+\textbf{Trait:} \emph{“Always an Escape Plan”} allows him, once per session, to declare he had an escape route planned all along.
+
+    \textbf{Resolution:} Instead of rolling, the GM allows him to describe a secret hatch in the alley leading to the sewers, letting him escape cleanly.
+\end{DndReadAloud}
+ 
+\subsection{Final Notes on Traits}
+
+Traits are not just mechanical advantages; they define a character’s core competencies and role in the narrative. Players should use them creatively, and GMs should reward clever applications that fit the story.
+
+\begin{DndComment}{Tip for GMs}
+ If a player wants to use a Trait in a way that isn’t obvious, ask them to describe \emph{how} it applies. Encourage creativity while keeping balance in mind.
+\end{DndComment}
+
+\section{Gear}
+
+\DndDropCapLine{U}{nlike} other systems that track individual items, inventory weight, and resource management, \emph{The Wyrd Engine} keeps gear streamlined and abstract. Instead of worrying about encumbrance, ammunition, or minor supplies, characters only track \textbf{gear that truly matters}. This means that most mundane equipment is assumed to be available when reasonable, and only items that provide a mechanical or narrative advantage are recorded.
+
+\subsection{Gear as Traits}
+Gear in \emph{The Wyrd Engine} functions similarly to Traits. Instead of listing specific damage values or weight, an item has a \textbf{trait} that defines its benefit in play. 
+
+Each character begins with \textbf{three pieces of gear}, and each piece should:
+\begin{itemize}
+    \item Provide a \emph{specific mechanical advantage} (e.g. \textbf{+2 bonus} to a relevant skill check). This works exactly the way that traits work; gear simply has traits.
+    \item Offer a \emph{unique function} that enables new actions.
+    \item Be \emph{narratively significant}—not just generic supplies.
+\end{itemize}
+
+See the ``Gear in \emph{The Grand Casebook}'' for examples of gear.
+
+\begin{DndSidebar}[float=!t]{Gear in \emph{The Grand Casebook}}
+\textbf{Detective’s Magnifying Glass}  
+\emph{Gain +2 to Investigate when examining tiny details or analysing documents.}
+
+\textbf{Clockwork Grappling Hook}  
+\emph{Once per session, escape or reach a high place instantly.}
+
+\textbf{Masterwork Dueling Pistol}  
+\emph{Gain +2 to Shoot in one-on-one confrontations.}
+
+\textbf{Encrypted Notebook}  
+\emph{Allows the player to store complex cyphers or hidden information that only they can decode.}
+
+\textbf{Hidden Blade}  
+\emph{Use \textbf{Stealth} instead of \textbf{Fight} in a surprise attack.}
+
+\textbf{Reinforced Trench Coat}  
+\emph{Gain +2 to \textbf{Physique} when resisting blunt force trauma.}
+\end{DndSidebar}
+
+\subsection{Using Gear in Play}
+Gear should not be micromanaged but used to define a character’s tools, specialities, and advantages. If an item logically fits a character’s concept—such as a detective having a notebook or a thief carrying lockpicks—it’s assumed to be available without taking up a slot. Only equipment that \emph{enhances gameplay} or \emph{creates narrative opportunities} should be explicitly listed.
+
+\begin{DndComment}{Game Master Tip}
+If a player asks, “Do I have this item?” consider whether it fits their role and background. If it makes sense, they do. If it would provide a major advantage, it should be a tracked piece of gear with a trait.
+\end{DndComment}
+
+
+\section{Difficulty Levels}
+
+\DndDropCapLine{W}{hile} \emph{The Wyrd Engine} uses a simple resolution mechanic, it is important to establish how difficult a given action is. The Game Master determines the \textbf{Difficulty Rating (DR)} based on the complexity of the task, the environment, and any obstacles the characters may face.
+
+\subsection{Passive Opposition}
+The \textbf{Difficulty Rating (DR)} represents the challenge level of a task. The simplest tasks involve no active opposition—where success or failure is determined solely by the character’s own abilities. This could be deciphering an ancient cipher, scaling a rocky cliff, or crafting a delicate mechanism—situations where the only obstacle is the task itself, rather than an opposing force.
+
+In these cases, the player rolls \textbf{4dF} + their \textbf{Skill Modifier} and applies any relevant \textbf{Trait} or \textbf{Gear bonus} (Gear Traits). If the total meets or exceeds the DR, the action succeeds.
+
+The GM determines the difficulty rating based on two factors: how inherently challenging the task is and how critical it is to the game’s progression. A well-balanced difficulty keeps the players engaged—offering real challenges without creating dead ends. While setbacks can enrich the story, a GM should never impose an insurmountable barrier that halts progress entirely. Instead, every challenge should be an opportunity for clever thinking, teamwork, and dramatic tension.
+
+\begin{DndTable}[header=Difficulty Levels in \emph{The Wyrd Engine}]{lX}
+    \textbf{Difficulty Rating} & \textbf{Example Task} \\
+    \hline
+    \textbf{Mediocre (0)} & Routine action anyone can attempt (jumping over a puddle, recalling common knowledge). Rolls are usually unnecessary unless dramatic tension is involved. \\
+    \textbf{Fair (+1)} & A simple challenge requiring basic skill (spotting a hidden compartment, climbing a wooden fence). \\
+    \textbf{Good (+2)} & A task that requires notable skill or effort (tracking footprints in the rain, persuading a sceptical guard). \\
+    \textbf{Great (+3)} & A difficult task that pushes a character’s abilities (picking a complex lock under pressure, leaping between rooftops). \\
+    \textbf{Superb (+4)} & A nearly impossible feat without expert training (detecting a forged document at a glance, sniping a target from extreme range). \\
+    \textbf{Legendary (+5 or more)} & A task bordering on the impossible (convincing a lifelong enemy to trust you, performing surgery in total darkness). \\
+\end{DndTable}
+
+
+
+\subsection{Active Opposition}
+When two characters compete directly but are not in combat (for that, see below), both roll \textbf{4dF + their relevant skill}. The highest result wins.
+
+\begin{itemize}
+    \item If one character beats the other by \textbf{1 or 2 points}, they succeed with a minor advantage.
+    \item If they beat the other by \textbf{3 or more points}, their success is so impressive that the GM can, at their discretion, provide the winning character with a \textbf{boon}.
+\end{itemize}
+
+A \textbf{boon} is a one-use trait invented for the situation at hand. It is only active for the current scene and is lost if not used after the scene ends.
+
+\subsection{Ties and Partial Successes}
+Not every roll results in a clean success or failure. When a roll \textbf{ties} the Difficulty Rating, or when failure would halt progress entirely, the GM may introduce a \textbf{complication}:
+
+\begin{itemize}
+    \item \textbf{Success with a Cost:} The action succeeds, but at a price (e.g., escaping a pursuer but losing an important clue).
+    \item \textbf{Mixed Success:} The character achieves part of their goal, but not completely (e.g., unlocking a door but setting off an alarm).
+    \item \textbf{A New Complication:} The failure introduces an unexpected twist (e.g., picking a lock only to find guards already inside).
+\end{itemize}
+
+\subsection{Interpreting Failure}
+A failed roll doesn’t necessarily mean the character is incompetent—it simply means their approach didn’t work this time. The GM should ensure failures lead to new choices, not dead ends.
+
+\begin{DndComment}{Game Master Tip}
+    If a failed roll would stop the story in its tracks, offer the player an alternative: “You can still succeed but at a cost.” This keeps the momentum going while making failure meaningful.
+\end{DndComment}
+
+
+\section{Combat in The Wyrd Engine}
+
+\DndDropCapLine{C}{ombat} in \textit{The Wyrd Engine} is designed to be fast, cinematic, and deadly. Instead of tracking minute details like hit points or exact damage values, the system focuses on the flow of action, player choices, and the consequences of combat.
+
+\subsection{Initiative: Who Acts First?}
+Combat follows a structured yet flexible turn order:
+
+\begin{DndReadAloud}{Determining Initiative}
+\begin{itemize}
+    \item \textbf{Surprise \& Readiness:} If one side is clearly ambushing the other, they act first.
+    \item \textbf{Tactical Positioning:} If no clear ambush is present, the GM determines turn order based on readiness.
+    \item \textbf{Rolling for Initiative:} If multiple characters are competing to act first, roll \textbf{4dF + Notice} (or another relevant skill). The highest roll acts first, with ties resolved narratively.
+\end{itemize}
+\end{DndReadAloud}
+
+\subsection{Taking Actions in Combat}
+On their turn, a character can do the following:
+\begin{itemize}
+    \item \textbf{One primary action} (Attack, defend, use an item, complex manoeuvre)
+    \item \textbf{One minor action} (Draw a weapon, reposition, open a door, shout a command)
+    \item \textbf{Free actions} (Speaking briefly, minor environmental interactions)
+\end{itemize}
+
+\subsection{Attacking and Defending}
+Attacks are resolved using opposed rolls:
+\begin{DndReadAloud}{Attack Resolution}
+\begin{itemize}
+    \item The attacker rolls \textbf{4dF + their combat skill} (\textbf{Fight} for melee, \textbf{Shoot} for firearms).
+    \item The defender rolls \textbf{4dF + their defense skill} (\textbf{Athletics} for dodging, \textbf{Fight} for parrying).
+    \item If the attacker’s total exceeds the defender’s, the attack lands and deals damage.
+\end{itemize}
+\end{DndReadAloud}
+
+The damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Depending on the setting, you can scale the damage to stress/wound conversion. Converting damage to stress or wounds 1-to-1 gives you a realistic but rather deadly game, so for more action-packed swashbuckling adventures, you might want to convert them 2-to-1 or 3-to-1.
+
+\begin{DndSidebar}[float=!t]{Example Attack}
+Jonathan Blackwood swings a cane at an enemy thug. He rolls \textbf{4dF +2 (Fight)}, while the thug rolls \textbf{4dF +1 (Athletics)} to dodge. If Jonathan’s result is higher, the hit lands.
+\end{DndSidebar}
+
+
+\subsection{Damage: Stress and Wounds}
+Instead of traditional hit points, \textit{The Wyrd Engine} uses \textbf{Stress} for minor injuries and \textbf{Wounds} for lasting harm.
+
+\begin{DndReadAloud}{Stress and Wounds}
+\begin{itemize}
+    \item \textbf{Stress:} Represents minor setbacks, fatigue, or temporary injuries. Every character has \textbf{five Stress boxes}. These are automatically cleared after a fight.
+    \item Once all stress boxes are filled, additional damage results in \textbf{Wounds}.
+\end{itemize}
+\end{DndReadAloud}
+
+Damage is converted to wounds similarly to how damage is converted to stress, using 1-to-1 or some other conversion factor. A \textbf{Mild Wound} absorbs the same as one stress box, a \textbf{Moderate Wound} the same as two stress boxes, and a \textbf{Severe Wound} the same as three stress boxes. In addition, when taking a \textbf{Wound}, one or more relevant skills are affected.
+
+\begin{DndTable}[header=]{ll}
+    \textbf{Wound Type} & \textbf{Effect} \\
+    \hline
+    \textbf{Mild Wound}  & -1 to relevant skill rolls \\
+    \textbf{Moderate Wound} & -2 to relevant skill rolls \\
+    \textbf{Severe Wound}  & -3 to all physical actions \\
+\end{DndTable}
+
+Damage does not have to fill a wound to invoke it. If a character already has a \textbf{Mild Wound} and takes \textbf{+1} in damage, it goes into the \textbf{Moderate Wound} \emph{and fills it}. Even though a \textbf{Moderate Wound} can take two in damage, it is inflicted as soon as it takes \emph{any} damage, and if the \textbf{+1} cannot go into a stress box or the \textbf{Mild Wound}, it goes into the \textbf{Moderate Wound}.
+
+\begin{DndSidebar}[float=!t]{Example Wound}
+Josephine Langley is shot during a gunfight and takes \textbf{+2} damage. She has no remaining Stress boxes, so she takes a \textbf{Moderate Wound} (since a \textbf{Moderate Wound} can soak up two damage while a \textbf{Mild Wound} cannot). The GM rules that the injury impairs her movement, applying a \textbf{-2} penalty to \textbf{Athletics} and \textbf{Fight} rolls.
+\end{DndSidebar}
+
+If all stress boxes are filled and all three wounds are taken, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
+
+\subsection{Healing and Recovery}
+\begin{itemize}
+    \item \textbf{Stress} clears at the end of a scene.
+    \item \textbf{Mild Wounds} require a short rest (a few hours) or first aid.
+    \item \textbf{Moderate Wounds} require days of rest or professional medical care.
+    \item \textbf{Severe Wounds} require weeks of rest, surgery, or supernatural healing (if applicable).
+\end{itemize}
+
+\subsection{Combat Maneuvers and Special Actions}
+Instead of simply attacking, players can use tactical manoeuvres:
+
+\begin{DndReadAloud}{Combat Maneuvers}
+\begin{itemize}
+    \item \textbf{Disarm:} Use Fight to knock a weapon from an opponent’s hands.
+    \item \textbf{Grapple:} Use Fight vs. Athletics to restrain an enemy.
+    \item \textbf{Push:} Use Athletics to shove an opponent into hazards.
+    \item \textbf{Feint:} Use Deceive to trick an enemy into missing a defense.
+    \item \textbf{Suppressing Fire:} Use Shoot to force enemies into cover.
+    \item \textbf{Intimidate:} Use Provoke to demoralize foes.
+\end{itemize}
+\end{DndReadAloud}
+
+\emph{The Wyrd Engine} does not have rules for all the myriad ways that actions can be used in combat, but the GM should generally try to convert an action into either an unopposed or opposed obstacle and let the outcome affect bonuses and penalties for future dice rolls.
+
+\subsection{Weapons and Gear in Combat}
+Weapons do not deal numeric damage but affect combat through \textbf{Traits}. Weapon traits work the same way as any gear trait and can be used when attacking or defending.
+
+\begin{DndReadAloud}{Types of Weapon Traits}
+\begin{itemize}
+    \item \textbf{Weapons with Traits} grant \textbf{+2} in relevant situations (e.g., “Mastercrafted Rapier” gives +2 to Fight in duels).
+    \item \textbf{Firearms} can inflict instant Wounds if the shot is well-placed.
+    \item \textbf{Improvised Weapons} may impose a penalty unless the character is skilled in their use.
+\end{itemize}
+\end{DndReadAloud}
+
+When a weapon's \textbf{Trait} adds to the attack of a character, it will indirectly affect the damage the attack is inflicting. More interesting uses of weapon traits give other advantages to their wielder.
+
+\begin{DndReadAloud}{Example Weapon Traits}
+\begin{itemize}
+    \item \textbf{Fine Dueling Sabre} – \textit{+2 to Fight when dueling.}
+    \item \textbf{Hidden Derringer} – \textit{Once per scene, draw a concealed firearm unnoticed.}
+    \item \textbf{Reinforced Cane} – \textit{Can be used as both a weapon and a defensive tool.}
+\end{itemize}
+\end{DndReadAloud}
+
+\section{Death and the End of Combat}
+When a character suffers a \textbf{Severe Wound} and takes further damage, they are at risk of death. The GM may allow:
+\begin{itemize}
+    \item A final desperate action before succumbing.
+    \item A chance to survive if an ally intervenes.
+    \item A dramatic consequence, such as permanent injury.
+\end{itemize}
+
+Combat ends when one side is defeated, flees, or surrenders. Survivors must then deal with the consequences of their wounds, the choices they made, and the path ahead.
+
+\begin{DndComment}{Tip for GMs}
+If a player is at risk of death, consider narrative consequences rather than instant removal. A major wound or permanent injury can be more interesting than a sudden death.
+\end{DndComment}
+
+\end{document}
+
+
+\section{Character Creation}
+
+\DndDropCapLine{C}{reating} a character in \textbf{The Wyrd Engine} is a quick and streamlined process, designed to get players into the game with minimal preparation. Each character is defined by a small but meaningful set of attributes that shape their role in the story. Unlike systems with long-term progression, \textbf{The Wyrd Engine} prioritises narrative impact over mechanical advancement, making character creation simple yet flexible.
+
+Every player character is built using the following elements:
+
+\subsection{Step 1: Concept}
+
+Before assigning mechanics, players should develop a brief \textbf{character concept}. This is a short description of who the character is, their role in the story, and what makes them interesting. Concepts should be evocative but flexible, helping guide both roleplay and mechanical choices.
+
+\begin{DndSidebar}[float=!t]{Example Character Concepts}
+    \begin{itemize}
+        \item \emph{A disgraced noble turned detective, haunted by his past.}
+        \item \emph{An eccentric engineer whose inventions are as brilliant as they are dangerous.}
+        \item \emph{A silver-tongued con artist who survives by wit and charm.}
+        \item \emph{A fearless occult investigator seeking forbidden knowledge.}
+    \end{itemize}
+\end{DndSidebar}
+
+\subsection{Step 2: Choose Skills}
+
+Each character has a set of \textbf{Skills} that determine their strengths and weaknesses. Skills represent broad areas of expertise rather than hyper-specialised talents, ensuring versatility.
+
+Characters receive a total of \textbf{six skill ranks}, distributed as follows:
+
+\begin{itemize}
+    \item \textbf{1 Great (+3)} skill
+    \item \textbf{2 Good (+2)} skills
+    \item \textbf{3 Fair (+1)} skills
+\end{itemize}
+
+All unselected skills default to \textbf{+0}.
+
+\begin{DndReadAloud}{}
+When assigning skills, players should consider their character’s background and expertise. A veteran detective might prioritise \textbf{Investigate} and \textbf{Notice}, while a rogue might favour \textbf{Stealth} and \textbf{Deceive}.
+\end{DndReadAloud}
+
+The total sum of skill ranks must always equal \textbf{10}. This ensures that every character is balanced in overall competence while allowing for specialisation.
+
+\subsection{Step 3: Select Traits}
+
+Every character has exactly \textbf{three Traits}. Traits represent exceptional abilities, personal quirks, or special training that set a character apart. 
+
+\textbf{Traits provide one of three benefits:}
+\begin{itemize}
+    \item A \textbf{+2 bonus} when applied to a relevant skill check.
+    \item A \textbf{special ability} that can be used \emph{once per scene or session}.
+    \item A \textbf{narrative permission} to attempt actions that would normally be impossible.
+\end{itemize}
+
+\begin{DndSidebar}[float=!b]{Example Traits}
+    \begin{itemize}
+        \item \textbf{Master Duelist} – \emph{Gain +2 to Fight when using a rapier or fencing techniques.}
+        \item \textbf{Inventive Genius} – \emph{Can craft unique gadgets that defy conventional mechanics.}
+        \item \textbf{Unshakable Will} – \emph{Once per session, ignore the effects of fear or mind control.}
+        \item \textbf{Underworld Connections} – \emph{Gain +2 to Contacts when dealing with criminals.}
+        \item \textbf{The Cards Never Lie} – \emph{Use Lore instead of Investigate when predicting an outcome.}
+    \end{itemize}
+\end{DndSidebar}
+
+Traits should enhance a character’s strengths and provide unique advantages in play. They should not be overly broad or cover multiple unrelated areas.
+
+\subsection{Step 4: Select Gear}
+
+\textbf{The Wyrd Engine} does not track mundane items or encumbrance. Instead, characters select \textbf{three pieces of notable gear} that have a mechanical or narrative impact.
+
+Each piece of gear functions like a Trait, providing either:
+\begin{itemize}
+    \item A \textbf{+2 bonus} when used appropriately.
+    \item A \textbf{special ability} usable once per scene or session.
+    \item A \textbf{narrative permission} to perform unique actions.
+\end{itemize}
+
+\begin{DndSidebar}[float=!t]{Example Gear}
+    \begin{itemize}
+        \item \textbf{Clockwork Lockpick} – \emph{+2 to Burglary when opening mechanical locks.}
+        \item \textbf{Enchanted Mirror} – \emph{Once per session, reveal a hidden truth.}
+        \item \textbf{Mastercrafted Rapier} – \emph{+2 to Fight in one-on-one duels.}
+        \item \textbf{Detective’s Notebook} – \emph{Use Investigate instead of Rapport when questioning suspects.}
+        \item \textbf{Hidden Derringer} – \emph{Once per scene, draw a concealed firearm unnoticed.}
+    \end{itemize}
+\end{DndSidebar}
+
+\subsection{Step 5: Define Stress and Consequences}
+\todo{UPDATE THIS AFTER COMBAT SECTION}
+
+Characters have a limited ability to absorb harm before suffering long-term effects.
+
+\begin{itemize}
+    \item \textbf{Three Stress Boxes} – Used to absorb minor failures.
+    \item \textbf{Mild, Moderate, and Severe Consequences} – Represent lasting harm or setbacks.
+\end{itemize}
+
+Consequences replace traditional hit points and can reflect physical, mental, or social strain. A "Mild" consequence might be a bruised rib, while a "Severe" consequence could be a permanent injury or a shattered reputation.
+
+\subsection{Step 6: Final Details}
+
+With mechanics in place, players can now define their character’s:
+\begin{itemize}
+    \item \textbf{Name} – Fitting for the setting and character concept.
+    \item \textbf{Appearance} – Distinctive traits, clothing, and demeanour.
+    \item \textbf{Personality} – Key personality traits, motivations, or quirks.
+    \item \textbf{Backstory} – A brief origin story or notable past experiences.
+\end{itemize}
+
+\begin{DndComment}{Final Advice for Players}
+\textbf{Focus on character over numbers.} The Wyrd Engine is designed for narrative-driven play, so build a character that fits the story rather than optimising for maximum efficiency.
+\end{DndComment}
+
+Once these steps are complete, the character is ready for play!
+
+
+
+%\chapter{Text Boxes}
+%
+%The module has three environments for setting text apart so that it is drawn to the reader's attention. |DndReadAloud| is used for text that a game master would read aloud.
+%
+%\begin{DndReadAloud}
+%  As you approach this module you get a sense that the blood and tears of many generations went into its making. A warm feeling welcomes you as you type your first words.
+%\end{DndReadAloud}
+%
+%\section{As an Aside}
+%The other two environments are the |DndComment| and the |DndSidebar|. The |DndComment| is breakable and can safely be used inline in the text.
+%
+%\begin{DndComment}{This Is a Comment Box!}
+%  A |DndComment| is a box for minimal highlighting of text. It lacks the ornamentation of |DndSidebar|, but it can handle being broken over a column.
+%\end{DndComment}
+%
+%The |DndSidebar| is not breakable and is best used floated toward a page corner as it is below.
+%
+%\begin{DndSidebar}[float=!b]{Behold the DndSidebar!}
+%  The |DndSidebar| is used as a sidebar. It does not break over columns and is best used with a figure environment to float it to one corner of the page where the surrounding text can then flow around it.
+%\end{DndSidebar}
+%
+%\section{Tables}
+%The |DndTable| colors the even rows and is set to the width of a line by default.
+%
+%\begin{DndTable}[header=Nice Table]{XX}
+%    Table head  & Table head \\
+%    Some value  & Some value \\
+%    Some value  & Some value \\
+%    Some value  & Some value
+%\end{DndTable}
+%
+
+\end{document}
