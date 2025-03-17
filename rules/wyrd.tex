@@ -1,4 +1,4 @@
-\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+\documentclass[twopage,twocolumn,nodeprecatedcode,bg=print]{dndbook}
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -8,6 +8,10 @@
 \usepackage{stfloats}
 \usepackage{tikz}
 \usepackage{xcolor}
+
+\usepackage{imakeidx}
+\makeindex
+
 \usepackage{todo}
 
 \newcommand{\FudgeDie}[1]{
@@ -26,6 +30,7 @@
 }
 
 \title{The Wyrd Engine}
+\author{Thomas Mailund}
 
 \begin{document}
 
@@ -37,38 +42,6 @@
 
 \input{content/index.tex}
 
-
-
-%\chapter{Text Boxes}
-%
-%The module has three environments for setting text apart so that it is drawn to the reader's attention. |DndReadAloud| is used for text that a game master would read aloud.
-%
-%\begin{DndReadAloud}
-%  As you approach this module you get a sense that the blood and tears of many generations went into its making. A warm feeling welcomes you as you type your first words.
-%\end{DndReadAloud}
-%
-%\section{As an Aside}
-%The other two environments are the |DndComment| and the |DndSidebar|. The |DndComment| is breakable and can safely be used inline in the text.
-%
-%\begin{DndComment}{This Is a Comment Box!}
-%  A |DndComment| is a box for minimal highlighting of text. It lacks the ornamentation of |DndSidebar|, but it can handle being broken over a column.
-%\end{DndComment}
-%
-%The |DndSidebar| is not breakable and is best used floated toward a page corner as it is below.
-%
-%\begin{DndSidebar}[float=!b]{Behold the DndSidebar!}
-%  The |DndSidebar| is used as a sidebar. It does not break over columns and is best used with a figure environment to float it to one corner of the page where the surrounding text can then flow around it.
-%\end{DndSidebar}
-%
-%\section{Tables}
-%The |DndTable| colors the even rows and is set to the width of a line by default.
-%
-%\begin{DndTable}[header=Nice Table]{XX}
-%    Table head  & Table head \\
-%    Some value  & Some value \\
-%    Some value  & Some value \\
-%    Some value  & Some value
-%\end{DndTable}
-%
+\printindex
 
 \end{document}
