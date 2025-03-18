@@ -18,11 +18,13 @@ With The Wyrd Engine, all conflict resolution follows this pattern:
 		      Each die has \textbf{+ (plus), - (minus), and 0 (blank) faces}. Add up the plusses and minuses.
 		\item The roll result is added to a relevant \textbf{Skill} modifier.
 		\item If relevant, \textbf{Traits} can be applied as bonuses.
-		\item The final result is compared against a \textbf{difficulty rating (DR)} to determine success or failure.
+		\item The final result is compared against a \textbf{difficulty rating (DR)} to determine success or failure:
+		\begin{itemize}
+			\item \textbf{4dF} + \textbf{Skill} + \textbf{Trait} $>$ \textbf{DR} (Success)	
+			\item \textbf{4dF} + \textbf{Skill} + \textbf{Trait} $=$ \textbf{DR} (Tie)
+			\item \textbf{4dF} + \textbf{Skill} + \textbf{Trait} $<$ \textbf{DR} (Failure)
+		\end{itemize}
 	\end{itemize}
-	\begin{center}
-		\textbf{4dF} + \textbf{Skill} + \textbf{Trait} $>$ \textbf{DR}.	
-	\end{center}
 \end{DndReadAloud}
 
 This will always be the general pattern for resolving conflicts, only differing in which skills and traits are involved, how the difficulty rating is determined, and what the consequences of success or failure will be.
