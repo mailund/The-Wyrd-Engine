@@ -19,6 +19,20 @@
 
 \captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
 
+%% References to pages
+\documentclass{article}
+\usepackage{hyperref}  % Allows reliable referencing of page numbers
+\usepackage{refcount}  % Provides \getpagerefnumber to fetch page numbers
+
+% Define a command for referencing the page of a label
+\newcommand{\pagereftext}[1]{%
+    \ifnum\getpagerefnumber{#1}=\thepage
+        on this page%
+    \else
+        on page \pageref{#1}%
+    \fi
+}
+
 %% Fudge dice notation %%%%%%%%%%%%%%%%%
 % Defining the three outcomes
 \newcommand{\FudgeDieP}{\faPlusSquare}
