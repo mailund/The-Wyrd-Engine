@@ -56,7 +56,7 @@ fudge_outcome
 
 difficulty_levels <- data.frame(
   outcome = seq(-4, 5, by = 1),
-  label = c("Trivial", "Simple", "Easy", "Basic", "Challenging", "Difficult", "Formidable", "Arduous", "Extreme")
+  label = c("Trivial", "Simple", "Easy", "Basic", "Challenging", "Difficult", "Formidable", "Arduous", "Extreme", "Impossible")
 )
 
 

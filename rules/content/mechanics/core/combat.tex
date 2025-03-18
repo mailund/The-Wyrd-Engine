@@ -1,0 +1,140 @@
+\section{Basic Combat in The Wyrd Engine}
+\index{Combat}
+
+Combat in \textit{The Wyrd Engine} is designed to be fast, cinematic, and deadly. Instead of tracking minute details like hit points or exact damage values, the system focuses on the flow of action, player choices, and the consequences of combat.
+
+\subsection{Initiative: Who Acts First?}
+\index{Combat!Initiative} 
+
+Combat follows a structured yet flexible turn order:
+
+\begin{DndReadAloud}{Determining Initiative}
+\begin{itemize}
+    \item \textbf{Surprise \& Readiness:} If one side is clearly ambushing the other, they act first.
+    \item \textbf{Tactical Positioning:} If no clear ambush is present, the GM determines turn order based on readiness.
+    \item \textbf{Rolling for Initiative:} If multiple characters are competing to act first, roll \textbf{4dF + Notice} (or another relevant skill). The highest roll acts first, with ties resolved narratively.
+\end{itemize}
+\end{DndReadAloud}
+
+\subsection{Taking Actions in Combat}
+\index{Combat actions}
+
+On their turn, a character can do the following:
+\begin{itemize}
+    \item \textbf{One primary action} (Attack, defend, use an item, complex manoeuvre)
+    \item \textbf{One minor action} (Draw a weapon, reposition, open a door, shout a command)
+    \item \textbf{Free actions} (Speaking briefly, minor environmental interactions)
+\end{itemize}
+
+\subsection{Attacking and Defending}
+\index{Combat!Attacking}\index{Combat!Defending}
+
+Attacks are resolved using opposed rolls:
+\begin{DndReadAloud}{Attack Resolution}
+\begin{itemize}
+    \item The attacker rolls \textbf{4dF + their combat skill} (\textbf{Fight} for melee, \textbf{Shoot} for firearms).
+    \item The defender rolls \textbf{4dF + their defense skill} (\textbf{Athletics} for dodging, \textbf{Fight} for parrying).
+    \item If the attacker’s total exceeds the defender’s, the attack lands and deals damage.
+\end{itemize}
+\end{DndReadAloud}
+
+\index{Damage}
+\index{Combat!Soaking up damage}
+The damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Depending on the setting, you can scale the damage to stress/wound conversion. Converting damage to stress or wounds 1-to-1 gives you a realistic but rather deadly game, so for more action-packed swashbuckling adventures, you might want to convert them 2-to-1 or 3-to-1.
+
+\begin{DndSidebar}[float=!t]{Example Attack}
+Jonathan Blackwood swings a cane at an enemy thug. He rolls \textbf{4dF +2 (Fight)}, while the thug rolls \textbf{4dF +1 (Athletics)} to dodge. If Jonathan’s result is higher, the hit lands.
+\end{DndSidebar}
+
+
+\subsection{Damage: Stress and Wounds}
+\index{Damage}
+
+Instead of traditional hit points, \textit{The Wyrd Engine} uses \textbf{Stress}\index{Damage!Stress}\index{Stress} for minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for lasting harm.
+
+\begin{DndReadAloud}{Stress and Wounds}
+\begin{itemize}
+    \item \textbf{Stress:} Represents minor setbacks, fatigue, or temporary injuries. Every character has \textbf{five Stress boxes}. These are automatically cleared after a fight.
+    \item Once all stress boxes are filled, additional damage results in \textbf{Wounds}.
+\end{itemize}
+\end{DndReadAloud}
+
+Damage is converted to wounds similarly to how damage is converted to stress, using 1-to-1 or some other conversion factor. A \textbf{Mild Wound} absorbs the same as one stress box, a \textbf{Moderate Wound} the same as two stress boxes, and a \textbf{Severe Wound} the same as three stress boxes. In addition, when taking a \textbf{Wound}, one or more relevant skills are affected.
+
+\begin{DndTable}[header=]{ll}
+    \textbf{Wound Type} & \textbf{Effect} \\
+    \hline
+    \textbf{Mild Wound}  & -1 to relevant skill rolls \\
+    \textbf{Moderate Wound} & -2 to relevant skill rolls \\
+    \textbf{Severe Wound}  & -3 to all physical actions \\
+\end{DndTable}
+
+Damage does not have to fill a wound to invoke it. If a character already has a \textbf{Mild Wound} and takes \textbf{+1} in damage, it goes into the \textbf{Moderate Wound} \emph{and fills it}. Even though a \textbf{Moderate Wound} can take two in damage, it is inflicted as soon as it takes \emph{any} damage, and if the \textbf{+1} cannot go into a stress box or the \textbf{Mild Wound}, it goes into the \textbf{Moderate Wound}.
+
+\begin{DndSidebar}[float=!t]{Example Wound}
+Josephine Langley is shot during a gunfight and takes \textbf{+2} damage. She has no remaining Stress boxes, so she takes a \textbf{Moderate Wound} (since a \textbf{Moderate Wound} can soak up two damage while a \textbf{Mild Wound} cannot). The GM rules that the injury impairs her movement, applying a \textbf{-2} penalty to \textbf{Athletics} and \textbf{Fight} rolls.
+\end{DndSidebar}
+
+If all stress boxes are filled and all three wounds are taken, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
+
+\subsection{Healing and Recovery}
+\index{Healing}\index{Recovery}
+
+\begin{itemize}
+    \item \textbf{Stress} clears at the end of a scene.
+    \item \textbf{Mild Wounds} require a short rest (a few hours) or first aid.
+    \item \textbf{Moderate Wounds} require days of rest or professional medical care.
+    \item \textbf{Severe Wounds} require weeks of rest, surgery, or supernatural healing (if applicable).
+\end{itemize}
+
+\subsection{Combat Maneuvers and Special Actions}
+Instead of simply attacking, players can use tactical manoeuvres:
+
+\begin{DndReadAloud}{Combat Maneuvers}
+\begin{itemize}
+    \item \textbf{Disarm:} Use Fight to knock a weapon from an opponent’s hands.
+    \item \textbf{Grapple:} Use Fight vs. Athletics to restrain an enemy.
+    \item \textbf{Push:} Use Athletics to shove an opponent into hazards.
+    \item \textbf{Feint:} Use Deceive to trick an enemy into missing a defense.
+    \item \textbf{Suppressing Fire:} Use Shoot to force enemies into cover.
+    \item \textbf{Intimidate:} Use Provoke to demoralize foes.
+\end{itemize}
+\end{DndReadAloud}
+
+\emph{The Wyrd Engine} does not have rules for all the myriad ways that actions can be used in combat, but the GM should generally try to convert an action into either an unopposed or opposed obstacle and let the outcome affect bonuses and penalties for future dice rolls.
+
+\subsection{Weapons and Gear in Combat}
+Weapons do not deal numeric damage but affect combat through \textbf{Traits}. Weapon traits work the same way as any gear trait and can be used when attacking or defending.
+
+\begin{DndReadAloud}{Types of Weapon Traits}
+\begin{itemize}
+    \item \textbf{Weapons with Traits} grant \textbf{+2} in relevant situations (e.g., “Mastercrafted Rapier” gives +2 to Fight in duels).
+    \item \textbf{Firearms} can inflict instant Wounds if the shot is well-placed.
+    \item \textbf{Improvised Weapons} may impose a penalty unless the character is skilled in their use.
+\end{itemize}
+\end{DndReadAloud}
+
+When a weapon's \textbf{Trait} adds to the attack of a character, it will indirectly affect the damage the attack is inflicting. More interesting uses of weapon traits give other advantages to their wielder.
+
+\begin{DndReadAloud}{Example Weapon Traits}
+\begin{itemize}
+    \item \textbf{Fine Dueling Sabre} – \textit{+2 to Fight when dueling.}
+    \item \textbf{Hidden Derringer} – \textit{Once per scene, draw a concealed firearm unnoticed.}
+    \item \textbf{Reinforced Cane} – \textit{Can be used as both a weapon and a defensive tool.}
+\end{itemize}
+\end{DndReadAloud}
+
+\subsection{Death and the End of Combat}
+When a character suffers a \textbf{Severe Wound} and takes further damage, they are at risk of death. The GM may allow:
+\begin{itemize}
+    \item A final desperate action before succumbing.
+    \item A chance to survive if an ally intervenes.
+    \item A dramatic consequence, such as permanent injury.
+\end{itemize}
+
+Combat ends when one side is defeated, flees, or surrenders. Survivors must then deal with the consequences of their wounds, the choices they made, and the path ahead.
+
+\begin{DndComment}{Game Master Tip}
+If a player is at risk of death, consider narrative consequences rather than instant removal. A major wound or permanent injury can be more interesting than a sudden death.
+\end{DndComment}
+
