@@ -1,7 +1,7 @@
 \section{Basic Combat in The Wyrd Engine}
 \index{Combat}
 
-Combat in \textit{The Wyrd Engine} is designed to be fast, cinematic, and deadly. Instead of tracking minute details like hit points or exact damage values, the system focuses on the flow of action, player choices, and the consequences of combat.
+Combat in \textit{The Wyrd Engine} is designed to be fast, cinematic, and deadly. Instead of tracking minute details like hit points or exact damage values, the system focuses on the flow of action, player choices, and the consequences of combat. Depending on a game's setting and how large a part combat is for any particular scenario, you might want to adjust the combat rules, and for that, we refer to Chapter~\ref{chap: combat}. The combat rules described in this chapter are tailored for games where combat plays a minor role, so combat encounters should be quickly resolved in gaming time.
 
 \subsection{Initiative: Who Acts First?}
 \index{Combat!Initiative} 
@@ -9,11 +9,11 @@ Combat in \textit{The Wyrd Engine} is designed to be fast, cinematic, and deadly
 Combat follows a structured yet flexible turn order:
 
 \begin{DndReadAloud}{Determining Initiative}
-\begin{itemize}
-    \item \textbf{Surprise \& Readiness:} If one side is clearly ambushing the other, they act first.
-    \item \textbf{Tactical Positioning:} If no clear ambush is present, the GM determines turn order based on readiness.
-    \item \textbf{Rolling for Initiative:} If multiple characters are competing to act first, roll \textbf{4dF + Notice} (or another relevant skill). The highest roll acts first, with ties resolved narratively.
-\end{itemize}
+	\begin{itemize}
+    	\item \textbf{Surprise \& Readiness:} If one side is clearly ambushing the other, they act first.
+	    \item \textbf{Tactical Positioning:} If no clear ambush is present, the GM determines turn order based on readiness.
+	    \item \textbf{Rolling for Initiative:} If multiple characters are competing to act first, roll \textbf{4dF + Notice} (or another relevant skill). The highest roll acts first, with ties resolved narratively.
+	\end{itemize}
 \end{DndReadAloud}
 
 \subsection{Taking Actions in Combat}
@@ -31,33 +31,44 @@ On their turn, a character can do the following:
 
 Attacks are resolved using opposed rolls:
 \begin{DndReadAloud}{Attack Resolution}
-\begin{itemize}
-    \item The attacker rolls \textbf{4dF + their combat skill} (\textbf{Fight} for melee, \textbf{Shoot} for firearms).
-    \item The defender rolls \textbf{4dF + their defense skill} (\textbf{Athletics} for dodging, \textbf{Fight} for parrying).
-    \item If the attacker’s total exceeds the defender’s, the attack lands and deals damage.
-\end{itemize}
+	\begin{itemize}
+    	\item The attacker rolls \textbf{4dF + their combat skill} (\textbf{Fight} for melee, \textbf{Shoot} for firearms).
+	    \item The defender rolls \textbf{4dF + their defense skill} (\textbf{Athletics} for dodging, \textbf{Fight} for parrying).
+	    \item If the attacker’s total exceeds the defender’s, the attack lands and deals damage.
+	\end{itemize}
 \end{DndReadAloud}
 
-\index{Damage}
-\index{Combat!Soaking up damage}
-The damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Depending on the setting, you can scale the damage to stress/wound conversion. Converting damage to stress or wounds 1-to-1 gives you a realistic but rather deadly game, so for more action-packed swashbuckling adventures, you might want to convert them 2-to-1 or 3-to-1.
+If the defender has a higher score than or equal to the attacker, the attack is averted, and no damage is dealt. Ties are always in the defender's favour. If the attacker scores higher, the damage inflicted on the defender is the attacker's score minus the defender's.
 
-\begin{DndSidebar}[float=!t]{Example Attack}
-Jonathan Blackwood swings a cane at an enemy thug. He rolls \textbf{4dF +2 (Fight)}, while the thug rolls \textbf{4dF +1 (Athletics)} to dodge. If Jonathan’s result is higher, the hit lands.
-\end{DndSidebar}
+\begin{DndReadAloud}{}
+	\subsubsection{Example Attack}
+	Jonathan Blackwood swings a cane at an enemy thug. He rolls \textbf{4dF +2 (Fight)}, while the thug rolls \textbf{4dF +1 (Athletics)} to dodge. If Jonathan’s result is higher, the hit lands, otherwise, it is defended. If Jonathan rolls \FudgeRes{+++-} = 2 he gets a score of \textbf{+4} when combined with his \textbf{Fight} skill. If the thug then rolls \FudgeRes{+--0} = -1, giving him a score of \textbf{0} when combined with his \textbf{Athletics}, then Jonathan's score is higher, so he scores a hit, and the damage he inflicts is \textbf{+4 - 0 = +4}. The thug takes \textbf{+4} in damage.
+\end{DndReadAloud}
 
 
 \subsection{Damage: Stress and Wounds}
 \index{Damage}
+\index{Combat!Soaking up damage}
 
-Instead of traditional hit points, \textit{The Wyrd Engine} uses \textbf{Stress}\index{Damage!Stress}\index{Stress} for minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for lasting harm.
+Instead of traditional hit points, \emph{The Wyrd Engine} uses \textbf{Stress}\index{Damage!Stress}\index{Stress} to represent minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for more serious, lasting harm. While not precisely the same as hit points, they function similarly—absorbing damage until a character is overwhelmed. However, by splitting damage into ``it's just a flesh wound'' stress boxes and actual wounds, we get a combat system as dynamic as hit point-based systems but with a roleplaying twist. The stresses work as generic hit points, but once a character takes a wound, the mechanics force the player and Game Master to determine which kind of wound and how the character is affected, as this goes into penalties for later actions.
 
 \begin{DndReadAloud}{Stress and Wounds}
-\begin{itemize}
-    \item \textbf{Stress:} Represents minor setbacks, fatigue, or temporary injuries. Every character has \textbf{five Stress boxes}. These are automatically cleared after a fight.
-    \item Once all stress boxes are filled, additional damage results in \textbf{Wounds}.
-\end{itemize}
+	\begin{itemize}
+    	\item \textbf{Stress:} Represents minor setbacks, fatigue, or temporary injuries. These are automatically cleared after a fight.
+	    \item \textbf{Wounds} come in three levels of severity. They take longer to heal, and adds penalties for future actions.
+	\end{itemize}
 \end{DndReadAloud}
+
+Any damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Each player has five \emph{Stress boxes}, \StressBoxes, and five \emph{Wounds boxes} where the wounds are split into three categories: three \textbf{Mild Wounds} (\MildWounds), two \textbf{Moderate Wounds} (\ModerateWounds), and one \textbf{Severe Wounds} (\SevereWounds). These boxes, combined, are where a character can soak up damage.
+
+\begin{DndReadAloud}{}
+	\\
+	\Damage
+\end{DndReadAloud}
+
+Damage is soaked up by the boxes left-to-right and top-to-bottom, so the stress boxes will soak up the first five points of damage. After that, the following three damage points are inflicted as mild wounds, then the next two as moderate wounds, and finally, the character suffers a severe wound. If all stresses and wounds are ticked off, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
+
+%% TODO: Continue from here
 
 Damage is converted to wounds similarly to how damage is converted to stress, using 1-to-1 or some other conversion factor. A \textbf{Mild Wound} absorbs the same as one stress box, a \textbf{Moderate Wound} the same as two stress boxes, and a \textbf{Severe Wound} the same as three stress boxes. In addition, when taking a \textbf{Wound}, one or more relevant skills are affected.
 
@@ -124,8 +135,12 @@ When a weapon's \textbf{Trait} adds to the attack of a character, it will indire
 \end{itemize}
 \end{DndReadAloud}
 
-\subsection{Death and the End of Combat}
-When a character suffers a \textbf{Severe Wound} and takes further damage, they are at risk of death. The GM may allow:
+\subsection{Death and the End of Combat}\label{core:death}
+When a character suffers a \textbf{Severe Wound} and takes further damage, they are at risk of death. The simplest choice here is to equate all damage boxes ticked off and character death, but this is not always the best option. It might be fine for nameless mooks the players are fighting but for player characters or important (or just interesting) NPCs, it is often more interesting to consider such a character \textbf{defeated} rather than \textbf{dead}.
+
+Instead of killing off characters, take them captured. Beat them up and leave them for death. Anything \emph{interesting} that can still count as a defeat. Of course, depending on their situation and the setting you are playing in. A zombie is unlikely to capture a character, so true to the zombie genre, you might want to kill off characters there. A vampire, on the other hand, could start monologing about vampiric superiority for long enough that the character could be rescued. 
+
+If you do consider the last wound as essentially death, you might still allow:
 \begin{itemize}
     \item A final desperate action before succumbing.
     \item A chance to survive if an ally intervenes.

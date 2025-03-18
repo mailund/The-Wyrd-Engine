@@ -20,11 +20,8 @@
 \captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
 
 %% References to pages
-\documentclass{article}
-\usepackage{hyperref}  % Allows reliable referencing of page numbers
-\usepackage{refcount}  % Provides \getpagerefnumber to fetch page numbers
-
-% Define a command for referencing the page of a label
+\usepackage{hyperref}  
+\usepackage{refcount}  
 \newcommand{\pagereftext}[1]{%
     \ifnum\getpagerefnumber{#1}=\thepage
         on this page%
@@ -35,9 +32,9 @@
 
 %% Fudge dice notation %%%%%%%%%%%%%%%%%
 % Defining the three outcomes
-\newcommand{\FudgeDieP}{\faPlusSquare}
-\newcommand{\FudgeDieM}{\faMinusSquare}
-\newcommand{\FudgeDieB}{\faSquare}
+\newcommand{\FudgeDieP}{\faPlusSquare\xspace}
+\newcommand{\FudgeDieM}{\faMinusSquare\xspace}
+\newcommand{\FudgeDieB}{\faSquare\xspace}
 
 % Defining shorthand for single-die outcomes
 \newcommand{\FudgeDie}[1]{%
@@ -45,6 +42,24 @@
     \else\ifx#1-\FudgeDieM
     \else\FudgeDieB
     \fi\fi
+}
+
+%% Stress and wounds
+\newcommand{\StressBox}{\faCircleO\xspace}
+\newcommand{\MildWound}{\faHeartO\xspace}
+\newcommand{\ModerateWound}{\faHeartbeat\xspace}
+\newcommand{\SevereWound}{\faHeart\xspace}
+
+\newcommand{\StressBoxes}{\StressBox\StressBox\StressBox\StressBox\StressBox}
+\newcommand{\MildWounds}{\MildWound\MildWound\MildWound}
+\newcommand{\ModerateWounds}{\ModerateWound\ModerateWound}
+\newcommand{\SevereWounds}{\SevereWound}
+
+\newcommand{\Damage}{
+    \begin{tabular}{@{}l l@{}}
+        \textbf{Stress:} & \StressBoxes \\ 
+        \textbf{Wounds:} & \MildWounds\ \ModerateWounds\ \SevereWounds
+    \end{tabular}
 }
 
 % Translating a sequence of die rolls
