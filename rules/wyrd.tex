@@ -8,12 +8,16 @@
 \usepackage{stfloats}
 \usepackage{tikz}
 \usepackage{xcolor}
+\usepackage{xspace}
 
 \usepackage{imakeidx}
 \makeindex
 
 \usepackage{todo}
 
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+% Fudge dice notation
 \newcommand{\FudgeDie}[1]{
     \tikz\draw[thick] (0,0) rectangle (0.3,0.3) node[pos=.5] {\small\textbf{\textcolor{black}{#1}}};
     \hspace{-8pt}
@@ -21,7 +25,24 @@
 \newcommand{\FudgeRes}[4]{%
     \FudgeDie{#1}\FudgeDie{#2}\FudgeDie{#3}\FudgeDie{#4}
 }
-\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+% Skill levels
+\newcommand{\Untrained}{\textbf{Untrained (0)}\xspace}
+\newcommand{\Novice}{\textbf{Novice (+1)}\xspace}
+\newcommand{\Skilled}{\textbf{Skilled (+2)}\xspace}
+\newcommand{\Expert}{\textbf{Expert (+3)}\xspace}
+
+% Define commands for difficulty levels
+\newcommand{\Trivial}{\textbf{Trivial (-4)}\xspace}
+\newcommand{\Simple}{\textbf{Simple (-3)}\xspace}
+\newcommand{\Easy}{\textbf{Easy (-2)}\xspace}
+\newcommand{\Basic}{\textbf{Basic (-1)}\xspace}
+\newcommand{\Challenging}{\textbf{Challenging (0)}\xspace}
+\newcommand{\Difficult}{\textbf{Difficult (+1)}\xspace}
+\newcommand{\Formidable}{\textbf{Formidable (+2)}\xspace}
+\newcommand{\Arduous}{\textbf{Arduous (+3)}\xspace}
+\newcommand{\Extreme}{\textbf{Extreme (+4)}\xspace}
+\newcommand{\Impossible}{\textbf{Impossible (+5)}\xspace}
 
 \lstset{%
   basicstyle=\ttfamily,

@@ -47,11 +47,13 @@ Using 4dF gives us a distribution of outcomes that look like this:
 
 You are unlikely to roll the extremes; you should expect to hit $\pm$4 about 1\% of the time (each)---about one time out of a hundred rolls, you should get +4, and about one time in a hundred, you should get -4. You expect to get an outcome above +3 or below -3 about 6\% of the time (each)---about one in twenty for each.
 
-Another way to visualise the outcome of a 4dF is as the chance you have of rolling higher than some threshold value, here shown for thresholds -5 (where the success probability is 100\% if the smallest value you can roll is -4) to +4 (the highest you can roll with a 4dF):
+Another way to visualise the outcome of a 4dF is as the chance you have of rolling higher than some threshold value:
 
 \begin{center}
 \includegraphics{stats/4dF-success.pdf}
 \end{center}
+
+To roll higher than \textbf{-4}, you just have to avoid \FudgeRes{-}{-}{-}{-}, and this outcome only happens one out of 81 rolls. To roll higher than \textbf{+3} you \emph{have} to roll \FudgeRes{+}{+}{+}{+}, which also happens with probability 1/81. To roll \emph{higher} than \textbf{+4} is impossible, since this it the highest value you can roll.
 
 In conflict resolution, this graph is relevant as it tells us how likely it is for a character without the necessary skills and relevant traits to succeed at any given difficulty rating. It is this graph of success probabilities you should have in mind when setting difficulty levels, and we return to it later. The graph, as it is here, is the probabilities you get if you had to rely on 4dF alone, without any skills or traits.
 
@@ -60,6 +62,20 @@ In conflict resolution, this graph is relevant as it tells us how likely it is f
 \index{Skills}
 
 In The Wyrd Engine, skills represent a character’s proficiency in various actions, from keen observation and quick reflexes to mastery in combat or persuasion. Whenever a character attempts a significant action where success is uncertain, they roll \textbf{4dF} and add their relevant skill modifier. The total is then compared against a \textbf{difficulty rating (DR)} set by the Game Master (GM) or an opposed roll from another character.
+
+For player characters and most non-player characters they encounter, skills are range from \Untrained to \Expert:
+
+\begin{DndTable}[header=Skill Levels in \emph{The Wyrd Engine}]{lX}
+    \textbf{Skill Level} & \textbf{Description}\\
+    \hline
+    \Untrained & A character with no special training, relying on instinct or common sense. \\
+    \Novice & Someone with basic knowledge or minimal hands-on experience in a skill. \\
+    \Skilled & A well-trained individual who regularly practices and applies their ability. \\
+    \Expert & A master in the field, capable of performing under extreme conditions. \\
+\end{DndTable}
+
+For extreme monsters, e.g., demons, dragons, or killer robots, skills might go higher. You will usually not go lower than \Untrained unless a character is impaired, e.g., drugged or recovering after severe physical or mental trauma, in which case you can.
+
 
 Characters begin with a defined set of skill ranks, representing their strengths and weaknesses. Unlike systems with extensive skill lists, The Wyrd Engine keeps skills broad and flexible, allowing them to cover a wide range of related actions. For instance, a character with a high \textbf{Athletics} skill might use it to outrun pursuers, climb treacherous cliffs, or leap between rooftops. Similarly, depending on the character's background, Lore could represent expertise in ancient history, arcane knowledge, or scientific principles.
 
@@ -364,17 +380,19 @@ The following table can guide you in determining the difficulty rating for a tas
 \begin{DndTable}[header=Difficulty Levels in \emph{The Wyrd Engine}]{lX}
     \textbf{Difficulty Rating} & \textbf{Example Task}\\
     \hline
-    \textbf{Trivial (-2)} & A task so easy that failure is nearly impossible (walking across a stable floor, recalling your own name). \\
-    \textbf{Simple (-1)} & A straightforward action requiring minimal effort (identifying a common herb, climbing a ladder). \\
-    \textbf{Basic (0)} & An ordinary action requiring little skill (jumping over a puddle, recalling well-known facts). \\
-    \textbf{Challenging (+1)} & A moderate test of skill or effort (spotting a hidden compartment, climbing a wooden fence). \\
-    \textbf{Difficult (+2)} & A task requiring training or experience (tracking footprints in the rain, persuading a sceptical guard). \\
-    \textbf{Formidable (+3)} & A demanding task that pushes a character’s limits (picking a complex lock under pressure, leaping between rooftops). \\
-    \textbf{Arduous (+4)} & A near-impossible feat requiring mastery (detecting a forged document at a glance, sniping a target from extreme range). \\
-    \textbf{Extreme (+5)} & A task bordering on the impossible (convincing a lifelong enemy to trust you, performing surgery in total darkness). \\
+    \Trivial & A task so easy that failure is nearly impossible (walking across a stable floor, recalling your own name). \\
+    \Simple & A straightforward action requiring minimal effort (identifying a common herb, climbing a ladder). \\
+    \Easy & A minor challenge that most people can accomplish without effort (jumping over a puddle, recalling common knowledge). \\
+    \Basic & An ordinary action requiring some attention (spotting a misplaced item, balancing on a narrow beam). \\
+    \Challenging & A moderate test of skill or effort (spotting a hidden compartment, climbing a wooden fence). \\
+    \Difficult & A task requiring training or experience (tracking footprints in the rain, persuading a sceptical guard). \\
+    \Formidable & A demanding task that pushes a character’s limits (picking a complex lock under pressure, leaping between rooftops). \\
+    \Arduous & A near-impossible feat requiring mastery (detecting a forged document at a glance, sniping a target from extreme range). \\
+    \Extreme & A task on the edge of human capability (convincing a lifelong enemy to trust you, performing surgery in total darkness). \\
+    \Impossible & A superhuman achievement defying all odds (dodging bullets mid-air, convincing an ancient dragon to surrender). \\
 \end{DndTable}
 
-For levels up to \textbf{Basic}, rolls are usually unnecessary unless dramatic tension is involved. For characters with appropriate skills, \textbf{Basic} tasks can also be handled without rolls.
+For levels up to \Basic, rolls are usually unnecessary unless dramatic tension is involved. For characters with appropriate skills, \Basic tasks can also be handled without rolls.
 
 We can superimpose the difficulty levels on the 4dF success rate graph to directly visualise how difficult it will be with just dice rolls to reach a given level:
 
@@ -382,22 +400,34 @@ We can superimpose the difficulty levels on the 4dF success rate graph to direct
 	\includegraphics{stats/4dF-DR.pdf}
 \end{center}
 
-The graph tells us that even trivial tasks can fail if you are unskilled and unlucky enough, and routine tasks will fail a third of the time for someone without the necessary skills. Adding skills effectively shifts the difficulty levels. When we add +1 to a roll, the unmodified range -4 to +4 is shifted to -3 to +5, for example. Adding one to the result of the dice roll is equivalent to subtracting one from the difficulty level. So, to see how difficult a task is for someone with a skill level of +1, you shift the difficulty levels down by one. To see how difficult a task is with skill levels +2 a +3, you shift by two and three. So a \textbf{Challenging} task for an untrained character (with a 19\% chance of success) will effectively only be \textbf{Basic} for a character with skill level +1.
+The graph tells us that even \Trivial tasks can fail if you are unskilled and unlucky enough, and \Challenging tasks will fail a third of the time for someone without the necessary skills.
+
+Adding skills effectively shifts the difficulty levels. When playing the game, we add skill levels to the 4dF rolls, as this is the easiest way to calculate the result, but when setting difficulty levels, it is easier to think in terms of how difficult an unskilled character would find a task, and then shift the difficulty levels down by one for each skill level a character has.
+
+A skill level of \Novice adds one to the 4dF, which effectively shifts the difficulties down by one. If we are adding \textbf{+1} to a roll, the unmodified range of \textbf{-4} to \textbf{+4} for a \Untrained character instead becomes the shifted range of \textbf{-3} to \textbf{+5}, for example. With this switch, the difficulty with which a \Novice character hits a \Challenging level will be the same as if he only had to reach the \Basic level.
+
+\begin{center}
+	\includegraphics{stats/shifted-DR.pdf}
+\end{center}
+
+A \Basic task, which has a 2/3 chance of success for an \Untrained character will be a success one out of twenty for a \Novice and a guaranteed success for an \Expert character. An \Extreme task, which will be impossible for an \Untrained and not much easier for a \Novice has a one in five chance of success for an \Expert.
 
 
 The table below shows the probability of success for the different difficulty levels at different skill levels:
 
 \begin{DndTable}[header=Success probability per skill level]{lrrrr}
-    \textbf{Difficulty Rating} & \textbf{Skill 0} & \textbf{Skill +1} & \textbf{Skill +2} & \textbf{Skill +3}\\
+    \textbf{Difficulty} & \textbf{0} & \textbf{+1} & \textbf{+2} & \textbf{+3} \\
     \hline
-    \textbf{Trivial (-2)}     & 82\% & 94\% & 99\% & 100\% \\
-    \textbf{Simple (-1)}      & 62\% & 82\% & 94\% & 99\% \\
-    \textbf{Basic (0)}        & 38\% & 62\% & 82\% & 94\% \\
-    \textbf{Challenging (+1)} & 19\% & 38\% & 62\% & 82\% \\
-    \textbf{Difficult (+2)}   &  6\% & 19\% & 38\% & 62\% \\
-    \textbf{Formidable (+3)}  &  1\% &  6\% & 19\% & 38\% \\
-    \textbf{Arduous (+4)}     &  -   &  1\% &  6\% & 19\% \\
-    \textbf{Extreme (+5)}     &  -   &  -   &  1\% &  6\% \\
+    \Trivial     & 98.8\% & 100.0\% & 100.0\% & 100.0\% \\
+    \Simple      & 93.8\% &  98.8\% & 100.0\% & 100.0\% \\
+    \Easy        & 81.5\% &  93.8\% &  98.8\% & 100.0\% \\
+    \Basic       & 61.7\% &  81.5\% &  93.8\% & 98.8\% \\
+    \Challenging & 38.7\% &  61.7\% &  81.5\% & 93.8\% \\
+    \Difficult   & 18.5\% &  38.7\% &  61.7\% & 81.5\% \\
+    \Formidable  &  6.2\% &  18.5\% &  38.7\% & 61.7\% \\
+    \Arduous     &  1.2\% &   6.2\% &  18.5\% & 38.7\% \\
+    \Extreme     &  -     &   1.2\% &   6.2\% & 18.5\% \\
+    \Impossible  &  -     &   -     &   1.2\% &  6.2\% \\
 \end{DndTable}
 
 Players will not need to consult this table during a game---in \emph{The Wyrd Engine} we are not keen on using tables for game mechanics---but it should give a Game Master a rough idea of how to set difficulty levels when planning a game session.
