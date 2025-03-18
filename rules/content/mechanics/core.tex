@@ -34,13 +34,9 @@ This will always be the general pattern for resolving conflicts, only differing 
 Fudge dice are dice that can give you one of three values: \FudgeDie{-}, \FudgeDie{}, or \FudgeDie{+}. You can buy this type of dice if you want, but you can also use any normal six-sided die and declare 1 and 2 to be \FudgeDie{-}, 3 and 4 to be \FudgeDie{}, and 5 and 6. to be \FudgeDie{+}.
 
 Whenever we roll dice in The Wyrd Engine, we roll four such dice (we write it as 4dF) and we add up the result, where \FudgeDie{-} counts as -1, \FudgeDie{} as 0, and \FudgeDie{+} as +1. So, for example
-\begin{center}
-	\FudgeRes{+}{+}{-}{} = +1 + 1 - 1 + 0 = 1
-\end{center}
-\noindent and 
-\begin{center}
-	\FudgeRes{-}{+}{-}{-} = -1 + 1 - 1 - 1 = -2
-\end{center}
+	\FudgeRes{++-0} = +1 + 1 - 1 + 0 = 1
+	and 
+	\FudgeRes{-+--} = -1 + 1 - 1 - 1 = -2.
 
 Using 4dF gives us a distribution of outcomes that look like this:
 \begin{center}
@@ -55,7 +51,7 @@ Another way to visualise the outcome of a 4dF is as the chance you have of rolli
 \includegraphics{stats/4dF-success.pdf}
 \end{center}
 
-To roll higher than \textbf{-4}, you just have to avoid \FudgeRes{-}{-}{-}{-}, and this outcome only happens one out of 81 rolls. To roll higher than \textbf{+3} you \emph{have} to roll \FudgeRes{+}{+}{+}{+}, which also happens with probability 1/81. To roll \emph{higher} than \textbf{+4} is impossible, since this it the highest value you can roll.
+To roll higher than \textbf{-4}, you just have to avoid \FudgeRes{----}, and this outcome only happens one out of 81 rolls. To roll higher than \textbf{+3} you \emph{have} to roll \FudgeRes{++++}, which also happens with probability 1/81. To roll \emph{higher} than \textbf{+4} is impossible, since this it the highest value you can roll.
 
 In conflict resolution, this graph is relevant as it tells us how likely it is for a character without the necessary skills and relevant traits to succeed at any given difficulty rating. It is this graph of success probabilities you should have in mind when setting difficulty levels, and we return to it later. The graph, as it is here, is the probabilities you get if you had to rely on 4dF alone, without any skills or traits.
 
@@ -146,7 +142,7 @@ Let us throw the character \emph{Inspector Julian Hargrave} (see sidebar) into s
 
 \begin{DndReadAloud}{}
 Julian rolls \textbf{4dF +3 (Investigate)} and gets
-		\textbf{\FudgeRes{+}{+}{-}{} +3 (Investigate)}.		
+		\textbf{\FudgeRes{++-0} +3 (Investigate)}.		
 	A total of +4. Since he exceeds the DR, he notices an overturned chair that contradicts the suicide setup. A closer look reveals a footprint near the window, suggesting an intruder.
 \end{DndReadAloud}
 
@@ -157,7 +153,7 @@ Julian rolls \textbf{4dF +3 (Investigate)} and gets
 
 \begin{DndReadAloud}{}
 Julian rolls \textbf{4dF +2 (Notice)} and gets 
-\textbf{\FudgeRes{+}{-}{-}{} +2 (Notice)}.
+\textbf{\FudgeRes{+--0} +2 (Notice)}.
 A total of +1, meeting the DR. He catches the reflection of a blade in a shop window just in time to evade an ambush.
 \end{DndReadAloud}
 
@@ -168,7 +164,7 @@ A total of +1, meeting the DR. He catches the reflection of a blade in a shop wi
 
 \begin{DndReadAloud}{}
 Julian rolls \textbf{4dF +2 (Rapport)} and gets 
-\textbf{\FudgeRes{+}{-}{-}{-} +2 (Rapport)}.
+\textbf{\FudgeRes{+---} +2 (Rapport)}.
   A total of +0. A failure. His direct approach only increases her anxiety. He must change his tactics or offer protection to try again.
 \end{DndReadAloud}
 
@@ -179,7 +175,7 @@ Julian rolls \textbf{4dF +2 (Rapport)} and gets
 
 \begin{DndReadAloud}{}
 \textbf{Resolution:} Julian rolls \textbf{4dF +1 (Provoke)} and gets
-\textbf{\FudgeRes{+}{+}{ }{ } +1 (Provoke)}.
+\textbf{\FudgeRes{++00} +1 (Provoke)}.
 A total of +3. He exceeds the DR, causing the thief to stammer out the name of a notorious smuggler before running off.
 \end{DndReadAloud}
 
