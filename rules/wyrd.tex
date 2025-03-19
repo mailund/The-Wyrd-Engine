@@ -14,6 +14,12 @@
 \usepackage{xfp}
 \usepackage{xparse}
 \usepackage{pgfkeys}
+\usepackage{textpos}
+\usepackage{ifoddpage}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{eso-pic}
 
 \usepackage{imakeidx}
 \makeindex
@@ -21,6 +27,34 @@
 \usepackage{todo}
 
 \captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\newlength{\bottomimageheight}
+\newsavebox{\bottomimagebox}
+\newcommand{\bottomart}[1]{
+    \thispagestyle{empty}
+    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
+    \setlength{\bottomimageheight}{\ht\bottomimagebox}
+    \enlargethispage*{-\bottomimageheight}
+    \AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth]{#1}}}
+    \begin{figure*}[b!]
+        \centering
+        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
+    \end{figure*}
+}
+\newcommand{\topart}[1]{
+  \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
+  \setlength{\bottomimageheight}{\ht\bottomimagebox}%
+  \enlargethispage*{-\bottomimageheight}%
+  \AddToShipoutPictureBG*{\AtPageUpperLeft{
+      \raisebox{-\bottomimageheight}{\includegraphics[width=\paperwidth]{#1}}
+    }
+  }
+  \begin{figure*}[t!]
+    \centering
+    \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
+  \end{figure*}
+}
+
 
 %% Command for The Wyrd Engine
 \newcommand{\wyrd}{\textsc{The Wyrd Engine}\xspace}
