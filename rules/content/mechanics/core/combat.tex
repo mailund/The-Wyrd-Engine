@@ -1,7 +1,9 @@
 \section{Basic Combat in The Wyrd Engine}
 \index{Combat}
 
-Combat in \textit{The Wyrd Engine} is designed to be fast, cinematic, and deadly. Instead of tracking minute details like hit points or exact damage values, the system focuses on the flow of action, player choices, and the consequences of combat. Depending on a game's setting and how large a part combat is for any particular scenario, you might want to adjust the combat rules, and for that, we refer to Chapter~\ref{chap: combat}. The combat rules described in this chapter are tailored for games where combat plays a minor role, so combat encounters should be quickly resolved in gaming time.
+The role of combat varies by setting, scenario, and playstyle. Some games favour \textbf{quick, brutal encounters}, where a single shot or swift blade ends a fight instantly, while others emphasise \textbf{heroic battles} against overwhelming foes. The \textbf{tone and pacing} should reflect the game's themes—whether it’s gritty realism, where injuries are severe, or cinematic action, where characters endure incredible feats. Combat may be \textbf{tactically complex}, rewarding careful planning, or more \textbf{freeform}, focusing on dramatic exchanges over strict mechanics. \wyrd offers a flexible system to suit different narratives. For combat mechanics and customisation, see \fullchapref{chap:combat}.
+
+Basic combat in \wyrd, as described in this chapter, is designed to be \textbf{fast and cinematic}. Most combat encounters resolve within a few quick rounds of opposition rolls, keeping the action moving without bogging down in excessive mechanics. At the same time, characters are relatively hard to take out. In real life, a single blow, stab, or gunshot wound is enough to kill a person, but in the combat rules in this chapter, taking out a character will take a few rounds unless the opponent is super-human in capabilities.
 
 \subsection{Initiative: Who Acts First?}
 \index{Combat!Initiative} 
@@ -32,17 +34,29 @@ On their turn, a character can do the following:
 Attacks are resolved using opposed rolls:
 \begin{DndReadAloud}{Attack Resolution}
 	\begin{itemize}
-    	\item The attacker rolls \textbf{4dF + their combat skill} (\textbf{Fight} for melee, \textbf{Shoot} for firearms).
-	    \item The defender rolls \textbf{4dF + their defense skill} (\textbf{Athletics} for dodging, \textbf{Fight} for parrying).
-	    \item If the attacker’s total exceeds the defender’s, the attack lands and deals damage.
+    	\item The attacker rolls \textbf{\Attack = \FudgeRoll + skill + traits}
+	    \item The defender rolls \textbf{\Defend = \FudgeRoll + skill + traits} 	    
+	    \item If \textbf{Attack > Defend}, the attack lands and deals damage.
 	\end{itemize}
 \end{DndReadAloud}
+
+Relevant skills depend on the setting, but attack skills could be \textbf{Fight} for melee or \textbf{Shoot} for firearms, while defence skills could be \textbf{Athletics} for dodging or \textbf{Fight} for parrying. Traits are any relevant character or gear traits that match the combat situation.
 
 If the defender has a higher score than or equal to the attacker, the attack is averted, and no damage is dealt. Ties are always in the defender's favour. If the attacker scores higher, the damage inflicted on the defender is the attacker's score minus the defender's.
 
 \begin{DndReadAloud}{}
+    \textbf{\Damage = \Attack - \Defend} when \textbf{\Attack > \Defend}.
+\end{DndReadAloud}
+
+\Damage is determined by how much the \Attack exceeds \Defend. Effects such as weapons efficiency or armour thickness are considered through the gear's traits in the combat rolls. This has the same effect as adding weapon and defence bonuses within the existing conflict resolution system. We don't need extra combat rules if we don't want them.
+
+\begin{DndReadAloud}{}
 	\subsubsection{Example Attack}
-	Jonathan Blackwood swings a cane at an enemy thug. He rolls \textbf{4dF +2 (Fight)}, while the thug rolls \textbf{4dF +1 (Athletics)} to dodge. If Jonathan’s result is higher, the hit lands, otherwise, it is defended. If Jonathan rolls \FudgeRes{+++-} = 2 he gets a score of \textbf{+4} when combined with his \textbf{Fight} skill. If the thug then rolls \FudgeRes{+--0} = -1, giving him a score of \textbf{0} when combined with his \textbf{Athletics}, then Jonathan's score is higher, so he scores a hit, and the damage he inflicts is \textbf{+4 - 0 = +4}. The thug takes \textbf{+4} in damage.
+	Jonathan Blackwood swings a cane at an enemy thug. He rolls \textbf{4dF +2 (Fight)}, while the thug rolls \textbf{4dF +1 (Athletics)} to dodge. If Jonathan’s result is higher, the hit lands; otherwise, it is defended.
+	
+	Jonathan rolls \FudgeRes{+++-} = 2 and gets a score of \textbf{Attack = +4} when combined with his \textbf{Fight} skill. The thug then rolls \FudgeRes{+--0} = -1, giving him a score of \textbf{Defend = 0} when combined with his \textbf{Athletics}.
+	
+	Since Jonathan's score is higher, so he scores a hit, and the damage he inflicts is \textbf{\Damage = \Attack - \Defend = +4 - 0 = +4}. The thug takes \textbf{+4} in damage.
 \end{DndReadAloud}
 
 
@@ -50,7 +64,8 @@ If the defender has a higher score than or equal to the attacker, the attack is 
 \index{Damage}
 \index{Combat!Soaking up damage}
 
-Instead of traditional hit points, \emph{The Wyrd Engine} uses \textbf{Stress}\index{Damage!Stress}\index{Stress} to represent minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for more serious, lasting harm. While not precisely the same as hit points, they function similarly—absorbing damage until a character is overwhelmed. However, by splitting damage into ``it's just a flesh wound'' stress boxes and actual wounds, we get a combat system as dynamic as hit point-based systems but with a roleplaying twist. The stresses work as generic hit points, but once a character takes a wound, the mechanics force the player and Game Master to determine which kind of wound and how the character is affected, as this goes into penalties for later actions.
+
+\wyrd uses \textbf{Stress}\index{Damage!Stress}\index{Stress} to represent minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for more serious, lasting harm. %% TODO: FROM HERE
 
 \begin{DndReadAloud}{Stress and Wounds}
 	\begin{itemize}
@@ -59,36 +74,92 @@ Instead of traditional hit points, \emph{The Wyrd Engine} uses \textbf{Stress}\i
 	\end{itemize}
 \end{DndReadAloud}
 
-Any damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Each player has five \emph{Stress boxes}, \StressBoxes, and five \emph{Wounds boxes} where the wounds are split into three categories: three \textbf{Mild Wounds} (\MildWounds), two \textbf{Moderate Wounds} (\ModerateWounds), and one \textbf{Severe Wounds} (\SevereWounds). These boxes, combined, are where a character can soak up damage.
+Any damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Each player has four \emph{Stress boxes}, \StressBoxes, and five \emph{Wounds boxes} where the wounds are split into three categories: three \textbf{Mild Wounds} (\MildWounds), two \textbf{Moderate Wounds} (\ModerateWounds), and one \textbf{Severe Wounds} (\SevereWounds). These boxes, combined, are where a character can soak up damage.
 
-\begin{DndReadAloud}{}
-	\\
-	\Damage
+\begin{DndReadAloud}{Damage soaking capability of a player character:}
+    \\\noindent
+	\FramedDamageBox
 \end{DndReadAloud}
 
-Damage is soaked up by the boxes left-to-right and top-to-bottom, so the stress boxes will soak up the first five points of damage. After that, the following three damage points are inflicted as mild wounds, then the next two as moderate wounds, and finally, the character suffers a severe wound. If all stresses and wounds are ticked off, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
+When a character sustains \Damage, the damage dealt is converted one-to-one into these stress and wound boxes.
+Damage is soaked up by the boxes top-to-bottom; the stress boxes will soak up the first four points of damage. After that, the following three damage points are inflicted as mild wounds, the next two as moderate wounds, and finally, the character suffers a severe wound. If all stress and wounds boxes are ticked off, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
 
-%% TODO: Continue from here
+%% Example of a character taking stress damage
+\begin{DndSidebar}[float=!t]{Example Character}
+	\subsection{Captain Elias Mercer}
+	\emph{A daring sky pirate and master pilot, Elias Mercer is a rogue smuggler with a reputation for getting the job done—no matter how dangerous. Once a decorated naval officer, he now flies under his own banner, evading bounty hunters, rival captains, and the law alike. He lives by one rule: a captain never abandons his crew.}
 
-Damage is converted to wounds similarly to how damage is converted to stress, using 1-to-1 or some other conversion factor. A \textbf{Mild Wound} absorbs the same as one stress box, a \textbf{Moderate Wound} the same as two stress boxes, and a \textbf{Severe Wound} the same as three stress boxes. In addition, when taking a \textbf{Wound}, one or more relevant skills are affected.
+	\subsubsection*{Skills}
+	\begin{itemize}
+	    \item \Expert: Pilot
+	    \item \Skilled: Shoot, Deception
+	    \item \Novice: Athletics, Awareness, Combat
+	\end{itemize}
+
+	\subsubsection*{Traits}
+	\begin{itemize}
+	    \item \textbf{Always One Step Ahead} – \emph{Gain a bonus when avoiding pursuit or laying traps.}
+	    \item \textbf{A Captain Never Abandons His Crew} – \emph{Once per session, resist an effect that would separate him from his crew.}
+	    \item \textbf{Knows Every Trick in the Book} – \emph{Can reroll a failed Deception test when lying or fast-talking.}
+	\end{itemize}
+
+	\FramedDamageBox
+\end{DndSidebar}
+\begin{DndReadAloud}{}
+\subsubsection{Example: Stress Damage}
+	As Captain Elias Mercer crouches in the engine room, setting the last charge to sabotage the enemy airship moored at the Tower of London, he is caught off guard by a patrolling crew member. A swift jab to the ribs and a pistol whip to the shoulder deal \textbf{+3} damage. With no previous injuries, the damage is absorbed entirely by his stress boxes. 
+	
+	\FramedDamageBox[stress=3]
+
+	\noindent
+	Gritting his teeth, he shoves the attacker aside and makes his escape—knowing the real danger will come when the explosives detonate.
+\end{DndReadAloud}
+
+
+When you tick off stress boxes, the damage has no noticeable effect. Stress is not considered real damage but the exhaustion accumulating from combat (or the ``flesh wounds'' from 90s action movies). Once damage goes into wounds, however, future skill rolls are affected.
 
 \begin{DndTable}[header=]{ll}
     \textbf{Wound Type} & \textbf{Effect} \\
-    \hline
-    \textbf{Mild Wound}  & -1 to relevant skill rolls \\
+    \textbf{Mild Wound}     & -1 to relevant skill rolls \\
     \textbf{Moderate Wound} & -2 to relevant skill rolls \\
-    \textbf{Severe Wound}  & -3 to all physical actions \\
+    \textbf{Severe Wound}   & -3 to all physical actions \\
 \end{DndTable}
 
-Damage does not have to fill a wound to invoke it. If a character already has a \textbf{Mild Wound} and takes \textbf{+1} in damage, it goes into the \textbf{Moderate Wound} \emph{and fills it}. Even though a \textbf{Moderate Wound} can take two in damage, it is inflicted as soon as it takes \emph{any} damage, and if the \textbf{+1} cannot go into a stress box or the \textbf{Mild Wound}, it goes into the \textbf{Moderate Wound}.
+When taking a wound of any of the three kinds, the player and Game Master decide on which relevant skills or traits are affected by the wound. The \textbf{-2} and \textbf{-3} penalties for \textbf{Moderate} and \textbf{Severe} Wounds can be split among multiple skills as long as the total penalty remains the same. Any future rolls involving those skills or traits will have the penalty applied until the wound is healed (see \textsc{Healing and Recovery}~\pagereftext{core:healing}). Additional wounds of the same kind do not add additional penalties when using the core rules.
 
-\begin{DndSidebar}[float=!t]{Example Wound}
-Josephine Langley is shot during a gunfight and takes \textbf{+2} damage. She has no remaining Stress boxes, so she takes a \textbf{Moderate Wound} (since a \textbf{Moderate Wound} can soak up two damage while a \textbf{Mild Wound} cannot). The GM rules that the injury impairs her movement, applying a \textbf{-2} penalty to \textbf{Athletics} and \textbf{Fight} rolls.
-\end{DndSidebar}
+\begin{DndReadAloud}{}
+\subsubsection{Example: Wound Damage}
+	While fleeing the engine room, Captain Mercer, the enemy he knocked aside, recovers, reaches for his gun, and fires off a shot (\FudgeRes{++-0} + \textbf{Shoot (+1)} for an \Attack of \textbf{+2}). Mercer attempts to duck (\FudgeRes{+--0} + \textbf{Atheletics (+1)} for a \Defend of \textbf{0}). The difference is a \Damage of \textbf{+2}.
+	
+	Mercer only has one stress box left, so one of the damage points goes into a \textbf{Mild} wound, and the player and GM decide that the bullet graces Captain Mercer's shoulder, which would affect the \textbf{Athletics} skill.
+	
+	\FramedDamageBox[stress=4,mild=1,mildtext=\textbf{Athletics (-1)}]
+
+	Taking the wound in his strides, he exits the room and continues his escape.
+\end{DndReadAloud}
+
+As long as any damage is in a wound category, the penalty applies. Additional damage to a category that is already marked does not add additional penalties. Penalties from different categories can stack, however.
+
+\begin{DndReadAloud}{}
+\subsubsection{Example: Wound Damage}
+	Captain Mercer rushes to the railing of the airship to throw himself off before the explosive device he planted detonates. The interruption in the engine room, unfortunately, has delayed him too long. The second he jumps, the bomb detonates. The shockwave hits his back with a whooping \textbf{+3} of damage. He can absorb two with his remaining \textbf{Mild} wounds, but one will go into his \textbf{Moderate} wounds. The \textbf{Moderate} wounds give him a penalty of \textbf{-2}, which he and the GM decide to split between \textbf{Atheletics} and \textbf{Awareness} (reasoning that getting blown up is likely to affect Mercer both physically and mentally).
+	
+	\FramedDamageBox[%
+		stress=4,%
+		mild=3,%
+		mildtext=\textbf{Athletics (-1)},%
+		moderate=1,%
+		moderatetext=\textbf{Athletics (-1), Awareness (-1)}%
+	]
+	
+	\noindent
+	The two penalties to \textbf{Athletics} stack, so any roll involving \textbf{Athletics} will have a \textbf{-2} penalty.
+\end{DndReadAloud}
 
 If all stress boxes are filled and all three wounds are taken, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
 
-\subsection{Healing and Recovery}
+
+\subsection{Healing and Recovery}\label{core:healing}
 \index{Healing}\index{Recovery}
 
 \begin{itemize}
@@ -98,41 +169,43 @@ If all stress boxes are filled and all three wounds are taken, the character is 
     \item \textbf{Severe Wounds} require weeks of rest, surgery, or supernatural healing (if applicable).
 \end{itemize}
 
+When healing wounds, \emph{all} marked wound boxes are cleared at the same time. They are healed in parallel, so a character with both \textbf{Mild} and \textbf{Moderate} wounds will have the mild wounds healed the following day (regardless of how many wounds are ticked) and the moderate wounds after a week (with no delay because the mild wounds were healing at the same time).
+
 \subsection{Combat Maneuvers and Special Actions}
 Instead of simply attacking, players can use tactical manoeuvres:
 
 \begin{DndReadAloud}{Combat Maneuvers}
-\begin{itemize}
-    \item \textbf{Disarm:} Use Fight to knock a weapon from an opponent’s hands.
-    \item \textbf{Grapple:} Use Fight vs. Athletics to restrain an enemy.
-    \item \textbf{Push:} Use Athletics to shove an opponent into hazards.
-    \item \textbf{Feint:} Use Deceive to trick an enemy into missing a defense.
-    \item \textbf{Suppressing Fire:} Use Shoot to force enemies into cover.
-    \item \textbf{Intimidate:} Use Provoke to demoralize foes.
-\end{itemize}
+	\begin{itemize}
+    	\item \textbf{Disarm:} Use Fight to knock a weapon from an opponent’s hands.
+	    \item \textbf{Grapple:} Use Fight vs. Athletics to restrain an enemy.
+    	\item \textbf{Push:} Use Athletics to shove an opponent into hazards.
+	    \item \textbf{Feint:} Use Deceive to trick an enemy into missing a defence.
+    	\item \textbf{Suppressing Fire:} Use Shoot to force enemies into cover.
+	    \item \textbf{Intimidate:} Use Provoke to demoralize foes.
+	\end{itemize}
 \end{DndReadAloud}
 
-\emph{The Wyrd Engine} does not have rules for all the myriad ways that actions can be used in combat, but the GM should generally try to convert an action into either an unopposed or opposed obstacle and let the outcome affect bonuses and penalties for future dice rolls.
+\wyrd does not have rules for all the myriad ways actions can be used in combat. However, the GM should generally convert an action into either an unopposed or opposed obstacle and let the outcome affect bonuses and penalties for future dice rolls. Using manoeuvres gives players a way to use skills besides the obvious combat skills (e.g. \textbf{Fight} or \textbf{Shoot}) as part of a combat encounter. A character with poor combat skills, with little chance of effectively dealing damage, might use other skills to stack up bonuses until an effective attack is possible.
 
 \subsection{Weapons and Gear in Combat}
 Weapons do not deal numeric damage but affect combat through \textbf{Traits}. Weapon traits work the same way as any gear trait and can be used when attacking or defending.
 
 \begin{DndReadAloud}{Types of Weapon Traits}
-\begin{itemize}
-    \item \textbf{Weapons with Traits} grant \textbf{+2} in relevant situations (e.g., “Mastercrafted Rapier” gives +2 to Fight in duels).
-    \item \textbf{Firearms} can inflict instant Wounds if the shot is well-placed.
-    \item \textbf{Improvised Weapons} may impose a penalty unless the character is skilled in their use.
-\end{itemize}
+	\begin{itemize}
+    	\item \textbf{Weapons with Traits} grant \textbf{+2} in relevant situations (e.g., “Mastercrafted Rapier” gives +2 to Fight in duels).
+	    \item \textbf{Firearms} can inflict instant Wounds if the shot is well-placed.
+    	\item \textbf{Improvised Weapons} may impose a penalty unless the character is skilled in their use.
+	\end{itemize}
 \end{DndReadAloud}
 
 When a weapon's \textbf{Trait} adds to the attack of a character, it will indirectly affect the damage the attack is inflicting. More interesting uses of weapon traits give other advantages to their wielder.
 
 \begin{DndReadAloud}{Example Weapon Traits}
-\begin{itemize}
-    \item \textbf{Fine Dueling Sabre} – \textit{+2 to Fight when dueling.}
-    \item \textbf{Hidden Derringer} – \textit{Once per scene, draw a concealed firearm unnoticed.}
-    \item \textbf{Reinforced Cane} – \textit{Can be used as both a weapon and a defensive tool.}
-\end{itemize}
+	\begin{itemize}
+    	\item \textbf{Fine Dueling Sabre} – \textit{+2 to Fight when dueling.}
+	    \item \textbf{Hidden Derringer} – \textit{Once per scene, draw a concealed firearm unnoticed.}
+	    \item \textbf{Reinforced Cane} – \textit{Can be used as both a weapon and a defensive tool.}
+	\end{itemize}
 \end{DndReadAloud}
 
 \subsection{Death and the End of Combat}\label{core:death}
