@@ -347,3 +347,19 @@
     \end{WyrdNPC}
 }
 
+\NewDocumentEnvironment{WyrdSettingHeading}{}
+{
+    \begin{DndReadAloud}[color=DmgCoral]{}
+}
+{
+    \end{DndReadAloud}
+}
+
+\NewDocumentEnvironment{WyrdScenarioHeading}{m}
+{
+    \begin{DndReadAloud}[color=DmgCoral]{}
+        \section{#1}
+}
+{
+    \end{DndReadAloud}
+}
