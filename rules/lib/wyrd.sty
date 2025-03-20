@@ -271,9 +271,9 @@
     \end{DndComment}
 }
 
-\NewDocumentEnvironment{WyrdGmTips}{}
+\NewDocumentEnvironment{WyrdGmTips}{O{}}
 {
-    \begin{DndComment}{Game Master Tip}
+    \begin{DndComment}[#1]{Game Master Tip}
 }
 {
     \end{DndComment}
@@ -282,14 +282,17 @@
 % Define keys for WyrdSidebar
 \pgfkeys{
     /WyrdSidebar/.is family, /WyrdSidebar,
-    float/.initial = h!, % Default: empty
+    background/.initial = DmgSlateGray, % Default: DmgSlateGray
+    float/.initial = !h, % Default: right
 }
 
 \NewDocumentEnvironment{WyrdSidebar}{O{} m}
 {
     \pgfkeys{/WyrdSidebar, #1}
-    \begin{DndSidebar}%
-        [float=\pgfkeysvalueof{/WyrdSidebar/float}]
+    \begin{DndSidebar}[%
+        float=\pgfkeysvalueof{/WyrdSidebar/float},%
+        color=\pgfkeysvalueof{/WyrdSidebar/background}%
+        ]%
         {#2}
 }
 {
@@ -304,12 +307,43 @@
     \end{WyrdSidebar}
 }
 
+\colorlet{WyrdNPCColor}{PhbLightGreen}
+\pgfkeys{
+    /WyrdNPC/.is family, /WyrdNPC,
+    description/.initial = Example Character,
+    background/.initial = WyrdNPCColor,
+    float/.initial = !h,
+}
 \NewDocumentEnvironment{WyrdNPC}{O{} m}
 {
-    \begin{WyrdSidebar}[#1]{Example Character}
+    \pgfkeys{/WyrdNPC, #1}
+    \begin{WyrdSidebar}[%
+        float=\pgfkeysvalueof{/WyrdNPC/float},%
+        background=\pgfkeysvalueof{/WyrdNPC/background}%
+    ]{\pgfkeysvalueof{/WyrdNPC/description}}
         \subsection*{#2}
 }
 {
     \end{WyrdSidebar}
+}
+
+\pgfkeys{
+    /WyrdFullNPC/.is family, /WyrdFullNPC,
+    name/.initial = {},
+    description/.initial = {},
+    background/.initial = WyrdNPCColor,
+    float/.initial = !h,
+}
+\NewDocumentEnvironment{WyrdFullNPC}{O{} m}
+{
+    \pgfkeys{/WyrdFullNPC, #1}
+    \begin{WyrdNPC}[%
+        float=\pgfkeysvalueof{/WyrdFullNPC/float},%
+        description=\pgfkeysvalueof{/WyrdFullNPC/description}%
+        ]%
+        {\pgfkeysvalueof{/WyrdFullNPC/name}}
+}
+{
+    \end{WyrdNPC}
 }
 

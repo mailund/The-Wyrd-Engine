@@ -1,38 +1,86 @@
 \section{Murder at the Brass Orchid}
 
+The investigators are called to \textbf{The Brass Orchid}. The establishment is filled with wealthy patrons, performers, and staff—each with their own secrets to hide. The club’s reputation is at stake, and the clock is ticking before the police arrive to sweep things under the rug.
 
-
-The investigators are called to The Brass Orchid either by an inside contact, a desperate plea from the club’s owner, or at the behest of an anonymous benefactor. The establishment is filled with wealthy patrons, performers, and staff—each with their own secrets to hide. The club’s reputation is at stake, and the clock is ticking before the police arrive to sweep things under the rug.
-
-The players must piece together the events of the evening, questioning patrons and staff, analysing the crime scene, and determining who had the means, motive, and opportunity to commit the crime. However, the deeper they dig, the more they realise that this murder is just the tip of the iceberg.
+The players must piece together the events of the evening, question patrons and staff, analyse the crime scene, and determine who had the means, motive, and opportunity to commit the crime. However, the deeper they dig, the more they realise that this murder is just the tip of the iceberg.
 
 \subsection{Premise} 
 A high-society soirée at the exclusive cabaret, The Brass Orchid, is cut short when a well-connected financier is found dead in a locked room. The party was attended by the city's elite, but none saw the murder happen—or so they claim. The investigators must navigate a world of secrets, deception, and hidden rivalries to uncover the truth.
 
 \subsection{What Really Happened} 
-Beatrice Langley, a hostess at The Brass Orchid, killed the financier, Edward Mercer, to protect herself from blackmail. Mercer had uncovered details about Beatrice’s past life and was threatening to expose her unless she paid a steep price. Desperate and out of options, she poisoned his drink and used the club’s pneumatic tube system to dispose of the evidence. However, a miscalculation led to certain clues being left behind.
+\textbf{Beatrice Langley}, a hostess at The Brass Orchid, killed the financier, \textbf{Edward Mercer}, to protect herself from blackmail. Mercer had uncovered details about Beatrice’s past life and was threatening to expose her unless she paid a steep price. Desperate and out of options, she poisoned his drink and used the club’s pneumatic tube system to dispose of the evidence. However, a miscalculation led to certain clues being left behind.
 
-\subsection{Act 1: The Crime Scene} 
-The investigators arrive at The Brass Orchid and are quickly introduced to the case. The scene is a private lounge where Mercer’s body remains untouched. Clues present in the scene include:
-\begin{DndReadAloud}{}
+\begin{WyrdFullNPC}[%
+		name=Beatrice Langley,%
+		description=The Orchid’s Most Enchanting Hostess,%
+		float=!t%
+	]{Beatrice Langley}
+	
+    \emph{A captivating hostess at the Brass Orchid, hiding a desperate past behind a charming smile.}
+    
+    \subsubsection*{Background:}
+    Beatrice Langley built a reputation as one of the Brass Orchid’s most sought-after hostesses, but her true past is far less glamorous. Once entangled in dangerous affairs, she sought refuge in the club’s gilded halls, only to have her secrets catch up with her. When Edward Mercer threatened to expose her, she took the only way out she saw—murder.
+    
+    \subsubsection*{Skills:}
+    \begin{itemize}
+       \item \Expert: Deception
+        \item \Skilled: Stealth, Persuasion
+        \item \Novice: Awareness, Empathy, Etiquette
+    \end{itemize}
+    
+    \subsubsection*{Traits:}
+    \begin{itemize}
+        \item \textbf{Charming Manipulator} – Gains a bonus when deceiving or misleading someone with her charms.
+        \item \textbf{A Past Worth Killing For} – Once per session, may create an advantage related to her hidden past.
+        \item \textbf{Desperate Measures} – Can reroll when acting under extreme pressure or life-threatening circumstances.
+    \end{itemize}
+\end{WyrdFullNPC}
+\begin{WyrdFullNPC}[%
+		name=Edward Mercer,%
+		description=The Murder Victim,%
+		float=!t%
+	]{Edward Mercer}
+	
+    \emph{A cunning blackmailer who underestimated the desperation of those he ensnared.}
+    
+    \subsubsection*{Background:}
+    Edward Mercer was well-known in London’s underworld for his talent for unearthing dirty secrets and using them to his advantage. He approached his victims with a cold, calculated patience, squeezing them for all they were worth. His last target, however, proved more dangerous than he anticipated—Beatrice Langley, a woman with too much to lose. He was found dead in his private lounge at the Brass Orchid, the victim of a locked-room murder.
+\end{WyrdFullNPC}
+
+\subsection{Act 0: Into the Fray}
+
+At the Game Master's discretion, the summons to the \textbf{Grand Hall} may be role-played, allowing players to experience firsthand how the \textbf{Grand Society of Inquiry} assigns cases. A Society Official, with an air of quiet authority, presents the latest mystery: a locked-room murder at the prestigious \textbf{Brass Orchid}. The club’s owner, \textbf{Madame Yvette Duval}, contacted the Society in desperation, realising that only the most capable investigators could unravel the enigma before her reputation—and her clientele—are irreparably damaged.
+
+The Brass Orchid remains under lockdown, but such restrictions cannot last indefinitely. Its wealthy and influential patrons will not tolerate confinement for long unless the authorities become involved. The pressure mounts: the investigators must reach the crime scene swiftly before key witnesses scatter and vital evidence is lost to time and subterfuge.
+
+\begin{WyrdGmTips}
+	In episodic settings, the \textbf{Call to Adventure} often renders such introductory scenes optional. However, in the first few sessions, as players familiarise themselves with the world, engaging in a scene outside the primary investigation can add depth and immersion. Receiving a case assignment is a natural opportunity to establish tone, introduce key NPCs, and reinforce the Society’s role in orchestrating these investigations.
+\end{WyrdGmTips}
+
+
+\subsection{Act 1: The Crime Scene}
+The investigators arrive at \textbf{The Brass Orchid} and are quickly introduced to the case. The scene is a private lounge where Mercer’s body remains untouched. Clues present in the scene include:
+\begin{WyrdExplanation}[Primary Clues]
 	\begin{itemize}
 		\item A half-finished drink laced with poison.
 		\item The victim’s missing pocket watch. (Is later found in an unexpected location).
 		\item The pneumatic tube system that leads in and out of various club areas.
 	\end{itemize}
-\end{DndReadAloud}
+\end{WyrdExplanation}
 
-\begin{DndComment}{What the clues reveal}
+\begin{WyrdComment}{What the clues reveal}
 	\begin{itemize}
 		\item The drink with poison reveals the cause of death.
 		\item The missing pocket watch is currently in the hands of \textbf{Henry ``Rigs'' Rigby}, the bartender at the Orchid's lounge. He found it in the servers' area, where Beatrice dropped it after leaving the pneumatic tube system. The watch itself is not a clue, but the location where it was found is.
 		\item The pneumatic tube system was used by Beatrice to leave the locked room. It leads to the servers' area and would normally not be noticed by patrons, hinting at a culprit amongst the staff.
 	\end{itemize}
-\end{DndComment}
+\end{WyrdComment}
 
 
-Patrons and staff provide conflicting accounts, making it difficult to discern the truth at first. To spice things up, the GM can add further complications:
-\begin{DndReadAloud}{\textbf{Complications:}}
+Patrons and staff provide conflicting accounts, making it difficult to discern the truth at first. To spice things up, the GM can add further complications.
+
+\begin{WyrdExplanation}[Complications]
+	Depending on the time available and how complex you want the game session to go, you can add complications such as:
 	\begin{itemize}
 		\item Club owner \textbf{Madame Yvette Duval} insists that the investigation remain discreet—if the scandal spreads, the club’s reputation is finished. 
 		\item Meanwhile, \textbf{Inspector Julian Hargrave}, a police detective with little patience for private investigators, arrives and attempts to assert authority over the case.
@@ -40,20 +88,153 @@ Patrons and staff provide conflicting accounts, making it difficult to discern t
 	
 	\noindent
 	The players must balance diplomacy, deception, or outright defiance to continue their work.
-\end{DndReadAloud}
+\end{WyrdExplanation}
 
+\begin{WyrdFullNPC}[%
+		name=Madame Yvette Duval,%
+		description=The Brass Orchid’s Matron,%
+		float=!t%
+	]{Madame Yvette Duval}
+	
+    \emph{The esteemed owner of the Brass Orchid, a woman who knows the price of every secret whispered in her establishment.}
+    
+    \subsubsection*{Background:}
+     Madame Duval built the Brass Orchid into London’s most exclusive cabaret and gambling house, catering to the city’s wealthiest and most influential figures. While she maintains a persona of graceful hospitality, she has survived in a cutthroat industry, using her intelligence and influence to navigate political and criminal circles alike.
+    
+    \subsubsection*{Skills:}
+    \begin{itemize}
+       \item \Expert: Persuasion
+        \item \Skilled: Deception, Resources
+        \item \Novice: Awareness, Etiquette, Insight
+    \end{itemize}
+    
+    \subsubsection*{Traits:}
+    \begin{itemize}
+        \item \textbf{Silver-Tongued Schemer} – Gains a bonus when negotiating delicate matters or extracting information.
+        \item \textbf{Web of Favors} – Once per session, call in a powerful favour from a well-connected patron.
+        \item \textbf{A Whisper Can Kill} – Can reroll when leveraging blackmail or manipulating a dangerous individual.
+    \end{itemize}
+\end{WyrdFullNPC}
+
+%% FIXME: Move him to a recurrent NPC section and add a photo
+\begin{WyrdFullNPC}[%
+		name=Inspector Julian Hargrave,%
+		description=By-the-Book Investigator,%
+		float=!t%
+	]{Inspector Julian Hargrave}
+	
+    \emph{A relentless investigator with little patience for theatrics, Inspector Hargrave believes in the cold, hard facts of an investigation—and that the law is the only true shield against chaos.}
+    
+    \subsubsection*{Background:}
+    Inspector Hargrave has built a reputation for being thorough, methodical, and incorruptible—a rarity in London’s police force. He takes personal offence at private investigators meddling in official cases, seeing them as little more than opportunists playing detective. However, he is intelligent enough to recognise talent when he sees it, even if he resents being forced to cooperate. He is determined to bring order to every case he handles, and the Brass Orchid murder is no exception.
+
+    \subsubsection*{Skills:}
+    \begin{itemize}
+       \item \Expert: Investigation
+        \item \Skilled: Awareness, Will
+        \item \Novice: Persuasion, Resources, Insight
+    \end{itemize}
+    
+    \subsubsection*{Traits:}
+    \begin{itemize}
+        \item \textbf{The Law is My Shield} – Gains a bonus when using his authority to force cooperation or uncover evidence.
+        \item \textbf{Dogged Pursuit} – Once per session, may reroll when tracking a suspect or uncovering a crucial clue.
+        \item \textbf{By the Book} – Can create an advantage when leveraging official procedures to stall or control a situation.
+    \end{itemize}
+\end{WyrdFullNPC}
 
 
 \subsection{Act 2: The Investigation} 
 
 Players must navigate the web of lies surrounding the Brass Orchid’s elite clientele and staff. Key locations include:
-\begin{DndReadAloud}{}
+\begin{WyrdExplanation}[Key Locations]
 	\begin{itemize}
 		\item \textbf{The performers’ dressing rooms}, where whispers of illicit affairs and secret dealings emerge.
 		\item \textbf{The club’s bar}, where a bartender, \textbf{Henry ``Rigs'' Rigby}, may know more than he lets on.
 		\item \textbf{The back office}, where financial records hint at Mercer’s recent blackmail attempts.
 	\end{itemize}
-\end{DndReadAloud}
+\end{WyrdExplanation}
+
+\begin{WyrdFullNPC}[%
+		name=The Staff of the Brass Orchid,%
+		description=The people who keep the Orchid running,%
+		float=!t%
+	]{The Staff of the Brass Orchid}
+	
+    \emph{A well-oiled machine of waiters, bartenders, entertainers, and security staff, all working under the careful watch of Madame Duval. Each has their own secrets—and some know more about the murder than they let on.}
+    
+    \begin{WyrdGmTips}[color=bgtan]
+    These are all Mook NPCs but can be fleshed out more (as Henry "Rigs" Rigby) if necessary. Most likely, you will not need their stats, though, but can use them simply to add flavour and drop clues and hints.
+    \end{WyrdGmTips}
+    
+	\subsubsection*{Delilah "Della" Moreau}
+	Head Hostess --- Poised and perceptive, Della keeps track of the Orchid’s clientele and ensures the staff stay in line.  
+	\textbf{What She Knows:} Della saw Mercer arguing with Beatrice Langley an hour before his death but doesn’t know what it was about. She also recalls that Mercer was drinking heavily that night.
+
+	\subsubsection*{Theo Finch}
+	Croupier – A professional gambler with a silver tongue, Theo oversees the Orchid’s high-stakes tables.
+	\textbf{What He Knows:} Theo doesn’t care about the murder but recalls that Mercer lost a large sum at the tables that evening. He might also hint that Mercer seemed desperate as if he owed someone money.
+
+	\subsubsection*{Lucian "Lucky" Calloway}
+	Security Chief – A former prizefighter turned bouncer, Lucky ensures that troublemakers are swiftly escorted out.
+	\textbf{What He Knows:} Lucky didn’t see anything unusual—he was dealing with a drunk patron at the time of the murder. However, he knows that Madame Duval is keeping something to herself about the night’s events.
+
+	\subsubsection*{Marguerite "Maggie" Lavoie} 
+	Cabaret Singer – The star performer at the Orchid, known for her breathtaking voice and her ability to read a room.
+	\textbf{What She Knows:} Maggie noticed that Mercer was unusually nervous that evening, frequently checking his pocket watch. She also saw Beatrice slip into his private booth, looking distressed.
+
+	\subsubsection*{Eleanor "Nellie" Carter}
+	Dancer – A charismatic performer who flirts with the patrons, always fishing for valuable gossip.
+	\textbf{What She Knows:} Nellie remembers Mercer leaving the table with Beatrice, heading towards a quieter part of the club. She also heard a hushed conversation about “secrets better left buried.”
+\end{WyrdFullNPC}
+
+\begin{WyrdFullNPC}[%
+		name=The Patrons of the Brass Orchid,%
+		description=The elite clientele of the Orchid,%
+		float=!t%
+	]{The Patrons of the Brass Orchid}
+	
+    \emph{An exclusive mix of aristocrats, socialites, and shadowy figures seeking entertainment, influence, or illicit dealings. Many were present on the night of the murder—some more observant than others.}
+        
+	\subsubsection*{Lord Alistair Pembroke}
+	Wealthy Industrialist – A steel magnate with an imposing presence, known for both his ruthless business tactics and his excessive gambling.  
+	\textbf{What He Knows:} Pembroke was losing heavily at the tables and barely paid attention to Mercer. However, he did overhear Theo Finch mutter that Mercer’s desperation meant “someone had him by the throat.” 
+
+	\subsubsection*{Genevieve Ashdown}
+	Scandalous Socialite – A striking woman with a penchant for dangerous liaisons and whispered rumours. She thrives on court intrigue and nightlife gossip.
+	\textbf{What She Knows:} Genevieve was seen exchanging words with Mercer earlier that night. She insists it was nothing but idle flirtation, but she might let slip that Mercer asked her if she “knew someone who could make a problem disappear.”
+
+	\subsubsection*{Dr. Elias Forsythe}
+	Respected Physician – A surgeon with a growing reputation, attending the Orchid to enjoy his vices away from prying eyes.
+	\textbf{What He Knows:} Dr. Forsythe was in the lounge at the time of the murder and vaguely remembers seeing Beatrice leave Mercer’s private booth looking pale and shaken. He is not eager to get involved but can confirm that Mercer was acting paranoid before his death.
+\end{WyrdFullNPC}
+
+\begin{WyrdFullNPC}[%
+		name=Henry "Rigs" Rigby,%
+		description=The Opportunistic Bartender,%
+		float=!b%
+	]{Henry "Rigs" Rigby}
+	
+    \emph{A seasoned bartender at the Brass Orchid, always looking for an angle to turn a profit.}
+    
+    \subsubsection*{Background:}
+    Henry “Rigs” Rigby has served drinks and collected secrets at the Brass Orchid for years. A man with a sharp eye and a sharper tongue, he knows how to keep patrons talking—especially when they’ve had a few too many. Unlike Madame Duval, who trades in high-stakes blackmail, Rigs deals in everyday schemes, slipping useful tidbits to those willing to pay. He found Edward Mercer’s missing watch, but whether he knows more than he lets on is another matter entirely.
+    
+    \subsubsection*{Skills:}
+    \begin{itemize}
+       \item \Expert: Contacts
+        \item \Skilled: Deception, Awareness
+        \item \Novice: Persuasion, Stealth, Resources
+    \end{itemize}
+    
+    \subsubsection*{Traits:}
+    \begin{itemize}
+        \item \textbf{Knows Everyone’s Secrets} – Gains a bonus when gathering or trading information in social circles.
+        \item \textbf{A Drink and a Lie} – Once per session may create an advantage by getting someone to talk over drinks.
+        \item \textbf{No Such Thing as a Free Drink} – Can reroll when negotiating a deal or extorting payment.
+    \end{itemize}
+\end{WyrdFullNPC}
+
 
 %% TODO: HERE
 
