@@ -357,8 +357,9 @@
 
 \NewDocumentEnvironment{WyrdScenarioHeading}{m}
 {
-    \begin{DndReadAloud}[color=DmgCoral]{}
-        \section{#1}
+    \newpage
+    \begin{DndReadAloud}{Example Scenario}
+    \section{#1}
 }
 {
     \end{DndReadAloud}
