@@ -1,0 +1,315 @@
+\ProvidesPackage{wyrd}
+
+% Required packages
+\RequirePackage{graphicx}
+\RequirePackage{xspace}
+\RequirePackage{hyperref}
+\RequirePackage{refcount}
+\RequirePackage{tcolorbox}
+\RequirePackage{fontawesome}
+\RequirePackage{xparse}
+\RequirePackage{pgfkeys}
+\RequirePackage{xcolor}
+\RequirePackage{xspace}
+\RequirePackage{fontawesome}
+\RequirePackage{pgffor}
+\RequirePackage{xfp}
+\RequirePackage{xparse}
+\RequirePackage{pgfkeys}
+\RequirePackage{textpos}
+\RequirePackage{ifoddpage}
+\RequirePackage{afterpage}
+\RequirePackage{graphicx}
+\RequirePackage{geometry}
+\RequirePackage{eso-pic}
+
+% Define new lengths and boxes
+\newlength{\bottomimageheight}
+\newsavebox{\bottomimagebox}
+
+% Bottom Image Command
+\newcommand{\bottomart}[1]{
+    \thispagestyle{empty}
+    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
+    \setlength{\bottomimageheight}{\ht\bottomimagebox}
+    \enlargethispage*{-\bottomimageheight}
+    \AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth]{#1}}}
+    \begin{figure*}[b!]
+        \centering
+        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
+    \end{figure*}
+}
+
+% Top Image Command
+\newcommand{\topart}[1]{
+    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
+    \setlength{\bottomimageheight}{\ht\bottomimagebox}%
+    \enlargethispage*{-\bottomimageheight}%
+    \AddToShipoutPictureBG*{\AtPageUpperLeft{
+        \raisebox{-\bottomimageheight}{\includegraphics[width=\paperwidth]{#1}}
+    }}
+    \begin{figure*}[t!]
+        \centering
+        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
+    \end{figure*}
+}
+
+% The Wyrd Engine Name Command
+\newcommand{\wyrd}{\textsc{The Wyrd Engine}\xspace}
+
+% References
+\newcommand{\pagereftext}[1]{%
+    \ifnum\getpagerefnumber{#1}=\thepage
+        on this page%
+    \else
+        on page \pageref{#1}%
+    \fi
+}
+\newcommand{\chapref}[1]{%
+    Chapter~\getrefnumber{#1}%
+}
+\newcommand{\fullchapref}[1]{%
+    {\color{titlered}\textsc{Chapter~\getrefnumber{#1}: \nameref{#1}}}%
+}
+
+% Fudge Dice Notation
+\newcommand{\FudgeDieP}{\faPlusSquare\xspace}
+\newcommand{\FudgeDieM}{\faMinusSquare\xspace}
+\newcommand{\FudgeDieB}{\faSquare\xspace}
+
+\newcommand{\FudgeDie}[1]{%
+    \ifx#1+\FudgeDieP
+    \else\ifx#1-\FudgeDieM
+    \else\FudgeDieB
+    \fi\fi
+}
+
+
+% Translating a sequence of die rolls
+\newcommand{\FudgeRoll}{\textbf{4dF}\xspace}
+\newcommand{\FudgeRes}[1]{%
+    \edef\tempstr{#1} % Store input string in \tempstr
+    \expandafter\FudgeLoop\tempstr\relax % Expand it into the loop
+}
+\def\FudgeLoop#1{%
+    \ifx#1\relax % Stop when reaching \relax
+    \else
+        \FudgeDie{#1} % Process current character
+        \expandafter\FudgeLoop % Recursive call
+    \fi
+}
+
+
+% Attack and Damage
+\newcommand{\Attack}{\textbf{Attack}\xspace}
+\newcommand{\Defend}{\textbf{Defend}\xspace}
+\newcommand{\Damage}{\textbf{Damage}\xspace}
+
+% Stress and Wounds
+\newcommand{\TickedBox}{\faTimes}
+\newcommand{\StressBox}{\faCircleO\xspace}
+\newcommand{\MildWound}{\faHeartO\xspace}
+\newcommand{\ModerateWound}{\faHeartbeat\xspace}
+\newcommand{\SevereWound}{\faHeart\xspace}
+
+% Repeating symbols for stress and wounds
+\NewDocumentCommand{\Repeat}{m m}{%
+    \ifnum#1>0
+        \RepeatHelper{#1}{#2}%
+    \fi
+}
+\NewDocumentCommand{\RepeatHelper}{m m}{%
+    \ifnum#1>0
+        #2\RepeatHelper{\numexpr#1-1\relax}{#2}%
+    \fi
+}
+
+% Define default stress and wound limits
+\newcommand{\TotalStress}{4}
+\newcommand{\TotalMild}{3}
+\newcommand{\TotalModerate}{2}
+\newcommand{\TotalSevere}{1}
+
+\NewDocumentCommand{\StressBoxes}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalStress}{\StressBox}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalStress-#1\relax}{\StressBox}}%
+}
+\NewDocumentCommand{\MildWounds}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalMild}{\MildWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalMild-#1\relax}{\MildWound}}%
+}
+\NewDocumentCommand{\ModerateWounds}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalModerate}{\ModerateWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalModerate-#1\relax}{\ModerateWound}}%
+}
+\NewDocumentCommand{\SevereWounds}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalSevere}{\SevereWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalSevere-#1\relax}{\SevereWound}}%
+}
+
+% Define Damage Box using pgfkeys
+\pgfkeys{/DamageBox/.is family, /DamageBox,
+    stress/.initial=0,
+    mild/.initial=0,
+    moderate/.initial=0,
+    severe/.initial=0,
+    mildtext/.initial=\underline{\hspace{3cm}}, % Default to underline
+    moderatetext/.initial=\underline{\hspace{3cm}},
+    severetext/.initial=\underline{\hspace{3cm}}
+}
+
+% Define Damage Box Command
+\NewDocumentCommand{\DamageBox}{O{}}{%
+    \pgfkeys{/DamageBox, #1}%
+    \begin{tabular}{@{}l l@{} l@{}}
+        \textbf{Stress:}  & \StressBoxes[\pgfkeysvalueof{/DamageBox/stress}] \\ 
+        \textbf{Mild:}    & \MildWounds[\pgfkeysvalueof{/DamageBox/mild}] & 
+        \pgfkeysvalueof{/DamageBox/mildtext} \\
+        \textbf{Mod:}     & \ModerateWounds[\pgfkeysvalueof{/DamageBox/moderate}] & 
+        \pgfkeysvalueof{/DamageBox/moderatetext} \\
+        \textbf{Severe:}  & \SevereWounds[\pgfkeysvalueof{/DamageBox/severe}] & 
+        \pgfkeysvalueof{/DamageBox/severetext}
+    \end{tabular}
+}
+
+% Framed Damage Box
+\NewDocumentCommand{\FramedDamageBox}{O{}}{%
+    \begin{center}
+        \begin{tcolorbox}[
+            colback=white!97,
+            colframe=titlered,
+            boxrule=0.8pt,
+            arc=3mm,
+            shadow=small,
+            width=\linewidth,
+            fonttitle=\bfseries,
+            colbacktitle=rulered,
+            coltitle=white!97,
+            %title=Damage Boxes,
+        ]
+        \DamageBox[#1]
+        \end{tcolorbox}
+    \end{center}
+}
+
+
+%% Skill levels %%%%%%%%%%%%%%%%%
+\newcommand{\Weak}{\textbf{Weak (-1)}\xspace}
+\newcommand{\Untrained}{\textbf{Untrained (0)}\xspace}
+\newcommand{\Novice}{\textbf{Novice (+1)}\xspace}
+\newcommand{\Skilled}{\textbf{Skilled (+2)}\xspace}
+\newcommand{\Expert}{\textbf{Expert (+3)}\xspace}
+\newcommand{\Superior}{\textbf{Superior (+4)}\xspace}
+
+%% Define commands for difficulty levels %%%%%%%%%%%%%%%%%
+\newcommand{\Trivial}{\textbf{Trivial (-4)}\xspace}
+\newcommand{\Simple}{\textbf{Simple (-3)}\xspace}
+\newcommand{\Easy}{\textbf{Easy (-2)}\xspace}
+\newcommand{\Basic}{\textbf{Basic (-1)}\xspace}
+\newcommand{\Challenging}{\textbf{Challenging (0)}\xspace}
+\newcommand{\Difficult}{\textbf{Difficult (+1)}\xspace}
+\newcommand{\Formidable}{\textbf{Formidable (+2)}\xspace}
+\newcommand{\Arduous}{\textbf{Arduous (+3)}\xspace}
+\newcommand{\Extreme}{\textbf{Extreme (+4)}\xspace}
+\newcommand{\Impossible}{\textbf{Impossible (+5)}\xspace}
+
+
+
+%% Plotting
+\NewDocumentCommand{\Graph}{O{} m}{%
+    \begin{center}
+        \begin{tcolorbox}[
+            colback=white!97,
+            colframe=titlered,
+            boxrule=0.8pt,
+            arc=3mm,
+            shadow=small,
+            width=0.9\linewidth,
+            fonttitle=\bfseries,
+            coltitle=titlered,
+            colbacktitle=bgtan,
+            title=#1,
+        ]
+            % Plot the graphics
+            \includegraphics[width=\textwidth]{#2}
+        \end{tcolorbox}
+    \end{center}
+}
+
+
+%% Environments
+\newcommand{\InsertIfNonEmpty}[2]{%
+    \ifx#1\empty 
+      % Nothing
+    \else
+      #2
+    \fi
+}
+\NewDocumentEnvironment{WyrdExplanation}{O{}}
+{
+    \begin{DndReadAloud}{}
+    \InsertIfNonEmpty{#1}{\subsubsection*{#1}}
+}
+{
+    \end{DndReadAloud}
+}
+
+\NewDocumentEnvironment{WyrdExample}{O{}}
+{
+    \begin{DndReadAloud}{}
+    \InsertIfNonEmpty{#1}{\subsubsection*{#1}}
+}
+{
+    \end{DndReadAloud}
+}
+
+\NewDocumentEnvironment{WyrdComment}{m}
+{
+    \begin{DndComment}{#1}
+}
+{
+    \end{DndComment}
+}
+
+\NewDocumentEnvironment{WyrdGmTips}{}
+{
+    \begin{DndComment}{Game Master Tip}
+}
+{
+    \end{DndComment}
+}
+
+% Define keys for WyrdSidebar
+\pgfkeys{
+    /WyrdSidebar/.is family, /WyrdSidebar,
+    float/.initial = h!, % Default: empty
+}
+
+\NewDocumentEnvironment{WyrdSidebar}{O{} m}
+{
+    \pgfkeys{/WyrdSidebar, #1}
+    \begin{DndSidebar}%
+        [float=\pgfkeysvalueof{/WyrdSidebar/float}]
+        {#2}
+}
+{
+    \end{DndSidebar}
+}
+
+\NewDocumentEnvironment{WyrdExampleSidebar}{O{} m}
+{
+    \begin{WyrdSidebar}[#1]{#2}
+}
+{
+    \end{WyrdSidebar}
+}
+
+\NewDocumentEnvironment{WyrdNPC}{O{} m}
+{
+    \begin{WyrdSidebar}[#1]{Example Character}
+        \subsection*{#2}
+}
+{
+    \end{WyrdSidebar}
+}
+

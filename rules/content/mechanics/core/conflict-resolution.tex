@@ -4,7 +4,7 @@ Whenever characters encounter an obstacle—be it an unsolvable riddle, a desper
 
 With The Wyrd Engine, all conflict resolution follows the same pattern that combines \textbf{4dF} Fudge Dice, described \pagereftext{core:fudge-dice}, \textbf{Skills} described on \pagereftext{core:skills}, and \textbf{Traits} described on \pagereftext{core:traits}. You combine these three and compare them to a \textbf{Difficulty Rating (DR)}, described on \pagereftext{core:difficulty-rating}, and the result determines the outcome of a conflict.
 
-\begin{DndReadAloud}{Steps in conflict resolution}
+\begin{WyrdExplanation}[Steps in conflict resolution]
 	\begin{itemize}
 		\item Roll four Fudge Dice (\textbf{4dF}).
 		      Each die has \textbf{+ (plus), - (minus), and 0 (blank) faces}. Add up the plusses and minuses.
@@ -17,7 +17,7 @@ With The Wyrd Engine, all conflict resolution follows the same pattern that comb
 			\item \textbf{4dF} + \textbf{Skill} + \textbf{Trait} $<$ \textbf{DR} (Failure)
 		\end{itemize}
 	\end{itemize}
-\end{DndReadAloud}
+\end{WyrdExplanation}
 
 This will always be the general pattern for resolving conflicts, only differing in which skills and traits are involved, how the difficulty rating is determined, and what the consequences of success or failure will be.
 
@@ -31,17 +31,13 @@ Whenever we roll dice in The Wyrd Engine, we roll four such dice (we write it as
 	\FudgeRes{-+--} = -1 + 1 - 1 - 1 = -2.
 
 Using 4dF gives us a distribution of outcomes that look like this:
-\begin{center}
-\includegraphics{stats/4dF.pdf}
-\end{center}
+\Graph[4dF results]{stats/4dF}
 
 You are unlikely to roll the extremes; you should expect to hit $\pm$4 about 1\% of the time (each)---about one time out of a hundred rolls, you should get +4, and about one time in a hundred, you should get -4. You expect to get an outcome above +3 or below -3 about 6\% of the time (each)---about one in twenty for each.
 
 Another way to visualise the outcome of a 4dF is as the chance you have of rolling higher than some threshold value:
 
-\begin{center}
-\includegraphics{stats/4dF-success.pdf}
-\end{center}
+\Graph[Success probabilities]{stats/4dF-success}
 
 To roll higher than \textbf{-4}, you just have to avoid \FudgeRes{----}, and this outcome only happens one out of 81 rolls. To roll higher than \textbf{+3} you \emph{have} to roll \FudgeRes{++++}, which also happens with probability 1/81. To roll \emph{higher} than \textbf{+4} is impossible, since this it the highest value you can roll.
 
