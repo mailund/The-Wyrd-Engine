@@ -28,13 +28,20 @@
 
 \captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
 
+\usepackage{etoolbox}
+
+\NewDocumentCommand{\MaybeSC}{m}{%
+  \edef\CurrentShape{\f@shape}%
+  \fontshape{sc}\selectfont
+  \edef\SCShape{\f@shape}%
+  \fontshape{\CurrentShape}\selectfont
+  \ifdefequal{\CurrentShape}{\SCShape}
+    {#1}% same shape, no small caps
+    {\textsc{#1}}% different shape, small caps available
+}
+
 % The Wyrd Engine Name Command -- put in small caps if the font supports it
-\newcommand{\wyrd}{%
-    {\ifx\f@shape\scdefault
-        \textsc{The Wyrd Engine}%
-    \else
-        The Wyrd Engine%
-    \fi}\xspace}
+\NewDocumentCommand{\wyrd}{}{\MaybeSC{The Wyrd Engine}\xspace}
 
 
 % Define new lengths and boxes
