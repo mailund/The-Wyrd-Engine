@@ -1,0 +1,52 @@
+% Define new lengths and boxes
+\newlength{\bottomimageheight}
+\newsavebox{\bottomimagebox}
+
+% Bottom Image Command
+\newcommand{\bottomart}[1]{
+    \thispagestyle{empty}
+    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
+    \setlength{\bottomimageheight}{\ht\bottomimagebox}
+    \enlargethispage*{-\bottomimageheight}
+    \AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth]{#1}}}
+    \begin{figure*}[b!]
+        \centering
+        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
+    \end{figure*}
+}
+
+% Top Image Command
+\newcommand{\topart}[1]{
+    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
+    \setlength{\bottomimageheight}{\ht\bottomimagebox}%
+    \enlargethispage*{-\bottomimageheight}%
+    \AddToShipoutPictureBG*{\AtPageUpperLeft{
+        \raisebox{-\bottomimageheight}{\includegraphics[width=\paperwidth]{#1}}
+    }}
+    \begin{figure*}[t!]
+        \centering
+        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
+    \end{figure*}
+}
+
+
+%% Plotting
+\NewDocumentCommand{\Graph}{O{} m}{%
+    \begin{center}
+        \begin{tcolorbox}[
+            colback=white!97,
+            colframe=titlered,
+            boxrule=0.8pt,
+            arc=3mm,
+            shadow=small,
+            width=0.9\linewidth,
+            fonttitle=\bfseries,
+            coltitle=titlered,
+            colbacktitle=bgtan,
+            title=#1,
+        ]
+            % Plot the graphics
+            \includegraphics[width=\textwidth]{#2}
+        \end{tcolorbox}
+    \end{center}
+}

@@ -1,0 +1,31 @@
+%% Basic text formatting code
+
+%% Attempts to set the font to small caps if the font supports it
+% This is a workaround for the fact that some fonts do not support small caps
+\makeatletter
+\NewDocumentCommand{\MaybeSC}{m}{%
+  \begingroup
+    \edef\@tempa{\f@encoding/\f@family/\f@series/sc/\f@size}%
+    \expandafter\ifx\csname\@tempa\endcsname\relax
+      % No small caps shape defined
+      \endgroup #1%
+    \else
+      \endgroup \textsc{#1}%
+    \fi
+}
+\makeatother
+
+%% Caption lines
+\renewcommand{\LettrineFontHook}{ \Royal  }
+\renewcommand{\LettrineTextFont}{\normalfont} % SC handled by MaybeSC
+\NewDocumentCommand{\WyrdCapLine}{ O{} m m }{
+    \lettrine[
+        lines   = 4,
+        depth   = 0,
+        findent = \fontdimen2\font,
+        nindent = 0pt,
+        #1
+      ]
+      {\color{titlered}{#2}}
+      {\MaybeSC{#3}}
+  }

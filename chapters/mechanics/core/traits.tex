@@ -58,20 +58,19 @@ In the following examples we see how traits can be used in different situations 
 \begin{WyrdNPC}[float=!t]{Felix Cavendish}
 	\emph{A brilliant but erratic inventor-for-hire, Felix Cavendish is both a mechanical genius and a walking disaster. His creations are revolutionary—when they don’t explode. A rogue innovator who skirts the edges of legality, he thrives on the challenge of solving impossible problems with machines that push the limits of science.}
 
-	\subsubsection*{Skills}
-	\begin{itemize}
-    	\item \Expert: Crafts
-	    \item \Skilled: Investigate, Resources
-    	\item \Novice: Lore, Will, Contacts
-	    \item \Untrained: Notice, Stealth, Deceive, Athletics
-	\end{itemize}
+	\vspace{0.5\baselineskip}
+	\SkillsBox[%
+		expert={Crafts},%
+		skilled={Investigate, Resources},%
+		novice={Lore, Will, Contacts},%
+		untrained={Notice, Stealth, Deceive, Athletics}%
+	]
 
-	\subsubsection*{Traits}
-	\begin{itemize}
-    	\item \textbf{Master Tinkerer} – \emph{Gain +2 to Crafts when repairing or modifying machinery.}
-	    \item \textbf{Unstable Prototype} – \emph{Once per session, declare an experimental gadget with an unpredictable effect.}
-    	\item \textbf{A Calculated Risk} – \emph{Use Will instead of Athletics when escaping dangerous situations.}
-	\end{itemize}
+	\begin{TraitsBox}
+		\item[Master Tinkerer] — \emph{Gain +2 to Crafts when repairing or modifying machinery.}
+		\item[Unstable Prototype] — \emph{Once per session, declare an experimental gadget with an unpredictable effect.}
+		\item[A Calculated Risk] — \emph{Use Will instead of Athletics when escaping dangerous situations.}
+	  \end{TraitsBox}
 \end{WyrdNPC}
 
 
@@ -85,22 +84,22 @@ In the following examples we see how traits can be used in different situations 
 
 \begin{WyrdNPC}[float=!b]{Isadora "Isa" Lovelace}
 	\emph{A renowned spiritualist and occult investigator, Isa Lovelace walks the thin line between science and the supernatural. Some believe she is merely an expert in human nature, while others whisper that she truly communes with forces beyond the veil. With piercing intuition and an enigmatic presence, she seeks knowledge that others fear to uncover.}
-
-	\subsubsection*{Skills}
-	\begin{itemize}
-    	\item \Expert: Empathy
-	    \item \Skilled: Investigate, Lore
-    	\item \Novice: Rapport, Will, Notice
-	    \item \Untrained: Stealth, Deceive, Resources, Contacts
-	\end{itemize}
-
-	\subsubsection*{Traits}
-	\begin{itemize}
-    	\item \textbf{A Glimpse Beyond the Veil} – \emph{Gain +2 to Empathy when sensing the emotions of the deceased.}
-	    \item \textbf{Foreboding Intuition} – \emph{Once per session, declare a warning based on an unseen force.}
-    	\item \textbf{The Cards Never Lie} – \emph{Use Lore instead of Investigate when predicting an outcome.}
-	\end{itemize}
-\end{WyrdNPC}
+  
+	\vspace{0.5\baselineskip}
+	\SkillsBox[%
+	  expert={Empathy},%
+	  skilled={Investigate, Lore},%
+	  novice={Rapport, Will, Notice},%
+	  untrained={Stealth, Deceive, Resources, Contacts}%
+	]
+  
+	\begin{TraitsBox}
+	  \item[A Glimpse Beyond the Veil] — \emph{Gain +2 to Empathy when sensing the emotions of the deceased.}
+	  \item[Foreboding Intuition] — \emph{Once per session, declare a warning based on an unseen force.}
+	  \item[The Cards Never Lie] — \emph{Use Lore instead of Investigate when predicting an outcome.}
+	\end{TraitsBox}
+  \end{WyrdNPC}
+  
 
 \begin{WyrdExample}[Example 3: Once Per Session Ability]
 	\textbf{Situation:} Cornelius Flint, a silver-tongued rogue, has been cornered in an alley by the city watch. Escape seems impossible.
@@ -112,22 +111,22 @@ In the following examples we see how traits can be used in different situations 
  
 \begin{WyrdNPC}[float=!t]{Cornelius "Corny" Flint}
 	\emph{A silver-tongued thief and a master of misdirection, Cornelius Flint moves between high society and the criminal underworld with effortless charm. He lives by one rule—if someone is foolish enough to leave their wealth unguarded, it deserves a new owner. While he prefers to talk his way out of danger, he always has an escape plan ready when words fail.}
-
-	\subsubsection*{Skills}
-	\begin{itemize}
-    	\item \Expert: Deceive
-	    \item \Skilled: Burglary, Rapport
-    	\item \Novice: Athletics, Stealth, Notice
-	    \item \Untrained: Contacts, Fight, Will, Resources
-	\end{itemize}
-
-	\subsubsection*{Traits}
-	\begin{itemize}
-    	\item \textbf{Master of Misdirection} – \emph{Gain +2 to Deceive when distracting someone in conversation.}
-	    \item \textbf{Sleight of Hand} – \emph{Once per session, declare you have already lifted a small item unnoticed.}
-	    \item \textbf{Always an Escape Plan} – \emph{Use Burglary instead of Athletics when escaping confinement.}
-	\end{itemize}
+  
+	\vspace{0.5\baselineskip}
+	\SkillsBox[%
+	  expert={Deceive},%
+	  skilled={Burglary, Rapport},%
+	  novice={Athletics, Stealth, Notice},%
+	  untrained={Contacts, Fight, Will, Resources}%
+	]
+  
+	\begin{TraitsBox}
+	  \item[Master of Misdirection] — \emph{Gain +2 to Deceive when distracting someone in conversation.}
+	  \item[Sleight of Hand] — \emph{Once per session, declare you have already lifted a small item unnoticed.}
+	  \item[Always an Escape Plan] — \emph{Use Burglary instead of Athletics when escaping confinement.}
+	\end{TraitsBox}
 \end{WyrdNPC}
+  
 
  
 \subsection{Final Notes on Traits}

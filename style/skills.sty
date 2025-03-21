@@ -1,0 +1,84 @@
+
+%% Skill levels %%%%%%%%%%%%%%%%%
+\newcommand{\Weak}{\textbf{Weak (-1)}\xspace}
+\newcommand{\Untrained}{\textbf{Untrained (0)}\xspace}
+\newcommand{\Novice}{\textbf{Novice (+1)}\xspace}
+\newcommand{\Skilled}{\textbf{Skilled (+2)}\xspace}
+\newcommand{\Expert}{\textbf{Expert (+3)}\xspace}
+\newcommand{\Superior}{\textbf{Superior (+4)}\xspace}
+
+\pgfkeys{/SkillsBox/.is family, /SkillsBox,
+    weak/.store in = \SkillsBoxWeak,
+    untrained/.store in = \SkillsBoxUntrained,
+    novice/.store in = \SkillsBoxNovice,
+    skilled/.store in = \SkillsBoxSkilled,
+    expert/.store in = \SkillsBoxExpert,
+    superior/.store in = \SkillsBoxSuperior,
+}
+
+
+\tcbset{
+  skillsbox/.style={
+    title=Skills,
+    boxrule=0.6pt,
+    shadow=small,
+    width=\linewidth,
+    fonttitle=\bfseries,
+    colbacktitle=DmgLavender,
+    coltitle=black,
+    colback=white!97,
+    colframe=black,
+  }
+}
+
+
+%% Predefined macros for skill boxes
+\newcommand{\SkillsBoxWeak}{}
+\newcommand{\SkillsBoxUntrained}{}
+\newcommand{\SkillsBoxNovice}{}
+\newcommand{\SkillsBoxSkilled}{}
+\newcommand{\SkillsBoxExpert}{}
+\newcommand{\SkillsBoxSuperior}{}
+
+\NewDocumentCommand{\SkillsBox}{O{}}{%
+  % Reset macros to truly empty
+  \renewcommand{\SkillsBoxWeak}{}%
+  \renewcommand{\SkillsBoxUntrained}{}%
+  \renewcommand{\SkillsBoxNovice}{}%
+  \renewcommand{\SkillsBoxSkilled}{}%
+  \renewcommand{\SkillsBoxExpert}{}%
+  \renewcommand{\SkillsBoxSuperior}{}%
+  %
+  % Apply user-supplied values
+  \pgfkeys{/SkillsBox, #1}%
+  %
+  \begin{center}
+    \begin{tcolorbox}[skillsbox]
+      \begin{tabular}{@{}l l@{}}
+        \ifdefempty{\SkillsBoxSuperior}{}{\Superior: & \SkillsBoxSuperior \\}
+        \ifdefempty{\SkillsBoxExpert}{}{\Expert: & \SkillsBoxExpert \\}
+        \ifdefempty{\SkillsBoxSkilled}{}{\Skilled: & \SkillsBoxSkilled \\}
+        \ifdefempty{\SkillsBoxNovice}{}{\Novice: & \SkillsBoxNovice \\}
+        \ifdefempty{\SkillsBoxUntrained}{}{\Untrained: & \SkillsBoxUntrained \\}
+        \ifdefempty{\SkillsBoxWeak}{}{\Weak: & \SkillsBoxWeak \\}
+      \end{tabular}
+    \end{tcolorbox}
+  \end{center}
+}
+
+
+
+
+
+%% Define commands for difficulty levels %%%%%%%%%%%%%%%%%
+\newcommand{\Trivial}{\textbf{Trivial (-4)}\xspace}
+\newcommand{\Simple}{\textbf{Simple (-3)}\xspace}
+\newcommand{\Easy}{\textbf{Easy (-2)}\xspace}
+\newcommand{\Basic}{\textbf{Basic (-1)}\xspace}
+\newcommand{\Challenging}{\textbf{Challenging (0)}\xspace}
+\newcommand{\Difficult}{\textbf{Difficult (+1)}\xspace}
+\newcommand{\Formidable}{\textbf{Formidable (+2)}\xspace}
+\newcommand{\Arduous}{\textbf{Arduous (+3)}\xspace}
+\newcommand{\Extreme}{\textbf{Extreme (+4)}\xspace}
+\newcommand{\Impossible}{\textbf{Impossible (+5)}\xspace}
+

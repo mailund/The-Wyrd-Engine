@@ -1,0 +1,26 @@
+\tcbset{
+  traitsboxstyle/.style={
+    title=Traits,
+    boxrule=0.6pt,
+    shadow=small,
+    width=\linewidth,
+    fonttitle=\bfseries,
+    colbacktitle=DmgLavender,
+    coltitle=black,
+    colback=white!97,
+    colframe=black,
+  }
+}
+
+\NewDocumentEnvironment{TraitsBox}{}
+  {
+    %\vspace{0.5\baselineskip}
+    \begin{center}
+      \begin{tcolorbox}[traitsboxstyle]
+        \begin{description}[leftmargin=.5em, labelsep=0.5em]
+  }
+  {
+        \end{description}
+      \end{tcolorbox}
+    \end{center}
+  }

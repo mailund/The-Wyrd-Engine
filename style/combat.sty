@@ -1,0 +1,94 @@
+
+
+
+% Attack and Damage
+\newcommand{\Attack}{\textbf{Attack}\xspace}
+\newcommand{\Defend}{\textbf{Defend}\xspace}
+\newcommand{\Damage}{\textbf{Damage}\xspace}
+
+% Stress and Wounds
+\newcommand{\TickedBox}{\faTimes}
+\newcommand{\FatigueBox}{\faCircleO\xspace}
+\newcommand{\MildWound}{\faHeartO\xspace}
+\newcommand{\ModerateWound}{\faHeartbeat\xspace}
+\newcommand{\SevereWound}{\faHeart\xspace}
+
+% Repeating symbols for stress and wounds
+\NewDocumentCommand{\Repeat}{m m}{%
+    \ifnum#1>0
+        \RepeatHelper{#1}{#2}%
+    \fi
+}
+\NewDocumentCommand{\RepeatHelper}{m m}{%
+    \ifnum#1>0
+        #2\RepeatHelper{\numexpr#1-1\relax}{#2}%
+    \fi
+}
+
+% Define default stress and wound limits
+\newcommand{\TotalStress}{4}
+\newcommand{\TotalMild}{3}
+\newcommand{\TotalModerate}{2}
+\newcommand{\TotalSevere}{1}
+
+\NewDocumentCommand{\FatigueBoxes}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalStress}{\FatigueBox}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalStress-#1\relax}{\FatigueBox}}%
+}
+\NewDocumentCommand{\MildWounds}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalMild}{\MildWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalMild-#1\relax}{\MildWound}}%
+}
+\NewDocumentCommand{\ModerateWounds}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalModerate}{\ModerateWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalModerate-#1\relax}{\ModerateWound}}%
+}
+\NewDocumentCommand{\SevereWounds}{o}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalSevere}{\SevereWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalSevere-#1\relax}{\SevereWound}}%
+}
+
+% Define Damage Box using pgfkeys
+\pgfkeys{/DamageBox/.is family, /DamageBox,
+    fatigue/.initial=0,
+    mild/.initial=0,
+    moderate/.initial=0,
+    severe/.initial=0,
+    mildtext/.initial=\underline{\hspace{3cm}}, % Default to underline
+    moderatetext/.initial=\underline{\hspace{3cm}},
+    severetext/.initial=\underline{\hspace{3cm}}
+}
+
+\tcbset{
+  damageboxstyle/.style={
+    title=Stress,
+    boxrule=0.6pt,
+    shadow=small,
+    width=\linewidth,
+    fonttitle=\bfseries,
+    colbacktitle=DmgLavender,
+    coltitle=black,
+    colback=white!97,
+    colframe=black,
+  }
+}
+
+\NewDocumentCommand{\DamageBox}{O{}}{%
+    \pgfkeys{/DamageBox, #1}%
+    \begin{center}
+        \begin{tcolorbox}[damageboxstyle]
+        \begin{tabular}{@{}l l@{} l@{}}
+            \textbf{Fatigue:}  & 
+                \FatigueBoxes[\pgfkeysvalueof{/DamageBox/fatigue}] \\ 
+            \textbf{Mild:}    & 
+                \MildWounds[\pgfkeysvalueof{/DamageBox/mild}] & 
+            \pgfkeysvalueof{/DamageBox/mildtext} \\
+            \textbf{Mod:}     & 
+                \ModerateWounds[\pgfkeysvalueof{/DamageBox/moderate}] & 
+            \pgfkeysvalueof{/DamageBox/moderatetext} \\
+            \textbf{Severe:}  & 
+                \SevereWounds[\pgfkeysvalueof{/DamageBox/severe}] & 
+            \pgfkeysvalueof{/DamageBox/severetext}
+        \end{tabular}
+    \end{tcolorbox}\end{center}
+}

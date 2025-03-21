@@ -34,7 +34,7 @@
 \contentsline {section}{Difficulty Levels}{10}{section*.37}%
 \contentsline {subsection}{Passive Opposition}{10}{subsection*.38}%
 \contentsline {subsection}{Active Opposition}{11}{subsection*.39}%
-\contentsline {subsection}{Ties and Partial Successes}{11}{subsection*.40}%
+\contentsline {subsection}{Ties and Partial Successes}{12}{subsection*.40}%
 \contentsline {subsection}{Interpreting Failure}{12}{subsection*.41}%
 \contentsline {subsection}{Boosts: Optional Rule for Increasing Success}{12}{subsection*.42}%
 \contentsline {subsection}{Teamwork: Optional Rule for Assisting Allies}{12}{subsection*.43}%
@@ -46,7 +46,7 @@
 \contentsline {subsection}{Healing and Recovery}{15}{subsection*.50}%
 \contentsline {subsection}{Combat Maneuvers and Special Actions}{15}{subsection*.51}%
 \contentsline {subsection}{Weapons and Gear in Combat}{15}{subsection*.52}%
-\contentsline {subsection}{Death and the End of Combat}{15}{subsection*.53}%
+\contentsline {subsection}{Death and the End of Combat}{16}{subsection*.53}%
 \contentsline {subsection}{Conceding the Fight}{16}{subsection*.54}%
 \contentsline {section}{Character Creation}{16}{section*.55}%
 \contentsline {subsection}{Step 1: Concept}{16}{subsection*.56}%
@@ -63,7 +63,7 @@
 \contentsline {subsubsection}{Key Traits of Dramatis Personae}{19}{subsubsection*.70}%
 \contentsline {subsection}{Living, Breathing Characters: Fully Realized NPCs}{19}{subsection*.71}%
 \contentsline {subsubsection}{Key Traits of Living, Breathing Characters}{19}{subsubsection*.72}%
-\contentsline {subsection}{Choosing the Right Type of NPC}{19}{subsection*.73}%
+\contentsline {subsection}{Choosing the Right Type of NPC}{20}{subsection*.73}%
 \contentsline {chapter}{\numberline {3}Adapting The Wyrd Engine}{21}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Combat}{23}{chapter.4}%
 \contentsline {section}{Dealing damage}{23}{section*.74}%

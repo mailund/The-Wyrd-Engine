@@ -1,0 +1,14 @@
+% References
+\newcommand{\pagereftext}[1]{%
+    \ifnum\getpagerefnumber{#1}=\thepage
+        on this page%
+    \else
+        on page \pageref{#1}%
+    \fi
+}
+\newcommand{\chapref}[1]{%
+    Chapter~\getrefnumber{#1}%
+}
+\newcommand{\fullchapref}[1]{%
+    {\color{titlered}\textsc{Chapter~\getrefnumber{#1}: \nameref{#1}}}%
+}
