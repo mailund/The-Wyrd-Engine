@@ -1,12 +1,12 @@
 # Fdb version 4
-["makeindex wyrd.idx"] 1742549605.9638 "wyrd.idx" "wyrd.ind" "wyrd" 1742549632.64793 0
-  "wyrd.idx" 1742549632.44847 1143 3df5d1882231b30b514eaed4e29e6ff3 "pdflatex"
+["makeindex wyrd.idx"] 1742556306.499 "wyrd.idx" "wyrd.ind" "wyrd" 1742557375.37078 0
+  "wyrd.idx" 1742557375.17443 1440 a1ad9c5bb10229b0760394df96752588 "pdflatex"
   (generated)
   "wyrd.ilg"
   "wyrd.ind"
   (rewritten before read)
-["pdflatex"] 1742549629.36047 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742549632.64801 0
-  "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742542617.77011 787 066d67114f6ec434fbd2ce49bbb6d1d8 ""
+["pdflatex"] 1742557372.12713 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742557375.37087 0
+  "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742549939.87832 797 37b0693ef35cdfb3682a36326e81dc41 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1710106625 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1710106625 2437 443c81fb50993bacedc5f9a206c322b0 ""
@@ -285,7 +285,7 @@
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1710106625 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221850 cdd0f59d64bf272578daf4037881baee ""
-  "chapters/episodic/crafting-episodic-play.tex" 1742394612.36385 77 46efc0d63134d65f371c83a368f87fd6 ""
+  "chapters/episodic/crafting-episodic-play.tex" 1742555404.47519 68 7a8751611e02ce38a63ee04b1f296ae2 ""
   "chapters/episodic/grand-casebook/./clockmakers-deception.tex" 1742489270.71591 6480 0680a59c44dae492e1149eaa07b8d7b0 ""
   "chapters/episodic/grand-casebook/./the-silent-courier.tex" 1742489016.61851 6104 cdfe575801942a48c522bbb4a8d59715 ""
   "chapters/episodic/grand-casebook/grand-casebook.tex" 1742542199.87092 9377 245f66f948670ba4cff7e1179335a8ff ""
@@ -302,8 +302,8 @@
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-mercer.tex" 1742474814.69901 708 3f5fff4c48993d1d4b6e286077185e47 ""
   "chapters/introduction.tex" 1742540211.52601 6227 781d5c482f0741cac65d8024ed92940f ""
   "chapters/mechanics/combat/combat.tex" 1742370803.55451 1973 f449f48694ee5028f80652912e1b9683 ""
-  "chapters/mechanics/core/./character-creation.tex" 1742544197.18294 6074 d83e1f135f9a4d1e6f1f85a78609516a ""
-  "chapters/mechanics/core/./combat.tex" 1742549629.17298 19605 ba44326ff38851acb0648c85fcafe558 ""
+  "chapters/mechanics/core/./character-creation.tex" 1742549708.33467 6036 cdf38f6c47577f0e36538b8fbee0c328 ""
+  "chapters/mechanics/core/./combat.tex" 1742549649.62161 19605 ba44326ff38851acb0648c85fcafe558 ""
   "chapters/mechanics/core/./conflict-resolution.tex" 1742454779.93777 3935 ad6cd7fec90ebe859e7910c4257ce7e9 ""
   "chapters/mechanics/core/./difficulty-levels.tex" 1742540827.96893 12144 d9ae28c86f8ca9568b238c84b547e0b7 ""
   "chapters/mechanics/core/./gear.tex" 1742462456.26856 3377 44416578cc936a0181baff2e50e874f4 ""
@@ -312,7 +312,12 @@
   "chapters/mechanics/core/./traits.tex" 1742548764.18648 8358 52c9ae086c05e4c164b16d4c3ea20996 ""
   "chapters/mechanics/core/core.tex" 1742542557.14585 2069 49e28c660f1d22f9dbc5985f127d5c87 ""
   "chapters/mechanics/magic/magic.tex" 1742221236.84808 606 9439cf558a7ffa836f17accc23f98a67 ""
-  "chapters/mechanics/toolbox/toolbox.tex" 1742542356.23404 285 22871ebde093ddbf3353673d8bdc3e1f ""
+  "chapters/mechanics/toolbox/./balancing.tex" 1742557368.45429 5609 3671ad4332ea14d664c765cfd81011f7 ""
+  "chapters/mechanics/toolbox/./skills.tex" 1742556006.7292 125 20fd884038719f9cbd672fb84c27d5b8 ""
+  "chapters/mechanics/toolbox/./stress.tex" 1742556051.66783 125 65cdbf08f3f56eba3a1072920fa4cf4b ""
+  "chapters/mechanics/toolbox/./tools.tex" 1742555970.56651 6665 5d57433185392ed142be5ab4e42fe03f ""
+  "chapters/mechanics/toolbox/./traits.tex" 1742556034.14195 124 1def2545cd13e767826d5a20911486be ""
+  "chapters/mechanics/toolbox/toolbox.tex" 1742556054.07004 1647 ff4ef2915d220637292f0228605802e6 ""
   "dndbook/dndbook.cls" 1742534688.53466 269 e488dc6c9f97aa67bf4dba25f2bd72ad ""
   "dndbook/dndcore.def" 1742534768.20646 3520 e0c04b9826398e582e5efc35f2d66f41 ""
   "dndbook/dndoptions.clo" 1742109229.16462 4450 689e9216332540ae1bb35bc727e37afa ""
@@ -343,11 +348,11 @@
   "style/text-processing.sty" 1742542797.41648 835 ec878f746a03e8d83a31e6b37724546b ""
   "style/traits.sty" 1742548391.21928 505 b6cdb75134ef52007ff16db205bbef97 ""
   "style/wyrd.sty" 1742548032.31786 1188 84b9f60e31965f1728d88247c47ef475 ""
-  "wyrd.aux" 1742549632.51035 15133 9884571dd80116b35225fdb94a67b1ea "pdflatex"
-  "wyrd.ind" 1742549632.5005 1112 f596a0d58f961199767b882620237ec9 "makeindex wyrd.idx"
-  "wyrd.out" 1742549632.51214 4238 35dd3841a3499ab2be2e50b2047b34b6 "pdflatex"
-  "wyrd.tex" 1742542617.77011 787 066d67114f6ec434fbd2ce49bbb6d1d8 ""
-  "wyrd.toc" 1742549632.51238 7313 0b85c733c006329a3346b75b49cd0c24 "pdflatex"
+  "wyrd.aux" 1742557375.23654 16595 4a366056929c5e8f7db2246dd369313e "pdflatex"
+  "wyrd.ind" 1742557375.22672 1308 10de85a571b1f38db0b8c8bfc7cc0b2b "makeindex wyrd.idx"
+  "wyrd.out" 1742557375.23841 4905 1e0c03cdc3169a7bcb5323fe5ea870f8 "pdflatex"
+  "wyrd.tex" 1742549939.87832 797 37b0693ef35cdfb3682a36326e81dc41 ""
+  "wyrd.toc" 1742557375.23864 8000 2a1127ac90e3903b19e4605416e2ee98 "pdflatex"
   (generated)
   "wyrd.aux"
   "wyrd.idx"
