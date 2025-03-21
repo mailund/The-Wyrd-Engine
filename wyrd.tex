@@ -1,16 +1,6 @@
 \documentclass[twocolumn,nodeprecatedcode,bg=print]{dndbook/dndbook}
-
-
-
 \usepackage{style/wyrd}
 \makeindex
-
-
-\lstset{%
-  basicstyle=\ttfamily,
-  language=[LaTeX]{TeX},
-  breaklines=true,
-}
 
 \title{The Wyrd Engine}
 \author{Thomas Mailund}
@@ -25,7 +15,22 @@
 \mainmatter%
 
 
-\input{content/index.tex}
+\include{content/introduction}
+
+\part{The Wyrd Engine}
+\include{content/mechanics/core}
+\include{content/mechanics/extending}
+\include{content/mechanics/combat}
+\include{content/mechanics/magic}
+\include{content/mechanics/npcs} %% Maybe drop this
+
+\part{Crafting One-Shots}
+\include{content/one-shots/crafting-one-shots}
+
+\part{Crafting Episodic Play}
+\include{content/episodic/crafting-episodic-play}
+\include{content/episodic/grand-casebook}
+
 
 \printindex
 
