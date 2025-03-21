@@ -15,21 +15,23 @@
 \mainmatter%
 
 
-\include{content/introduction}
+\import{chapters}{introduction}
 
 \part{The Wyrd Engine}
-\include{content/mechanics/core}
-\include{content/mechanics/extending}
-\include{content/mechanics/combat}
-\include{content/mechanics/magic}
-\include{content/mechanics/npcs} %% Maybe drop this
+\import{chapters/mechanics/core}{core}
+\import{chapters/mechanics/toolbox}{toolbox}
+\import{chapters/mechanics/combat}{combat}
+\import{chapters/mechanics/magic}{magic}
+% \include{chapters/mechanics/npcs} %% Maybe drop this
 
-\part{Crafting One-Shots}
-\include{content/one-shots/crafting-one-shots}
+\part{One-Shots}
+% \include{chapters/one-shots/crafting-one-shots}
 
-\part{Crafting Episodic Play}
-\include{content/episodic/crafting-episodic-play}
-\include{content/episodic/grand-casebook}
+\part{Episodic Play}
+\import{chapters/episodic}{crafting-episodic-play}
+\import{chapters/episodic/grand-casebook}{grand-casebook}
+
+\part{Campaigns}
 
 
 \printindex

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  21 MAR 2025 08:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  21 MAR 2025 08:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -837,6 +837,8 @@ Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count345
 ) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchronous mode
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
 ) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count346
 \lst@gtempboxa=\box133
@@ -890,7 +892,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 
 
 Writing index file wyrd.idx
-(./wyrd.aux (./content/introduction.aux) (./content/mechanics/core.aux) (./content/mechanics/extending.aux) (./content/mechanics/combat.aux) (./content/mechanics/magic.aux) (./content/mechanics/npcs.aux) (./content/one-shots/crafting-one-shots.aux) (./content/episodic/crafting-episodic-play.aux) (./content/episodic/grand-casebook.aux))
+(./wyrd.aux)
 \openout1 = `wyrd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -1042,7 +1044,7 @@ LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <6> not available
 {/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <7> not available
 (Font)              Font shape `T1/pbk/l/n' tried instead on input line 13.
-<dndbook/img/footerscroll.pdf, id=137, 596.2275pt x 42.15584pt>
+<dndbook/img/footerscroll.pdf, id=133, 596.2275pt x 42.15584pt>
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 13.
@@ -1066,11 +1068,6 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <14.4> not available
 (Font)              Font shape `T1/pbk/l/sc' tried instead on input line 20.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|\T1/pbk/l/sc/12 (+20) Ch. 2: []The Wyrd En-gine Core 
- []
-
-
 Overfull \hbox (0.57983pt too wide) detected at line 67
  \T1/pbk/l/sc/12 21
  []
@@ -1086,28 +1083,13 @@ Overfull \hbox (0.57983pt too wide) detected at line 71
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 72
- \T1/pbk/l/sc/12 27
- []
-
-
 Overfull \hbox (0.57983pt too wide) detected at line 74
  \T1/pbk/l/sc/12 31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]|\T1/pbk/l/sc/14.4 (+20) Part 3: []Craft-ing Episodic 
- []
-
-
-Overfull \hbox (0.57983pt too wide) detected at line 76
- \T1/pbk/l/sc/12 35
- []
-
-
-Overfull \hbox (0.57983pt too wide) detected at line 77
- \T1/pbk/l/sc/12 37
+Overfull \hbox (0.57983pt too wide) detected at line 75
+ \T1/pbk/l/sc/12 33
  []
 
 )
@@ -1126,10 +1108,7 @@ Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 15.
  [4
 
 
-]
-\openout2 = `content/introduction.aux'.
-
- (./content/introduction.tex
+] (./chapters/introduction.tex
 Chapter 1.
 contour: Using 32 copies for `Chapter\ 1:' on input line 2.
 contour: Using 32 copies for `The' on input line 2.
@@ -1153,14 +1132,13 @@ Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 70.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
 [1
 
-
 ]
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <10> not available
 (Font)              Font shape `T1/pbk/db/n' tried instead on input line 72.
 )
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 18.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 20.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [2
 
@@ -1176,24 +1154,16 @@ Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 20.
 [3
 
 
-
-
-] [4]
-\openout2 = `content/mechanics/core.aux'.
-
- (./content/mechanics/core.tex
+] [4] (./chapters/mechanics/core/core.tex
 Chapter 2.
 contour: Using 32 copies for `Chapter\ 2:' on input line 1.
-contour: Using 32 copies for `The' on input line 1.
-contour: Using 32 copies for `Wyrd' on input line 1.
-contour: Using 32 copies for `Engine' on input line 1.
 contour: Using 32 copies for `Core' on input line 1.
 contour: Using 32 copies for `Mechanics' on input line 1.
 Package lettrine.sty Info: Targeted height = 40.98491pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.98476pt (T);
 (lettrine.sty)             reported on input line 4.
-(./content/mechanics/core/conflict-resolution.tex
+(./chapters/mechanics/core/./conflict-resolution.tex
 LaTeX Font Info:    Trying to load font information for T1+GilliusADFNoTwo-LF on input line 7.
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/T1GilliusADFNoTwo-LF.fd
 File: T1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for T1/GilliusADFNoTwo-LF.
@@ -1238,35 +1208,31 @@ LaTeX Font Info:    Trying to load font information for U+fontawesomethree on in
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
-<stats/4dF.pdf, id=254, 198.7425pt x 113.42375pt>
+<stats/4dF.pdf, id=246, 198.7425pt x 113.42375pt>
 File: stats/4dF.pdf Graphic file (type pdf)
 <use stats/4dF.pdf>
 Package pdftex.def Info: stats/4dF.pdf  used on input line 34.
 (pdftex.def)             Requested size: 186.86417pt x 106.64775pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [5
-
-
-
-{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_efuo7w.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 36.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <10> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <7> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 36.
-<stats/4dF-success.pdf, id=266, 226.8475pt x 141.52875pt>
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 37.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [5
+
+
+{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_efuo7w.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc} <./stats/4dF.pdf>]
+<stats/4dF-success.pdf, id=263, 226.8475pt x 141.52875pt>
 File: stats/4dF-success.pdf Graphic file (type pdf)
 <use stats/4dF-success.pdf>
 Package pdftex.def Info: stats/4dF-success.pdf  used on input line 40.
 (pdftex.def)             Requested size: 186.86417pt x 116.5834pt.
-) (./content/mechanics/core/skills.tex
+) (./chapters/mechanics/core/./skills.tex
 LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 6.
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
@@ -1284,112 +1250,105 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3199) has occurred while \output is active []
 
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 57.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 62.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [6 <./stats/4dF.pdf> <./stats/4dF-success.pdf>]
+ [6 <./stats/4dF-success.pdf>]) (./chapters/mechanics/core/./traits.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 118.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 8.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [7]) (./content/mechanics/core/traits.tex
+ [7]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 84.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 111.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [8]) (./content/mechanics/core/gear.tex
+ [8]) (./chapters/mechanics/core/./gear.tex
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 32.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 40.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 42.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [9]) (./content/mechanics/core/difficulty-levels.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 35.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [10{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}]
-<stats/4dF-DR.pdf, id=320, 226.8475pt x 141.52875pt>
+ [9]) (./chapters/mechanics/core/./difficulty-levels.tex
+<stats/4dF-DR.pdf, id=306, 226.8475pt x 141.52875pt>
 File: stats/4dF-DR.pdf Graphic file (type pdf)
 <use stats/4dF-DR.pdf>
 Package pdftex.def Info: stats/4dF-DR.pdf  used on input line 36.
 (pdftex.def)             Requested size: 186.86417pt x 116.5834pt.
-<stats/shifted-DR.pdf, id=321, 226.8475pt x 284.06125pt>
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 40.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [10{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc} <./stats/4dF-DR.pdf>]
+<stats/shifted-DR.pdf, id=318, 226.8475pt x 284.06125pt>
 File: stats/shifted-DR.pdf Graphic file (type pdf)
 <use stats/shifted-DR.pdf>
 Package pdftex.def Info: stats/shifted-DR.pdf  used on input line 45.
 (pdftex.def)             Requested size: 186.86417pt x 233.99364pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 71.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 93.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [11 <./stats/4dF-DR.pdf> <./stats/shifted-DR.pdf>]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 136.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [12]) (./content/mechanics/core/combat.tex
+ [11 <./stats/shifted-DR.pdf>]) (./chapters/mechanics/core/./combat.tex
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <10> not available
 (Font)              Font shape `T1/pbk/l/sc' tried instead on input line 4.
-
-Underfull \vbox (badness 5741) has occurred while \output is active []
-
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 61.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 7.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [13]
+ [12]
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 78.
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 127.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 81.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [14{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
+ [13{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
+Underfull \vbox (badness 3646) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 188.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 153.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [15]) (./content/mechanics/core/character-creation.tex
+ [14]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 6.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 209.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [16]
+ [15]) (./chapters/mechanics/core/./character-creation.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 101.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [17]) (./content/mechanics/core/npcs.tex
+ [16]) (./chapters/mechanics/core/./npcs.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 39.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [18]
+ [17]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 114.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 59.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [19]))
+ [18])) (./chapters/mechanics/toolbox/toolbox.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [19]
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [20
 
 ]
-\openout2 = `content/mechanics/extending.aux'.
-
- (./content/mechanics/extending.tex
 Chapter 3.
 contour: Using 32 copies for `Chapter\ 3:' on input line 1.
 contour: Using 32 copies for `Adapting' on input line 1.
@@ -1400,29 +1359,19 @@ Package lettrine.sty Info: Targeted height = 40.98491pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.41977pt (E);
 (lettrine.sty)             reported on input line 3.
-)
+) (./chapters/mechanics/combat/combat.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 22.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [21
 
-
-
-
-
 ]
-\openout2 = `content/mechanics/combat.aux'.
-
- (./content/mechanics/combat.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [22
-
-
-
 
 ]
 Chapter 4.
@@ -1432,25 +1381,19 @@ Package lettrine.sty Info: Targeted height = 40.98491pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.98476pt (T);
 (lettrine.sty)             reported on input line 5.
-)
+) (./chapters/mechanics/magic/magic.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 23.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [23
 
 ]
-\openout2 = `content/mechanics/magic.aux'.
-
- (./content/mechanics/magic.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [24
-
-
-
 
 ]
 Chapter 5.
@@ -1466,131 +1409,63 @@ Package lettrine.sty Info: Targeted height = 40.98491pt
 )
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 24.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [25
-
-]
-\openout2 = `content/mechanics/npcs.aux'.
-
- (./content/mechanics/npcs.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [26
-
-
-
-
-]
-Chapter 6.
-contour: Using 32 copies for `Chapter\ 6:' on input line 1.
-contour: Using 32 copies for `Non-player' on input line 1.
-contour: Using 32 copies for `Characters' on input line 1.
-Package lettrine.sty Info: Targeted height = 40.98491pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 40.11163pt (N);
-(lettrine.sty)             reported on input line 3.
-)
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [27
 
 ]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [28
-
-
+ [26
 
 ]
 contour: Using 32 copies for `Part\ 2' on input line 27.
-contour: Using 32 copies for `Crafting' on input line 27.
 contour: Using 32 copies for `One-Shots' on input line 27.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[29
+[27
 
-] [30]
-\openout2 = `content/one-shots/crafting-one-shots.aux'.
-
- (./content/one-shots/crafting-one-shots.tex
-Chapter 7.
-contour: Using 32 copies for `Chapter\ 7:' on input line 1.
-contour: Using 32 copies for `Crafting' on input line 1.
-contour: Using 32 copies for `One-shots' on input line 1.
-)
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 28.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [31
-
-
-
-
-]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 30.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [32
-
-
-
-]
+] [28]
 contour: Using 32 copies for `Part\ 3' on input line 30.
-contour: Using 32 copies for `Crafting' on input line 30.
 contour: Using 32 copies for `Episodic' on input line 30.
 contour: Using 32 copies for `Play' on input line 30.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 30.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[33
+[29
 
-] [34]
-\openout2 = `content/episodic/crafting-episodic-play.aux'.
 
- (./content/episodic/crafting-episodic-play.tex
-Chapter 8.
-contour: Using 32 copies for `Chapter\ 8:' on input line 1.
+
+] [30] (./chapters/episodic/crafting-episodic-play.tex
+Chapter 6.
+contour: Using 32 copies for `Chapter\ 6:' on input line 1.
 contour: Using 32 copies for `Crafting' on input line 1.
 contour: Using 32 copies for `Episodic' on input line 1.
 contour: Using 32 copies for `Settings' on input line 1.
-)
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 31.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [35
-
-
-
-
-]
-\openout2 = `content/episodic/grand-casebook.aux'.
-
- (./content/episodic/grand-casebook.tex
+) (./chapters/episodic/grand-casebook/grand-casebook.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [36
-
+ [31
 
 
 
 ]
-Chapter 9.
-contour: Using 32 copies for `Chapter\ 9:' on input line 1.
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [32
+
+]
+Chapter 7.
+contour: Using 32 copies for `Chapter\ 7:' on input line 1.
 contour: Using 32 copies for `The' on input line 1.
 contour: Using 32 copies for `Grand' on input line 1.
 contour: Using 32 copies for `Casebook' on input line 1.
@@ -1602,73 +1477,80 @@ File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 46.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[37]
+[33]
 Underfull \vbox (badness 1117) has occurred while \output is active []
 
- (./content/episodic/grand-casebook/murder-at-the-brass-orchid.tex
+ (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/murder-at-the-brass-orchid.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 2.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [38] (./content/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-langley.tex) (./content/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-mercer.tex) (./content/episodic/grand-casebook/murder-at-the-brass-orchid/act-0.tex) (./content/episodic/grand-casebook/murder-at-the-brass-orchid/act-1.tex (./content/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/madame-yvette-duval.tex)
+ [34] (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-langley.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-mercer.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-0.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1.tex (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/madame-yvette-duval.tex)
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 5.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [39] (./content/episodic/grand-casebook/murder-at-the-brass-orchid/act-1/clues.tex)
+ [35] (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1/clues.tex)
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 53.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [40]) (./content/episodic/grand-casebook/murder-at-the-brass-orchid/act-2.tex (./content/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/staff.tex
+ [36]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-2.tex (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/staff.tex
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
-) (./content/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/patrons.tex)
+) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/patrons.tex)
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 26.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [41]
+ [37]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 44.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [42]
+ [38]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 85.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [43]) (./content/episodic/grand-casebook/murder-at-the-brass-orchid/act-3.tex)) (./content/episodic/grand-casebook/clockmakers-deception.tex
+ [39]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-3.tex)) (./chapters/episodic/grand-casebook/./clockmakers-deception.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [44]
+ [40]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 55.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [45]) (./content/episodic/grand-casebook/the-silent-courier.tex
+ [41]) (./chapters/episodic/grand-casebook/./the-silent-courier.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [46]))
+ [42]))
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 32.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [47]
+ [43]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 36.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [48
-
-
+ [44
 
 ]
+contour: Using 32 copies for `Part\ 4' on input line 34.
+contour: Using 32 copies for `Campaigns' on input line 34.
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+[45
+
+] [46]
 runsystem(makeindex wyrd.idx)...executed safely (allowed).
 
  (./wyrd.ind
@@ -1677,30 +1559,32 @@ File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 79.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[49
+[47
 
 
-]) (./wyrd.aux (./content/introduction.aux) (./content/mechanics/core.aux) (./content/mechanics/extending.aux) (./content/mechanics/combat.aux) (./content/mechanics/magic.aux) (./content/mechanics/npcs.aux) (./content/one-shots/crafting-one-shots.aux) (./content/episodic/crafting-episodic-play.aux) (./content/episodic/grand-casebook.aux))
+
+
+]) (./wyrd.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `wyrd.out' has not changed.
-(rerunfilecheck)             Checksum: A695996CFF99124D60DC0D22524ED6F1;4637.
+(rerunfilecheck)             Checksum: 35DD3841A3499AB2BE2E50B2047B34B6;4238.
  ) 
 Here is how much of TeX's memory you used:
- 36916 strings out of 474116
- 734256 string characters out of 5732613
+ 36838 strings out of 474116
+ 732279 string characters out of 5732613
  1974187 words of memory out of 5000000
- 57927 multiletter control sequences out of 15000+600000
+ 57829 multiletter control sequences out of 15000+600000
  661122 words of font info for 332 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 121i,17n,131p,1044b,1966s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,18n,131p,1037b,1966s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-BoldItalic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Italic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on wyrd.pdf (53 pages, 423049 bytes).
+Output written on wyrd.pdf (51 pages, 414931 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 177 named destinations out of 1000 (max. 500000)
- 115998 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 664 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 115990 words of extra memory for PDF output out of 128383 (max. 10000000)
 

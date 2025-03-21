@@ -5,7 +5,7 @@
 
     You are part of The Grand Society of Inquiry, a clandestine organisation of detectives, scholars, and unconventional thinkers dedicated to unravelling the mysteries the world would rather forget. The police may handle mundane crimes, but when the case is impossible, when the authorities turn a blind eye, or when the answers defy reason, that is where you come in.
 
-    The aristocracy hides more than it reveals. The city’s underworld knows whispers of truths the elite wish to bury. Strange happenings unfold in laboratories, occult circles, and long-forgotten ruins. It is your job to investigate, to bring truth to light—whether the world is ready for it or not.
+    The aristocracy hides more than it reveals. The city's underworld knows whispers of truths the elite wish to bury. Strange happenings unfold in laboratories, occult circles, and long-forgotten ruins. It is your job to investigate, to bring truth to light—whether the world is ready for it or not.
 
     You will encounter murderers whose motives defy logic, inventions beyond their time, secret societies vying for power, and horrors that exist just beyond the veil of reason. Some mysteries should never be solved, but you have chosen to chase the truth regardless.
 
@@ -100,9 +100,10 @@ When a new case emerges, summons are discreetly dispatched to those deemed most 
 %This marvel of engineering, a hybrid of Babbage’s Analytical Engine and the finest advancements in mechanical computation, processes a staggering wealth of information. Data is fed into its whirring mechanisms by archivists and clerks, cross-referencing past cases, skills, and affiliations. The result: a meticulously curated team, assembled not by human intuition, but by the cold, logical precision of brass gears and punched cards. Whether by fate or by cold calculation, those summoned are invariably drawn into intrigue, danger, and the pursuit of justice.
 
 
-\input{content/episodic/grand-casebook/murder-at-the-brass-orchid}
-\input{content/episodic/grand-casebook/clockmakers-deception}
-\input{content/episodic/grand-casebook/the-silent-courier}
+\subimport{murder-at-the-brass-orchid}{murder-at-the-brass-orchid}
+%% FIXME: proper importing
+\subimport{./}{clockmakers-deception}
+\subimport{./}{the-silent-courier}
 
 
 %% TODO: Add three more adventures
