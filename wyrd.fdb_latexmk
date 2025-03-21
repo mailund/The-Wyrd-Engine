@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex wyrd.idx"] 1742548346.50617 "wyrd.idx" "wyrd.ind" "wyrd" 1742548938.9692 0
-  "wyrd.idx" 1742548938.74743 1006 173fabaa73a6e64a0844f19f8c328101 "pdflatex"
+["makeindex wyrd.idx"] 1742548346.50617 "wyrd.idx" "wyrd.ind" "wyrd" 1742549164.65455 0
+  "wyrd.idx" 1742549164.45245 1006 173fabaa73a6e64a0844f19f8c328101 "pdflatex"
   (generated)
   "wyrd.ilg"
   "wyrd.ind"
   (rewritten before read)
-["pdflatex"] 1742548935.86763 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742548938.96933 0
+["pdflatex"] 1742549161.35887 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742549164.65465 0
   "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742542617.77011 787 066d67114f6ec434fbd2ce49bbb6d1d8 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1710106625 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -294,11 +294,11 @@
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1/clues.tex" 1742473691.15014 1875 561515775f04e96535c98e1319e34594 ""
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-2.tex" 1742542154.18335 10957 debc65b4298626684995c8bb65772cfa ""
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-3.tex" 1742480490.67225 2657 1ff65e2aa51e54a23382584f7ef2c931 ""
-  "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/madame-yvette-duval.tex" 1742471336.50183 1305 b7f316e615d4d61c092e928009cb701c ""
+  "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/madame-yvette-duval.tex" 1742549066.11181 1225 531e1e1c2d7bfb14181f98dc27888ea0 ""
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/patrons.tex" 1742475031.78301 1619 9013c389741841104cc0185a0f384812 ""
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/staff.tex" 1742474999.38928 2761 fb85b81107a6a9ab3310e0eab1005c29 ""
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/murder-at-the-brass-orchid.tex" 1742542111.78076 2752 2e2b00a1b8840635e14ec4bc7d39af7b ""
-  "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-langley.tex" 1742474772.27622 1293 80773d6adeb0e6f8b0578e76cf4563e5 ""
+  "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-langley.tex" 1742549157.78795 1216 bcc494ffbe555e7386c60b591c2f5df4 ""
   "chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-mercer.tex" 1742474814.69901 708 3f5fff4c48993d1d4b6e286077185e47 ""
   "chapters/introduction.tex" 1742540211.52601 6227 781d5c482f0741cac65d8024ed92940f ""
   "chapters/mechanics/combat/combat.tex" 1742370803.55451 1973 f449f48694ee5028f80652912e1b9683 ""
@@ -307,7 +307,7 @@
   "chapters/mechanics/core/./conflict-resolution.tex" 1742454779.93777 3935 ad6cd7fec90ebe859e7910c4257ce7e9 ""
   "chapters/mechanics/core/./difficulty-levels.tex" 1742540827.96893 12144 d9ae28c86f8ca9568b238c84b547e0b7 ""
   "chapters/mechanics/core/./gear.tex" 1742462456.26856 3377 44416578cc936a0181baff2e50e874f4 ""
-  "chapters/mechanics/core/./npcs.tex" 1742548932.4603 9040 68aad6f9eddea2289822bfd3d7318f7d ""
+  "chapters/mechanics/core/./npcs.tex" 1742548946.82255 9040 68aad6f9eddea2289822bfd3d7318f7d ""
   "chapters/mechanics/core/./skills.tex" 1742548728.04274 7880 18b4220ff26fcb6cccb35bc59a0e3075 ""
   "chapters/mechanics/core/./traits.tex" 1742548764.18648 8358 52c9ae086c05e4c164b16d4c3ea20996 ""
   "chapters/mechanics/core/core.tex" 1742542557.14585 2069 49e28c660f1d22f9dbc5985f127d5c87 ""
@@ -343,11 +343,11 @@
   "style/text-processing.sty" 1742542797.41648 835 ec878f746a03e8d83a31e6b37724546b ""
   "style/traits.sty" 1742548391.21928 505 b6cdb75134ef52007ff16db205bbef97 ""
   "style/wyrd.sty" 1742548032.31786 1188 84b9f60e31965f1728d88247c47ef475 ""
-  "wyrd.aux" 1742548938.81118 15129 4c64ff4da28d50fda71cfa7a94d39279 "pdflatex"
-  "wyrd.ind" 1742548938.80065 1067 641ad45b4857de6dbe6f9972ab2d8cd8 "makeindex wyrd.idx"
-  "wyrd.out" 1742548938.81304 4238 35dd3841a3499ab2be2e50b2047b34b6 "pdflatex"
+  "wyrd.aux" 1742549164.51525 15129 5cc2a093b5369dc7efff123433812d4e "pdflatex"
+  "wyrd.ind" 1742549164.50527 1067 641ad45b4857de6dbe6f9972ab2d8cd8 "makeindex wyrd.idx"
+  "wyrd.out" 1742549164.51711 4238 35dd3841a3499ab2be2e50b2047b34b6 "pdflatex"
   "wyrd.tex" 1742542617.77011 787 066d67114f6ec434fbd2ce49bbb6d1d8 ""
-  "wyrd.toc" 1742548938.81352 7312 3982fb7e6af048775e074b15c24a1de0 "pdflatex"
+  "wyrd.toc" 1742549164.51736 7312 634b41c199f5e47a48d2dd0bdf0755dc "pdflatex"
   (generated)
   "wyrd.aux"
   "wyrd.idx"

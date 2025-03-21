@@ -83,11 +83,11 @@
 \contentsline {subsection}{The Call to Adventure}{34}{subsection*.83}%
 \contentsline {section}{Murder at the Brass Orchid}{35}{section*.84}%
 \contentsline {subsection}{Act 0: Into the Fray}{35}{subsection*.87}%
-\contentsline {subsection}{Act 1: The Crime Scene}{35}{subsection*.88}%
+\contentsline {subsection}{Act 1: The Crime Scene}{36}{subsection*.88}%
 \contentsline {subsubsection}{Examining the Crime Scene}{36}{subsubsection*.90}%
 \contentsline {subsection}{Act 2: The Investigation}{37}{subsection*.91}%
 \contentsline {subsubsection}{The Performers’ Dressing Rooms}{37}{subsubsection*.94}%
-\contentsline {subsubsection}{The Club’s Bar}{38}{subsubsection*.95}%
+\contentsline {subsubsection}{The Club’s Bar}{39}{subsubsection*.95}%
 \contentsline {subsubsection}{The Back Office}{40}{subsubsection*.96}%
 \contentsline {subsection}{Act 3: The Reveal}{40}{subsection*.97}%
 \contentsline {subsection}{Resolutions}{40}{subsection*.98}%
