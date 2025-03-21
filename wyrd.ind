@@ -12,12 +12,11 @@
 
   \indexspace
 
-  \item Character creation, 16
+  \item Character creation, 17
   \item Combat, 12, 23
     \subitem Attacking, 13
     \subitem Defending, 13
     \subitem Initiative, 13
-    \subitem Soaking up damage, 13
   \item Combat actions, 13
   \item Conceding, 16
   \item Conflict resolution, 5
@@ -25,12 +24,14 @@
   \indexspace
 
   \item Damage, 13
+    \subitem Fatigue, 13
     \subitem Stress, 13
     \subitem Wounds, 13
   \item Difficulty levels, 10
 
   \indexspace
 
+  \item Fatigue, 13
   \item Fudge dice, 5
 
   \indexspace
@@ -51,7 +52,7 @@
   \item Non-Player Characters, 18
   \item NPCs, 18
     \subitem Dramatis Personae, 19
-    \subitem Mooks, 18
+    \subitem Mooks, 19
 
   \indexspace
 
@@ -66,6 +67,7 @@
 
   \item Skills, 6
   \item Stress, 13
+    \subitem Soaking up damage, 13
 
   \indexspace
 

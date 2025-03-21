@@ -42,23 +42,23 @@
 \contentsline {subsection}{Initiative: Who Acts First?}{13}{subsection*.45}%
 \contentsline {subsection}{Taking Actions in Combat}{13}{subsection*.46}%
 \contentsline {subsection}{Attacking and Defending}{13}{subsection*.47}%
-\contentsline {subsection}{Damage: Stress and Wounds}{13}{subsection*.48}%
+\contentsline {subsection}{Stress: Fatigue and Wounds}{13}{subsection*.48}%
 \contentsline {subsection}{Healing and Recovery}{15}{subsection*.50}%
 \contentsline {subsection}{Combat Maneuvers and Special Actions}{15}{subsection*.51}%
-\contentsline {subsection}{Weapons and Gear in Combat}{15}{subsection*.52}%
+\contentsline {subsection}{Weapons and Gear in Combat}{16}{subsection*.52}%
 \contentsline {subsection}{Death and the End of Combat}{16}{subsection*.53}%
 \contentsline {subsection}{Conceding the Fight}{16}{subsection*.54}%
-\contentsline {section}{Character Creation}{16}{section*.55}%
-\contentsline {subsection}{Step 1: Concept}{16}{subsection*.56}%
+\contentsline {section}{Character Creation}{17}{section*.55}%
+\contentsline {subsection}{Step 1: Concept}{17}{subsection*.56}%
 \contentsline {subsection}{Step 2: Choose Skills}{17}{subsection*.58}%
 \contentsline {subsection}{Step 3: Select Traits}{17}{subsection*.59}%
 \contentsline {subsection}{Step 4: Select Gear}{17}{subsection*.61}%
 \contentsline {subsection}{Step 5: Stress and Wounds}{17}{subsection*.63}%
-\contentsline {subsection}{Step 6: Final Details}{17}{subsection*.64}%
+\contentsline {subsection}{Step 6: Final Details}{18}{subsection*.64}%
 \contentsline {section}{Creating Non-Player Characters}{18}{section*.65}%
 \contentsline {subsubsection}{For NPCs, the rules do not apply}{18}{subsubsection*.66}%
-\contentsline {subsection}{Mooks: Quick and Disposable}{18}{subsection*.67}%
-\contentsline {subsubsection}{Running Mooks in Play}{18}{subsubsection*.68}%
+\contentsline {subsection}{Mooks: Quick and Disposable}{19}{subsection*.67}%
+\contentsline {subsubsection}{Running Mooks in Play}{19}{subsubsection*.68}%
 \contentsline {subsection}{Dramatis Personae: Functional but Flexible}{19}{subsection*.69}%
 \contentsline {subsubsection}{Key Traits of Dramatis Personae}{19}{subsubsection*.70}%
 \contentsline {subsection}{Living, Breathing Characters: Fully Realized NPCs}{19}{subsection*.71}%

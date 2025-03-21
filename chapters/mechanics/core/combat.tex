@@ -61,26 +61,27 @@ If the defender has a higher score than or equal to the attacker, the attack is 
 \end{WyrdExample}
 
 
-\subsection{Damage: Stress and Wounds}
-\index{Damage}
-\index{Combat!Soaking up damage}
+\subsection{Stress: Fatigue  and Wounds}
+\index{Damage}\index{Stress}\index{Fatigue}\index{Wounds}
+\index{Damage!Stress}\index{Damage!Wounds}
+\index{Stress!Soaking up damage}
 
+\wyrd uses the term \textbf{Stress} for all types of damage a character can sustain. This includes physical, mental, and social damage. Stress is a measure of how much damage a character can take before they are incapacitated. The term \textbf{Stress} is used to represent the overall damage a character can take, while \textbf{Fatigue} and \textbf{Wounds} are used to represent different types of damage.
 
-\wyrd uses \textbf{Stress}\index{Damage!Stress}\index{Stress} to represent minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for more serious, lasting harm.
+\wyrd uses \textbf{Fatigue}\index{Damage!Fatigue}\index{Fatigue} to represent minor injuries and \textbf{Wounds}\index{Damage!Wounds}\index{Wounds} for more serious, lasting harm. Neither kind of stress is necessarily physical; mental damage is lumped in with physical stress in the core rules. In games where reputation or social standing is important, social damage can be represented as stress or wounds. The GM and players should agree on how to represent these types of damage in the game.
 
-\begin{WyrdExplanation}[Stress and Wounds]
+\begin{WyrdExplanation}[Fatigue and Wounds]
 	\begin{itemize}
-    	\item \textbf{Stress:} Represents minor setbacks, fatigue, or temporary injuries. These are automatically cleared after a fight.
+    	\item \textbf{Fatigue:} Represents minor setbacks, fatigue, or temporary injuries. These are automatically cleared after a fight.
 	    \item \textbf{Wounds} come in three levels of severity. They take longer to heal, and adds penalties for future actions.
 	\end{itemize}
 \end{WyrdExplanation}
 
-Any damage inflicted must be soaked up by either \textbf{Stress} or \textbf{Wounds}. Each player has four \emph{Stress boxes}, \FatigueBoxes, and five \emph{Wounds boxes} where the wounds are split into three categories: three \textbf{Mild Wounds} (\MildWounds), two \textbf{Moderate Wounds} (\ModerateWounds), and one \textbf{Severe Wounds} (\SevereWounds). These boxes, combined, are where a character can soak up damage.
+Any damage inflicted must be soaked up by either \textbf{Fatigue} or \textbf{Wounds}. Each player has four \emph{Fatigue boxes}, \FatigueBoxes, and five \emph{Wounds boxes} where the wounds are split into three categories: three \textbf{Mild Wounds} (\MildWounds), two \textbf{Moderate Wounds} (\ModerateWounds), and one \textbf{Severe Wounds} (\SevereWounds). These boxes, combined, are where a character can soak up damage.
 
 \DamageBox
 
-When a character sustains \Damage, the damage dealt is converted one-to-one into these stress and wound boxes.
-Damage is soaked up by the boxes top-to-bottom; the stress boxes will soak up the first four points of damage. After that, the following three damage points are inflicted as mild wounds, the next two as moderate wounds, and finally, the character suffers a severe wound. If all stress and wounds boxes are ticked off, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
+When a character sustains \Damage, the damage dealt is converted one-to-one into these stress and wound boxes. Stress is soaked up by the boxes top-to-bottom; the fatigue boxes will soak up the first four points of stress. After that, the following three stress points are inflicted as mild wounds, the next two as moderate wounds, and finally, the character suffers a severe wound. If all stress boxes are ticked off, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
 
 %% Example of a character taking stress damage
 \begin{WyrdNPC}[float=!t]{Captain Elias Mercer}
@@ -102,8 +103,8 @@ Damage is soaked up by the boxes top-to-bottom; the stress boxes will soak up th
 	\DamageBox
   \end{WyrdNPC}
   
-\begin{WyrdExample}[Example: Stress Damage]
-	As Captain Elias Mercer crouches in the engine room, setting the last charge to sabotage the enemy airship moored at the Tower of London, he is caught off guard by a patrolling crew member. A swift jab to the ribs and a pistol whip to the shoulder deal \textbf{+3} damage. With no previous injuries, the damage is absorbed entirely by his stress boxes. 
+\begin{WyrdExample}[Example: Fatigue Damage]
+	As Captain Elias Mercer crouches in the engine room, setting the last charge to sabotage the enemy airship moored at the Tower of London, he is caught off guard by a patrolling crew member. A swift jab to the ribs and a pistol whip to the shoulder deal \textbf{+3} damage. With no previous injuries, the damage is absorbed entirely by his fatigue boxes. 
 	
 	\vspace{0.5\baselineskip}
 	\DamageBox[fatigue=3]
@@ -113,7 +114,7 @@ Damage is soaked up by the boxes top-to-bottom; the stress boxes will soak up th
 \end{WyrdExample}
 
 
-When you tick off stress boxes, the damage has no noticeable effect. Stress is not considered real damage but the exhaustion accumulating from combat (or the ``flesh wounds'' from 90s action movies). Once damage goes into wounds, however, future skill rolls are affected.
+When you tick off fatigue boxes, the damage has no noticeable effect. Fatigue is not considered lasting damage but the exhaustion accumulating from combat (or the ``flesh wounds'' from 90s action movies). Once the damage goes into wounds, however, future skill rolls are affected.
 
 \begin{DndTable}[header=]{ll}
     \textbf{Wound Type} & \textbf{Effect} \\
@@ -127,7 +128,7 @@ When taking a wound of any of the three kinds, the player and Game Master decide
 \begin{WyrdExample}[Example: Wound Damage]
 	While fleeing the engine room, Captain Mercer, the enemy he knocked aside, recovers, reaches for his gun, and fires off a shot (\FudgeRes{++-0} + \textbf{Shoot (+1)} for an \Attack of \textbf{+2}). Mercer attempts to duck (\FudgeRes{+--0} + \textbf{Atheletics (+1)} for a \Defend of \textbf{0}). The difference is a \Damage of \textbf{+2}.
 	
-	Mercer only has one stress box left, so one of the damage points goes into a \textbf{Mild} wound, and the player and GM decide that the bullet graces Captain Mercer's shoulder, which would affect the \textbf{Athletics} skill.
+	Mercer only has one fatigue box left, so one of the damage points goes into a \textbf{Mild} wound, and the player and GM decide that the bullet graces Captain Mercer's shoulder, which would affect the \textbf{Athletics} skill.
 	
 	\vspace{0.5\baselineskip}
 	\DamageBox[fatigue=4,mild=1,mildtext=\textbf{Athletics (-1)}]
@@ -135,7 +136,7 @@ When taking a wound of any of the three kinds, the player and Game Master decide
 	Taking the wound in his strides, he exits the room and continues his escape.
 \end{WyrdExample}
 
-As long as any damage is in a wound category, the penalty applies. Additional damage to a category that is already marked does not add additional penalties. Penalties from different categories can stack, however.
+As long as a character has any damage is in a wound category, the penalty applies. Additional stress to a wound category that is already marked does not add additional penalties. Penalties from different categories can stack, however.
 
 \begin{WyrdExample}[Example: Wound Damage]
 	Captain Mercer rushes to the railing of the airship to throw himself off before the explosive device he planted detonates. The interruption in the engine room, unfortunately, has delayed him too long. The second he jumps, the bomb detonates. The shockwave hits his back with a whooping \textbf{+3} of damage. He can absorb two with his remaining \textbf{Mild} wounds, but one will go into his \textbf{Moderate} wounds. The \textbf{Moderate} wounds give him a penalty of \textbf{-2}, which he and the GM decide to split between \textbf{Atheletics} and \textbf{Awareness} (reasoning that getting blown up is likely to affect Mercer both physically and mentally).
@@ -153,14 +154,14 @@ As long as any damage is in a wound category, the penalty applies. Additional da
 	The two penalties to \textbf{Athletics} stack, so any roll involving \textbf{Athletics} will have a \textbf{-2} penalty.
 \end{WyrdExample}
 
-If all stress boxes are filled and all three wounds are taken, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
+If all stress boxes are filled, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
 
 
 \subsection{Healing and Recovery}\label{core:healing}
 \index{Healing}\index{Recovery}
 
 \begin{itemize}
-    \item \textbf{Stress} clears at the end of a scene.
+    \item \textbf{Fatigue} clears at the end of a scene.
     \item \textbf{Mild Wounds} require a short rest (a few hours) or first aid.
     \item \textbf{Moderate Wounds} require days of rest or professional medical care.
     \item \textbf{Severe Wounds} require weeks of rest, surgery, or supernatural healing (if applicable).
