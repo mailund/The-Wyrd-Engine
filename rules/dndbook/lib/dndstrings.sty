@@ -104,26 +104,26 @@
 \newcommand\tocchapterabbreviationname{Ch.}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Adding languages
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% To add captions for other languages:
-% 1. Copy and paste languages/_template.sty to languages/<language>.sty
-% 2. Substitute the <language> token in the file with the language name
-%    (i.e. \addto\captionsfrench).
-% 3. Replace the English strings with the translations and comment any captions
-%    that you do not translate. Please keep the captions in the same order.
-% 4. Add \RequirePackage{lib/languages/<language>} to the following function.
-\cs_new_protected_nopar:Npn \__dnd_input_languages:
-  {
-    \RequirePackage{lib/languages/italian}
-    \RequirePackage{lib/languages/japanese} % Requires LuaTeX or XeTeX
-    \RequirePackage{lib/languages/ngerman}
-    \RequirePackage{lib/languages/russian}
-    \RequirePackage{lib/languages/spanish}
-    \RequirePackage{lib/languages/french}
-    \RequirePackage{lib/languages/portuguese}
-}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Adding languages
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % To add captions for other languages:
+% % 1. Copy and paste languages/_template.sty to languages/<language>.sty
+% % 2. Substitute the <language> token in the file with the language name
+% %    (i.e. \addto\captionsfrench).
+% % 3. Replace the English strings with the translations and comment any captions
+% %    that you do not translate. Please keep the captions in the same order.
+% % 4. Add \RequirePackage{lib/languages/<language>} to the following function.
+% \cs_new_protected_nopar:Npn \__dnd_input_languages:
+%   {
+%     \RequirePackage{lib/languages/italian}
+%     \RequirePackage{lib/languages/japanese} % Requires LuaTeX or XeTeX
+%     \RequirePackage{lib/languages/ngerman}
+%     \RequirePackage{lib/languages/russian}
+%     \RequirePackage{lib/languages/spanish}
+%     \RequirePackage{lib/languages/french}
+%     \RequirePackage{lib/languages/portuguese}
+% }
 
 % Delay loading captions until after the user has imported a language package.
 % Enables using babel/polyglossia with the dndbook document class as well as the
@@ -134,10 +134,10 @@
 \AtEndPreamble{
   % Check if either babel or polyglossia have been loaded,
   % in which case load the string captions
-  \@ifpackageloaded{babel}{
-    \__dnd_input_languages:
-  }{}
-  \@ifpackageloaded{polyglossia}{
-    \__dnd_input_languages:
-  }{}
+  % \@ifpackageloaded{babel}{
+  %   \__dnd_input_languages:
+  % }{}
+  % \@ifpackageloaded{polyglossia}{
+  %   \__dnd_input_languages:
+  % }{}
 }

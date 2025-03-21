@@ -1,27 +1,41 @@
-\ProvidesPackage{wyrd}
+\ProvidesPackage{style/wyrd}
 
 % Required packages
+\RequirePackage[english]{babel}
+\RequirePackage[singlelinecheck=false]{caption}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{afterpage}
+\RequirePackage{eso-pic}
+\RequirePackage{fontawesome}
+\RequirePackage{geometry}
 \RequirePackage{graphicx}
-\RequirePackage{xspace}
 \RequirePackage{hyperref}
-\RequirePackage{refcount}
-\RequirePackage{tcolorbox}
-\RequirePackage{fontawesome}
-\RequirePackage{xparse}
-\RequirePackage{pgfkeys}
-\RequirePackage{xcolor}
-\RequirePackage{xspace}
-\RequirePackage{fontawesome}
+\RequirePackage{ifoddpage}
+\RequirePackage{imakeidx}
+\RequirePackage{listings}
 \RequirePackage{pgffor}
+\RequirePackage{pgfkeys}
+\RequirePackage{refcount}
+\RequirePackage{shortvrb}
+\RequirePackage{stfloats}
+\RequirePackage{tcolorbox}
+\RequirePackage{textpos}
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
 \RequirePackage{xfp}
 \RequirePackage{xparse}
-\RequirePackage{pgfkeys}
-\RequirePackage{textpos}
-\RequirePackage{ifoddpage}
-\RequirePackage{afterpage}
-\RequirePackage{graphicx}
-\RequirePackage{geometry}
-\RequirePackage{eso-pic}
+\RequirePackage{xspace}
+
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+% The Wyrd Engine Name Command -- put in small caps if the font supports it
+\newcommand{\wyrd}{%
+    {\ifx\f@shape\scdefault
+        \textsc{The Wyrd Engine}%
+    \else
+        The Wyrd Engine%
+    \fi}\xspace}
+
 
 % Define new lengths and boxes
 \newlength{\bottomimageheight}
@@ -54,8 +68,7 @@
     \end{figure*}
 }
 
-% The Wyrd Engine Name Command
-\newcommand{\wyrd}{\textsc{The Wyrd Engine}\xspace}
+
 
 % References
 \newcommand{\pagereftext}[1]{%

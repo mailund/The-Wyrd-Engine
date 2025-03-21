@@ -69,22 +69,22 @@
 % Load other modules of this package after all dependencies to avoid load order
 % conflicts (e.g., package options).
 % Low-level modules first.
-\RequirePackage {lib/compat}        % compatibility definitions
-\RequirePackage {lib/dndutility}    % utility functions
-\RequirePackage {lib/dndcolors}     % color definitions
-\RequirePackage {lib/dndfonts}      % font definitions
-\RequirePackage {lib/dndstrings}    % Load document strings
+\RequirePackage {dndbook/lib/compat}        % compatibility definitions
+\RequirePackage {dndbook/lib/dndutility}    % utility functions
+\RequirePackage {dndbook/lib/dndcolors}     % color definitions
+\RequirePackage {dndbook/lib/dndfonts}      % font definitions
+\RequirePackage {dndbook/lib/dndstrings}    % Load document strings
 
 % Conditionally load deprecated code for backwards compatibility
 \bool_if:NF \l__dnd_no_deprecated_code_bool
   { \RequirePackage {lib/dnddeprecated} }
 
 % Main modules in alphabetical order
-\RequirePackage {lib/dndcomment}    % inline comment boxes
-\RequirePackage {lib/dndheader}     % fancy headers and footers
-\RequirePackage {lib/dndmonster}    % stat blocks
-\RequirePackage {lib/dndreadaloud}  % read-aloud text
-\RequirePackage {lib/dndsections}   % section styling and special section headers
-\RequirePackage {lib/dndsidebar}    % sidebars
-\RequirePackage {lib/dndtable}      % tables
-\RequirePackage {lib/dndtoc}        % table of contents styling
+\RequirePackage {dndbook/lib/dndcomment}    % inline comment boxes
+\RequirePackage {dndbook/lib/dndheader}     % fancy headers and footers
+\RequirePackage {dndbook/lib/dndmonster}    % stat blocks
+\RequirePackage {dndbook/lib/dndreadaloud}  % read-aloud text
+\RequirePackage {dndbook/lib/dndsections}   % section styling and special section headers
+\RequirePackage {dndbook/lib/dndsidebar}    % sidebars
+\RequirePackage {dndbook/lib/dndtable}      % tables
+\RequirePackage {dndbook/lib/dndtoc}        % table of contents styling
