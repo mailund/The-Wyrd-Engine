@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  22 MAR 2025 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  22 MAR 2025 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -878,7 +878,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (./style/text-processing.sty) (./style/graphics.sty
 \bottomimageheight=\skip125
 \bottomimagebox=\box136
-) (./style/references.sty) (./style/fudge.sty) (./style/combat.sty) (./style/skills.sty) (./style/traits.sty) (./style/environments.sty)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/paracol/paracol.sty
+) (./style/references.sty) (./style/fudge.sty) (./style/combat.sty) (./style/skills.sty) (./style/traits.sty) (./style/environments.sty) (./style/character-sheet.sty)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/paracol/paracol.sty
 Package: paracol 2018/12/31 v1.35 
 \pcol@currcol=\count356
 \pcol@nextcol=\count357
@@ -1089,32 +1089,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 67
+Overfull \hbox (0.57983pt too wide) detected at line 68
  \T1/pbk/l/sc/12 21
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 81
+Overfull \hbox (0.57983pt too wide) detected at line 82
  \T1/pbk/l/sc/12 25
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 84
+Overfull \hbox (0.57983pt too wide) detected at line 85
  \T1/pbk/l/sc/12 27
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 113
+Overfull \hbox (0.57983pt too wide) detected at line 114
  \T1/pbk/l/sc/12 35
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 116
+Overfull \hbox (0.57983pt too wide) detected at line 117
  \T1/pbk/l/sc/12 41
  []
 
 
-Overfull \hbox (0.57983pt too wide) detected at line 117
+Overfull \hbox (0.57983pt too wide) detected at line 118
  \T1/pbk/l/sc/12 43
  []
 
@@ -1351,7 +1351,12 @@ File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 86.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [11 <./stats/4dF-DR.pdf> <./stats/shifted-DR.pdf>]
-Overfull \hbox (0.10106pt too wide) in paragraph at lines 133--134
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 148.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [12]
+Overfull \hbox (0.10106pt too wide) in paragraph at lines 171--172
 []\T1/pbk/db/n/10 (+20) Direct As-sis-tance\T1/pbk/l/n/10 (+20) : Ac-tively work-ing along-side 
  []
 
@@ -1360,12 +1365,7 @@ LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <10> not available
 (Font)              Font shape `T1/pbk/l/sc' tried instead on input line 4.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 5.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [12]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 72.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [13]
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 80.
@@ -1374,43 +1374,39 @@ File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 127.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 85.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [14{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 187.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 155.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [15]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 242.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 213.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [16]) (./chapters/mechanics/core/./character-creation.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 94.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 31.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [17]) (./chapters/mechanics/core/./npcs.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 4.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [18]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 114.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 61.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [19]))
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 23.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [20
-
-]
+ [20]
 Chapter 3.
 contour: Using 32 copies for `Chapter\ 3:' on input line 23.
 contour: Using 32 copies for `The' on input line 23.
@@ -1731,21 +1727,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `wyrd.out' has not changed.
-(rerunfilecheck)             Checksum: 081BE51DA10B7DF50ABDD5D71507BEEA;6065.
+(rerunfilecheck)             Checksum: B8953AD73D919EFA9F44D693473C7248;6065.
  ) 
 Here is how much of TeX's memory you used:
- 37807 strings out of 474116
- 752177 string characters out of 5732613
+ 37816 strings out of 474116
+ 752395 string characters out of 5732613
  1977187 words of memory out of 5000000
- 58654 multiletter control sequences out of 15000+600000
+ 58659 multiletter control sequences out of 15000+600000
  664900 words of font info for 345 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  121i,17n,131p,1052b,2209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-BoldItalic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Italic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on wyrd.pdf (61 pages, 497945 bytes).
+Output written on wyrd.pdf (61 pages, 501216 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 680 compressed objects within 7 object streams
- 230 named destinations out of 1000 (max. 500000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 681 compressed objects within 7 object streams
+ 231 named destinations out of 1000 (max. 500000)
  121206 words of extra memory for PDF output out of 128383 (max. 10000000)
 
