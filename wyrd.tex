@@ -1,5 +1,7 @@
-\documentclass[twocolumn,nodeprecatedcode,bg=print]{dndbook/dndbook}
+\documentclass[nodeprecatedcode,bg=print]{dndbook/dndbook}
 \usepackage{style/wyrd}
+\usepackage{paracol}
+\usepackage{multicol}
 \makeindex
 
 \title{The Wyrd Engine}
@@ -14,23 +16,22 @@
 
 \mainmatter%
 
-
-\import{chapters}{introduction}
+\WyrdChapter[label=chap:wyrd-intro]{The Wyrd Engine}{}{introduction}
 
 \part{The Wyrd Engine Mechanics}
-\import{chapters/mechanics/core}{core}
-\import{chapters/mechanics/toolbox}{toolbox}
-\import{chapters/mechanics/combat}{combat}
-\import{chapters/mechanics/magic}{magic}
+\WyrdChapter[label=chap:core]{Core Mechanics}{mechanics/core}{core}
+\WyrdChapter[label=chap:toolbox]{The Wyrd Engine Toolbox}{mechanics/toolbox}{toolbox}
+\WyrdChapter[label=chap:combat]{Combat}{mechanics/combat}{combat}
+\WyrdChapter[label=chap:magic]{Magic}{mechanics/magic}{magic}
 %\import{chapters/mechanics/gear}{gear} -- high-tech gear?
-\import{chapters/mechanics/races-and-creatures}{races-and-creatures}
+\WyrdChapter[label=chap:races]{Races \& Creatures}{mechanics/races-and-creatures}{races-and-creatures}
 
 \part{One-Shots}
 % \include{chapters/one-shots/crafting-one-shots}
 
 \part{Episodic Play}
-\import{chapters/episodic}{crafting-episodic-play}
-\import{chapters/episodic/grand-casebook}{grand-casebook}
+\WyrdChapter[label=chap:crafting-episodic-campaignes]{Episodic Settings}{episodic}{crafting-episodic-play}
+\WyrdChapter[label=chap:grand-casebook]{The Grand Casebook}{episodic/grand-casebook}{grand-casebook}
 
 \part{Campaigns}
 

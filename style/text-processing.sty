@@ -29,3 +29,41 @@
       {\color{titlered}{#2}}
       {\MaybeSC{#3}}
   }
+
+
+%% Formatting Chapters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\wyrdchapterlabel}{}
+\pgfkeys{
+  /wyrdchapter/.is family, /wyrdchapter,
+  label/.store in=\wyrdchapterlabel,
+  label/.default=,
+}
+
+\newcommand{\MaybeLabel}[1]{%
+  \if\relax\detokenize{#1}\relax
+    % Do nothing
+  \else
+    \label{#1}%
+  \fi
+}
+
+\NewDocumentEnvironment{WyrdChapterEnv}{O{} m}
+{
+    \pgfkeys{/wyrdchapter, #1}
+
+    \twocolumn
+    \chapter{#2}
+    \MaybeLabel{\wyrdchapterlabel}
+    \index{#2}
+    %\begin{multicols}{2}
+}
+{
+    %\end{multicols}
+}
+
+\NewDocumentCommand{\WyrdChapter}{O{} m m m}
+{
+    \begin{WyrdChapterEnv}[#1]{#2}
+        \import{chapters/#3}{#4}
+    \end{WyrdChapterEnv}
+}
