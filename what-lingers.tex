@@ -102,39 +102,37 @@ The monastery gates stand open, and the world behind them falls silent.
     
     \subsubsection{Mental and Emotional}
     \begin{itemize}
-        \item \textbf{Discipline} — Resisting psychic pressure, spiritual erosion, and identity loss
+        \item \textbf{Empathy} — Connecting with echoes, emotional projections, or grieving spirits
         \item \textbf{Focus} — Holding concentration in hallucinations or spiritual attacks
         \item \textbf{Insight} — Understanding visions, illusions, or lost memories
         \item \textbf{Lore} — Interpreting the monastery’s history, rites, and the Bell’s purpose
-        \item \textbf{Empathy} — Connecting with echoes, emotional projections, or grieving spirits
+        \item \textbf{Will} — Resisting psychic pressure, spiritual erosion, and identity loss
     \end{itemize}
     
     \subsubsection{Social and Interpersonal}
     \begin{itemize}
-        \item \textbf{Presence} — Asserting the self against supernatural dread or erasure
-        \item \textbf{Persuasion} — Calming others or convincing hesitant allies
         \item \textbf{Etiquette} — Recognising religious traditions or sacred customs
+        \item \textbf{Persuasion} — Calming others or convincing hesitant allies
     \end{itemize}
     
     \subsubsection{Perceptual and Investigative}
     \begin{itemize}
         \item \textbf{Awareness} — Noticing details, spiritual distortions, or vanishing sounds
-        \item \textbf{Survival} — Navigating terrain or finding crypt entrances
         \item \textbf{Investigation} — Examining rooms, deciphering inscriptions, finding hidden relics
     \end{itemize}
     
     \subsubsection{Physical}
     \begin{itemize}
         \item \textbf{Athletics} — Dodging debris, climbing, moving in collapsing areas (Act IV)
-        \item \textbf{Fight} — Used only during the final act, once the Abbot becomes vulnerable
+        \item \textbf{Fight} — Captures all types of ranged and melee combat. (Used only during the final act, once the Abbot becomes vulnerable)
     \end{itemize}
     
     \subsubsection{Skill Highlights by Act}
     \begin{itemize}
-        \item \textbf{Act I –} Presence, Insight, Empathy
-        \item \textbf{Act II –} Awareness, Focus, Discipline, Lore
-        \item \textbf{Act III –} Lore, Empathy, Insight, Discipline
-        \item \textbf{Act IV –} Fight, Focus, Discipline, Presence
+        \item \textbf{Act I –} Insight, Empathy
+        \item \textbf{Act II –} Awareness, Focus, Will, Lore
+        \item \textbf{Act III –} Lore, Empathy, Insight, Will
+        \item \textbf{Act IV –} Fight, Focus, Will
     \end{itemize}
     
 \end{WyrdSidebar}
@@ -200,7 +198,7 @@ Introduce one or two surreal or unnerving moments as tension builds:
     \item A player attempts to speak and finds that no one hears them for a full minute.
 \end{itemize}
 
-These effects do not cause Wounds but may impose \emph{Fatigue} as the monastery erodes the players' sense of self. Players who resist through \textbf{Discipline}, \textbf{Focus}, or \textbf{Insight} may recover composure—but only briefly.
+These effects do not cause Wounds but may impose \emph{Fatigue} as the monastery erodes the players' sense of self. Players who resist through \textbf{Will}, \textbf{Focus}, or \textbf{Insight} may recover composure—but only briefly.
 
 \subsection{Tone and Progression}
 
@@ -226,7 +224,7 @@ Players may witness or interact with:
     \item Personal visions—scenes from each player’s past, slightly altered, where their lost loved one begs them to forget.
 \end{itemize}
 
-These encounters are emotionally exhausting. Players resisting emotional collapse must use \textbf{Empathy}, \textbf{Discipline}, or \textbf{Will}. Some may begin taking \emph{Fatigue}—especially if they linger or interact too deeply.
+These encounters are emotionally exhausting. Players resisting emotional collapse must use \textbf{Empathy}, \textbf{Will}, or \textbf{Will}. Some may begin taking \emph{Fatigue}—especially if they linger or interact too deeply.
 
 \subsection{Discovery of the Bell}
 
@@ -293,12 +291,12 @@ Once the Bell is rung, a shockwave passes through the monastery. The Abbot stumb
   \vspace{0.5\baselineskip}
   \SkillsBox[%
     expert={Will},%
-    skilled={Focus, Discipline},%
-    novice={Presence, Awareness, Insight}%
+    skilled={Focus, FIXME},%
+    novice={FIXME, Awareness, Insight}%
   ]
   
   \begin{TraitsBox}
-    \item[Silence Hungers] — At the start of each round, all player characters suffer 1 \textbf{Fatigue} unless they succeed on a \textbf{Discipline} or \textbf{Focus} check (TN 2).
+    \item[Silence Hungers] — At the start of each round, all player characters suffer 1 \textbf{Fatigue} unless they succeed on a \textbf{Will} or \textbf{Focus} check (TN 2).
     \item[Untouchable Form] — The Abbot is immune to all harm unless the \emph{Campana Silens} has been rung. Once it has, this Trait is suppressed.
     \item[Erase the Self] — Once per scene, target a character and suppress one of their Traits until the end of the encounter. The Trait may be restored by invoking a personal memory aloud (costing 1 Fatigue).
     \item[Aura of Dread] — Characters in the Abbot’s presence take a –1 penalty to all rolls unless they can clearly recall and speak the name of their lost loved one.
@@ -359,13 +357,13 @@ If the players fail, they are absorbed into the stillness. Their identities fade
         ]
   
         \begin{TraitsBox}
-            \item[Driven to Understand] — Gain a bonus when analysing ritual, folklore, or spiritual mechanisms.
-            \item[Buried Guilt] — Once per session, may remove 1 Fatigue after confronting a painful memory.
-            \item[Cold Logic, Quiet Grief] — Reroll a failed Insight or Empathy check related to grief or memory.
+            \item[Driven to Understand] — Gain a \textbf{+2} bonus when analysing ritual, folklore, or spiritual mechanisms.
+            \item[Buried Guilt] — Once per session, may clear all Fatigue after confronting a painful memory. The memory must be shared aloud to the group. Confronting the painful memory takes one combat action.
+            \item[Cold Logic, Quiet Grief] — Reroll a failed \textbf{Insight} or \textbf{Empathy} check related to grief or memory.
         \end{TraitsBox}
   
-        \DamageBox[%
-        ]
+        \DamageBox[]
+
     \end{WyrdStatsBlock}
   \end{WyrdCharacterSheet}
   
@@ -392,15 +390,15 @@ If the players fail, they are absorbed into the stillness. Their identities fade
   
     \begin{WyrdStatsBlock}[profile=img/characters/isaac_bellamy]
         \SkillsBox[%
-            expert={Discipline},%
+            expert={Will},%
             skilled={Athletics, Fight},%
             novice={Awareness, Insight, Will},%
         ]
   
         \begin{TraitsBox}
             \item[Combat Tempered] — Gain a bonus when acting under pressure or facing fear head-on.
-            \item[The Locket] — Once per session, may refresh a Trait by invoking a memory of his brother.
-            \item[Trained to Endure] — Reduce incoming Fatigue by 1 (minimum 0) once per scene.
+            \item[The Locket] — Once per session, reroll a failed check after invoking a memory of his brother.
+            \item[Trained to Endure] — Reduce incoming Stress by 2 once per scene.
         \end{TraitsBox}
   
         \DamageBox[%
@@ -438,9 +436,9 @@ If the players fail, they are absorbed into the stillness. Their identities fade
         ]
   
         \begin{TraitsBox}
-            \item[Grief Made Graceful] — Once per session, may grant a +2 to an ally's roll by offering emotional support.
+            \item[Grief Made Graceful] — Once per session, may grant a \textbf{+2} to an ally's roll by offering emotional support.
             \item[Photograph in the Pocket] — Gain a bonus when resisting psychic or emotional attacks tied to memory or identity.
-            \item[Unanswered Faith] — Reroll a failed Will or Empathy check when confronting spiritual or moral conflict.
+            \item[Unanswered Faith] — Reroll a failed \textbf{Will} or Empathy check when confronting spiritual or moral conflict.
         \end{TraitsBox}
   
         \DamageBox[%
@@ -473,7 +471,7 @@ If the players fail, they are absorbed into the stillness. Their identities fade
         \SkillsBox[%
             expert={Empathy},%
             skilled={Insight, Lore},%
-            novice={Discipline, Fight, Persuasion},%
+            novice={Will, Fight, Persuasion},%
         ]
   
         \begin{TraitsBox}
@@ -512,7 +510,7 @@ If the players fail, they are absorbed into the stillness. Their identities fade
         \SkillsBox[%
             expert={Fight},%
             skilled={Awareness, Focus},%
-            novice={Discipline, Investigation, Insight},%
+            novice={Will, Investigation, Insight},%
         ]
   
         \begin{TraitsBox}
