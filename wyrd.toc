@@ -74,43 +74,74 @@
 \contentsline {subsection}{Balancing Encounters}{23}{subsection*.82}%
 \contentsline {subsection}{Balancing the Game}{23}{subsection*.83}%
 \contentsline {section}{Adapting Skills}{23}{section*.84}%
-\contentsline {section}{Adapting Traits}{23}{section*.85}%
-\contentsline {section}{Adapting Stress}{23}{section*.86}%
+\contentsline {subsection}{Skill progression and prerequisites}{23}{subsection*.85}%
+\contentsline {subsection}{Levels of detail}{23}{subsection*.86}%
+\contentsline {section}{Adapting Traits}{23}{section*.87}%
+\contentsline {section}{Adapting Stress}{23}{section*.88}%
 \contentsline {chapter}{\numberline {4}Combat}{25}{chapter.4}%
-\contentsline {section}{Dealing damage}{25}{section*.87}%
-\contentsline {section}{Recovery}{25}{section*.88}%
-\contentsline {chapter}{\numberline {5}Magic \& High Tech}{27}{chapter.5}%
-\contentsline {part}{\numberline {2}One-Shots}{29}{part.2}%
-\contentsline {part}{\numberline {3}Episodic Play}{31}{part.3}%
-\contentsline {chapter}{\numberline {6}Episodic Settings}{33}{chapter.6}%
-\contentsline {chapter}{\numberline {7}The Grand Casebook}{35}{chapter.7}%
-\contentsline {section}{The Setting}{35}{section*.89}%
-\contentsline {subsection}{The Grand Society of Inquiry}{35}{subsection*.90}%
-\contentsline {subsection}{The Powers That Be}{35}{subsection*.91}%
-\contentsline {subsection}{Types of Play}{35}{subsection*.92}%
-\contentsline {subsection}{Character Roles}{36}{subsection*.93}%
-\contentsline {subsection}{Rule Adaptations for This Setting}{36}{subsection*.94}%
-\contentsline {section}{Adventures}{36}{section*.95}%
-\contentsline {subsection}{The Call to Adventure}{36}{subsection*.96}%
-\contentsline {section}{Murder at the Brass Orchid}{37}{section*.97}%
-\contentsline {subsection}{Act 0: Into the Fray}{37}{subsection*.100}%
-\contentsline {subsection}{Act 1: The Crime Scene}{38}{subsection*.101}%
-\contentsline {subsubsection}{Examining the Crime Scene}{38}{subsubsection*.103}%
-\contentsline {subsection}{Act 2: The Investigation}{39}{subsection*.104}%
-\contentsline {subsubsection}{The Performers’ Dressing Rooms}{39}{subsubsection*.107}%
-\contentsline {subsubsection}{The Club’s Bar}{41}{subsubsection*.108}%
-\contentsline {subsubsection}{The Back Office}{42}{subsubsection*.109}%
-\contentsline {subsection}{Act 3: The Reveal}{42}{subsection*.110}%
-\contentsline {subsection}{Resolutions}{42}{subsection*.111}%
-\contentsline {section}{The Clockmaker’s Deception}{43}{section*.112}%
-\contentsline {subsection}{Act 1: The Accusation}{43}{subsection*.113}%
-\contentsline {subsection}{Act 2: The Hidden Conflict}{43}{subsection*.114}%
-\contentsline {subsection}{Act 3: The Mastermind Revealed}{44}{subsection*.115}%
-\contentsline {subsection}{Resolution: Justice or Cover-Up?}{44}{subsection*.116}%
-\contentsline {section}{The Silent Courier}{44}{section*.117}%
-\contentsline {subsection}{Act 1: The Body and the Letter}{44}{subsection*.118}%
-\contentsline {subsection}{Act 2: The Trail of Secrets}{45}{subsection*.119}%
-\contentsline {subsection}{Act 3: The Truth Unveiled}{45}{subsection*.120}%
-\contentsline {subsection}{Resolution: The Consequences of Truth}{45}{subsection*.121}%
-\contentsline {part}{\numberline {4}Campaigns}{47}{part.4}%
+\contentsline {section}{Dealing damage}{25}{section*.89}%
+\contentsline {section}{Recovery}{25}{section*.90}%
+\contentsline {chapter}{\numberline {5}Magic}{27}{chapter.5}%
+\contentsline {section}{Design Goals for Magic Systems}{27}{section*.91}%
+\contentsline {subsection}{Soft Magic vs Hard Magic}{27}{subsection*.92}%
+\contentsline {subsection}{The Goals of Magic in \wyrd }{27}{subsection*.94}%
+\contentsline {section}{Building Magic with Core Mechanics}{28}{section*.95}%
+\contentsline {section}{The Gift of Twilight}{29}{section*.96}%
+\contentsline {subsection}{Using the Gift: The Mechanics}{29}{subsection*.97}%
+\contentsline {subsection}{Guidelines for GMs}{30}{subsection*.98}%
+\contentsline {subsection}{Optional Consequences}{30}{subsection*.99}%
+\contentsline {subsection}{In Summary}{30}{subsection*.100}%
+\contentsline {section}{The Warden’s Path}{30}{section*.101}%
+\contentsline {subsection}{The Mechanics of the Warden’s Path}{30}{subsection*.102}%
+\contentsline {subsubsection}{Build-Up}{30}{subsubsection*.103}%
+\contentsline {subsubsection}{Release}{31}{subsubsection*.104}%
+\contentsline {subsection}{Casting and Channeling}{31}{subsection*.105}%
+\contentsline {subsection}{Elemental Limits}{31}{subsection*.106}%
+\contentsline {subsection}{Optional Mechanics}{31}{subsection*.107}%
+\contentsline {subsection}{Magic Skills}{31}{subsection*.108}%
+\contentsline {subsection}{In Summary}{31}{subsection*.109}%
+\contentsline {section}{Codex Infinitum}{31}{section*.110}%
+\contentsline {subsection}{The Codex Mechanics}{32}{subsection*.111}%
+\contentsline {subsubsection}{Spells as Skills}{32}{subsubsection*.112}%
+\contentsline {subsubsection}{Grimoires and Spellbooks}{32}{subsubsection*.113}%
+\contentsline {subsubsection}{Magic Stress}{32}{subsubsection*.114}%
+\contentsline {subsubsection}{Spell Ranks}{32}{subsubsection*.115}%
+\contentsline {subsubsection}{Magic Schools}{32}{subsubsection*.116}%
+\contentsline {subsection}{Guidelines for GMs}{33}{subsection*.117}%
+\contentsline {subsection}{In Summary}{33}{subsection*.118}%
+\contentsline {section}{The Known and the Named}{33}{section*.119}%
+\contentsline {chapter}{\numberline {6}Races \& Creatures}{35}{chapter.6}%
+\contentsline {part}{\numberline {2}One-Shots}{37}{part.2}%
+\contentsline {part}{\numberline {3}Episodic Play}{39}{part.3}%
+\contentsline {chapter}{\numberline {7}Episodic Settings}{41}{chapter.7}%
+\contentsline {chapter}{\numberline {8}The Grand Casebook}{43}{chapter.8}%
+\contentsline {section}{The Setting}{43}{section*.120}%
+\contentsline {subsection}{The Grand Society of Inquiry}{43}{subsection*.121}%
+\contentsline {subsection}{The Powers That Be}{43}{subsection*.122}%
+\contentsline {subsection}{Types of Play}{43}{subsection*.123}%
+\contentsline {subsection}{Character Roles}{44}{subsection*.124}%
+\contentsline {subsection}{Rule Adaptations for This Setting}{44}{subsection*.125}%
+\contentsline {section}{Adventures}{44}{section*.126}%
+\contentsline {subsection}{The Call to Adventure}{44}{subsection*.127}%
+\contentsline {section}{Murder at the Brass Orchid}{45}{section*.128}%
+\contentsline {subsection}{Act 0: Into the Fray}{45}{subsection*.131}%
+\contentsline {subsection}{Act 1: The Crime Scene}{46}{subsection*.132}%
+\contentsline {subsubsection}{Examining the Crime Scene}{46}{subsubsection*.134}%
+\contentsline {subsection}{Act 2: The Investigation}{47}{subsection*.135}%
+\contentsline {subsubsection}{The Performers’ Dressing Rooms}{47}{subsubsection*.138}%
+\contentsline {subsubsection}{The Club’s Bar}{49}{subsubsection*.139}%
+\contentsline {subsubsection}{The Back Office}{50}{subsubsection*.140}%
+\contentsline {subsection}{Act 3: The Reveal}{50}{subsection*.141}%
+\contentsline {subsection}{Resolutions}{50}{subsection*.142}%
+\contentsline {section}{The Clockmaker’s Deception}{51}{section*.143}%
+\contentsline {subsection}{Act 1: The Accusation}{51}{subsection*.144}%
+\contentsline {subsection}{Act 2: The Hidden Conflict}{51}{subsection*.145}%
+\contentsline {subsection}{Act 3: The Mastermind Revealed}{52}{subsection*.146}%
+\contentsline {subsection}{Resolution: Justice or Cover-Up?}{52}{subsection*.147}%
+\contentsline {section}{The Silent Courier}{52}{section*.148}%
+\contentsline {subsection}{Act 1: The Body and the Letter}{52}{subsection*.149}%
+\contentsline {subsection}{Act 2: The Trail of Secrets}{53}{subsection*.150}%
+\contentsline {subsection}{Act 3: The Truth Unveiled}{53}{subsection*.151}%
+\contentsline {subsection}{Resolution: The Consequences of Truth}{53}{subsection*.152}%
+\contentsline {part}{\numberline {4}Campaigns}{55}{part.4}%
 \contentsfinish 
