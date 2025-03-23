@@ -629,10 +629,10 @@ INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/vf/public/k
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/kpfonts/jkpssbn8r.tfm
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/kpfonts/jkpssbne.tfm
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/arkandis/gillius/GilliusADFNo2-Italic-lf-t1.tfm
-INPUT ./img/pageart/gears-bottom-right-tall.png
-INPUT img/pageart/gears-bottom-right-tall.png
-INPUT ./img/pageart/gears-bottom-right-tall.png
-INPUT ./img/pageart/gears-bottom-right-tall.png
+INPUT ./img/pageart/gears-reverse-L.png
+INPUT img/pageart/gears-reverse-L.png
+INPUT ./img/pageart/gears-reverse-L.png
+INPUT ./img/pageart/gears-reverse-L.png
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/vf/public/kpfonts/jkpssbsc8t.vf
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/kpfonts/jkpssbsc8r.tfm
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/kpfonts/jkpssbsce.tfm

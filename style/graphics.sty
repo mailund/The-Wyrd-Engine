@@ -9,11 +9,17 @@
 }
 
 % Top Image Command
-\newcommand{\WyrdHeaderImage}[1]{
-    \AddToShipoutPictureBG*{\AtPageUpperLeft{
-        \raisebox{-\bottomimageheight}{\includegraphics[width=\paperwidth]{#1}}
-    }}
+\newlength{\WyrdHeaderHeight} % allocate a length variable
+\newcommand{\WyrdHeaderImage}[1]{%
+  \thispagestyle{empty}%
+  \settoheight{\WyrdHeaderHeight}{\includegraphics[width=\paperwidth]{#1}}%
+  \AddToShipoutPictureBG*{%
+    \AtPageUpperLeft{%
+      \raisebox{-\WyrdHeaderHeight}{\includegraphics[width=\paperwidth]{#1}}%
+    }%
+  }%
 }
+
 
 %% Plotting
 \NewDocumentCommand{\Graph}{O{} m}{%

@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex wyrd.idx"] 1742722657.29563 "wyrd.idx" "wyrd.ind" "wyrd" 1742724748.40346 0
-  "wyrd.idx" 1742724748.15016 1917 bce9d4e01ce492cae9081f6fca3e8ba0 "pdflatex"
+["makeindex wyrd.idx"] 1742722657.29563 "wyrd.idx" "wyrd.ind" "wyrd" 1742727735.98004 0
+  "wyrd.idx" 1742727735.7514 1917 bce9d4e01ce492cae9081f6fca3e8ba0 "pdflatex"
   (generated)
   "wyrd.ilg"
   "wyrd.ind"
   (rewritten before read)
-["pdflatex"] 1742724744.1071 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742724748.40354 0
+["pdflatex"] 1742727732.02903 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742727735.98012 0
   "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742719565.89777 1143 78dbe24d9339ec0f7ee9ca5f0cd5248b ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1710106625 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -315,7 +315,7 @@
   "chapters/mechanics/core/./difficulty-levels.tex" 1742633091.53851 15587 9da533e0d84b237c404be369917c032d ""
   "chapters/mechanics/core/./gear.tex" 1742462456.26856 3377 44416578cc936a0181baff2e50e874f4 ""
   "chapters/mechanics/core/./npcs.tex" 1742548946.82255 9040 68aad6f9eddea2289822bfd3d7318f7d ""
-  "chapters/mechanics/core/./skills.tex" 1742724742.59513 7749 e2216854956749636576f2dc3b07f4a4 ""
+  "chapters/mechanics/core/./skills.tex" 1742727731.7791 7741 e025d3fad7b4abb0fb4cbf710ce664a6 ""
   "chapters/mechanics/core/./traits.tex" 1742548764.18648 8358 52c9ae086c05e4c164b16d4c3ea20996 ""
   "chapters/mechanics/core/core.tex" 1742631012.09195 2023 871da42b9bcb48d8eaf021b81e67afab ""
   "chapters/mechanics/magic/./building-blocks.tex" 1742562734.42157 4685 89b8fcc7e809ec30e290e754d624db2d ""
@@ -350,7 +350,7 @@
   "dndbook/lib/dndtoc.sty" 1742109229.16849 1202 00b14773226dc8fbad192d7143536f0a ""
   "dndbook/lib/dndutility.sty" 1742109229.16856 2834 d519e572cd3045e519c665d91e192743 ""
   "img/pageart/gears-bottom-left.png" 1742721102.27185 1047191 ee282ed9cbc31dfe4f1071edf86e0d36 ""
-  "img/pageart/gears-bottom-right-tall.png" 1742724701.65729 1818091 2a4c34005d9cfc1551fcc6a109122514 ""
+  "img/pageart/gears-reverse-L.png" 1742727713.70016 1491566 a5522d5c36836628cf9db7cccb949859 ""
   "stats/4dF-DR.pdf" 1742304259.13486 4573 cad9cddf8c11ee10fab8b760aee07138 ""
   "stats/4dF-success.pdf" 1742304259.13527 4530 6ae27220a4a6b0017b4a52bc67377218 ""
   "stats/4dF.pdf" 1742304259.13583 4245 994f6bab2724e9f1650acc479c0b6f1c ""
@@ -365,11 +365,11 @@
   "style/text-processing.sty" 1742719507.73265 1479 7590d11d50c19e0c65abee4b3d3d169c ""
   "style/traits.sty" 1742548391.21928 505 b6cdb75134ef52007ff16db205bbef97 ""
   "style/wyrd.sty" 1742719566.01744 1298 71feba0d2fca632db01d6e912607e280 ""
-  "wyrd.aux" 1742724748.22694 21411 dc90b342c839a7623b7d27e0f99f8309 "pdflatex"
-  "wyrd.ind" 1742724748.20977 1741 cb678aabe5e755fb1369506991937fdc "makeindex wyrd.idx"
-  "wyrd.out" 1742724748.22918 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
+  "wyrd.aux" 1742727735.82227 21411 dc90b342c839a7623b7d27e0f99f8309 "pdflatex"
+  "wyrd.ind" 1742727735.80476 1741 cb678aabe5e755fb1369506991937fdc "makeindex wyrd.idx"
+  "wyrd.out" 1742727735.82453 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
   "wyrd.tex" 1742719565.89777 1143 78dbe24d9339ec0f7ee9ca5f0cd5248b ""
-  "wyrd.toc" 1742724748.22941 10265 aaaef304c64e7017eaac79c705ccde4e "pdflatex"
+  "wyrd.toc" 1742727735.82476 10265 aaaef304c64e7017eaac79c705ccde4e "pdflatex"
   (generated)
   "wyrd.aux"
   "wyrd.idx"
