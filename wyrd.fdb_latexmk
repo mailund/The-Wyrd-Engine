@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex wyrd.idx"] 1742722657.29563 "wyrd.idx" "wyrd.ind" "wyrd" 1742738030.40943 0
-  "wyrd.idx" 1742738030.171 1917 bce9d4e01ce492cae9081f6fca3e8ba0 "pdflatex"
+["makeindex wyrd.idx"] 1742722657.29563 "wyrd.idx" "wyrd.ind" "wyrd" 1742738080.78317 0
+  "wyrd.idx" 1742738080.51025 1917 bce9d4e01ce492cae9081f6fca3e8ba0 "pdflatex"
   (generated)
   "wyrd.ilg"
   "wyrd.ind"
   (rewritten before read)
-["pdflatex"] 1742738026.06823 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742738030.40952 0
+["pdflatex"] 1742738075.52756 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742738080.78332 0
   "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742719565.89777 1143 78dbe24d9339ec0f7ee9ca5f0cd5248b ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1710106625 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -318,7 +318,7 @@
   "chapters/mechanics/core/./npcs.tex" 1742548946.82255 9040 68aad6f9eddea2289822bfd3d7318f7d ""
   "chapters/mechanics/core/./skills.tex" 1742727731.7791 7741 e025d3fad7b4abb0fb4cbf710ce664a6 ""
   "chapters/mechanics/core/./traits.tex" 1742548764.18648 8358 52c9ae086c05e4c164b16d4c3ea20996 ""
-  "chapters/mechanics/core/core.tex" 1742738025.85633 2079 09e57966c47f1b940aaff8fddd511127 ""
+  "chapters/mechanics/core/core.tex" 1742738075.2704 2170 bc68b7dbfed65cbcdb59257edc77f61b ""
   "chapters/mechanics/magic/./building-blocks.tex" 1742562734.42157 4685 89b8fcc7e809ec30e290e754d624db2d ""
   "chapters/mechanics/magic/./codex-infinitum.tex" 1742578093.53988 7933 5acde0e322933dd5b02e697fae38a4be ""
   "chapters/mechanics/magic/./design-goals.tex" 1742558235.93321 4783 864433ed69352073c332ab6f53e6e58b ""
@@ -367,11 +367,11 @@
   "style/text-processing.sty" 1742719507.73265 1479 7590d11d50c19e0c65abee4b3d3d169c ""
   "style/traits.sty" 1742548391.21928 505 b6cdb75134ef52007ff16db205bbef97 ""
   "style/wyrd.sty" 1742737457.86882 1320 821d141a0d1281e269fe6364fae029b9 ""
-  "wyrd.aux" 1742738030.24557 21367 d35eb169f3e44aedd49645716586e78d "pdflatex"
-  "wyrd.ind" 1742738030.22742 1741 cb678aabe5e755fb1369506991937fdc "makeindex wyrd.idx"
-  "wyrd.out" 1742738030.24811 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
+  "wyrd.aux" 1742738080.60424 21367 d35eb169f3e44aedd49645716586e78d "pdflatex"
+  "wyrd.ind" 1742738080.5839 1741 cb678aabe5e755fb1369506991937fdc "makeindex wyrd.idx"
+  "wyrd.out" 1742738080.60675 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
   "wyrd.tex" 1742719565.89777 1143 78dbe24d9339ec0f7ee9ca5f0cd5248b ""
-  "wyrd.toc" 1742738030.24836 10265 aaaef304c64e7017eaac79c705ccde4e "pdflatex"
+  "wyrd.toc" 1742738080.60705 10265 aaaef304c64e7017eaac79c705ccde4e "pdflatex"
   (generated)
   "wyrd.aux"
   "wyrd.idx"

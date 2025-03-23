@@ -1716,4 +1716,196 @@ Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 32.
 Chapter 8.
 contour: Using 32 copies for `Chapter\ 8:' on input line 32.
 contour: Using 32 copies for `The' on input line 32.
-contour: Using 32 copies for `Gr
+contour: Using 32 copies for `Grand' on input line 32.
+contour: Using 32 copies for `Casebook' on input line 32.
+(./chapters/episodic/grand-casebook/grand-casebook.tex
+Package lettrine.sty Info: Targeted height = 40.78662pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 40.4287pt (\color {titlered}{L});
+(lettrine.sty)             reported on input line 3.
+
+Overfull \vbox (7.21457pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 46.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [47] (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/murder-at-the-brass-orchid.tex
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 2.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [48] (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-langley.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-mercer.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-0.tex
+Overfull \vbox (188.35489pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 9.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [49]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1.tex (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/madame-yvette-duval.tex)
+Overfull \hbox (0.10483pt too wide) in paragraph at lines 6--7
+[]\T1/pbk/l/n/10 (+9) Upon un-lock-ing the door, they were met with a 
+ []
+
+(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1/clues.tex)
+Overfull \vbox (8.1681pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 53.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (350.42177pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (350.42177pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 53.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [51]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-2.tex (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/staff.tex
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/jkpss/b/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/patrons.tex)
+Overfull \vbox (38.56323pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 24.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 37.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 62.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [54]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-3.tex
+Overfull \vbox (3.45212pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 13.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [55]
+Overfull \hbox (0.10194pt too wide) in paragraph at lines 18--19
+[]\T1/pbk/l/n/10 (+8) However, if they push too ag-gres-sively or fail to 
+ []
+
+)) (./chapters/episodic/grand-casebook/./clockmakers-deception.tex
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (190.6834pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (190.6834pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [57]) (./chapters/episodic/grand-casebook/./the-silent-courier.tex
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (56.06924pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (56.06924pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [59]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 55.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [60]))
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [61]
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [62
+
+]
+contour: Using 32 copies for `Part\ 4' on input line 34.
+contour: Using 32 copies for `Campaigns' on input line 34.
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+[63
+
+] [64]
+runsystem(makeindex wyrd.idx)...executed safely (allowed).
+
+ (./wyrd.ind
+contour: Using 32 copies for `Index' on input line 1.
+)
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 39.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [65
+
+
+
+] (./wyrd.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+Package rerunfilecheck Info: File `wyrd.out' has not changed.
+(rerunfilecheck)             Checksum: B8953AD73D919EFA9F44D693473C7248;6065.
+ ) 
+Here is how much of TeX's memory you used:
+ 38016 strings out of 474116
+ 757029 string characters out of 5732613
+ 1986187 words of memory out of 5000000
+ 58838 multiletter control sequences out of 15000+600000
+ 664900 words of font info for 345 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 121i,18n,131p,1052b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-BoldItalic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Italic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on wyrd.pdf (69 pages, 4298135 bytes).
+PDF statistics:
+ 875 PDF objects out of 1000 (max. 8388607)
+ 707 compressed objects within 8 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 121221 words of extra memory for PDF output out of 128383 (max. 10000000)
+
