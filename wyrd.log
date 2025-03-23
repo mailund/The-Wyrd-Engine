@@ -1,35 +1,25 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  22 MAR 2025 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  23 MAR 2025 11:12
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**wyrd.tex
-(./wyrd.tex
+**/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex
+(/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(./dndbook/dndbook.cls
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3kernel/ex
-pl3.sty
+(./dndbook/dndbook.cls (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-02-20 L3 programming layer (loader) 
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3backend/l
-3backend-pdftex.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count188
 \l__pdf_internal_box=\box51
 ))
-Document Class: dndbook/dndbook 2020/04/21 v0.8.0  Template for DnD 5e material
- 
-(./dndbook/dndoptions.clo
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/
-l3keys2e/l3keys2e.sty
+Document Class: dndbook/dndbook 2020/04/21 v0.8.0  Template for DnD 5e material 
+(./dndbook/dndoptions.clo (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/book.c
-ls
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/bk10.c
-lo
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count189
@@ -44,9 +34,7 @@ File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (./dndbook/dndcore.def
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/array
-.sty
+) (./dndbook/dndcore.def (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen141
 \ar@mcellbox=\box52
@@ -55,33 +43,21 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \extratabsurround=\skip50
 \backup@length=\skip51
 \ar@cellbox=\box53
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/colortbl/co
-lortbl.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/co
-lor.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cf
-g/color.cfg
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-de
-f/pdftex.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/ma
-thcolor.ltx))
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 \everycr=\toks18
 \minrowclearance=\skip52
 \rownum=\count198
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/enumitem/en
-umitem.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks19
 \labelindent=\skip53
@@ -90,29 +66,19 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box54
 \enit@count@id=\count199
 \enitdp@description=\count266
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/etoolbox/et
-oolbox.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count267
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/textco
-mp.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gensymb/gen
-symb.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gensymb/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hang/hang.s
-ty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hang/hang.sty
 Package: hang 2017/02/18 v2.1 Hanging paragraphs and list items
 \hangingindent=\skip54
 \hangingleftmargin=\skip55
 \labeledleftmargin=\skip56
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/numprint/nu
-mprint.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/numprint/numprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 \c@nprt@mantissa@digitsbefore=\count268
 \c@nprt@mantissa@digitsafter=\count269
@@ -131,9 +97,7 @@ Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 \c@nprt@digitsfirstblock=\count275
 \c@nprt@blockcnt=\count276
 \c@nprt@cntprint=\count277
- No configuration file `numprint.cfg' found.)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/tabul
-arx.sty
+ No configuration file `numprint.cfg' found.) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen144
 \TX@old@table=\dimen145
@@ -142,74 +106,40 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@delta=\dimen148
 \TX@cols=\count278
 \TX@ftn=\toks24
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/t
-colorbox.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/basicla
-yer/pgf.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/utiliti
-es/pgfrcs.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgfutil-common.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks25
 \pgfutil@tempdima=\dimen149
 \pgfutil@tempdimb=\dimen150
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgfutil-latex.def
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box55
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgfrcs.code.tex
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/pgf.r
-evision.tex)
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/basicla
-yer/pgfcore.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/gr
-aphicx.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/ke
-yval.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/gr
-aphics.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/tr
-ig.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cf
-g/graphics.cfg
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/systeml
-ayer/pgfsys.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/syste
-mlayer/pgfsys.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgfkeys.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgfkeyslibraryfiltered.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen153
@@ -232,44 +162,28 @@ ties/pgfkeyslibraryfiltered.code.tex
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
 \pgf@sys@id@count=\count283
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/syste
-mlayer/pgf.cfg
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/syste
-mlayer/pgfsys-pdftex.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/syste
-mlayer/pgfsys-common-pdf.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/syste
-mlayer/pgfsyssoftpath.code.tex
+))) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count284
 \pgfsyssoftpath@bigbuffer@items=\count285
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/syste
-mlayer/pgfsysprotocol.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xcolor/xcol
-or.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cf
-g/color.cfg
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 LaTeX Info: Redefining \color on input line 758.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/ma
-thcolor.ltx)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -279,52 +193,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcore.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmath.code.tex
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathutil.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathparser.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen163
 \pgfmath@count=\count286
 \pgfmath@box=\box56
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.basic.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.trigonometric.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.random.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.comparison.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.base.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.round.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.misc.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfunctions.integerarithmetics.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathcalc.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmathfloat.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count287
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfint.code.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorepoints.code.tex
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen164
 \pgf@picmaxx=\dimen165
@@ -340,120 +220,74 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yy=\dimen175
 \pgf@zx=\dimen176
 \pgf@zy=\dimen177
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorepathconstruct.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen178
 \pgf@path@lasty=\dimen179
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorepathusage.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen180
 \pgf@shorten@start@additional=\dimen181
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorescopes.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
 \pgf@picture@serial@count=\count288
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoregraphicstate.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen182
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoretransformations.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen183
 \pgf@pt@y=\dimen184
 \pgf@pt@temp=\dimen185
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorequick.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoreobjects.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorepathprocessing.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorearrows.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen186
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoreshade.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen187
 \pgf@sys@shading@range@num=\count289
 \pgf@shadingcount=\count290
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoreimage.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoreexternal.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box60
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorelayers.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcoretransparency.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorepatterns.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basic
-layer/pgfcorerdf.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/modul
-es/pgfmoduleshapes.code.tex
+))) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box61
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/modul
-es/pgfmoduleplot.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/compati
-bility/pgfcomp-version-0-65.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen188
 \pgf@nodesepend=\dimen189
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/compati
-bility/pgfcomp-version-1-18.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/verba
-tim.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks36
 \verbatim@line=\toks37
 \verbatim@in@stream=\read3
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/environ/env
-iron.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/trimspaces/
-trimspaces.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks38
@@ -471,62 +305,32 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box68
 \tcb@temp=\box69
 \tcb@temp=\box70
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/t
-cbbreakable.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pdfcol/pdfc
-ol.sty
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/ltxcmds/l
-txcmds.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/infwarerr
-/infwarerr.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ift
-ex.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box71
 \tcb@totalupperbox=\box72
 \tcb@totallowerbox=\box73
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/t
-cbskins.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/fronten
-dlayer/tikz.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/utiliti
-es/pgffor.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/utiliti
-es/pgfkeys.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgfkeys.code.tex))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/math/pg
-fmath.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/
-pgfmath.code.tex))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utili
-ties/pgffor.code.tex
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen191
 \pgffor@skip=\dimen192
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/tikz.code.tex
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/libra
-ries/pgflibraryplothandlers.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count294
 \pgfplotmarksize=\dimen193
@@ -547,51 +351,31 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofchildren=\count296
 \tikznumberofcurrentchild=\count297
 \tikz@fig@count=\count298
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/modul
-es/pgfmodulematrix.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count299
 \pgfmatrixcurrentcolumn=\count300
 \pgf@matrix@numberofcolumns=\count301
 )
 \tikz@expandcount=\count302
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tikzfill/ti
-kzfill.image.sty
+))) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
 Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tikzfill/ti
-kzfill-common.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tikzfill/ti
-kzlibraryfill.image.code.tex
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
 \l__tikzfill_img_box=\box78
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/t
-cbskinsjigsaw.code.tex
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/t
-cbxparse.code.tex
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '6.2.0'
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/
-xparse/xparse.sty
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-02-18 L3 Experimental document command parser
-)))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/geometry/ge
-ometry.sty
+))) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifv
-tex.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count303
@@ -606,9 +390,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen264
 \Gm@layoutvoffset=\dimen265
 \Gm@dimlist=\toks41
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/m
-icrotype.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 \MT@toks=\toks42
 \MT@tempbox=\box79
@@ -621,23 +403,16 @@ LaTeX Info: Redefining \textls on input line 1368.
 \MT@outer@kern=\dimen266
 LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
 \MT@listname@count=\count307
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/m
-icrotype-pdftex.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
-
 LaTeX Info: Redefining \lsstyle on input line 902.
 LaTeX Info: Redefining \lslig on input line 902.
 \MT@outer@space=\skip61
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/m
-icrotype.cfg
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/ragged2e/ra
-gged2e.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip62
 \RaggedLeftLeftskip=\skip63
@@ -653,9 +428,7 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedLeftParindent=\skip73
 \RaggedRightParindent=\skip74
 \JustifyingParindent=\skip75
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tocloft/toc
-loft.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip76
@@ -694,9 +467,7 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip107
 \cfttabindent=\skip108
 \cfttabnumwidth=\skip109
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/titlesec/ti
-tlesec.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box80
 \beforetitleunit=\skip110
@@ -707,13 +478,9 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen269
 \titlewidthlast=\dimen270
 \titlewidthfirst=\dimen271
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/ms/multitoc
-.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/ms/multitoc.sty
 Package: multitoc 1999/06/08 v2.01 MultiToc Package (MS)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/multi
-col.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count310
 \mult@box=\box81
@@ -782,21 +549,14 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \mult@nat@firstbox=\box125
 \colbreak@box=\box126
 \mc@col@check@num=\count319
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/ifthen
-.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )) (./dndbook/lib/compat.sty) (./dndbook/lib/dndutility.sty
 \l__dnd_space_box=\box127
 \l__dnd_space_dim=\dimen281
-)
-(./dndbook/lib/dndcolors.sty) (./dndbook/lib/dndfonts.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/lettrine/le
-ttrine.sty
+) (./dndbook/lib/dndcolors.sty) (./dndbook/lib/dndfonts.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2024-01-20 v2.60 (Daniel Flipo)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/
-xfp/xfp.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
 Package: xfp 2024-02-18 L3 Floating point unit
 )
 \c@DefaultLines=\count320
@@ -828,82 +588,48 @@ Package: xfp 2024-02-18 L3 Floating point unit
 \LettrineDepth=\dimen301
 
 Loading lettrine.cfg
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/lettrine/le
-ttrine.cfg)
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/lettrine/lettrine.cfg)
 \Llist@everypar=\toks45
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/cfr-initial
-s/Royal.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/cfr-initials/Royal.sty
 Package: Royal 2007/11/24 v1.01 Royal CFR
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/initials/Ro
-yalIn.fd
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/initials/RoyalIn.fd
 File: RoyalIn.fd 2003/04/02 Font definition file for U/RoyalIn
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/contour/con
-tour.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/contour/contour.sty
 Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
 \con@length=\skip114
 
 Loading configuration file `contour.cfg'.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/contour/con
-tour.cfg
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/contour/contour.cfg
 File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
 )
 contour: Using driver file `pdftex.cnt'.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/contour/pdf
-tex.cnt
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/contour/pdftex.cnt
 File: pdftex.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/book
-man.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/bookman.sty
 Package: bookman 2020/03/25 PSNFSS-v9.3 (SPQR) 
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/gil
-lius2.sty
-Package: gillius2 2022/10/28 (Bob Tennent) Supports Gillius No.2 fonts for all 
-LaTeX engines.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifx
-etex.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/gillius2.sty
+Package: gillius2 2022/10/28 (Bob Tennent) Supports Gillius No.2 fonts for all LaTeX engines.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifl
-uatex.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xkeyval/xke
-yval.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/xkeyval/x
-keyval.tex
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/xkeyval/x
-kvutils.tex
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks46
 \XKV@tempa@toks=\toks47
 )
 \XKV@depth=\count324
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/fonten
-c.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for OT1+pbk on input line 1
-12.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ot1p
-bk.fd
+LaTeX Font Info:    Trying to load font information for OT1+pbk on input line 112.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ot1pbk.fd
 File: ot1pbk.fd 2001/06/04 font definitions for OT1/pbk.
 )
 LaTeX Font Info:    Font shape `OT1/pbk/m/n' in size <10> not available
 (Font)              Font shape `OT1/pbk/l/n' tried instead on input line 112.
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontaxes/fo
-ntaxes.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -915,29 +641,18 @@ LaTeX Info: Redefining \ulcshape on input line 41.
 LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kpfonts/kpf
-onts.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kpfonts/kpfonts.sty
 Package: kpfonts  2023/01/18 v3.35
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/fonten
-c.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+pbk on input line 11
-2.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pb
-k.fd
+LaTeX Font Info:    Trying to load font information for T1+pbk on input line 112.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pbk.fd
 File: t1pbk.fd 2001/06/04 font definitions for T1/pbk.
 )
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
 (Font)              Font shape `T1/pbk/l/n' tried instead on input line 112.
-)) (./dndbook/lib/dndstrings.sty) (./dndbook/lib/dndcomment.sty)
-(./dndbook/lib/dndheader.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fancyhdr/fa
-ncyhdr.sty
+)) (./dndbook/lib/dndstrings.sty) (./dndbook/lib/dndcomment.sty) (./dndbook/lib/dndheader.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip115
 \f@nch@O@elh=\skip116
 \f@nch@O@erh=\skip117
@@ -951,35 +666,25 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \enitdp@__dnd_monster_attributes=\count325
 \enitdp@DndMonsterSpells=\count326
 \enitdp@DndMonsterLegendaryActions=\count327
-) (./dndbook/lib/dndreadaloud.sty)
-(./dndbook/lib/dndsections.sty
+) (./dndbook/lib/dndreadaloud.sty) (./dndbook/lib/dndsections.sty
 \c@DndAreaCounter=\count328
 \c@DndSubAreaCounter=\count329
-) (./dndbook/lib/dndsidebar.sty)
-(./dndbook/lib/dndtable.sty
+) (./dndbook/lib/dndsidebar.sty) (./dndbook/lib/dndtable.sty
 \l__dnd_table_width_dim=\dimen302
-)) (./dndbook/lib/dndtoc.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/titlesec/ti
-tletoc.sty
+)) (./dndbook/lib/dndtoc.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
 \ttl@leftsep=\dimen303
 ))) (./style/wyrd.sty
 Package: style/wyrd 
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel/bab
-el.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
 \babel@savecnt=\count330
 \U@D=\dimen304
 \l@unhyphenated=\language89
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel/txt
-babel.def)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
 \bbl@dirlevel=\count331
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel-eng
-lish/english.ldf
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -987,18 +692,12 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language23). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language23). Reported on input line 108.
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel/loc
-ale/en/babel-english.tex
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/caption/cap
-tion.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/caption/cap
-tion3.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen305
 \captionmargin=\dimen306
@@ -1012,102 +711,64 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count332
 \c@continuedfloat=\count333
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/inpute
-nc.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks48
 \inpenc@posthook=\toks49
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/after
-page.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 \AP@output=\toks50
 \AP@partial=\box131
 \AP@footins=\box132
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/eso-pic/eso
--pic.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/preprint/balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen313
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen313
-\ESO@tempdimb=\dimen314
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome
-/fontawesome.sty
+\ESO@tempdima=\dimen314
+\ESO@tempdimb=\dimen315
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome
-/fontawesomesymbols-generic.tex)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome
-/fontawesomesymbols-pdftex.tex))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/hy
-perref.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kvsetkeys/k
-vsetkeys.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/kvdefinek
-eys/kvdefinekeys.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pdfescape
-/pdfescape.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pdftexcmd
-s/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hycolor/hyc
-olor.sty
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/auxhook/aux
-hook.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/na
-meref.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/refcount/re
-fcount.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/gettitles
-tring/gettitlestring.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kvoptions/k
-voptions.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count334
 )
-\@linkdim=\dimen315
+\@linkdim=\dimen316
 \Hy@linkcounter=\count335
 \Hy@pagecounter=\count336
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/pd
-1enc.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/intcalc/i
-ntcalc.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count337
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/pu
-enc.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -1120,26 +781,20 @@ Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
 \c@Hy@tempcnt=\count338
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/url/url.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen316
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/bitset/bi
-tset.sty
+\XeTeXLinkMargin=\dimen317
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/bigintcal
-c/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count339
-\Field@Width=\dimen317
-\Fld@charsize=\dimen318
+\Field@Width=\dimen318
+\Fld@charsize=\dimen319
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -1147,9 +802,7 @@ Package hyperref Info: backreferencing OFF on input line 6078.
 Package hyperref Info: Link coloring OFF on input line 6083.
 Package hyperref Info: Link coloring with OCG OFF on input line 6088.
 Package hyperref Info: PDF/A mode OFF on input line 6093.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/atbegs
-hi-ltx.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -1158,144 +811,101 @@ package with kernel methods
 \c@Hfootnote=\count342
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/hp
-dftex.def
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/atvery
-end-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count343
 \c@bookmark@seq@number=\count344
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/rerunfilech
-eck/rerunfilecheck.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/uniquecou
-nter/uniquecounter.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-85.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip124
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/ifoddpage/i
-foddpage.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count345
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/imakeidx/im
-akeidx.sty
-Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
-nous mode
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/import/impo
-rt.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchronous mode
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/li
-stings.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count346
 \lst@gtempboxa=\box133
 \lst@token=\toks51
 \lst@length=\count347
-\lst@currlwidth=\dimen319
+\lst@currlwidth=\dimen320
 \lst@column=\count348
 \lst@pos=\count349
-\lst@lostspace=\dimen320
-\lst@width=\dimen321
+\lst@lostspace=\dimen321
+\lst@width=\dimen322
 \lst@newlines=\count350
 \lst@lineno=\count351
-\lst@maxwidth=\dimen322
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/ls
-tpatch.sty
+\lst@maxwidth=\dimen323
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/ls
-tmisc.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 \c@lstnumber=\count352
 \lst@skipnumbers=\count353
 \lst@framebox=\box134
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/li
-stings.cfg
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/shortv
-rb.sty
-Package: shortvrb 2022/11/13 v3.0m Standard LaTeX documentation package V3 (FMi
-)
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/sttools/stf
-loats.sty
-Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
-ings
-\@dblbotnum=\count354
-\c@dblbotnumber=\count355
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/textpos/tex
-tpos.sty
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/paracol/paracol.sty
+Package: paracol 2018/12/31 v1.35 
+\pcol@currcol=\count354
+\pcol@nextcol=\count355
+\pcol@ncol=\count356
+\pcol@ncolleft=\count357
+\pcol@page=\count358
+\pcol@basepage=\count359
+\pcol@toppage=\count360
+\pcol@footnotebase=\count361
+\pcol@nfootnotes=\count362
+\pcol@mcid=\count363
+\pcol@prevdepth=\dimen324
+\pcol@colht=\dimen325
+\pcol@textfloatsep=\dimen326
+\pcol@lrmargin=\dimen327
+\pagerim=\dimen328
+\pcol@topskip=\skip125
+\belowfootnoteskip=\skip126
+\pcol@topfnotes=\box135
+\pcol@prespan=\box136
+\pcol@rightpage=\box137
+\pcol@colorstack@saved=\box138
+\pcol@tempboxa=\box139
+\pcol@tempboxb=\box140
+\pcol@colorins=\insert252
+\pcol@everyvbox=\toks52
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/shortvrb.sty
+Package: shortvrb 2022/11/13 v3.0m Standard LaTeX documentation package V3 (FMi)
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/sttools/stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
+\@dblbotnum=\count364
+\c@dblbotnumber=\count365
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
-\TP@textbox=\box135
-\TPHorizModule=\dimen323
-\TPVertModule=\dimen324
-\TP@margin=\dimen325
-\TP@absmargin=\dimen326
+\TP@textbox=\box141
+\TPHorizModule=\dimen329
+\TPVertModule=\dimen330
+\TP@margin=\dimen331
+\TP@absmargin=\dimen332
 
 Grid set 16 x 16 = 38.39343pt x 49.68562pt
-\TPboxrulesize=\dimen327
-\TP@tbargs=\toks52
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/xspac
-e.sty
+\TPboxrulesize=\dimen333
+\TP@tbargs=\toks53
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (./style/text-processing.sty) (./style/graphics.sty
-\bottomimageheight=\skip125
-\bottomimagebox=\box136
-)
-(./style/references.sty) (./style/fudge.sty) (./style/combat.sty)
-(./style/skills.sty) (./style/traits.sty) (./style/environments.sty)
-(./style/character-sheet.sty
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/paracol/par
-acol.sty
-Package: paracol 2018/12/31 v1.35 
-\pcol@currcol=\count356
-\pcol@nextcol=\count357
-\pcol@ncol=\count358
-\pcol@ncolleft=\count359
-\pcol@page=\count360
-\pcol@basepage=\count361
-\pcol@toppage=\count362
-\pcol@footnotebase=\count363
-\pcol@nfootnotes=\count364
-\pcol@mcid=\count365
-\pcol@prevdepth=\dimen328
-\pcol@colht=\dimen329
-\pcol@textfloatsep=\dimen330
-\pcol@lrmargin=\dimen331
-\pagerim=\dimen332
-\pcol@topskip=\skip126
-\belowfootnoteskip=\skip127
-\pcol@topfnotes=\box137
-\pcol@prespan=\box138
-\pcol@rightpage=\box139
-\pcol@colorstack@saved=\box140
-\pcol@tempboxa=\box141
-\pcol@tempboxb=\box142
-\pcol@colorins=\insert252
-\pcol@everyvbox=\toks53
-)))
+) (./style/text-processing.sty) (./style/graphics.sty) (./style/references.sty) (./style/fudge.sty) (./style/combat.sty) (./style/skills.sty) (./style/traits.sty) (./style/environments.sty) (./style/character-sheet.sty))
 \wyrd@idxfile=\write4
 \openout4 = `wyrd.idx'.
 
@@ -1304,62 +914,53 @@ Writing index file wyrd.idx
 (./wyrd.aux)
 \openout1 = `wyrd.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/context/base/mkii
-/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count366
-\scratchdimen=\dimen333
-\scratchbox=\box143
+\scratchdimen=\dimen334
+\scratchbox=\box142
 \nofMPsegments=\count367
 \nofMParguments=\count368
 \everyMPshowfont=\toks54
 \MPscratchCnt=\count369
-\MPscratchDim=\dimen334
+\MPscratchDim=\dimen335
 \MPnumerator=\count370
 \makeMPintoPDFobject=\count371
 \everyMPtoPDFconversion=\toks55
-)
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/epstopdf-pk
-g/epstopdf-base.sty
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/latexconfig
-/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 10.
-Package gensymb Info: Math companion symbols declared on input line 10.
-LaTeX Info: Redefining \degree on input line 10.
-LaTeX Info: Redefining \celsius on input line 10.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 10.
-LaTeX Info: Redefining \ohm on input line 10.
-Package gensymb Info: Using \textohm for \ohm on input line 10.
-Package gensymb Info: Using \textmu for \micro on input line 10.
+(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 8.
+Package gensymb Info: Math companion symbols declared on input line 8.
+LaTeX Info: Redefining \degree on input line 8.
+LaTeX Info: Redefining \celsius on input line 8.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 8.
+LaTeX Info: Redefining \ohm on input line 8.
+Package gensymb Info: Using \textohm for \ohm on input line 8.
+Package gensymb Info: Using \textmu for \micro on input line 8.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1395,19 +996,19 @@ Package gensymb Info: Using \textmu for \micro on input line 10.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 10.
-Package microtype Info: Applying patch `item' on input line 10.
-Package microtype Info: Applying patch `toc' on input line 10.
-Package microtype Info: Applying patch `eqnum' on input line 10.
-Package microtype Info: Applying patch `footnote' on input line 10.
-Package microtype Info: Applying patch `verbatim' on input line 10.
+LaTeX Info: Redefining \microtypecontext on input line 8.
+Package microtype Info: Applying patch `item' on input line 8.
+Package microtype Info: Applying patch `toc' on input line 8.
+Package microtype Info: Applying patch `eqnum' on input line 8.
+Package microtype Info: Applying patch `footnote' on input line 8.
+Package microtype Info: Applying patch `verbatim' on input line 8.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 10.
+LaTeX Info: Redefining \showhyphens on input line 8.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1421,69 +1022,60 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 10.
+Package hyperref Info: Link coloring OFF on input line 8.
 (./wyrd.out) (./wyrd.out)
 \@outlinefile=\write5
 \openout5 = `wyrd.out'.
 
 \c@lstlisting=\count374
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <17.28> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 15.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <12> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 15.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/m
-t-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 13.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
-LaTeX Font Info:    Trying to load font information for TS1+pbk on input line 1
-5.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ts1p
-bk.fd
+(Font)              <6> on input line 13.
+LaTeX Font Info:    Trying to load font information for TS1+pbk on input line 13.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ts1pbk.fd
 File: ts1pbk.fd 2001/06/04 font definitions for TS1/pbk.
 )
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <12> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 13.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pbk' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <8> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <6> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 13.
  [1
 
 
 
-{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updm
-ap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/e
-nc/dvips/base/8r.enc}]
+{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <7> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 15.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 13.
 <dndbook/img/footerscroll.pdf, id=181, 596.2275pt x 42.15584pt>
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 15.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 13.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [2
 
  <./dndbook/img/footerscroll.pdf>]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <24.88> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 15.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <24.88> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 15.
+(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 13.
 
-contour: Using 32 copies for `Contents\ttl@gmk{\@mkboth{\MakeUppercase    []{Co
-ntents}}{\MakeUppercase    []{Contents}}}' on input line 15.
+contour: Using 32 copies for `Contents\ttl@gmk{\@mkboth{\MakeUppercase    []{Contents}}{\MakeUppercase    []{Contents}}}' on input line 13.
 (./wyrd.toc
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <12> not available
 (Font)              Font shape `T1/pbk/l/sc' tried instead on input line 3.
@@ -1498,32 +1090,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 
 
 Overfull \hbox (0.57983pt too wide) detected at line 68
- \T1/pbk/l/sc/12 21
- []
-
-
-Overfull \hbox (0.57983pt too wide) detected at line 82
  \T1/pbk/l/sc/12 25
  []
 
 
+Overfull \hbox (0.57983pt too wide) detected at line 82
+ \T1/pbk/l/sc/12 29
+ []
+
+
 Overfull \hbox (0.57983pt too wide) detected at line 85
- \T1/pbk/l/sc/12 27
+ \T1/pbk/l/sc/12 31
  []
 
 
 Overfull \hbox (0.57983pt too wide) detected at line 114
- \T1/pbk/l/sc/12 35
+ \T1/pbk/l/sc/12 39
  []
 
 
 Overfull \hbox (0.57983pt too wide) detected at line 117
- \T1/pbk/l/sc/12 41
+ \T1/pbk/l/sc/12 45
  []
 
 
 Overfull \hbox (0.57983pt too wide) detected at line 118
- \T1/pbk/l/sc/12 43
+ \T1/pbk/l/sc/12 47
  []
 
 )
@@ -1532,26 +1124,25 @@ Overfull \hbox (0.57983pt too wide) detected at line 118
 
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 17.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 15.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [3]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 17.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 15.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [4
 
 ]
 Chapter 1.
-contour: Using 32 copies for `Chapter\ 1:' on input line 19.
-contour: Using 32 copies for `The' on input line 19.
-contour: Using 32 copies for `Wyrd' on input line 19.
-contour: Using 32 copies for `Engine' on input line 19.
+contour: Using 32 copies for `Chapter\ 1:' on input line 17.
+contour: Using 32 copies for `The' on input line 17.
+contour: Using 32 copies for `Wyrd' on input line 17.
+contour: Using 32 copies for `Engine' on input line 17.
 (./chapters/introduction.tex
 Package lettrine.sty Info: Targeted height = 40.98491pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.98476pt (\color {titlered}{T});
-
 (lettrine.sty)             reported on input line 3.
 
 Overfull \hbox (0.10428pt too wide) in paragraph at lines 3--4
@@ -1577,45 +1168,38 @@ Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 69.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <10> not available
 (Font)              Font shape `T1/pbk/db/n' tried instead on input line 71.
 )
+<img/pageart/gears-bottom-left.png, id=299, 974.64125pt x 719.68875pt>
+File: img/pageart/gears-bottom-left.png Graphic file (type png)
+<use img/pageart/gears-bottom-left.png>
+Package pdftex.def Info: img/pageart/gears-bottom-left.png  used on input line 19.
+(pdftex.def)             Requested size: 614.295pt x 453.60399pt.
+ [2 <./img/pageart/gears-bottom-left.png>]
+contour: Using 32 copies for `Part\ 1' on input line 19.
+contour: Using 32 copies for `The' on input line 19.
+contour: Using 32 copies for `Wyrd' on input line 19.
+contour: Using 32 copies for `Engine' on input line 19.
+contour: Using 32 copies for `Mechanics' on input line 19.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [2
-
-]
-contour: Using 32 copies for `Part\ 1' on input line 21.
-contour: Using 32 copies for `The' on input line 21.
-contour: Using 32 copies for `Wyrd' on input line 21.
-contour: Using 32 copies for `Engine' on input line 21.
-contour: Using 32 copies for `Mechanics' on input line 21.
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 19.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
 [3
 
 
 ] [4]
 Chapter 2.
-contour: Using 32 copies for `Chapter\ 2:' on input line 22.
-contour: Using 32 copies for `Core' on input line 22.
-contour: Using 32 copies for `Mechanics' on input line 22.
+contour: Using 32 copies for `Chapter\ 2:' on input line 20.
+contour: Using 32 copies for `Core' on input line 20.
+contour: Using 32 copies for `Mechanics' on input line 20.
 (./chapters/mechanics/core/core.tex
 Package lettrine.sty Info: Targeted height = 40.98491pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.98476pt (\color {titlered}{T});
-
 (lettrine.sty)             reported on input line 2.
-
-(./chapters/mechanics/core/./conflict-resolution.tex
-LaTeX Font Info:    Trying to load font information for T1+GilliusADFNoTwo-LF o
-n input line 7.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/T1G
-illiusADFNoTwo-LF.fd
-File: T1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for T1/Gil
-liusADFNoTwo-LF.
+ (./chapters/mechanics/core/./conflict-resolution.tex
+LaTeX Font Info:    Trying to load font information for T1+GilliusADFNoTwo-LF on input line 7.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/T1GilliusADFNoTwo-LF.fd
+File: T1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for T1/GilliusADFNoTwo-LF.
 )
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 7.
@@ -1629,13 +1213,9 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <9> not available
 (Font)              Font shape `T1/pbk/l/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 9.
-LaTeX Font Info:    Trying to load font information for TS1+GilliusADFNoTwo-LF 
-on input line 9.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/TS1
-GilliusADFNoTwo-LF.fd
-File: TS1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for TS1/G
-illiusADFNoTwo-LF.
+LaTeX Font Info:    Trying to load font information for TS1+GilliusADFNoTwo-LF on input line 9.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/gillius/TS1GilliusADFNoTwo-LF.fd
+File: TS1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for TS1/GilliusADFNoTwo-LF.
 )
 LaTeX Font Info:    Font shape `TS1/GilliusADFNoTwo-LF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 9.
@@ -1653,21 +1233,15 @@ LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <9> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <5> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
-ut line 26.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome
-/ufontawesometwo.fd
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 26.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
-nput line 26.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome
-/ufontawesomethree.fd
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 26.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
-<stats/4dF.pdf, id=319, 198.7425pt x 113.42375pt>
+<stats/4dF.pdf, id=320, 198.7425pt x 113.42375pt>
 File: stats/4dF.pdf Graphic file (type pdf)
 <use stats/4dF.pdf>
 Package pdftex.def Info: stats/4dF.pdf  used on input line 34.
@@ -1678,6 +1252,9 @@ LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <10> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <7> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 36.
+
+Overfull \vbox (5.1346pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 37.
@@ -1686,24 +1263,15 @@ Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 37.
 
 
 
-{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gilli
-us/gls_efuo7w.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fon
-ts/enc/dvips/gillius/gls_4bsedw.enc}{/opt/homebrew/Cellar/texlive/20240312_3/sh
-are/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/homebrew/Ce
-llar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesom
-ethree.enc} <./stats/4dF.pdf>]
-<stats/4dF-success.pdf, id=336, 226.8475pt x 141.52875pt>
+{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_efuo7w.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc} <./stats/4dF.pdf>]
+<stats/4dF-success.pdf, id=338, 226.8475pt x 141.52875pt>
 File: stats/4dF-success.pdf Graphic file (type pdf)
 <use stats/4dF-success.pdf>
 Package pdftex.def Info: stats/4dF-success.pdf  used on input line 40.
 (pdftex.def)             Requested size: 186.86417pt x 116.5834pt.
-)
-(./chapters/mechanics/core/./skills.tex
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 
-6.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kpfonts/t1j
-kpss.fd
+) (./chapters/mechanics/core/./skills.tex
+LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 8.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1713,87 +1281,122 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 9.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \vbox (badness 3199) has occurred while \output is active []
-
-
-Overfull \hbox (0.10156pt too wide) in paragraph at lines 58--59
+Overfull \hbox (0.10156pt too wide) in paragraph at lines 17--18
 \T1/pbk/l/n/10 (+17) after severe physical or mental trauma, in which 
  []
 
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 62.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 28.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
 [6 <./stats/4dF-success.pdf>]
-Overfull \hbox (2.66386pt too wide) in paragraph at lines 78--78
+LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 34.
+
+Overfull \hbox (2.66386pt too wide) in paragraph at lines 79--79
 [][] 
  []
 
-) (./chapters/mechanics/core/./traits.tex
+
+LaTeX Warning: Text page 7 contains only floats.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (150.38446pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (150.38446pt too high) has occurred while \output is active []
+
+<img/pageart/gears-bottom-right-tall.png, id=351, 1027.84pt x 1027.84pt>
+File: img/pageart/gears-bottom-right-tall.png Graphic file (type png)
+<use img/pageart/gears-bottom-right-tall.png>
+Package pdftex.def Info: img/pageart/gears-bottom-right-tall.png  used on input line 81.
+(pdftex.def)             Requested size: 614.295pt x 614.30917pt.
+ [7
+
+ <./img/pageart/gears-bottom-right-tall.png (PNG copy)>]) (./chapters/mechanics/core/./traits.tex
+Overfull \vbox (2.42308pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (14.14241pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 8.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 56.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [7]
+ [8
+
+]
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <9> not available
 (Font)              Font shape `T1/pbk/db/n' tried instead on input line 70.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 83.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [9]
 Overfull \hbox (13.69788pt too wide) in paragraph at lines 94--94
 [][] 
  []
 
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 110.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[8]) (./chapters/mechanics/core/./gear.tex
+) (./chapters/mechanics/core/./gear.tex
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 32.
-
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 40.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [10]
 Overfull \hbox (0.1098pt too wide) in paragraph at lines 41--42
 \T1/pbk/l/n/10 (+14) ad-vanc-ing char-ac-ters when prepar-ing them for a 
  []
 
+) (./chapters/mechanics/core/./difficulty-levels.tex
+Overfull \vbox (3.66238pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 42.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 33.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[9]) (./chapters/mechanics/core/./difficulty-levels.tex
-<stats/4dF-DR.pdf, id=378, 226.8475pt x 141.52875pt>
+ [11{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}]
+<stats/4dF-DR.pdf, id=392, 226.8475pt x 141.52875pt>
 File: stats/4dF-DR.pdf Graphic file (type pdf)
 <use stats/4dF-DR.pdf>
 Package pdftex.def Info: stats/4dF-DR.pdf  used on input line 36.
 (pdftex.def)             Requested size: 186.86417pt x 116.5834pt.
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 36.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [10{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/k
-pfonts/kpfonts-expert.enc}]
-<stats/shifted-DR.pdf, id=387, 226.8475pt x 284.06125pt>
+<stats/shifted-DR.pdf, id=393, 226.8475pt x 284.06125pt>
 File: stats/shifted-DR.pdf Graphic file (type pdf)
 <use stats/shifted-DR.pdf>
 Package pdftex.def Info: stats/shifted-DR.pdf  used on input line 45.
 (pdftex.def)             Requested size: 186.86417pt x 233.99364pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (76.87138pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 86.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 79.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [11 <./stats/4dF-DR.pdf> <./stats/shifted-DR.pdf>]
+ [12 <./stats/4dF-DR.pdf> <./stats/shifted-DR.pdf>]
+Underfull \vbox (badness 1867) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 148.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 145.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [12]
+ [13]
 Overfull \hbox (0.10106pt too wide) in paragraph at lines 171--172
-[]\T1/pbk/db/n/10 (+20) Direct As-sis-tance\T1/pbk/l/n/10 (+20) : Ac-tively wor
-k-ing along-side 
+[]\T1/pbk/db/n/10 (+20) Direct As-sis-tance\T1/pbk/l/n/10 (+20) : Ac-tively work-ing along-side 
  []
 
 ) (./chapters/mechanics/core/./combat.tex
@@ -1801,348 +1404,389 @@ LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <10> not available
 (Font)              Font shape `T1/pbk/l/sc' tried instead on input line 4.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 8.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [13]
-LaTeX Font Info:    Trying to load font information for U+fontawesomeone on inp
-ut line 80.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome
-/ufontawesomeone.fd
-File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
-)
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 85.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [14{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/f
-ontawesome/fontawesomeone.enc}]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 155.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [15]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 213.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [16])
-(./chapters/mechanics/core/./character-creation.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 31.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [17])
-(./chapters/mechanics/core/./npcs.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 4.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [18]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 61.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [19]))
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 23.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [20]
-Chapter 3.
-contour: Using 32 copies for `Chapter\ 3:' on input line 23.
-contour: Using 32 copies for `The' on input line 23.
-contour: Using 32 copies for `Wyrd' on input line 23.
-contour: Using 32 copies for `Engine' on input line 23.
-contour: Using 32 copies for `Toolbox' on input line 23.
-(./chapters/mechanics/toolbox/toolbox.tex
-Package lettrine.sty Info: Targeted height = 40.98491pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 40.41977pt (\color {titlered}{E});
-
-(lettrine.sty)             reported on input line 2.
-
-(./chapters/mechanics/toolbox/./tools.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 30.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [21
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-])
-(./chapters/mechanics/toolbox/./balancing.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 18.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [22]
-Overfull \hbox (0.10777pt too wide) in paragraph at lines 21--22
-\T1/pbk/l/n/10 (+16) hit dice, or chal-lenge rat-ings. You do not need to 
- []
+Overfull \vbox (1.25084pt too high) has occurred while \output is active []
 
-) (./chapters/mechanics/toolbox/./skills.tex)
-(./chapters/mechanics/toolbox/./traits.tex)
-(./chapters/mechanics/toolbox/./stress.tex))
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 24.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [23]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 24.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [24
-
-
-]
-Chapter 4.
-contour: Using 32 copies for `Chapter\ 4:' on input line 24.
-contour: Using 32 copies for `Combat' on input line 24.
-(./chapters/mechanics/combat/combat.tex
-Package lettrine.sty Info: Targeted height = 40.98491pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 40.98476pt (\color {titlered}{T});
-
-(lettrine.sty)             reported on input line 2.
-)
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [25
-
-]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [26
-
-
-]
-Chapter 5.
-contour: Using 32 copies for `Chapter\ 5:' on input line 25.
-contour: Using 32 copies for `Magic' on input line 25.
-(./chapters/mechanics/magic/magic.tex
-Package lettrine.sty Info: Targeted height = 40.98491pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.75212pt (\color {titlered}{M});
-
-(lettrine.sty)             reported on input line 2.
-
-(./chapters/mechanics/magic/./design-goals.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 42.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [27])
-(./chapters/mechanics/magic/./building-blocks.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 47.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [28])
-(./chapters/mechanics/magic/./gift-of-twilight.tex
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 48.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [29])
-(./chapters/mechanics/magic/./wardens-path.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 51.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [30]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 69
-.
+ [15]
+LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 80.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
+)
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 114.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [16{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pc
-r.fd
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 137.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [17]
+Overfull \vbox (15.82872pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 207.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [18]) (./chapters/mechanics/core/./character-creation.tex
+Overfull \vbox (9.1442pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [19]
+Overfull \vbox (19.67131pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 109.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [20]) (./chapters/mechanics/core/./npcs.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 26.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 55.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [22]
+Overfull \vbox (2.27637pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 124.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [23]))
+Overfull \vbox (0.30331pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [24]
+Chapter 3.
+contour: Using 32 copies for `Chapter\ 3:' on input line 21.
+contour: Using 32 copies for `The' on input line 21.
+contour: Using 32 copies for `Wyrd' on input line 21.
+contour: Using 32 copies for `Engine' on input line 21.
+contour: Using 32 copies for `Toolbox' on input line 21.
+(./chapters/mechanics/toolbox/toolbox.tex
+Package lettrine.sty Info: Targeted height = 40.98491pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 40.41977pt (\color {titlered}{E});
+(lettrine.sty)             reported on input line 2.
+ (./chapters/mechanics/toolbox/./tools.tex
+Overfull \vbox (0.36334pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 31.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [25
+
+
+]) (./chapters/mechanics/toolbox/./balancing.tex
+Overfull \vbox (1.63434pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 18.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [26]
+Overfull \hbox (0.10777pt too wide) in paragraph at lines 21--22
+\T1/pbk/l/n/10 (+16) hit dice, or chal-lenge rat-ings. You do not need to 
+ []
+
+) (./chapters/mechanics/toolbox/./skills.tex) (./chapters/mechanics/toolbox/./traits.tex) (./chapters/mechanics/toolbox/./stress.tex))
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 22.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [27]
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 22.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [28
+
+
+]
+Chapter 4.
+contour: Using 32 copies for `Chapter\ 4:' on input line 22.
+contour: Using 32 copies for `Combat' on input line 22.
+(./chapters/mechanics/combat/combat.tex
+Package lettrine.sty Info: Targeted height = 40.98491pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 40.98476pt (\color {titlered}{T});
+(lettrine.sty)             reported on input line 2.
+)
+Overfull \vbox (1.94908pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 23.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [29]
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 23.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [30
+
+
+]
+Chapter 5.
+contour: Using 32 copies for `Chapter\ 5:' on input line 23.
+contour: Using 32 copies for `Magic' on input line 23.
+(./chapters/mechanics/magic/magic.tex
+Package lettrine.sty Info: Targeted height = 40.98491pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 39.75212pt (\color {titlered}{M});
+(lettrine.sty)             reported on input line 2.
+ (./chapters/mechanics/magic/./design-goals.tex
+Overfull \vbox (2.18231pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (27.58372pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 42.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [31]) (./chapters/mechanics/magic/./building-blocks.tex
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 47.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [32]) (./chapters/mechanics/magic/./gift-of-twilight.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 19.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [33]) (./chapters/mechanics/magic/./wardens-path.tex
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 12.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [34]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 69.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./chapters/mechanics/magic/./codex-infinitum.tex
+
+Overfull \vbox (4.6152pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 100.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [35]) (./chapters/mechanics/magic/./codex-infinitum.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 23.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [31]
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 107.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 57.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [32])
-(./chapters/mechanics/magic/./known-and-the-named.tex))
+ [37]) (./chapters/mechanics/magic/./known-and-the-named.tex))
+Overfull \vbox (10.31972pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [33
-
-]
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [34
-
-
-]
+ [38]
 Chapter 6.
-contour: Using 32 copies for `Chapter\ 6:' on input line 27.
-contour: Using 32 copies for `Races' on input line 27.
-contour: Using 32 copies for `\&' on input line 27.
-contour: Using 32 copies for `Creatures' on input line 27.
+contour: Using 32 copies for `Chapter\ 6:' on input line 25.
+contour: Using 32 copies for `Races' on input line 25.
+contour: Using 32 copies for `\&' on input line 25.
+contour: Using 32 copies for `Creatures' on input line 25.
 (./chapters/mechanics/races-and-creatures/races-and-creatures.tex
 Package lettrine.sty Info: Targeted height = 40.98491pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.11163pt (\color {titlered}{N});
-
 (lettrine.sty)             reported on input line 3.
 )
+Overfull \vbox (2.24994pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 29.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [35
+ [39
+
 
 ]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 29.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-
-[36
+ [40
 
 ]
-contour: Using 32 copies for `Part\ 2' on input line 29.
-contour: Using 32 copies for `One-Shots' on input line 29.
+contour: Using 32 copies for `Part\ 2' on input line 27.
+contour: Using 32 copies for `One-Shots' on input line 27.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 29.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 27.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[37
+[41
 
-] [38]
-contour: Using 32 copies for `Part\ 3' on input line 32.
-contour: Using 32 copies for `Episodic' on input line 32.
-contour: Using 32 copies for `Play' on input line 32.
+] [42]
+contour: Using 32 copies for `Part\ 3' on input line 30.
+contour: Using 32 copies for `Episodic' on input line 30.
+contour: Using 32 copies for `Play' on input line 30.
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 30.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+[43
+
+
+
+] [44]
+Chapter 7.
+contour: Using 32 copies for `Chapter\ 7:' on input line 31.
+contour: Using 32 copies for `Episodic' on input line 31.
+contour: Using 32 copies for `Settings' on input line 31.
+(./chapters/episodic/crafting-episodic-play.tex)
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 32.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[39
-
-
-
-] [40]
-Chapter 7.
-contour: Using 32 copies for `Chapter\ 7:' on input line 33.
-contour: Using 32 copies for `Episodic' on input line 33.
-contour: Using 32 copies for `Settings' on input line 33.
-(./chapters/episodic/crafting-episodic-play.tex)
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [41
-
+ [45
 
 
 
 ]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 32.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [42
+ [46
 
 
 ]
 Chapter 8.
-contour: Using 32 copies for `Chapter\ 8:' on input line 34.
-contour: Using 32 copies for `The' on input line 34.
-contour: Using 32 copies for `Grand' on input line 34.
-contour: Using 32 copies for `Casebook' on input line 34.
+contour: Using 32 copies for `Chapter\ 8:' on input line 32.
+contour: Using 32 copies for `The' on input line 32.
+contour: Using 32 copies for `Grand' on input line 32.
+contour: Using 32 copies for `Casebook' on input line 32.
 (./chapters/episodic/grand-casebook/grand-casebook.tex
 Package lettrine.sty Info: Targeted height = 40.78662pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 40.4287pt (\color {titlered}{L});
 (lettrine.sty)             reported on input line 3.
+
+Overfull \vbox (7.21457pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 45.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 46.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [43]
-Underfull \vbox (badness 1117) has occurred while \output is active []
-
-
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/murder-at-the-br
-ass-orchid.tex
+ [47] (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/murder-at-the-brass-orchid.tex
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 2.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [44]
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-la
-ngley.tex)
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-merc
-er.tex)
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-0.tex
+ [48] (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/beatrice-langley.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/npcs/edward-mercer.tex) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-0.tex
+Overfull \vbox (188.35489pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 9.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-
-[45])
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1.tex
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/madame-yv
-ette-duval.tex)
+ [49]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1.tex (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/madame-yvette-duval.tex)
 Overfull \hbox (0.10483pt too wide) in paragraph at lines 6--7
 []\T1/pbk/l/n/10 (+9) Upon un-lock-ing the door, they were met with a 
  []
 
+(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1/clues.tex)
+Overfull \vbox (8.1681pt too high) has occurred while \output is active []
 
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-1/clues.te
-x)
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 53.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [46]
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-2.tex
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/staff.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (350.42177pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (350.42177pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 53.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [51]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-2.tex (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/staff.tex
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
-)
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/patrons.t
-ex)
+) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./npcs/patrons.tex)
+Overfull \vbox (38.56323pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 24.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [47]
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 42.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 37.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [48]
+ [53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 74.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 62.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [49])
-(./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-3.tex
+ [54]) (./chapters/episodic/grand-casebook/murder-at-the-brass-orchid/./act-3.tex
+Overfull \vbox (3.45212pt too high) has occurred while \output is active []
+
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 13.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [55]
 Overfull \hbox (0.10194pt too wide) in paragraph at lines 18--19
 []\T1/pbk/l/n/10 (+8) However, if they push too ag-gres-sively or fail to 
  []
@@ -2152,40 +1796,66 @@ File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [50]
+ [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (190.6834pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (190.6834pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 55.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 21.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [57]) (./chapters/episodic/grand-casebook/./the-silent-courier.tex
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 1.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51]) (./chapters/episodic/grand-casebook/./the-silent-courier.tex
+
+Overfull \vbox (56.06924pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (56.06924pt too high) has occurred while \output is active []
+
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 25.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [52]))
-File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
-<use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 36.
-(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [59]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[53]
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 36.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 55.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [54
+ [60]))
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [61]
+File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
+<use dndbook/img/footerscroll.pdf>
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
+(pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
+ [62
 
 ]
-contour: Using 32 copies for `Part\ 4' on input line 36.
-contour: Using 32 copies for `Campaigns' on input line 36.
+contour: Using 32 copies for `Part\ 4' on input line 34.
+contour: Using 32 copies for `Campaigns' on input line 34.
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 36.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 34.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[55
+[63
 
-] [56]
+] [64]
 runsystem(makeindex wyrd.idx)...executed safely (allowed).
 
  (./wyrd.ind
@@ -2193,10 +1863,9 @@ contour: Using 32 copies for `Index' on input line 1.
 )
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 41.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 39.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
- [57
-
+ [65
 
 
 
@@ -2209,38 +1878,18 @@ Package rerunfilecheck Info: File `wyrd.out' has not changed.
 (rerunfilecheck)             Checksum: B8953AD73D919EFA9F44D693473C7248;6065.
  ) 
 Here is how much of TeX's memory you used:
- 37841 strings out of 474116
- 753013 string characters out of 5732613
- 1977187 words of memory out of 5000000
- 58685 multiletter control sequences out of 15000+600000
+ 37917 strings out of 474116
+ 755222 string characters out of 5732613
+ 1986187 words of memory out of 5000000
+ 58743 multiletter control sequences out of 15000+600000
  664900 words of font info for 345 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 121i,17n,131p,1016b,2209s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/
-fontawesome/FontAwesome.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texm
-f-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cella
-r/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo
-2-BoldItalic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/font
-s/type1/arkandis/gillius/GilliusADFNo2-Italic.pfb></opt/homebrew/Cellar/texlive
-/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular
-.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/publ
-ic/initials/RoyalIn.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/homebrew/Cellar/texlive/20240
-312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/C
-ellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/publ
-ic/kpfonts/jkpssbn8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-d
-ist/fonts/type1/public/kpfonts/jkpssbne.pfb></opt/homebrew/Cellar/texlive/20240
-312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></opt/homebrew
-/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb>
-</opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookm
-an/ubkl8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/t
-ype1/urw/bookman/ubkli8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on wyrd.pdf (61 pages, 501216 bytes).
+ 121i,18n,131p,1052b,2209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-BoldItalic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Italic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on wyrd.pdf (69 pages, 3486245 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 681 compressed objects within 7 object streams
- 231 named destinations out of 1000 (max. 500000)
- 121206 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 874 PDF objects out of 1000 (max. 8388607)
+ 707 compressed objects within 8 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 121216 words of extra memory for PDF output out of 128383 (max. 10000000)
 

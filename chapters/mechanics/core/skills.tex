@@ -3,7 +3,32 @@
 \index{Skills}
 \label{core:skills}
 
-\begin{WyrdExampleSidebar}[float=!t]{Skills in the ``Grand Casebook'' Setting}
+Skills represent a character's proficiency in various actions, from keen observation and quick reflexes to mastery in combat or persuasion. Whenever a character attempts a significant action where success is uncertain, they roll \textbf{4dF} and add their relevant skill modifier. For player characters and most non-player characters they encounter, skills are range as:
+
+\begin{DndTable}[header=Skill Levels in \wyrd]{lX}
+    \textbf{Skill Level} & \textbf{Description}\\
+    \hline
+    \Untrained & A character with no special training, relying on instinct or common sense. \\
+    \Novice & Someone with basic knowledge or minimal hands-on experience in a skill. \\
+    \Skilled & A well-trained individual who regularly practices and applies their ability. \\
+    \Expert & A master in the field, capable of performing under extreme conditions. \\
+\end{DndTable}
+
+For extreme monsters, e.g., demons, dragons, or killer robots, skills might go higher. You will usually not go lower than \Untrained unless a character is impaired, e.g., drugged or recovering after severe physical or mental trauma, in which case you can.
+
+
+Characters begin with a defined set of skill ranks, representing their strengths and weaknesses. Unlike systems with extensive skill lists, The Wyrd Engine keeps skills broad and flexible, allowing them to cover a wide range of related actions. For instance, a character with a high \textbf{Athletics} skill might use it to outrun pursuers, climb treacherous cliffs, or leap between rooftops. Similarly, depending on the character's background, Lore could represent expertise in ancient history, arcane knowledge, or scientific principles.
+
+The list of skills a character can have will depend on the setting in which the game is taking place, and there is not a fixed list of skills for all Wyrd games. Generally, you should feel free to make up your own skills---remembering to keep them broad in scope---and decide between player and GM when a skill is applicable. If you like, though, you can make more detailed skill lists if that is more to your taste. In the sidebar, you can see an example of this from \emph{The Grand Casebook} setting, a Victorian/Steampunk/Gothic Horror setting.
+
+When a character lacks a skill, they roll with a default modifier of 0, relying solely on luck and circumstance. This ensures that even untrained characters have a chance—however slim—of succeeding in tasks outside their expertise.
+
+Let us throw the character \emph{Inspector Julian Hargrave} (see sidebar) into some difficult situations and see how he can use his skills to resolve them.
+
+\clearpage
+\WyrdFooterImage{img/pageart/gears-bottom-right-tall}
+
+\begin{WyrdExampleSidebar}[float=!t]{Example Skills}
 	\subsection*{Investigation \& Knowledge}  
 	\begin{itemize}
     	\item \emph{Investigate}---Analysing crime scenes, following leads, searching for hidden clues.
@@ -42,30 +67,6 @@
 	\end{itemize}
 \end{WyrdExampleSidebar}
 
-In The Wyrd Engine, skills represent a character's proficiency in various actions, from keen observation and quick reflexes to mastery in combat or persuasion. Whenever a character attempts a significant action where success is uncertain, they roll \textbf{4dF} and add their relevant skill modifier. The total is then compared against a \textbf{difficulty rating (DR)} set by the Game Master (GM) or an opposed roll from another character.
-
-For player characters and most non-player characters they encounter, skills are range from \Untrained to \Expert:
-
-\begin{DndTable}[header=Skill Levels in \wyrd]{lX}
-    \textbf{Skill Level} & \textbf{Description}\\
-    \hline
-    \Untrained & A character with no special training, relying on instinct or common sense. \\
-    \Novice & Someone with basic knowledge or minimal hands-on experience in a skill. \\
-    \Skilled & A well-trained individual who regularly practices and applies their ability. \\
-    \Expert & A master in the field, capable of performing under extreme conditions. \\
-\end{DndTable}
-
-For extreme monsters, e.g., demons, dragons, or killer robots, skills might go higher. You will usually not go lower than \Untrained unless a character is impaired, e.g., drugged or recovering after severe physical or mental trauma, in which case you can.
-
-
-Characters begin with a defined set of skill ranks, representing their strengths and weaknesses. Unlike systems with extensive skill lists, The Wyrd Engine keeps skills broad and flexible, allowing them to cover a wide range of related actions. For instance, a character with a high \textbf{Athletics} skill might use it to outrun pursuers, climb treacherous cliffs, or leap between rooftops. Similarly, depending on the character's background, Lore could represent expertise in ancient history, arcane knowledge, or scientific principles.
-
-The list of skills a character can have will depend on the setting in which the game is taking place, and there is not a fixed list of skills for all Wyrd games. Generally, you should feel free to make up your own skills---remembering to keep them broad in scope---and decide between player and GM when a skill is applicable. If you like, though, you can make more detailed skill lists if that is more to your taste. In the sidebar, you can see an example of this from \emph{The Grand Casebook} setting, a Victorian/Steampunk/Gothic Horror setting.
-
-When a character lacks a skill, they roll with a default modifier of 0, relying solely on luck and circumstance. This ensures that even untrained characters have a chance—however slim—of succeeding in tasks outside their expertise.
-
-Let us throw the character \emph{Inspector Julian Hargrave} (see sidebar) into some difficult situations and see how he can use his skills to resolve them.
-
 \begin{WyrdNPC}[float=!t]{Inspector Julian Hargrave}
 	\emph{Determined and methodical, Inspector Julian Hargrave is a seasoned detective. His years of experience have made him an expert at uncovering the truth, though his rigid approach sometimes clashes with the unpredictable nature of crime-solving.}
 
@@ -76,10 +77,14 @@ Let us throw the character \emph{Inspector Julian Hargrave} (see sidebar) into s
 		novice={Will, Provoke, Athletics},%
 		untrained={Stealth, Burglary, Shoot, Resources}%
 	]
+
 \end{WyrdNPC}
 
-\subsection{Skills in Action}
+\clearpage
 
+
+
+\subsection{Skills in Action}
 
 \begin{WyrdExample}[Analysing a Crime Scene]
 	\textbf{Situation:} A renowned socialite has been found dead in her study. The room appears to suggest suicide, but something about the scene seems off. Julian examines the area for inconsistencies.

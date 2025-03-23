@@ -1,34 +1,19 @@
-% Define new lengths and boxes
-\newlength{\bottomimageheight}
-\newsavebox{\bottomimagebox}
+%% FIXME: The bottom and top images will have text
+%% on top of them, and I need to figure out how to
+%% wrap that text.
 
 % Bottom Image Command
-\newcommand{\bottomart}[1]{
+\newcommand{\WyrdFooterImage}[1]{
     \thispagestyle{empty}
-    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
-    \setlength{\bottomimageheight}{\ht\bottomimagebox}
-    \enlargethispage*{-\bottomimageheight}
     \AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth]{#1}}}
-    \begin{figure*}[b!]
-        \centering
-        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
-    \end{figure*}
 }
 
 % Top Image Command
-\newcommand{\topart}[1]{
-    \sbox{\bottomimagebox}{\includegraphics[width=\paperwidth]{#1}}%
-    \setlength{\bottomimageheight}{\ht\bottomimagebox}%
-    \enlargethispage*{-\bottomimageheight}%
+\newcommand{\WyrdHeaderImage}[1]{
     \AddToShipoutPictureBG*{\AtPageUpperLeft{
         \raisebox{-\bottomimageheight}{\includegraphics[width=\paperwidth]{#1}}
     }}
-    \begin{figure*}[t!]
-        \centering
-        \makebox[\paperwidth][l]{\phantom{\includegraphics[width=\paperwidth]{#1}}}
-    \end{figure*}
 }
-
 
 %% Plotting
 \NewDocumentCommand{\Graph}{O{} m}{%
