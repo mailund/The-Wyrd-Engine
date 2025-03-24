@@ -34,7 +34,7 @@
 \contentsline {section}{Difficulty Levels}{10}{section*.37}%
 \contentsline {subsection}{Passive Opposition}{11}{subsection*.38}%
 \contentsline {subsection}{Active Opposition}{12}{subsection*.39}%
-\contentsline {subsection}{Ties and Partial Successes}{12}{subsection*.40}%
+\contentsline {subsection}{Ties and Partial Successes}{13}{subsection*.40}%
 \contentsline {subsection}{Interpreting Failure}{13}{subsection*.41}%
 \contentsline {subsection}{Boosts: Optional Rule for Increasing Success}{13}{subsection*.42}%
 \contentsline {subsection}{Effort: Optional Rule for Complex Tasks}{13}{subsection*.43}%
@@ -129,20 +129,20 @@
 \contentsline {subsection}{Act 1: The Crime Scene}{48}{subsection*.133}%
 \contentsline {subsubsection}{Examining the Crime Scene}{48}{subsubsection*.135}%
 \contentsline {subsection}{Act 2: The Investigation}{49}{subsection*.136}%
-\contentsline {subsubsection}{The Performers’ Dressing Rooms}{49}{subsubsection*.139}%
-\contentsline {subsubsection}{The Club’s Bar}{51}{subsubsection*.140}%
+\contentsline {subsubsection}{The Performers’ Dressing Rooms}{50}{subsubsection*.139}%
+\contentsline {subsubsection}{The Club’s Bar}{50}{subsubsection*.140}%
 \contentsline {subsubsection}{The Back Office}{52}{subsubsection*.141}%
 \contentsline {subsection}{Act 3: The Reveal}{52}{subsection*.142}%
 \contentsline {subsection}{Resolutions}{52}{subsection*.143}%
 \contentsline {section}{The Clockmaker’s Deception}{53}{section*.144}%
-\contentsline {subsection}{Act 1: The Accusation}{53}{subsection*.145}%
-\contentsline {subsection}{Act 2: The Hidden Conflict}{53}{subsection*.146}%
+\contentsline {subsection}{Act 1: The Accusation}{54}{subsection*.145}%
+\contentsline {subsection}{Act 2: The Hidden Conflict}{54}{subsection*.146}%
 \contentsline {subsection}{Act 3: The Mastermind Revealed}{54}{subsection*.147}%
 \contentsline {subsection}{Resolution: Justice or Cover-Up?}{54}{subsection*.148}%
-\contentsline {section}{The Silent Courier}{54}{section*.149}%
-\contentsline {subsection}{Act 1: The Body and the Letter}{54}{subsection*.150}%
+\contentsline {section}{The Silent Courier}{55}{section*.149}%
+\contentsline {subsection}{Act 1: The Body and the Letter}{55}{subsection*.150}%
 \contentsline {subsection}{Act 2: The Trail of Secrets}{55}{subsection*.151}%
 \contentsline {subsection}{Act 3: The Truth Unveiled}{55}{subsection*.152}%
-\contentsline {subsection}{Resolution: The Consequences of Truth}{55}{subsection*.153}%
+\contentsline {subsection}{Resolution: The Consequences of Truth}{56}{subsection*.153}%
 \contentsline {part}{\numberline {4}Campaigns}{57}{part.4}%
 \contentsfinish 
