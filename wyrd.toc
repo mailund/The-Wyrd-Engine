@@ -27,122 +27,122 @@
 \contentsline {subsection}{How Traits Work}{8}{subsection*.25}%
 \contentsline {subsection}{Creating Effective Traits}{8}{subsection*.26}%
 \contentsline {subsection}{Using Traits in Play}{8}{subsection*.28}%
-\contentsline {subsection}{Final Notes on Traits}{10}{subsection*.32}%
+\contentsline {subsection}{Final Notes on Traits}{9}{subsection*.32}%
 \contentsline {section}{Gear}{10}{section*.33}%
 \contentsline {subsection}{Gear as Traits}{10}{subsection*.34}%
-\contentsline {subsection}{Using Gear in Play}{11}{subsection*.36}%
-\contentsline {section}{Difficulty Levels}{11}{section*.37}%
+\contentsline {subsection}{Using Gear in Play}{10}{subsection*.36}%
+\contentsline {section}{Difficulty Levels}{10}{section*.37}%
 \contentsline {subsection}{Passive Opposition}{11}{subsection*.38}%
-\contentsline {subsection}{Active Opposition}{13}{subsection*.39}%
-\contentsline {subsection}{Ties and Partial Successes}{13}{subsection*.40}%
+\contentsline {subsection}{Active Opposition}{12}{subsection*.39}%
+\contentsline {subsection}{Ties and Partial Successes}{12}{subsection*.40}%
 \contentsline {subsection}{Interpreting Failure}{13}{subsection*.41}%
 \contentsline {subsection}{Boosts: Optional Rule for Increasing Success}{13}{subsection*.42}%
 \contentsline {subsection}{Effort: Optional Rule for Complex Tasks}{13}{subsection*.43}%
 \contentsline {subsection}{Teamwork: Optional Rule for Assisting Allies}{14}{subsection*.44}%
 \contentsline {section}{Basic Combat in The Wyrd Engine}{14}{section*.45}%
-\contentsline {subsection}{Initiative: Who Acts First?}{15}{subsection*.46}%
-\contentsline {subsection}{Taking Actions in Combat}{15}{subsection*.47}%
+\contentsline {subsection}{Initiative: Who Acts First?}{14}{subsection*.46}%
+\contentsline {subsection}{Taking Actions in Combat}{14}{subsection*.47}%
 \contentsline {subsection}{Attacking and Defending}{15}{subsection*.48}%
-\contentsline {subsection}{Stress: Fatigue and Wounds}{16}{subsection*.49}%
-\contentsline {subsection}{Healing and Recovery}{18}{subsection*.51}%
-\contentsline {subsection}{Combat Maneuvers and Special Actions}{18}{subsection*.52}%
-\contentsline {subsection}{Weapons and Gear in Combat}{18}{subsection*.53}%
-\contentsline {subsection}{Death and the End of Combat}{19}{subsection*.54}%
-\contentsline {subsection}{Conceding the Fight}{19}{subsection*.55}%
-\contentsline {section}{Character Creation}{19}{section*.56}%
-\contentsline {subsection}{Step 1: Concept}{19}{subsection*.57}%
-\contentsline {subsection}{Step 2: Choose Skills}{20}{subsection*.59}%
-\contentsline {subsection}{Step 3: Select Traits}{20}{subsection*.60}%
-\contentsline {subsection}{Step 4: Select Gear}{20}{subsection*.62}%
-\contentsline {subsection}{Step 5: Stress and Wounds}{20}{subsection*.64}%
-\contentsline {subsection}{Step 6: Final Details}{20}{subsection*.65}%
-\contentsline {section}{Creating Non-Player Characters}{21}{section*.66}%
-\contentsline {subsubsection}{For NPCs, the rules do not apply}{21}{subsubsection*.67}%
-\contentsline {subsection}{Mooks: Quick and Disposable}{22}{subsection*.68}%
-\contentsline {subsubsection}{Running Mooks in Play}{22}{subsubsection*.69}%
-\contentsline {subsection}{Dramatis Personae: Functional but Flexible}{23}{subsection*.70}%
-\contentsline {subsubsection}{Key Traits of Dramatis Personae}{23}{subsubsection*.71}%
-\contentsline {subsection}{Living, Breathing Characters: Fully Realized NPCs}{23}{subsection*.72}%
-\contentsline {subsubsection}{Key Traits of Living, Breathing Characters}{23}{subsubsection*.73}%
-\contentsline {subsection}{Choosing the Right Type of NPC}{24}{subsection*.74}%
-\contentsline {chapter}{\numberline {3}The Wyrd Engine Toolbox}{25}{chapter.3}%
-\contentsline {section}{The Tools in the Box}{25}{section*.75}%
-\contentsline {subsection}{Skills}{25}{subsection*.76}%
-\contentsline {subsection}{Traits}{25}{subsection*.78}%
-\contentsline {subsection}{Stress}{26}{subsection*.80}%
-\contentsline {section}{Balancing}{26}{section*.81}%
-\contentsline {subsection}{Balancing Player Characters}{26}{subsection*.82}%
-\contentsline {subsection}{Balancing Encounters}{27}{subsection*.83}%
-\contentsline {subsection}{Balancing the Game}{27}{subsection*.84}%
-\contentsline {section}{Adapting Skills}{27}{section*.85}%
-\contentsline {subsection}{Skill progression and prerequisites}{27}{subsection*.86}%
-\contentsline {subsection}{Levels of detail}{27}{subsection*.87}%
-\contentsline {section}{Adapting Traits}{27}{section*.88}%
-\contentsline {section}{Adapting Stress}{27}{section*.89}%
-\contentsline {chapter}{\numberline {4}Combat}{29}{chapter.4}%
-\contentsline {section}{Dealing damage}{29}{section*.90}%
-\contentsline {section}{Recovery}{29}{section*.91}%
-\contentsline {chapter}{\numberline {5}Magic}{31}{chapter.5}%
-\contentsline {section}{Design Goals for Magic Systems}{31}{section*.92}%
-\contentsline {subsection}{Soft Magic vs Hard Magic}{31}{subsection*.93}%
-\contentsline {subsection}{The Goals of Magic in \wyrd }{31}{subsection*.95}%
-\contentsline {section}{Building Magic with Core Mechanics}{32}{section*.96}%
-\contentsline {section}{The Gift of Twilight}{33}{section*.97}%
-\contentsline {subsection}{Using the Gift: The Mechanics}{34}{subsection*.98}%
-\contentsline {subsection}{Guidelines for GMs}{34}{subsection*.99}%
-\contentsline {subsection}{Optional Consequences}{34}{subsection*.100}%
-\contentsline {subsection}{In Summary}{34}{subsection*.101}%
-\contentsline {section}{The Warden’s Path}{34}{section*.102}%
-\contentsline {subsection}{The Mechanics of the Warden’s Path}{35}{subsection*.103}%
-\contentsline {subsubsection}{Build-Up}{35}{subsubsection*.104}%
-\contentsline {subsubsection}{Release}{35}{subsubsection*.105}%
-\contentsline {subsection}{Casting and Channeling}{35}{subsection*.106}%
-\contentsline {subsection}{Elemental Limits}{35}{subsection*.107}%
-\contentsline {subsection}{Optional Mechanics}{35}{subsection*.108}%
-\contentsline {subsection}{Magic Skills}{36}{subsection*.109}%
-\contentsline {subsection}{In Summary}{36}{subsection*.110}%
-\contentsline {section}{Codex Infinitum}{36}{section*.111}%
-\contentsline {subsection}{The Codex Mechanics}{37}{subsection*.112}%
-\contentsline {subsubsection}{Spells as Skills}{37}{subsubsection*.113}%
-\contentsline {subsubsection}{Grimoires and Spellbooks}{37}{subsubsection*.114}%
-\contentsline {subsubsection}{Magic Stress}{38}{subsubsection*.115}%
-\contentsline {subsubsection}{Spell Ranks}{38}{subsubsection*.116}%
-\contentsline {subsubsection}{Magic Schools}{38}{subsubsection*.117}%
-\contentsline {subsection}{Guidelines for GMs}{38}{subsection*.118}%
-\contentsline {subsection}{In Summary}{38}{subsection*.119}%
-\contentsline {section}{The Known and the Named}{38}{section*.120}%
-\contentsline {chapter}{\numberline {6}Races \& Creatures}{39}{chapter.6}%
-\contentsline {part}{\numberline {2}One-Shots}{41}{part.2}%
-\contentsline {part}{\numberline {3}Episodic Play}{43}{part.3}%
-\contentsline {chapter}{\numberline {7}Episodic Settings}{45}{chapter.7}%
-\contentsline {chapter}{\numberline {8}The Grand Casebook}{47}{chapter.8}%
-\contentsline {section}{The Setting}{47}{section*.121}%
-\contentsline {subsection}{The Grand Society of Inquiry}{47}{subsection*.122}%
-\contentsline {subsection}{The Powers That Be}{47}{subsection*.123}%
-\contentsline {subsection}{Types of Play}{47}{subsection*.124}%
-\contentsline {subsection}{Character Roles}{48}{subsection*.125}%
-\contentsline {subsection}{Rule Adaptations for This Setting}{48}{subsection*.126}%
-\contentsline {section}{Adventures}{48}{section*.127}%
-\contentsline {subsection}{The Call to Adventure}{48}{subsection*.128}%
-\contentsline {section}{Murder at the Brass Orchid}{49}{section*.129}%
-\contentsline {subsection}{Act 0: Into the Fray}{49}{subsection*.132}%
-\contentsline {subsection}{Act 1: The Crime Scene}{50}{subsection*.133}%
-\contentsline {subsubsection}{Examining the Crime Scene}{50}{subsubsection*.135}%
-\contentsline {subsection}{Act 2: The Investigation}{52}{subsection*.136}%
-\contentsline {subsubsection}{The Performers’ Dressing Rooms}{53}{subsubsection*.139}%
-\contentsline {subsubsection}{The Club’s Bar}{54}{subsubsection*.140}%
-\contentsline {subsubsection}{The Back Office}{55}{subsubsection*.141}%
-\contentsline {subsection}{Act 3: The Reveal}{55}{subsection*.142}%
-\contentsline {subsection}{Resolutions}{56}{subsection*.143}%
-\contentsline {section}{The Clockmaker’s Deception}{57}{section*.144}%
-\contentsline {subsection}{Act 1: The Accusation}{58}{subsection*.145}%
-\contentsline {subsection}{Act 2: The Hidden Conflict}{58}{subsection*.146}%
-\contentsline {subsection}{Act 3: The Mastermind Revealed}{58}{subsection*.147}%
-\contentsline {subsection}{Resolution: Justice or Cover-Up?}{58}{subsection*.148}%
-\contentsline {section}{The Silent Courier}{59}{section*.149}%
-\contentsline {subsection}{Act 1: The Body and the Letter}{59}{subsection*.150}%
-\contentsline {subsection}{Act 2: The Trail of Secrets}{60}{subsection*.151}%
-\contentsline {subsection}{Act 3: The Truth Unveiled}{60}{subsection*.152}%
-\contentsline {subsection}{Resolution: The Consequences of Truth}{61}{subsection*.153}%
-\contentsline {part}{\numberline {4}Campaigns}{63}{part.4}%
+\contentsline {subsection}{Stress: Fatigue and Wounds}{15}{subsection*.49}%
+\contentsline {subsection}{Healing and Recovery}{17}{subsection*.51}%
+\contentsline {subsection}{Combat Maneuvers and Special Actions}{17}{subsection*.52}%
+\contentsline {subsection}{Weapons and Gear in Combat}{17}{subsection*.53}%
+\contentsline {subsection}{Death and the End of Combat}{17}{subsection*.54}%
+\contentsline {subsection}{Conceding the Fight}{18}{subsection*.55}%
+\contentsline {section}{Character Creation}{18}{section*.56}%
+\contentsline {subsection}{Step 1: Concept}{18}{subsection*.57}%
+\contentsline {subsection}{Step 2: Choose Skills}{18}{subsection*.59}%
+\contentsline {subsection}{Step 3: Select Traits}{19}{subsection*.60}%
+\contentsline {subsection}{Step 4: Select Gear}{19}{subsection*.62}%
+\contentsline {subsection}{Step 5: Stress and Wounds}{19}{subsection*.64}%
+\contentsline {subsection}{Step 6: Final Details}{19}{subsection*.65}%
+\contentsline {section}{Creating Non-Player Characters}{19}{section*.66}%
+\contentsline {subsubsection}{For NPCs, the rules do not apply}{20}{subsubsection*.67}%
+\contentsline {subsection}{Mooks: Quick and Disposable}{20}{subsection*.68}%
+\contentsline {subsubsection}{Running Mooks in Play}{20}{subsubsection*.69}%
+\contentsline {subsection}{Dramatis Personae: Functional but Flexible}{20}{subsection*.70}%
+\contentsline {subsubsection}{Key Traits of Dramatis Personae}{21}{subsubsection*.71}%
+\contentsline {subsection}{Living, Breathing Characters: Fully Realized NPCs}{21}{subsection*.72}%
+\contentsline {subsubsection}{Key Traits of Living, Breathing Characters}{21}{subsubsection*.73}%
+\contentsline {subsection}{Choosing the Right Type of NPC}{21}{subsection*.74}%
+\contentsline {chapter}{\numberline {3}The Wyrd Engine Toolbox}{23}{chapter.3}%
+\contentsline {section}{The Tools in the Box}{23}{section*.75}%
+\contentsline {subsection}{Skills}{23}{subsection*.76}%
+\contentsline {subsection}{Traits}{23}{subsection*.78}%
+\contentsline {subsection}{Stress}{24}{subsection*.80}%
+\contentsline {section}{Balancing}{24}{section*.81}%
+\contentsline {subsection}{Balancing Player Characters}{24}{subsection*.82}%
+\contentsline {subsection}{Balancing Encounters}{25}{subsection*.83}%
+\contentsline {subsection}{Balancing the Game}{25}{subsection*.84}%
+\contentsline {section}{Adapting Skills}{25}{section*.85}%
+\contentsline {subsection}{Skill progression and prerequisites}{25}{subsection*.86}%
+\contentsline {subsection}{Levels of detail}{25}{subsection*.87}%
+\contentsline {section}{Adapting Traits}{25}{section*.88}%
+\contentsline {section}{Adapting Stress}{25}{section*.89}%
+\contentsline {chapter}{\numberline {4}Combat}{27}{chapter.4}%
+\contentsline {section}{Dealing damage}{27}{section*.90}%
+\contentsline {section}{Recovery}{27}{section*.91}%
+\contentsline {chapter}{\numberline {5}Magic}{29}{chapter.5}%
+\contentsline {section}{Design Goals for Magic Systems}{29}{section*.92}%
+\contentsline {subsection}{Soft Magic vs Hard Magic}{29}{subsection*.93}%
+\contentsline {subsection}{The Goals of Magic in \wyrd }{29}{subsection*.95}%
+\contentsline {section}{Building Magic with Core Mechanics}{30}{section*.96}%
+\contentsline {section}{The Gift of Twilight}{31}{section*.97}%
+\contentsline {subsection}{Using the Gift: The Mechanics}{31}{subsection*.98}%
+\contentsline {subsection}{Guidelines for GMs}{32}{subsection*.99}%
+\contentsline {subsection}{Optional Consequences}{32}{subsection*.100}%
+\contentsline {subsection}{In Summary}{32}{subsection*.101}%
+\contentsline {section}{The Warden’s Path}{32}{section*.102}%
+\contentsline {subsection}{The Mechanics of the Warden’s Path}{32}{subsection*.103}%
+\contentsline {subsubsection}{Build-Up}{32}{subsubsection*.104}%
+\contentsline {subsubsection}{Release}{33}{subsubsection*.105}%
+\contentsline {subsection}{Casting and Channeling}{33}{subsection*.106}%
+\contentsline {subsection}{Elemental Limits}{33}{subsection*.107}%
+\contentsline {subsection}{Optional Mechanics}{33}{subsection*.108}%
+\contentsline {subsection}{Magic Skills}{33}{subsection*.109}%
+\contentsline {subsection}{In Summary}{33}{subsection*.110}%
+\contentsline {section}{Codex Infinitum}{33}{section*.111}%
+\contentsline {subsection}{The Codex Mechanics}{34}{subsection*.112}%
+\contentsline {subsubsection}{Spells as Skills}{34}{subsubsection*.113}%
+\contentsline {subsubsection}{Grimoires and Spellbooks}{34}{subsubsection*.114}%
+\contentsline {subsubsection}{Magic Stress}{34}{subsubsection*.115}%
+\contentsline {subsubsection}{Spell Ranks}{34}{subsubsection*.116}%
+\contentsline {subsubsection}{Magic Schools}{34}{subsubsection*.117}%
+\contentsline {subsection}{Guidelines for GMs}{35}{subsection*.118}%
+\contentsline {subsection}{In Summary}{35}{subsection*.119}%
+\contentsline {section}{The Known and the Named}{35}{section*.120}%
+\contentsline {chapter}{\numberline {6}Races \& Creatures}{37}{chapter.6}%
+\contentsline {part}{\numberline {2}One-Shots}{39}{part.2}%
+\contentsline {part}{\numberline {3}Episodic Play}{41}{part.3}%
+\contentsline {chapter}{\numberline {7}Episodic Settings}{43}{chapter.7}%
+\contentsline {chapter}{\numberline {8}The Grand Casebook}{45}{chapter.8}%
+\contentsline {section}{The Setting}{45}{section*.121}%
+\contentsline {subsection}{The Grand Society of Inquiry}{45}{subsection*.122}%
+\contentsline {subsection}{The Powers That Be}{45}{subsection*.123}%
+\contentsline {subsection}{Types of Play}{45}{subsection*.124}%
+\contentsline {subsection}{Character Roles}{46}{subsection*.125}%
+\contentsline {subsection}{Rule Adaptations for This Setting}{46}{subsection*.126}%
+\contentsline {section}{Adventures}{46}{section*.127}%
+\contentsline {subsection}{The Call to Adventure}{46}{subsection*.128}%
+\contentsline {section}{Murder at the Brass Orchid}{47}{section*.129}%
+\contentsline {subsection}{Act 0: Into the Fray}{47}{subsection*.132}%
+\contentsline {subsection}{Act 1: The Crime Scene}{48}{subsection*.133}%
+\contentsline {subsubsection}{Examining the Crime Scene}{48}{subsubsection*.135}%
+\contentsline {subsection}{Act 2: The Investigation}{49}{subsection*.136}%
+\contentsline {subsubsection}{The Performers’ Dressing Rooms}{49}{subsubsection*.139}%
+\contentsline {subsubsection}{The Club’s Bar}{51}{subsubsection*.140}%
+\contentsline {subsubsection}{The Back Office}{52}{subsubsection*.141}%
+\contentsline {subsection}{Act 3: The Reveal}{52}{subsection*.142}%
+\contentsline {subsection}{Resolutions}{52}{subsection*.143}%
+\contentsline {section}{The Clockmaker’s Deception}{53}{section*.144}%
+\contentsline {subsection}{Act 1: The Accusation}{53}{subsection*.145}%
+\contentsline {subsection}{Act 2: The Hidden Conflict}{53}{subsection*.146}%
+\contentsline {subsection}{Act 3: The Mastermind Revealed}{54}{subsection*.147}%
+\contentsline {subsection}{Resolution: Justice or Cover-Up?}{54}{subsection*.148}%
+\contentsline {section}{The Silent Courier}{54}{section*.149}%
+\contentsline {subsection}{Act 1: The Body and the Letter}{54}{subsection*.150}%
+\contentsline {subsection}{Act 2: The Trail of Secrets}{55}{subsection*.151}%
+\contentsline {subsection}{Act 3: The Truth Unveiled}{55}{subsection*.152}%
+\contentsline {subsection}{Resolution: The Consequences of Truth}{55}{subsection*.153}%
+\contentsline {part}{\numberline {4}Campaigns}{57}{part.4}%
 \contentsfinish 

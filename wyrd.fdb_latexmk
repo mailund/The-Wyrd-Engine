@@ -1,12 +1,12 @@
 # Fdb version 4
-["makeindex wyrd.idx"] 1742794671.71355 "wyrd.idx" "wyrd.ind" "wyrd" 1742794976.60535 0
-  "wyrd.idx" 1742794976.3518 1937 15e9d8279fd72af6b514b63b3713151a "pdflatex"
+["makeindex wyrd.idx"] 1742795082.13895 "wyrd.idx" "wyrd.ind" "wyrd" 1742795086.0851 0
+  "wyrd.idx" 1742795085.87103 1937 789fdbc16c415eefd0fbd046672f4293 "pdflatex"
   (generated)
   "wyrd.ilg"
   "wyrd.ind"
   (rewritten before read)
-["pdflatex"] 1742794972.1068 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742794976.60549 0
-  "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742719565.89777 1143 78dbe24d9339ec0f7ee9ca5f0cd5248b ""
+["pdflatex"] 1742795082.19564 "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742795086.08524 0
+  "/Users/mailund/Wyrd/The-Wyrd-Engine/wyrd.tex" 1742795044.37001 1153 fdca79f73b33ce3fff6cff82bee95bdc ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1710106625 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1710106625 2437 443c81fb50993bacedc5f9a206c322b0 ""
@@ -364,14 +364,14 @@
   "style/graphics.sty" 1742737465.42234 1172 013030c5a5be314aef008e25e9ea3790 ""
   "style/references.sty" 1742543008.95311 321 195f7ce834b9e852bbb3c35b6b000d68 ""
   "style/skills.sty" 1742794414.74439 2707 7e88457c37b8a7a6d7a50b8d80a6d31c ""
-  "style/text-processing.sty" 1742719507.73265 1479 7590d11d50c19e0c65abee4b3d3d169c ""
+  "style/text-processing.sty" 1742795076.02595 1481 c59c9b83ed3a4fc731be31d2a1124dfe ""
   "style/traits.sty" 1742548391.21928 505 b6cdb75134ef52007ff16db205bbef97 ""
   "style/wyrd.sty" 1742737457.86882 1320 821d141a0d1281e269fe6364fae029b9 ""
-  "wyrd.aux" 1742794976.4269 21367 92de70aa1bf92eef33772067c2646906 "pdflatex"
-  "wyrd.ind" 1742794976.40835 1756 a96ca11da6f875ae3cd5f34e1ddab9fe "makeindex wyrd.idx"
-  "wyrd.out" 1742794976.42922 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
-  "wyrd.tex" 1742719565.89777 1143 78dbe24d9339ec0f7ee9ca5f0cd5248b ""
-  "wyrd.toc" 1742794976.42943 10265 755adf603c91a024327e7cc16561521d "pdflatex"
+  "wyrd.aux" 1742795085.93657 21095 b0cca41f0e8d796d1be3e15b7dbbb313 "pdflatex"
+  "wyrd.ind" 1742795085.92583 1756 deee9cb1c427dfa9d97ef502d6d20c92 "makeindex wyrd.idx"
+  "wyrd.out" 1742795085.93883 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
+  "wyrd.tex" 1742795044.37001 1153 fdca79f73b33ce3fff6cff82bee95bdc ""
+  "wyrd.toc" 1742795085.93903 10264 4479d43d6a43bced41b1693db186f3ce "pdflatex"
   (generated)
   "wyrd.aux"
   "wyrd.idx"
