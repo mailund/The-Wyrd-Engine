@@ -1,12 +1,14 @@
 \section{Difficulty Levels}
 \index{Difficulty levels}
-\label{core:difficulty-level}
+\label{core:difficulty-levels}
 
 While \emph{The Wyrd Engine} uses a simple resolution mechanic, it is important to establish how difficult a given action is. The Game Master determines the \textbf{Difficulty Level (DL)} based on the complexity of the task, the environment, and any obstacles the characters may face.
 
 \subsection{Passive Opposition}
 \index{Passive opposition}
-The \textbf{Difficulty Level (DL)} represents the challenge level of a task. The simplest tasks involve no active opposition—where success or failure is determined solely by the character’s own abilities. This could be deciphering an ancient cipher, scaling a rocky cliff, or crafting a delicate mechanism—situations where the only obstacle is the task itself, rather than an opposing force.
+The \textbf{Difficulty Level (DL)} represents the challenge level of a task, and we write it as either numerically, as \DL{+1} or \DL{+3}, or use mnemonic names like \Challenging or \Formidable.
+
+The simplest tasks involve no active opposition—where success or failure is determined solely by the character’s own abilities. This could be deciphering an ancient cipher, scaling a rocky cliff, or crafting a delicate mechanism—situations where the only obstacle is the task itself, rather than an opposing force.
 
 In these cases, the player rolls \textbf{4dF} + their \textbf{Skill Modifier} and applies any relevant \textbf{Trait} or \textbf{Gear bonus} (Gear Traits). If the total meets or exceeds the DR, the action succeeds.
 
@@ -24,27 +26,28 @@ The following table can guide you in determining the difficulty level for a task
     \Challenging & A moderate test of skill or effort (spotting a hidden compartment, climbing a wooden fence). \\
     \Difficult & A task requiring training or experience (tracking footprints in the rain, persuading a sceptical guard). \\
     \Formidable & A demanding task that pushes a character's limits (picking a complex lock under pressure, leaping between rooftops). \\
-    \Arduous & A near-impossible feat requiring mastery (detecting a forged document at a glance, sniping a target from extreme range). \\
-    \Extreme & A task on the edge of human capability (convincing a lifelong enemy to trust you, performing surgery in total darkness). \\
-    \Impossible & A superhuman achievement defying all odds (dodging bullets mid-air, convincing an ancient dragon to surrender). \\
+    \Arduous & A demanding task that pushes skill and focus to the limit (spotting inconsistencies in a forged document, hitting a target at long range under pressure). \\
+    \Extreme & A rare and challenging feat requiring expertise and composure (gaining the trust of a bitter rival, performing a delicate operation in poor conditions). \\
+    \Legendary & A remarkable accomplishment requiring extraordinary talent or luck (evading a sudden hail of gunfire, persuading a powerful ancient being to stand down). \\
+    \Impossible & A feat beyond mortal capability under normal circumstances (overturning the natural order of the world, persuading a god to forsake its essence). \\
 \end{DndTable}
 
-For levels up to \Basic, rolls are usually unnecessary unless dramatic tension is involved. For characters with appropriate skills, \Basic tasks can also be handled without rolls.
+For levels up to \DL{-1}, rolls are usually unnecessary unless dramatic tension is involved. For characters with appropriate skills, \DL{0} tasks can also be handled without rolls.
 
 We can superimpose the difficulty levels on the 4dF success rate graph to directly visualise how difficult it will be with just dice rolls to reach a given level:
 
 \Graph[4dF versus Difficulty Levels]{stats/4dF-DR}
 
 
-The graph tells us that even \Trivial tasks can fail if you are unskilled and unlucky enough, and \Challenging tasks will fail a third of the time for someone without the necessary skills.
+The graph tells us that even \DL{-3} tasks can fail if you are unskilled and unlucky enough, and \DL{+1} tasks will fail a third of the time for someone without the necessary skills.
 
 Adding skills effectively shifts the difficulty levels. When playing the game, we add skill levels to the 4dF rolls, as this is the easiest way to calculate the result, but when setting difficulty levels, it is easier to think in terms of how difficult an unskilled character would find a task, and then shift the difficulty levels down by one for each skill level a character has.
 
-A skill level of \Novice adds one to the 4dF, which effectively shifts the difficulties down by one. If we are adding \textbf{+1} to a roll, the unmodified range of \textbf{-4} to \textbf{+4} for a \Untrained character instead becomes the shifted range of \textbf{-3} to \textbf{+5}, for example. With this switch, the difficulty with which a \Novice character hits a \Challenging level will be the same as if he only had to reach the \Basic level.
+A skill level of \Novice adds one to the 4dF, which effectively shifts the difficulties down by one. If we are adding \textbf{+1} to a roll, the unmodified range of \textbf{-4} to \textbf{+4} for an \Untrained character instead becomes the shifted range of \textbf{-3} to \textbf{+5}, for example. With this switch, the difficulty with which a \Novice character hits a \DL{+1} level will be the same as if he only had to reach the \DL{0} level.
 
 \Graph[Skills shifting difficulties]{stats/shifted-DR.pdf}
 
-A \Basic task, which has a 2/3 chance of success for an \Untrained character will be a success one out of twenty for a \Novice and a guaranteed success for an \Expert character. An \Extreme task, which will be impossible for an \Untrained and not much easier for a \Novice, has a one-in-five chance of success for an \Expert. Add in a \textbf{Trait (+2)}---which shifts the range by an additional two points---and an \Expert character will, under the right circumstances, have a one-in-three chance of doing the impossible.
+A \DL{0} task, which has a 2/3 chance of success for an \Untrained character will be a success one out of twenty for a \Novice and a guaranteed success for an \Expert character. A \DL{+5} task, which will be impossible for an \Untrained and not much easier for a \Novice, but has a one-in-five chance of success for an \Expert. Add in a \textbf{Trait (+2)}---which shifts the range by an additional two points---and an \Expert character will, under the right circumstances, have a one-in-three chance of doing the impossible.
 
 The table below shows the probability of success for the different difficulty levels at different skill levels:
 
@@ -60,10 +63,11 @@ The table below shows the probability of success for the different difficulty le
     \Formidable  &  6.2\% &  18.5\% &  38.7\% & 61.7\% \\
     \Arduous     &  1.2\% &   6.2\% &  18.5\% & 38.7\% \\
     \Extreme     &  -     &   1.2\% &   6.2\% & 18.5\% \\
-    \Impossible  &  -     &   -     &   1.2\% &  6.2\% \\
+    \Legendary   &  -     &   -     &   1.2\% &  6.2\% \\
+    \Impossible  &  -     &  -     &   -     &   1.2\% \\
 \end{DndTable}
 
-Players will not need to consult this table during a game---in \emph{The Wyrd Engine} we are not keen on using tables for game mechanics---but it should give a Game Master a rough idea of how to set difficulty levels when planning a game session.
+Players will not need to consult this table during a game---in \wyrd we are not keen on using tables for game mechanics---but it should give a Game Master a rough idea of how to set difficulty levels when planning a game session.
 
 
 \begin{WyrdGmTips}
@@ -89,17 +93,21 @@ A \textbf{boon} is a one-use trait invented for the situation at hand. It is onl
 
 \subsection{Ties and Partial Successes}
 \index{Ties}\index{Partial successes}
-Not every roll results in a clean success or failure. When a roll \textbf{ties} the Difficulty Level, or when failure would halt progress entirely, the GM may introduce a \textbf{complication}:
+Not every roll results in a clean success or failure. A roll that \textbf{ties} with the Difficulty Level can, at the GM's discretion, result in a partial success or a complication. This should still be a success, just with a twist that adds tension or drama to the scene. If the GM cannot think of such a twist, consider ties successes.
 
+The complications caused by a tie could be a new obstacle, a delay, or a cost to the character. The GM should use ties to keep the story moving and the players engaged, not to punish them for bad luck.
 \begin{itemize}
     \item \textbf{Success with a Cost:} The action succeeds, but at a price (e.g., escaping a pursuer but losing an important clue).
     \item \textbf{Mixed Success:} The character achieves part of their goal, but not completely (e.g., unlocking a door but setting off an alarm).
     \item \textbf{A New Complication:} The failure introduces an unexpected twist (e.g., picking a lock only to find guards already inside).
 \end{itemize}
 
+
 \subsection{Interpreting Failure}
 \index{Interpreting failure}
 A failed roll doesn’t necessarily mean the character is incompetent—it simply means their approach didn’t work this time. The GM should ensure failures lead to new choices, not dead ends.
+
+A failure can also be turned into a complication instead. This can be a way to keep the story moving forward and to keep the players engaged. A failure that leads to a dead end is not as interesting as a failure that leads to a new choice. If the players fail to pick a lock, they might set off an alarm, but they might also find a hidden passage or a secret compartment. Make failure complications harsher than ties, of course, but if a failure will interrupt the story, consider turning it into a complication instead.
 
 \begin{DndComment}{Game Master Tip}
     If a failed roll would stop the story in its tracks, offer the player an alternative: “You can still succeed but at a cost.” This keeps the momentum going while making failure meaningful.
