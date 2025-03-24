@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex wyrd.idx"] 1742802978 "wyrd.idx" "wyrd.ind" "wyrd" 1742803045 0
-  "wyrd.idx" 1742803045 1937 68bd0f8d87181bd6fb2b2e3aa68eb305 "pdflatex"
+["makeindex wyrd.idx"] 1742804247 "wyrd.idx" "wyrd.ind" "wyrd" 1742804465 0
+  "wyrd.idx" 1742804464 1937 3ccd3d26f7c01b44a2de6d2e6e63341a "pdflatex"
   (generated)
   "wyrd.ilg"
   "wyrd.ind"
   (rewritten before read)
-["pdflatex"] 1742803040 "/Users/mailund/Code/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742803045 0
+["pdflatex"] 1742804460 "/Users/mailund/Code/The-Wyrd-Engine/wyrd.tex" "wyrd.pdf" "wyrd" 1742804465 0
   "/Users/mailund/Code/The-Wyrd-Engine/wyrd.tex" 1742798004 1153 fdca79f73b33ce3fff6cff82bee95bdc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -316,13 +316,13 @@
   "chapters/mechanics/combat/combat.tex" 1742798004 1918 df260769dbf0d46a3ee85dd40dea1de4 ""
   "chapters/mechanics/core/./character-creation.tex" 1742798004 6036 cdf38f6c47577f0e36538b8fbee0c328 ""
   "chapters/mechanics/core/./combat.tex" 1742802860 19631 9ccab8b8ec5079b880b6fd846c6b78f3 ""
-  "chapters/mechanics/core/./conflict-resolution.tex" 1742798004 4211 b5ab500695e20b31bcd83914fd316e86 ""
+  "chapters/mechanics/core/./conflict-resolution.tex" 1742804460 4344 9dc556281d0f850ec84baa02fc16b29e ""
   "chapters/mechanics/core/./difficulty-levels.tex" 1742798004 15587 9da533e0d84b237c404be369917c032d ""
   "chapters/mechanics/core/./gear.tex" 1742798004 3377 44416578cc936a0181baff2e50e874f4 ""
-  "chapters/mechanics/core/./npcs.tex" 1742802897 9063 9639d1b82804944cfc89e3c44c7f8c47 ""
+  "chapters/mechanics/core/./npcs.tex" 1742804269 9061 c87821827c2435530534c35678134daf ""
   "chapters/mechanics/core/./skills.tex" 1742802940 7769 f37053070c46f94436d8e36248c8f059 ""
   "chapters/mechanics/core/./traits.tex" 1742803040 8437 9ad1cee7642540f2119b865f9593df65 ""
-  "chapters/mechanics/core/core.tex" 1742798004 2170 bc68b7dbfed65cbcdb59257edc77f61b ""
+  "chapters/mechanics/core/core.tex" 1742804312 2170 bc68b7dbfed65cbcdb59257edc77f61b ""
   "chapters/mechanics/magic/./building-blocks.tex" 1742798004 4685 89b8fcc7e809ec30e290e754d624db2d ""
   "chapters/mechanics/magic/./codex-infinitum.tex" 1742798004 7933 5acde0e322933dd5b02e697fae38a4be ""
   "chapters/mechanics/magic/./design-goals.tex" 1742798004 4783 864433ed69352073c332ab6f53e6e58b ""
@@ -334,7 +334,7 @@
   "chapters/mechanics/toolbox/./balancing.tex" 1742798004 5609 3671ad4332ea14d664c765cfd81011f7 ""
   "chapters/mechanics/toolbox/./skills.tex" 1742798004 805 aafc796dc6e6875bbfe804f8d692056f ""
   "chapters/mechanics/toolbox/./stress.tex" 1742798004 125 65cdbf08f3f56eba3a1072920fa4cf4b ""
-  "chapters/mechanics/toolbox/./tools.tex" 1742798004 6665 5d57433185392ed142be5ab4e42fe03f ""
+  "chapters/mechanics/toolbox/./tools.tex" 1742804299 6665 5d57433185392ed142be5ab4e42fe03f ""
   "chapters/mechanics/toolbox/./traits.tex" 1742798004 189 48f872a622c7f1a0154cc177a39e99bf ""
   "chapters/mechanics/toolbox/toolbox.tex" 1742798004 1614 1400eeb3ba538b0602d5188b0edf7f43 ""
   "dndbook/dndbook.cls" 1742798107 269 e488dc6c9f97aa67bf4dba25f2bd72ad ""
@@ -368,14 +368,14 @@
   "style/graphics.sty" 1742798004 1172 013030c5a5be314aef008e25e9ea3790 ""
   "style/references.sty" 1742798004 321 195f7ce834b9e852bbb3c35b6b000d68 ""
   "style/skills.sty" 1742802385 3150 e7687bca025b89cc9232058d9b1cd8ef ""
-  "style/text-processing.sty" 1742798004 1481 c59c9b83ed3a4fc731be31d2a1124dfe ""
+  "style/text-processing.sty" 1742804237 1480 93b01195b07acb3b966aa71e8ae74da9 ""
   "style/traits.sty" 1742798004 505 b6cdb75134ef52007ff16db205bbef97 ""
   "style/wyrd.sty" 1742799102 1321 fa049869ee78aa2ddee39da80d384ddc ""
-  "wyrd.aux" 1742803045 21485 2abbb986654bccca34f96bb519cbc9e5 "pdflatex"
-  "wyrd.ind" 1742803045 1756 6c079b5315cb9948e5194d6e677ec593 "makeindex wyrd.idx"
-  "wyrd.out" 1742803045 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
+  "wyrd.aux" 1742804465 21937 aa82be8b8868798d4c080e41625640fa "pdflatex"
+  "wyrd.ind" 1742804464 1756 a4827c4f710a12a4e42ab1881f35c33a "makeindex wyrd.idx"
+  "wyrd.out" 1742804465 6065 b8953ad73d919efa9f44d693473c7248 "pdflatex"
   "wyrd.tex" 1742798004 1153 fdca79f73b33ce3fff6cff82bee95bdc ""
-  "wyrd.toc" 1742803045 10264 b11dc8a0676c2eec7fb2c00387e51d25 "pdflatex"
+  "wyrd.toc" 1742804465 10265 1b7ed67627a24aab95de761141e28d3d "pdflatex"
   (generated)
   "wyrd.aux"
   "wyrd.idx"
