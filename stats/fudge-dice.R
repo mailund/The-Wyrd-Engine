@@ -3,7 +3,7 @@ library(tidyverse)
 no_outcomes <- 81
 fudge_outcome <- tribble(
   ~outcome, ~probability,
-  #-5, 0,
+  -5, 0,
   -4, 1/no_outcomes,
   -3, 4/no_outcomes,
   -2, 10/no_outcomes,
@@ -13,7 +13,9 @@ fudge_outcome <- tribble(
   +2, 10/no_outcomes,
   +3, 4/no_outcomes,
   +4, 1/no_outcomes,
-  +5, 0
+  +5, 0,
+  +6, 0,
+  +7, 0,
 )
 
 fudge_outcome <- fudge_outcome %>%
@@ -22,9 +24,14 @@ fudge_outcome <- fudge_outcome %>%
   mutate(cumulative_complement = 1 - cumulative_prob)  # P(X > x)
 
 fudge_outcome <- fudge_outcome %>%
+  arrange(outcome) %>%
+  mutate(cumulative_prob = cumsum(probability)) %>%
+  mutate(cumulative_complement = 1 - lag(cumulative_prob, default = 0))  # P(X ≥ x)
+
+fudge_outcome <- fudge_outcome %>%
   mutate(success_percent = round(cumulative_complement * 100, 1))  # Convert to percentage
 
-plt <- ggplot(fudge_outcome[fudge_outcome$outcome > -5 & fudge_outcome$outcome < 5,], aes(x = outcome, y = probability)) +
+plt <- ggplot(fudge_outcome %>% filter(outcome > -5) %>% filter(outcome < 5), aes(x = outcome, y = probability)) +
   geom_bar(stat = "identity", fill = "#DBE4E4", color = "black") +
   scale_x_continuous(breaks = seq(-4, 4, by = 1)) +  # Only integer ticks on x-axis
   scale_y_continuous(breaks = NULL) +  # Removes y-axis values
@@ -37,9 +44,9 @@ plt <- ggplot(fudge_outcome[fudge_outcome$outcome > -5 & fudge_outcome$outcome <
 plt
 ggsave("4dF.pdf", plot = plt, width = 7, height = 4, units = "cm")
 
-(plt <- ggplot(fudge_outcome[fudge_outcome$outcome > -5 & fudge_outcome$outcome < 5,], aes(x = outcome, y = cumulative_complement)) +
+(plt <- ggplot(fudge_outcome %>% filter(outcome > -5) %>% filter(outcome < 5), aes(x = outcome, y = cumulative_complement)) +
     geom_bar(stat = "identity", fill = "#DBE4E4", color = "black") +  # Histogram bars
-    scale_x_continuous(breaks = seq(-4, 4, by = 1)) +  # Keep integer ticks
+    scale_x_continuous(breaks = 1+seq(-5, 4, by = 1)) +  # Keep integer ticks
     theme_minimal() +
     theme(
       panel.grid = element_blank(),  # Removes all grid lines
@@ -63,20 +70,21 @@ difficulty_levels <- data.frame(
 
 # Define the updated difficulty labels with numerical values
 difficulty_labels <- c(
-  "Trivial (-4)",
-  "Simple (-3)",
-  "Easy (-2)",
-  "Basic (-1)",
-  "Challenging (0)",
-  "Difficult (+1)",
-  "Formidable (+2)",
-  "Arduous (+3)",
-  "Extreme (+4)",
-  "Impossible (+5)"
+  "Trivial (-3)",
+  "Simple (-2)",
+  "Easy (-1)",
+  "Basic (0)",
+  "Challenging (+1)",
+  "Difficult (+2)",
+  "Formidable (+3)",
+  "Arduous (+4)",
+  "Extreme (+5)",
+  "Legendary (+6)",
+  "Impossible (+7)"
 )
 
 # Assign these labels to the corresponding x-axis positions
-difficulty_positions <- seq(-4, 5, by = 1)
+difficulty_positions <- seq(-3, 7, by = 1)
 
 # Update the plot with labeled x-axis and angled labels
 plt <- ggplot(fudge_outcome, aes(x = outcome, y = cumulative_complement)) +
@@ -93,7 +101,7 @@ plt <- ggplot(fudge_outcome, aes(x = outcome, y = cumulative_complement)) +
   geom_text(aes(label = paste0(success_percent, "%")), 
             color = "#58180D", fontface = "bold", size = 2, vjust = -0.3)  # Slightly above the bars
 
-plt <- ggplot(fudge_outcome, aes(x = outcome, y = cumulative_complement)) +
+plt <- ggplot(fudge_outcome %>% filter(outcome >= -3) %>% filter(outcome <= 5), aes(x = outcome, y = cumulative_complement)) +
   geom_bar(stat = "identity", fill = "#DBE4E4", color = "black") +  # Histogram bars
   scale_x_continuous(breaks = difficulty_positions, labels = difficulty_labels) +  # Replace numerical ticks with difficulty names
   theme_minimal() +
@@ -110,10 +118,6 @@ plt <- ggplot(fudge_outcome, aes(x = outcome, y = cumulative_complement)) +
 plt
 
 ggsave("4dF-DR.pdf", plot = plt, width = 8, height = 5, units = "cm")
-
-library(ggplot2)
-library(dplyr)
-library(tidyr)
 
 # Define skill levels in the correct order
 skill_levels <- data.frame(
@@ -136,15 +140,10 @@ fudge_outcome_shifted <- fudge_outcome_shifted %>%
                                   100, success_percent))  # Only fill 100% if no valid reference exists
 
 # Define difficulty labels and their x-axis positions
-difficulty_labels <- c(
-  "Trivial (-4)", "Simple (-3)", "Easy (-2)", "Basic (-1)",
-  "Challenging (0)", "Difficult (+1)", "Formidable (+2)", 
-  "Arduous (+3)", "Extreme (+4)", "Impossible (+5)"
-)
-difficulty_positions <- seq(-4, 5, by = 1)
+difficulty_positions <- seq(-3, 7, by = 1)
 
 # Create the faceted plot with shifted difficulties
-plt <- ggplot(fudge_outcome_shifted, aes(x = outcome, y = success_percent)) +
+plt <- ggplot(fudge_outcome_shifted %>% filter(outcome >= -3), aes(x = outcome, y = success_percent)) +
   geom_bar(stat = "identity", fill = "#DBE4E4", color = "black") +  # Histogram bars
   scale_x_continuous(breaks = difficulty_positions, labels = difficulty_labels) +  # Adjust x-axis
   facet_grid(skill_level ~ ., scales = "free_y", switch = "y") +  # Facet labels on left

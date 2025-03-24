@@ -584,8 +584,6 @@ INPUT ./stats/4dF.pdf
 INPUT stats/4dF.pdf
 INPUT ./stats/4dF.pdf
 INPUT ./stats/4dF.pdf
-INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/adobe/bookman/pbkl8c.tfm
-INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/adobe/bookman/pbkl8c.tfm
 INPUT ./dndbook/img/footerscroll.pdf
 INPUT dndbook/img/footerscroll.pdf
 INPUT ./dndbook/img/footerscroll.pdf
@@ -601,6 +599,8 @@ INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/arkandi
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/arkandis/gillius/GilliusADFNo2-Bold-lf-t1--lcdfj.tfm
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc
 INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc
+INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/adobe/bookman/pbkl8c.tfm
+INPUT /opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/adobe/bookman/pbkl8c.tfm
 INPUT ./stats/4dF-success.pdf
 INPUT stats/4dF-success.pdf
 INPUT ./stats/4dF-success.pdf

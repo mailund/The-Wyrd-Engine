@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  23 MAR 2025 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2025.1.26)  24 MAR 2025 06:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1247,41 +1247,44 @@ LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <9> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <5> not available
 (Font)              Font shape `TS1/pbk/l/n' tried instead on input line 15.
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 26.
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 28.
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 26.
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 28.
  (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
 <stats/4dF.pdf, id=320, 198.7425pt x 113.42375pt>
 File: stats/4dF.pdf Graphic file (type pdf)
 <use stats/4dF.pdf>
-Package pdftex.def Info: stats/4dF.pdf  used on input line 34.
+Package pdftex.def Info: stats/4dF.pdf  used on input line 36.
 (pdftex.def)             Requested size: 186.86417pt x 106.64775pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 36.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <10> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 36.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <7> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 36.
 
-Overfull \vbox (5.1346pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (1.85527pt too high) has occurred while \output is active []
 
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 37.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 36.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [5
 
 
 
-{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_efuo7w.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc} <./stats/4dF.pdf>]
-<stats/4dF-success.pdf, id=338, 226.8475pt x 141.52875pt>
+{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_efuo7w.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <10> not available
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <7> not available
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 38.
+<stats/4dF-success.pdf, id=332, 226.8475pt x 141.52875pt>
 File: stats/4dF-success.pdf Graphic file (type pdf)
 <use stats/4dF-success.pdf>
-Package pdftex.def Info: stats/4dF-success.pdf  used on input line 40.
+Package pdftex.def Info: stats/4dF-success.pdf  used on input line 42.
 (pdftex.def)             Requested size: 186.86417pt x 116.5834pt.
 ) (./chapters/mechanics/core/./skills.tex
 LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 8.
@@ -1307,7 +1310,7 @@ File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 28.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
-[6 <./stats/4dF-success.pdf>]
+[6 <./stats/4dF.pdf> <./stats/4dF-success.pdf>]
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 34.
 
@@ -1395,15 +1398,13 @@ Package pdftex.def Info: stats/shifted-DR.pdf  used on input line 45.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (76.87138pt too high) has occurred while \output is active []
+Overfull \vbox (88.41795pt too high) has occurred while \output is active []
 
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
-Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 79.
+Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 78.
 (pdftex.def)             Requested size: 614.33043pt x 43.36565pt.
  [12 <./stats/4dF-DR.pdf> <./stats/shifted-DR.pdf>]
-Underfull \vbox (badness 1867) has occurred while \output is active []
-
 File: dndbook/img/footerscroll.pdf Graphic file (type pdf)
 <use dndbook/img/footerscroll.pdf>
 Package pdftex.def Info: dndbook/img/footerscroll.pdf  used on input line 145.
@@ -1894,15 +1895,15 @@ Package rerunfilecheck Info: File `wyrd.out' has not changed.
 (rerunfilecheck)             Checksum: B8953AD73D919EFA9F44D693473C7248;6065.
  ) 
 Here is how much of TeX's memory you used:
- 38016 strings out of 474116
- 757029 string characters out of 5732613
+ 38015 strings out of 474116
+ 757013 string characters out of 5732613
  1986187 words of memory out of 5000000
- 58838 multiletter control sequences out of 15000+600000
- 664900 words of font info for 345 fonts, out of 8000000 for 9000
+ 58840 multiletter control sequences out of 15000+600000
+ 664708 words of font info for 343 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  121i,18n,131p,1052b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-BoldItalic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Italic.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbne.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on wyrd.pdf (69 pages, 4298135 bytes).
+Output written on wyrd.pdf (69 pages, 4298118 bytes).
 PDF statistics:
  875 PDF objects out of 1000 (max. 8388607)
  707 compressed objects within 8 object streams

@@ -33,7 +33,7 @@
 \contentsline {subsection}{Using Gear in Play}{11}{subsection*.36}%
 \contentsline {section}{Difficulty Levels}{11}{section*.37}%
 \contentsline {subsection}{Passive Opposition}{11}{subsection*.38}%
-\contentsline {subsection}{Active Opposition}{12}{subsection*.39}%
+\contentsline {subsection}{Active Opposition}{13}{subsection*.39}%
 \contentsline {subsection}{Ties and Partial Successes}{13}{subsection*.40}%
 \contentsline {subsection}{Interpreting Failure}{13}{subsection*.41}%
 \contentsline {subsection}{Boosts: Optional Rule for Increasing Success}{13}{subsection*.42}%
