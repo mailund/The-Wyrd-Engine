@@ -329,10 +329,11 @@ Players may witness or interact with the following:
     The monks become hostile only when the Abbot commands them. In combat, they use \textbf{Focus + Silent Screams} to cause \emph{Fatigue}, but cannot inflict Wounds. They serve as a spiritual obstacle rather than a lethal threat, and will vanish once the \emph{Campana Silens} is rung.
 
     \vspace{0.5\baselineskip}
-    \SkillsBox[%
-    skilled={Focus},%
-    novice={Awareness}%
-    ]
+
+    \begin{SkillsBox}
+        \Skilled & Focus \\
+        \Novice & Awareness \\
+    \end{SkillsBox}
 
     \begin{TraitsBox}
         \item[Spectral Silence] — Cannot be harmed until the \emph{Campana Silens} is rung. Bound to the monastery's silence.
@@ -401,11 +402,12 @@ Once opened, the door swings inward slowly, revealing the vast, hollow chamber b
     Once the bell is rung, the Abbot’s spectral shell collapses. What remains is a ravaged, half-human husk—robes torn and ritual-scars burned deep into pale, brittle flesh. His fused eyes cannot see, but he still perceives through the echoes of memory. He is no longer untouchable, but his presence remains overwhelming.
 
     \vspace{0.5\baselineskip}
-    \SkillsBox[%
-    expert={Will},%
-    skilled={Focus, Insight},%
-    novice={Fight, Awareness}%
-    ]
+
+    \begin{SkillsBox}
+        \Expert & Will \\
+        \Skilled & Focus, Insight \\
+        \Novice & Fight, Awareness \\
+    \end{SkillsBox}
 
     \begin{TraitsBox}
     \item[Silence Hungers] — At the start of each round, all player characters suffer 1 \textbf{Fatigue} unless they succeed on a \Challenging \textbf{Will} or \textbf{Focus} check. This Trait can only inflict Fatigue, not Wounds.
@@ -415,10 +417,10 @@ Once opened, the door swings inward slowly, revealing the vast, hollow chamber b
     \end{TraitsBox}
 
     \DamageBox[%
-    totalfatigue=3,%
-    totalmild=2,%
-    totalmoderate=1,%
-    totalsevere=0,%
+        totalfatigue=3,%
+        totalmild=2,%
+        totalmoderate=1,%
+        totalsevere=0,%
     ]
 
 \end{WyrdFullNPC}
@@ -550,12 +552,12 @@ If they fail:
     Clara seeks to uncover what happened to her sister, and by doing so, expose the truth about the monastery’s silence. She also hopes, secretly, to find some version of forgiveness—for Evelyn, and for herself.
   
     \begin{WyrdStatsBlock}[profile=img/characters/clara_ashcroft]
-        \SkillsBox[%
-            expert={Lore},%
-            skilled={Focus, Awareness},%
-            novice={Empathy, Insight, Investigation},%
-        ]
-  
+        \begin{SkillsBox}
+            \Expert & Lore \\
+            \Skilled & Focus, Awareness \\
+            \Novice & Empathy, Insight, Investigation
+        \end{SkillsBox}
+
         \begin{TraitsBox}
             \item[Driven to Understand] — Gain a \textbf{+2} bonus when analysing ritual, folklore, or spiritual mechanisms.
             \item[Buried Guilt] — Once per session, may clear all Fatigue after confronting a painful memory. The memory must be shared aloud to the group. Confronting the painful memory takes one combat action.
@@ -589,11 +591,12 @@ If they fail:
     Isaac wants the truth about what happened to his brother. He’s not afraid of ghosts, only of failing someone he loved—again. If he has to fight the dark to get answers, so be it.
   
     \begin{WyrdStatsBlock}[profile=img/characters/isaac_bellamy]
-        \SkillsBox[%
-            expert={Will},%
-            skilled={Athletics, Fight},%
-            novice={Awareness, Insight, Will},%
-        ]
+
+        \begin{SkillsBox}
+            \Expert & Will \\
+            \Skilled & Athletics, Fight \\
+            \Novice & Awareness, Insight, Will \\
+        \end{SkillsBox}
   
         \begin{TraitsBox}
             \item[Combat Tempered] — Gain a bonus when acting under pressure or facing fear head-on.
@@ -601,8 +604,8 @@ If they fail:
             \item[Trained to Endure] — Reduce incoming Stress by 2 once per scene.
         \end{TraitsBox}
   
-        \DamageBox[%
-        ]
+        \DamageBox
+
     \end{WyrdStatsBlock}
 \end{WyrdCharacterSheet}
   
@@ -629,11 +632,12 @@ If they fail:
     Margot wants the truth—not just for Eleanor, but for herself. She seeks closure, but also understanding. She hopes to find proof that her daughter mattered—that her story didn’t simply vanish.
   
     \begin{WyrdStatsBlock}[profile=img/characters/margot_delaney]
-        \SkillsBox[%
-            expert={Empathy},%
-            skilled={Will, Insight},%
-            novice={Lore, Focus, Persuasion},%
-        ]
+
+        \begin{SkillsBox}
+            \Expert & Empathy \\
+            \Skilled & Will, Insight \\
+            \Novice & Lore, Focus, Persuasion \\
+        \end{SkillsBox}
   
         \begin{TraitsBox}
             \item[Grief Made Graceful] — Once per session, may grant a \textbf{+2} to an ally's roll by offering emotional support.
@@ -641,8 +645,8 @@ If they fail:
             \item[Unanswered Faith] — Reroll a failed \textbf{Will} or \textbf{Empathy} check when confronting spiritual or moral conflict.
         \end{TraitsBox}
   
-        \DamageBox[%
-        ]
+        \DamageBox
+
     \end{WyrdStatsBlock}
 \end{WyrdCharacterSheet}
   
@@ -668,11 +672,11 @@ If they fail:
     Micah wants to understand what’s haunting the monastery—not just for his uncle’s sake, but to better understand his own strange connection to death and memory. If he can help others find peace, maybe he can find some of his own.
   
     \begin{WyrdStatsBlock}[profile=img/characters/micah_rios]
-        \SkillsBox[%
-            expert={Empathy},%
-            skilled={Insight, Lore},%
-            novice={Will, Fight, Persuasion},%
-        ]
+        \begin{SkillsBox}
+            \Expert & Empathy \\
+            \Skilled & Insight, Lore \\
+            \Novice & Will, Fight, Persuasion \\
+        \end{SkillsBox}
   
         \begin{TraitsBox}
             \item[Spirit-Touched] — Once per session, receive a vision or sensation tied to an echo or memory.
@@ -680,8 +684,8 @@ If they fail:
             \item[Sensitive Aura] — May reroll failed Insight or Awareness when detecting unseen presences.
         \end{TraitsBox}
   
-        \DamageBox[%
-        ]
+        \DamageBox
+
     \end{WyrdStatsBlock}
 \end{WyrdCharacterSheet}
   
@@ -707,11 +711,12 @@ If they fail:
     Nina wants to find the source of the monastery’s silence and put it to rest—by force, if necessary. She doesn’t believe in ghosts, but she does believe in justice. And if there’s something still trapped there, it’s about to find out what she's made of.
   
     \begin{WyrdStatsBlock}[profile=img/characters/nina_maddox]
-        \SkillsBox[%
-            expert={Fight},%
-            skilled={Awareness, Focus},%
-            novice={Will, Investigation, Insight},%
-        ]
+
+        \begin{SkillsBox}
+            \Expert & Fight \\
+            \Skilled & Awareness, Focus \\
+            \Novice & Will, Investigation, Insight
+        \end{SkillsBox}
   
         \begin{TraitsBox}
             \item[No-Nonsense Grit] — Gain a bonus when pushing through fear, injury, or disbelief.
@@ -719,8 +724,8 @@ If they fail:
             \item[Break the Pattern] — Once per session, ignore the effects of a supernatural influence for one round.
         \end{TraitsBox}
   
-        \DamageBox[%
-        ]
+        \DamageBox
+
     \end{WyrdStatsBlock}
 \end{WyrdCharacterSheet}
   

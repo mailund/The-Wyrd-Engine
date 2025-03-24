@@ -40,7 +40,12 @@
 \newcommand{\SkillsBoxExpert}{}
 \newcommand{\SkillsBoxSuperior}{}
 
-\NewDocumentCommand{\SkillsBox}{O{}}{%
+\NewDocumentCommand{\OldSkillsBox}{O{}}{%
+
+  \PackageWarning{Wyrd}{%
+    \string\OldCommand\space is deprecated. Use SkillsBox environment instead.
+  }
+
   % Reset macros to truly empty
   \renewcommand{\SkillsBoxWeak}{}%
   \renewcommand{\SkillsBoxUntrained}{}%
@@ -54,7 +59,7 @@
   %
   \begin{center}
     \begin{tcolorbox}[skillsbox]
-      \begin{tabular}{@{}l l@{}}
+      \begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.7\linewidth}}
         \ifdefempty{\SkillsBoxSuperior}{}{\Superior: & \SkillsBoxSuperior \\}
         \ifdefempty{\SkillsBoxExpert}{}{\Expert: & \SkillsBoxExpert \\}
         \ifdefempty{\SkillsBoxSkilled}{}{\Skilled: & \SkillsBoxSkilled \\}
@@ -67,8 +72,20 @@
 }
 
 
-
-
+\NewDocumentEnvironment{SkillsBox}{}{%
+  \begin{center}
+    \begin{tcolorbox}[skillsbox]
+      \begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.6\linewidth}}
+}{
+      \end{tabular}
+    \end{tcolorbox}
+  \end{center}
+}
+\NewDocumentEnvironment{ExpertSkills}{}{
+  \Expert: & 
+}{
+  \\
+}
 
 %% Define commands for difficulty levels %%%%%%%%%%%%%%%%%
 \newcommand{\DL}[1]{\textbf{#1}\xspace}

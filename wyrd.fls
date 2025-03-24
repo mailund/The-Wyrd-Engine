@@ -74,6 +74,17 @@ INPUT ./dndbook/dndcore.def
 INPUT dndbook/dndcore.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/silence/silence.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
