@@ -24,60 +24,68 @@ The list of skills a character can have will depend on the setting in which the 
 When a character lacks a skill, they roll with a default modifier of 0, relying solely on luck and circumstance. This ensures that even untrained characters have a chance—however slim—of succeeding in tasks outside their expertise.
 
 
-% \clearpage
-% \WyrdFooterImage{img/pageart/gears-reverse-L}
 
-\begin{WyrdExampleSidebar}[float=!t]{Example Skills}
-	\subsection*{Investigation \& Knowledge}  
-	\begin{itemize}
-    	\item \emph{Investigate}---Analysing crime scenes, following leads, searching for hidden clues.
-	    \item \emph{Lore}---Understanding history, science, the occult, and the unnatural.
-	    \item \emph{Notice}---Spotting details, sensing danger, and staying aware of surroundings.
-	\end{itemize}
+\BeginBoxPage
 
-	\subsection*{Social \& Influence}  
-	\begin{itemize}
-    	\item \emph{Rapport}---Gaining trust, persuading, and negotiating.
-	    \item \emph{Deceive}---Lying, creating convincing cover stories, and disguises.
-    	\item \emph{Provoke}---Intimidation, interrogation, and getting a reaction from others.
-	    \item \emph{Contacts}---Knowing the right people, gathering information through connections.
-		\item \emph{Empathy}---Reading emotions, understanding motives, and connecting with others.
-	\end{itemize}
+	\WyrdFooterImage{img/pageart/gears-reverse-L}
 
-	\subsection*{Physical \& Dexterity}  
-	\begin{itemize}
-    	\item \emph{Athletics}---Running, jumping, climbing, and escaping dangerous situations.
-	    \item \emph{Stealth}---Moving unseen, tailing a suspect, sneaking into restricted areas.
-	    \item \emph{Fight}---Engaging in hand-to-hand combat, fencing, or using melee weapons.
-	    \item \emph{Shoot}---Firearms, throwing weapons, and ranged combat.
-	\end{itemize}
+	\begin{multicols}{2}
 
-	\subsection*{Resilience \& Mental Fortitude}  
-	\begin{itemize}
-    	\item \emph{Will}---Resisting fear, staying composed under pressure, enduring mental strain.
-	    \item \emph{Physique}---Strength, endurance, and the ability to withstand injury or exhaustion.
-	\end{itemize}
+	\begin{WyrdExampleSidebar}{Example Skills}
+		\subsection*{Investigation \& Knowledge}  
+		\begin{itemize}
+			\item \emph{Investigate}---Analysing crime scenes, following leads, searching for hidden clues.
+			\item \emph{Lore}---Understanding history, science, the occult, and the unnatural.
+			\item \emph{Notice}---Spotting details, sensing danger, and staying aware of surroundings.
+		\end{itemize}
 
-	\subsection*{Mechanical \& Practical Skills}  
-	\begin{itemize}
-    	\item \emph{Burglary}---Lockpicking, safecracking, and breaking into places unseen.
-	    \item \emph{Resources}---Access to wealth, favours, or valuable possessions.
-	    \item \emph{Crafts}---Repairing devices, modifying tools, or working with mechanical systems.
-	\end{itemize}
-\end{WyrdExampleSidebar}
+		\subsection*{Social \& Influence}  
+		\begin{itemize}
+			\item \emph{Rapport}---Gaining trust, persuading, and negotiating.
+			\item \emph{Deceive}---Lying, creating convincing cover stories, and disguises.
+			\item \emph{Provoke}---Intimidation, interrogation, and getting a reaction from others.
+			\item \emph{Contacts}---Knowing the right people, gathering information through connections.
+			\item \emph{Empathy}---Reading emotions, understanding motives, and connecting with others.
+		\end{itemize}
 
-\begin{WyrdNPC}[float=!t]{Inspector Julian Hargrave}
-	\emph{Determined and methodical, Inspector Julian Hargrave is a seasoned detective. His years of experience have made him an expert at uncovering the truth, though his rigid approach sometimes clashes with the unpredictable nature of crime-solving.}
+		\subsection*{Physical \& Dexterity}  
+		\begin{itemize}
+			\item \emph{Athletics}---Running, jumping, climbing, and escaping dangerous situations.
+			\item \emph{Stealth}---Moving unseen, tailing a suspect, sneaking into restricted areas.
+			\item \emph{Fight}---Engaging in hand-to-hand combat, fencing, or using melee weapons.
+			\item \emph{Shoot}---Firearms, throwing weapons, and ranged combat.
+		\end{itemize}
 
-	\vspace{0.5\baselineskip}
-	\begin{SkillsBox}
-		\Expert & Investigate \\
-		\Skilled & Notice, Rapport \\
-		\Novice & Will, Provoke, Athletics \\
-	\end{SkillsBox}
+		\subsection*{Resilience \& Mental Fortitude}  
+		\begin{itemize}
+			\item \emph{Will}---Resisting fear, staying composed under pressure, enduring mental strain.
+			\item \emph{Physique}---Strength, endurance, and the ability to withstand injury or exhaustion.
+		\end{itemize}
 
-\end{WyrdNPC}
+		\subsection*{Mechanical \& Practical Skills}  
+		\begin{itemize}
+			\item \emph{Burglary}---Lockpicking, safecracking, and breaking into places unseen.
+			\item \emph{Resources}---Access to wealth, favours, or valuable possessions.
+			\item \emph{Crafts}---Repairing devices, modifying tools, or working with mechanical systems.
+		\end{itemize}
+	\end{WyrdExampleSidebar}
 
+	\columnbreak
+
+	\begin{WyrdNPC}{Inspector Julian Hargrave}
+		\emph{Determined and methodical, Inspector Julian Hargrave is a seasoned detective. His years of experience have made him an expert at uncovering the truth, though his rigid approach sometimes clashes with the unpredictable nature of crime-solving.}
+
+		\vspace{0.5\baselineskip}
+		\begin{SkillsBox}
+			\Expert & Investigate \\
+			\Skilled & Notice, Rapport \\
+			\Novice & Will, Provoke, Athletics \\
+		\end{SkillsBox}
+	\end{WyrdNPC}
+
+	\end{multicols}
+
+\EndBoxPage
 
 \subsection{Skills in Action}
 

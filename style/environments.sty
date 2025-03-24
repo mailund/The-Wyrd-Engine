@@ -6,6 +6,18 @@
       #2
     \fi
 }
+
+
+\NewDocumentCommand{\BeginBoxPage}{}{%
+  \end{multicols}%
+  \clearpage
+}
+
+\NewDocumentCommand{\EndBoxPage}{}{%
+  \clearpage
+  \begin{multicols}{2}%
+}
+
 \NewDocumentEnvironment{WyrdExplanation}{O{}}
 {
     \begin{DndReadAloud}{}
@@ -51,7 +63,7 @@
 {
     \pgfkeys{/WyrdSidebar, #1}
     \begin{DndSidebar}[%
-        float=\pgfkeysvalueof{/WyrdSidebar/float},%
+        %float=\pgfkeysvalueof{/WyrdSidebar/float},%
         color=\pgfkeysvalueof{/WyrdSidebar/background}%
         ]%
         {#2}
