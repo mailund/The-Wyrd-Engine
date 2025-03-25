@@ -51,13 +51,14 @@
 {
     \pgfkeys{/wyrdchapter, #1}
 
-    %\twocolumn
     \chapter{#2}
     \MaybeLabel{\wyrdchapterlabel}
     \index{#2}   
+    \begin{multicols}{2}
 }
 {
-    \balance
+    \end{multicols}
+    %\balance
 }
 
 \NewDocumentCommand{\WyrdChapter}{O{} m m m}
