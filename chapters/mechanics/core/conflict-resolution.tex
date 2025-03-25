@@ -3,7 +3,9 @@
 
 Whenever characters encounter an obstacle—be it an unsolvable riddle, a desperate struggle to escape a flooded sewer or a battle against a coven of deadly necromancers—they must find a way to overcome the challenge. Whether through wit, skill, or sheer determination, resolving conflicts is at the heart of the game, driving the story forward and shaping the fate of the characters.
 
-With The Wyrd Engine, all conflict resolution follows the same pattern that combines \textbf{4dF} Fudge Dice, described \pagereftext{core:fudge-dice}, \textbf{Skills} described on \pagereftext{core:skills}, and \textbf{Traits} described on \pagereftext{core:traits}. You combine these three and compare them to a \textbf{Difficulty Levels (DR)}, described on \pagereftext{core:difficulty-levels}, and the result determines the outcome of a conflict.
+With The Wyrd Engine, all conflict resolution follows the same pattern that combines \textbf{4dF} Fudge Dice, described \pagereftext{core:fudge-dice}, \textbf{Skills} described on \pagereftext{core:skills}, and \textbf{Traits} described on \pagereftext{core:traits}.
+
+You combine these three and compare them to a \textbf{Difficulty Levels (DL)}, described on \pagereftext{core:difficulty-levels}, and the result determines the outcome of a conflict.
 
 \begin{Example}[Steps in conflict resolution]
 	\begin{itemize}
@@ -28,11 +30,15 @@ These steps will always be the general pattern for resolving conflicts, only dif
 
 Fudge dice are dice that can give you one of three values: \FudgeDie{-}, \FudgeDie{}, or \FudgeDie{+}. You can buy this type of dice if you want, but you can also use any normal six-sided die and declare 1 and 2 to be \FudgeDie{-}, 3 and 4 to be \FudgeDie{}, and 5 and 6. to be \FudgeDie{+}.
 
-Whenever we roll dice in The Wyrd Engine, we roll four such dice (we write it as 4dF) and we add up the result, where \FudgeDie{-} counts as -1, \FudgeDie{} as 0, and \FudgeDie{+} as +1. So, for example
-	\FudgeRes{++-0} = +1 + 1 - 1 + 0 = 1
-	and 
+Whenever we roll dice in The Wyrd Engine, we roll four such dice (we write it as 4dF) and we add up the result, where \FudgeDie{-} counts as -1, \FudgeDie{} as 0, and \FudgeDie{+} as +1. So, for example:
+\begin{quote}
+	\FudgeRes{++-0} = +1 + 1 - 1 + 0 = 1 \\
+	\FudgeRes{+0-0} = +1 + 0 - 1 + 0 = 0 \\
+	\FudgeRes{---0} = -1 - 1 - 1 + 0 = -3 \\
 	\FudgeRes{-+--} = -1 + 1 - 1 - 1 = -2.
+\end{quote}
 
+\noindent
 Using 4dF gives us a distribution of outcomes that look like this:
 \Graph[4dF results]{stats/4dF}
 
