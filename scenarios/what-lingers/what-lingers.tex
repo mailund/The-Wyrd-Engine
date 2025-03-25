@@ -1,11 +1,12 @@
 % TEXINPUTS=../../dndbook:../../wyrdtex:
 
-\documentclass[twocolumn,nodeprecatedcode,bg=print]{dndbook}
+\documentclass[nodeprecatedcode,bg=print]{dndbook}
 \usepackage{wyrd}
 
 \begin{document}
 \DndSetThemeColor[DmgSlateGray]
 \chapter*{What Lingers}
+\begin{multicols}{2}
 \begin{WyrdSettingHeading}
     \WyrdCapLine{T}{here} are places the world forgets. Not through time or chance, but through silence—heavy, deliberate silence that settles like dust over memory, over names, over grief.
 
@@ -85,6 +86,10 @@ Inside the envelope is a prayer card from Saint Hieronymus Monastery, bearing th
 \begin{Example}
    \textit{Come to the monastery. Something remains. It must not.}
 \end{Example}
+
+    
+The letter offers no explanation, yet the handwriting is unmistakable—and impossibly preserved. Whether out of longing, guilt, curiosity, or fear, the characters set out for the hills where Saint Hieronymus stands in ruin. No traffic goes that way. The path is overgrown. The air feels thinner the closer they get. The monastery gates stand open, and the world behind them falls silent.
+
 \begin{CommentBox}{Who Sent the Letters?}
     The letters that summoned the players to Saint Hieronymus Monastery have no clear origin—and that is intentional. The handwriting belongs to loved ones long lost, yet the paper is pristine, the ink fresh. No mundane explanation fits.
     
@@ -94,8 +99,7 @@ Inside the envelope is a prayer card from Saint Hieronymus Monastery, bearing th
     
     \emph{GMs may choose to reveal this secret during the climax or leave it unsaid. The ambiguity strengthens the tone—some truths are better left incomplete.}
 \end{CommentBox}
-    
-The letter offers no explanation, yet the handwriting is unmistakable—and impossibly preserved. Whether out of longing, guilt, curiosity, or fear, the characters set out for the hills where Saint Hieronymus stands in ruin. No traffic goes that way. The path is overgrown. The air feels thinner the closer they get. The monastery gates stand open, and the world behind them falls silent.
+\newcolumn
 
 \begin{CommentBox}{Relevant Skills}
     This scenario emphasises emotional, investigative, and spiritual challenges over physical ones. Only one combat skill—\textbf{Fight}—is used, and only during the final confrontation. Most skill use centres around resisting silence (as a spiritual attack), uncovering forgotten truths, and interpreting haunting illusions.
@@ -137,6 +141,8 @@ The letter offers no explanation, yet the handwriting is unmistakable—and impo
         \item \textbf{Act IV –} Athletics, Fight, Focus, Will
     \end{itemize}    
 \end{CommentBox}
+
+\newcolumn
     
 
 \section*{Act I – Echoes Before the Silence}
@@ -315,39 +321,6 @@ Players may witness or interact with the following:
     \end{itemize}
 \end{Example}
 
-\begin{NPC}[%
-	description=Lingering echoes bound in silence,%
-]{The Spectral Monks}
-
-    \emph{They were once devout—seekers of peace through silence. Now they are only fragments: flickering memories and slivers of spirit, trapped in the stone. When the Abbot stirs, they move not as men, but as one mind.}
-
-    \subsubsection*{Background:}
-    Erased in the failed rite, the monks persist as ambient sorrow. During exploration, they are non-hostile and may be seen performing fragments of their old routines. They cannot speak, but may respond to a player invoking a lost loved one’s name with an \textbf{Empathy} roll at \DL{+2}.
-
-    \subsubsection*{Combat:}
-    The monks become hostile only when the Abbot commands them. In combat, they use \textbf{Focus + Silent Screams} to cause \emph{Fatigue}, but cannot inflict Wounds. They serve as a spiritual obstacle rather than a lethal threat, and will vanish once the \emph{Campana Silens} is rung.
-
-    \vspace{0.5\baselineskip}
-
-    \begin{SkillsBox}
-        \Skilled & Focus \\
-        \Novice & Awareness \\
-    \end{SkillsBox}
-
-    \begin{TraitsBox}
-        \item[Spectral Silence] — Cannot be harmed until the \emph{Campana Silens} is rung. Bound to the monastery's silence.
-        \item[Silent Screams] — Use \textbf{Focus} to inflict \emph{Fatigue Stress} through psychic silence. Targets may roll \textbf{Will} to resist.
-    \end{TraitsBox}
-
-    \DamageBox[%
-        totalfatigue=3,%
-        totalmild=0,%
-        totalmoderate=0,%
-        totalsevere=0,%
-    ]
-
-\end{NPC}
-
 Interacting with the monks is emotionally exhausting. Each attempt may require a \textbf{Will} or \textbf{Empathy} check against \Basic or cost 1 \emph{Fatigue}. With a successful \textbf{Empathy} or \textbf{Focus} check at \DL{+2}, the monks may reveal fragmented memories, including glimpses of the ritual, lost loved ones, or the bell’s significance.
 
 \begin{Example}[Visions and Echoes]
@@ -382,9 +355,60 @@ Once opened, the door swings inward slowly, revealing the vast, hollow chamber b
 \end{GmTips}
 
 
+\BeginBoxPage
+\begin{multicols}{2}
+\begin{NPC}[%
+	description=Lingering echoes bound in silence,%
+]{The Spectral Monks}
 
+    \emph{They were once devout—seekers of peace through silence. Now they are only fragments: flickering memories and slivers of spirit, trapped in the stone. When the Abbot stirs, they move not as men, but as one mind.}
 
-\section*{Act IV \textendash{} The Thing That Waits}
+    \subsubsection*{Background:}
+    Erased in the failed rite, the monks persist as ambient sorrow. During exploration, they are non-hostile and may be seen performing fragments of their old routines. They cannot speak, but may respond to a player invoking a lost loved one’s name with an \textbf{Empathy} roll at \DL{+2}.
+
+    \subsubsection*{Combat:}
+    The monks become hostile only when the Abbot commands them. In combat, they use \textbf{Focus + Silent Screams} to cause \emph{Fatigue}, but cannot inflict Wounds. They serve as a spiritual obstacle rather than a lethal threat, and will vanish once the \emph{Campana Silens} is rung.
+
+    \vspace{0.5\baselineskip}
+
+    \begin{SkillsBox}
+        \Skilled & Focus \\
+        \Novice & Awareness \\
+    \end{SkillsBox}
+
+    \begin{TraitsBox}
+        \item[Spectral Silence] — Cannot be harmed until the \emph{Campana Silens} is rung. Bound to the monastery's silence.
+        \item[Silent Screams] — Use \textbf{Focus} to inflict \emph{Fatigue Stress} through psychic silence. Targets may roll \textbf{Will} to resist.
+    \end{TraitsBox}
+
+    \DamageBox[%
+        totalfatigue=3,%
+        totalmild=0,%
+        totalmoderate=0,%
+        totalsevere=0,%
+    ]
+
+\end{NPC}
+
+\vspace{\baselineskip}
+\begin{CommentBox}{Campana Silens}
+    \emph{Campana Silens}, the Silent Bell, is a sacred funerary relic once used to preserve the names of the dead. Forged in iron and consecrated in ancient rites, it was designed to protect memory during the final passage—ensuring the deceased would not be forgotten.
+    
+    But Abbot Rian twisted its purpose. Instead of preserving memory, he used it to seal it away. The bell became an anchor for silence, stillness, and spiritual imprisonment. Now, it is the only thing capable of disrupting the unnatural peace he created.
+    
+    \vspace{0.5\baselineskip}\noindent
+    \textbf{Ringing the Bell} shatters the silence, transforming the Eyeless Abbot to from his spirit back into flesh and bone.
+    
+    \vspace{0.5\baselineskip}
+    \textbf{Mechanics:}
+    \begin{itemize}
+        \item \textbf{Action:} A player may ring the Bell as an action. Doing so causes an immediate shift in the environment (dust, sound, collapsing illusions).
+        \item \textbf{Effect:} The Eyeless Abbot becomes vulnerable to \emph{Wounds} and the Spectral Monks dissolve.
+        \item \textbf{Cost:} Each round after the Bell is rung, all characters gain 1 \emph{Fatigue} as the veil weakens and the burden of memory floods back.
+    \end{itemize}
+\end{CommentBox}
+
+\newcolumn
 
 \begin{NPC}[description=Silence Incarnate]{The Eyeless Abbot}
 
@@ -418,7 +442,14 @@ Once opened, the door swings inward slowly, revealing the vast, hollow chamber b
         totalsevere=0,%
     ]
 
+
 \end{NPC}
+\WyrdFooterImage{img/gothic_mountains_cleaned}
+\end{multicols}
+
+\EndBoxPage
+
+\section*{Act IV \textendash{} The Thing That Waits}
 
 
 The final confrontation takes place in the monastery's meditation hall\textemdash{}a vast, domed space of cracked stone, with faded frescoes on high walls and an oppressive weight in the air. Dust hangs unnaturally still. There is no sound.
@@ -447,22 +478,7 @@ Players quickly realise they cannot win by force.
 
 \subsection*{Reaching the Bell}
 
-\begin{CommentBox}{Campana Silens}
-    \emph{Campana Silens}, the Silent Bell, is a sacred funerary relic once used to preserve the names of the dead. Forged in iron and consecrated in ancient rites, it was designed to protect memory during the final passage—ensuring the deceased would not be forgotten.
-    
-    But Abbot Rian twisted its purpose. Instead of preserving memory, he used it to seal it away. The bell became an anchor for silence, stillness, and spiritual imprisonment. Now, it is the only thing capable of disrupting the unnatural peace he created.
-    
-    \vspace{0.5\baselineskip}\noindent
-    \textbf{Ringing the Bell} shatters the silence, transforming the Eyeless Abbot to from his spirit back into flesh and bone.
-    
-    \vspace{0.5\baselineskip}
-    \textbf{Mechanics:}
-    \begin{itemize}
-        \item \textbf{Action:} A player may ring the Bell as an action. Doing so causes an immediate shift in the environment (dust, sound, collapsing illusions).
-        \item \textbf{Effect:} The Eyeless Abbot becomes vulnerable to \emph{Wounds} and the Spectral Monks dissolve.
-        \item \textbf{Cost:} Each round after the Bell is rung, all characters gain 1 \emph{Fatigue} as the veil weakens and the burden of memory floods back.
-    \end{itemize}
-\end{CommentBox}
+
 
 As they fight, players may notice the \emph{Campana Silens} above. Clues from earlier visions or carvings should now click into place. To reach the bell:
 
@@ -502,7 +518,6 @@ Once the bell tolls, the Abbot becomes vulnerable, and as a physical opponent he
 
 Once defeated, the Abbot collapses into dust. A final toll echoes, and the silence ends.
 
-\balance % FIXME: placement of this guy is unstable
 
 
 \subsection*{Victory and Aftermath}
@@ -523,7 +538,6 @@ If they fail:
 \vspace{\baselineskip}\noindent
 \emph{Some silences were never meant to be broken. But some names should never be forgotten.}
 
-\WyrdFooterImage{img/gothic_mountains_cleaned}
 \clearpage
 
 
@@ -726,5 +740,6 @@ If they fail:
 
     \end{WyrdStatsBlock}
 \end{WyrdCharacterSheet}
-  
+
+\end{multicols}
 \end{document}
