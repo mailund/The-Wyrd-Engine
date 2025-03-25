@@ -1,0 +1,155 @@
+
+
+
+% Attack and Damage
+\newcommand{\Attack}{\textbf{Attack}\xspace}
+\newcommand{\Defend}{\textbf{Defend}\xspace}
+\newcommand{\Damage}{\textbf{Stress}\xspace}
+
+% Stress and Wounds
+\newcommand{\TickedBox}{\faTimes}
+\newcommand{\FatigueBox}{\faCircleO\xspace}
+\newcommand{\MildWound}{\faHeartO\xspace}
+\newcommand{\ModerateWound}{\faHeartbeat\xspace}
+\newcommand{\SevereWound}{\faHeart\xspace}
+
+% Repeating symbols for stress and wounds
+\NewDocumentCommand{\Repeat}{m m}{%
+    \ifnum#1>0
+        \RepeatHelper{#1}{#2}%
+    \fi
+}
+\NewDocumentCommand{\RepeatHelper}{m m}{%
+    \ifnum#1>0
+        #2\RepeatHelper{\numexpr#1-1\relax}{#2}%
+    \fi
+}
+
+% Define default stress and wound limits
+\newcommand{\TotalStress}{4}
+\newcommand{\TotalMild}{3}
+\newcommand{\TotalModerate}{2}
+\newcommand{\TotalSevere}{1}
+
+\NewDocumentCommand{\FatigueBoxes}{o o}{%
+  \IfNoValueTF{#2}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalStress}{\FatigueBox}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalStress-#1\relax}{\FatigueBox}}%
+  }{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{#2}{\FatigueBox}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr #2-#1\relax}{\FatigueBox}}%
+  }%
+}
+
+\NewDocumentCommand{\MildWounds}{o o}{%
+  \IfNoValueTF{#2}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalMild}{\MildWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalMild-#1\relax}{\MildWound}}%
+  }{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{#2}{\MildWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr #2-#1\relax}{\MildWound}}%
+  }%
+}
+
+\NewDocumentCommand{\ModerateWounds}{o o}{%
+  \IfNoValueTF{#2}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalModerate}{\ModerateWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalModerate-#1\relax}{\ModerateWound}}%
+  }{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{#2}{\ModerateWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr #2-#1\relax}{\ModerateWound}}%
+  }%
+}
+
+\NewDocumentCommand{\SevereWounds}{o o}{%
+  \IfNoValueTF{#2}{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{\TotalSevere}{\SevereWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr \TotalSevere-#1\relax}{\SevereWound}}%
+  }{%
+    \IfNoValueTF{#1}{\Repeat{0}{\TickedBox}\Repeat{#2}{\SevereWound}}%
+    {\Repeat{#1}{\TickedBox}\Repeat{\numexpr #2-#1\relax}{\SevereWound}}%
+  }%
+}
+
+
+% Define Damage Box using pgfkeys
+\pgfkeys{/DamageBox/.is family, /DamageBox,
+    totalfatigue/.initial=\TotalStress,
+    fatigue/.initial=0,
+    totalmild/.initial=\TotalMild,
+    mild/.initial=0,
+    totalmoderate/.initial=\TotalModerate,
+    moderate/.initial=0,
+    totalsevere/.initial=\TotalSevere,
+    severe/.initial=0,
+    mildtext/.initial=\underline{\hspace{3cm}}, % Default to underline
+    moderatetext/.initial=\underline{\hspace{3cm}},
+    severetext/.initial=\underline{\hspace{3cm}}
+}
+
+\tcbset{
+  damageboxstyle/.style={
+    title=Stress,
+    boxrule=0.6pt,
+    shadow=small,
+    width=\linewidth,
+    fonttitle=\bfseries,
+    colbacktitle=DmgLavender,
+    coltitle=black,
+    colback=white!97,
+    colframe=black,
+  }
+}
+
+\NewDocumentCommand{\DamxxageBox}{O{}}{%
+    \pgfkeys{/DamageBox, #1}%
+    \begin{center}
+        \begin{tcolorbox}[damageboxstyle]
+        \begin{tabular}{@{}l l@{} l@{}}
+            \textbf{Fatigue:}  & 
+                \FatigueBoxes[\pgfkeysvalueof{/DamageBox/fatigue}][\pgfkeysvalueof{/DamageBox/totalfatigue}] \\ 
+            \textbf{Mild:}    & 
+                \MildWounds[\pgfkeysvalueof{/DamageBox/mild}][\pgfkeysvalueof{/DamageBox/totalmild}] & 
+            \pgfkeysvalueof{/DamageBox/mildtext} \\
+            \textbf{Mod:}     & 
+                \ModerateWounds[\pgfkeysvalueof{/DamageBox/moderate}][\pgfkeysvalueof{/DamageBox/totalmoderate}] & 
+            \pgfkeysvalueof{/DamageBox/moderatetext} \\
+            \textbf{Severe:}  & 
+                \SevereWounds[\pgfkeysvalueof{/DamageBox/severe}][\pgfkeysvalueof{/DamageBox/totalsevere}] & 
+            \pgfkeysvalueof{/DamageBox/severetext}
+        \end{tabular}
+    \end{tcolorbox}\end{center}
+}
+
+\NewDocumentCommand{\DamageBox}{O{}}{%
+    \pgfkeys{/DamageBox, #1}%
+    \begin{center}
+    \begin{tcolorbox}[damageboxstyle]
+    \begin{tabular}{@{}l l@{} l@{}}
+        % Fatigue
+        \ifnum\numexpr\pgfkeysvalueof{/DamageBox/totalfatigue}\relax>0
+            \textbf{Fatigue:}  & 
+                \FatigueBoxes[\pgfkeysvalueof{/DamageBox/fatigue}][\pgfkeysvalueof{/DamageBox/totalfatigue}] \\
+        \fi
+        % Mild
+        \ifnum\numexpr\pgfkeysvalueof{/DamageBox/totalmild}\relax>0
+            \textbf{Mild:}    & 
+                \MildWounds[\pgfkeysvalueof{/DamageBox/mild}][\pgfkeysvalueof{/DamageBox/totalmild}] & 
+                \pgfkeysvalueof{/DamageBox/mildtext} \\
+        \fi
+        % Moderate
+        \ifnum\numexpr\pgfkeysvalueof{/DamageBox/totalmoderate}\relax>0
+            \textbf{Mod:}     & 
+                \ModerateWounds[\pgfkeysvalueof{/DamageBox/moderate}][\pgfkeysvalueof{/DamageBox/totalmoderate}] & 
+                \pgfkeysvalueof{/DamageBox/moderatetext} \\
+        \fi
+        % Severe
+        \ifnum\numexpr\pgfkeysvalueof{/DamageBox/totalsevere}\relax>0
+            \textbf{Severe:}  & 
+                \SevereWounds[\pgfkeysvalueof{/DamageBox/severe}][\pgfkeysvalueof{/DamageBox/totalsevere}] & 
+                \pgfkeysvalueof{/DamageBox/severetext}
+        \fi
+    \end{tabular}
+    \end{tcolorbox}
+    \end{center}
+}

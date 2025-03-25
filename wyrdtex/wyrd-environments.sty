@@ -1,0 +1,100 @@
+%% Environments
+\newcommand{\InsertIfNonEmpty}[2]{%
+    \ifx#1\empty 
+      % Nothing
+    \else
+      #2
+    \fi
+}
+
+
+\NewDocumentCommand{\BeginBoxPage}{}{%
+  \end{multicols}%
+  \clearpage
+}
+
+\NewDocumentCommand{\EndBoxPage}{}{%
+  \clearpage
+  \begin{multicols}{2}%
+}
+
+
+\NewDocumentEnvironment{Example}{O{}}
+{
+    \begin{DndReadAloud}{}
+    \InsertIfNonEmpty{#1}{\subsubsection*{#1}}
+}
+{
+    \end{DndReadAloud}
+}
+
+
+
+% Define keys for boxes
+\pgfkeys{
+    /WyrdBox/.is family, /WyrdBox,
+    background/.initial = DmgSlateGray, % Default: DmgSlateGray
+}
+
+\NewDocumentEnvironment{WyrdBox}{O{} m}
+{
+    \pgfkeys{/WyrdBox, #1}
+    \begin{DndSidebar}[color=\pgfkeysvalueof{/WyrdBox/background}]%
+        {#2}
+}
+{
+    \end{DndSidebar}
+}
+
+\NewDocumentEnvironment{CommentBox}{O{} m}
+{
+    \begin{WyrdBox}[#1]{#2}
+}
+{
+    \end{WyrdBox}
+}
+
+\NewDocumentEnvironment{GmTips}{o}
+{
+    \begin{CommentBox}[#1]{Game Master Tip}
+}
+{
+    \end{CommentBox}
+}
+
+\colorlet{WyrdNPCColor}{PhbLightGreen}
+\pgfkeys{
+    /WyrdNPC/.is family, /WyrdNPC,
+    name/.initial = {},
+    description/.initial = Example Character,
+    background/.initial = WyrdNPCColor,
+}
+\NewDocumentEnvironment{NPC}{O{} m}
+{
+    \pgfkeys{/WyrdNPC, #1}
+    \begin{WyrdBox}[background=\pgfkeysvalueof{/WyrdNPC/background}]{\pgfkeysvalueof{/WyrdNPC/description}}
+        \subsection*{#2}
+}
+{
+    \end{WyrdBox}
+}
+
+%% Heading for setting chapters
+\NewDocumentEnvironment{WyrdSettingHeading}{}
+{
+    \begin{DndReadAloud}[color=DmgCoral]{}
+}
+{
+    \end{DndReadAloud}
+}
+
+%% Heading for scenarios inside setting chapters
+\NewDocumentEnvironment{WyrdScenarioHeading}{m}
+{
+    \newpage
+    \begin{DndReadAloud}{Example Scenario}
+    \section{#1}
+}
+{
+    \end{DndReadAloud}
+}

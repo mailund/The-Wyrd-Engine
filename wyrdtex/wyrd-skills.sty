@@ -1,0 +1,104 @@
+
+%% Skill levels %%%%%%%%%%%%%%%%%
+\newcommand{\Weak}{\textbf{Weak (-1)}\xspace}
+\newcommand{\Untrained}{\textbf{Untrained (0)}\xspace}
+\newcommand{\Novice}{\textbf{Novice (+1)}\xspace}
+\newcommand{\Skilled}{\textbf{Skilled (+2)}\xspace}
+\newcommand{\Expert}{\textbf{Expert (+3)}\xspace}
+\newcommand{\Superior}{\textbf{Superior (+4)}\xspace}
+\newcommand{\Epic}{\textbf{Epic (+5)}\xspace}
+
+\pgfkeys{/SkillsBox/.is family, /SkillsBox,
+    weak/.store in = \SkillsBoxWeak,
+    untrained/.store in = \SkillsBoxUntrained,
+    novice/.store in = \SkillsBoxNovice,
+    skilled/.store in = \SkillsBoxSkilled,
+    expert/.store in = \SkillsBoxExpert,
+    superior/.store in = \SkillsBoxSuperior,
+}
+
+
+\tcbset{
+  skillsbox/.style={
+    title=Skills,
+    boxrule=0.6pt,
+    shadow=small,
+    width=\linewidth,
+    fonttitle=\bfseries,
+    colbacktitle=DmgLavender,
+    coltitle=black,
+    colback=white!97,
+    colframe=black,
+  }
+}
+
+
+%% Predefined macros for skill boxes
+\newcommand{\SkillsBoxWeak}{}
+\newcommand{\SkillsBoxUntrained}{}
+\newcommand{\SkillsBoxNovice}{}
+\newcommand{\SkillsBoxSkilled}{}
+\newcommand{\SkillsBoxExpert}{}
+\newcommand{\SkillsBoxSuperior}{}
+
+\NewDocumentCommand{\OldSkillsBox}{O{}}{%
+
+  \PackageWarning{Wyrd}{%
+    \string\OldCommand\space is deprecated. Use SkillsBox environment instead.
+  }
+
+  % Reset macros to truly empty
+  \renewcommand{\SkillsBoxWeak}{}%
+  \renewcommand{\SkillsBoxUntrained}{}%
+  \renewcommand{\SkillsBoxNovice}{}%
+  \renewcommand{\SkillsBoxSkilled}{}%
+  \renewcommand{\SkillsBoxExpert}{}%
+  \renewcommand{\SkillsBoxSuperior}{}%
+  %
+  % Apply user-supplied values
+  \pgfkeys{/SkillsBox, #1}%
+  %
+  \begin{center}
+    \begin{tcolorbox}[skillsbox]
+      \begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.7\linewidth}}
+        \ifdefempty{\SkillsBoxSuperior}{}{\Superior: & \SkillsBoxSuperior \\}
+        \ifdefempty{\SkillsBoxExpert}{}{\Expert: & \SkillsBoxExpert \\}
+        \ifdefempty{\SkillsBoxSkilled}{}{\Skilled: & \SkillsBoxSkilled \\}
+        \ifdefempty{\SkillsBoxNovice}{}{\Novice: & \SkillsBoxNovice \\}
+        \ifdefempty{\SkillsBoxUntrained}{}{\Untrained: & \SkillsBoxUntrained \\}
+        \ifdefempty{\SkillsBoxWeak}{}{\Weak: & \SkillsBoxWeak \\}
+      \end{tabular}
+    \end{tcolorbox}
+  \end{center}
+}
+
+
+\NewDocumentEnvironment{SkillsBox}{}{%
+  \begin{center}
+    \begin{tcolorbox}[skillsbox]
+      \begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.6\linewidth}}
+}{
+      \end{tabular}
+    \end{tcolorbox}
+  \end{center}
+}
+\NewDocumentEnvironment{ExpertSkills}{}{
+  \Expert: & 
+}{
+  \\
+}
+
+%% Define commands for difficulty levels %%%%%%%%%%%%%%%%%
+\newcommand{\DL}[1]{\textbf{DL = #1}\xspace}
+\newcommand{\Trivial}{\textbf{Trivial (-3)}\xspace}
+\newcommand{\Simple}{\textbf{Simple (-2)}\xspace}
+\newcommand{\Easy}{\textbf{Easy (-1)}\xspace}
+\newcommand{\Basic}{\textbf{Basic (0)}\xspace}
+\newcommand{\Challenging}{\textbf{Challenging (+1)}\xspace}
+\newcommand{\Difficult}{\textbf{Difficult (+2)}\xspace}
+\newcommand{\Formidable}{\textbf{Formidable (+3)}\xspace}
+\newcommand{\Arduous}{\textbf{Arduous (+4)}\xspace}
+\newcommand{\Extreme}{\textbf{Extreme (+5)}\xspace}
+\newcommand{\Legendary}{\textbf{Legendary (+6)}\xspace}
+\newcommand{\Impossible}{\textbf{Impossible (+7)}\xspace}
+

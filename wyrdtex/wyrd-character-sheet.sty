@@ -1,0 +1,41 @@
+\usepackage{paracol}
+
+\NewDocumentEnvironment{WyrdCharacterSheet}{m m}
+{
+    \onecolumn
+    \section*{#1}
+    \textit{#2}
+    \vspace{\baselineskip}
+    \columnratio{0.55}
+    \begin{paracol}{2}
+}{
+    \end{paracol}
+    \twocolumn
+}
+
+\pgfkeys{/wyrdstats/.is family, /wyrdstats,
+  profile/.store in=\WyrdStatsProfile,
+  profile/.default=,
+}
+
+\makeatletter
+\NewDocumentEnvironment{WyrdStatsBlock}{O{}}
+{
+  % Clear previous value
+  \def\WyrdStatsProfile{}
+
+  % Apply current key-value input
+  \pgfkeys{/wyrdstats, #1}
+
+  \switchcolumn
+  \small
+  \begin{center}
+    \ifx\WyrdStatsProfile\@empty
+      % Profile is empty: do nothing
+    \else
+      \includegraphics[width=0.9\linewidth]{\WyrdStatsProfile}
+    \fi
+  \end{center}
+}
+{}
+\makeatother

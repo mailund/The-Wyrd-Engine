@@ -1,0 +1,41 @@
+\documentclass[nodeprecatedcode,bg=print]{dndbook}
+\usepackage{wyrd}
+\makeindex
+\raggedright
+
+\begin{document}
+\DndSetThemeColor[DmgSlateGray]
+
+
+\frontmatter
+\thispagestyle{empty}
+\begin{center}
+  \includegraphics[width=\textwidth]{img/wyrd-logo}
+\end{center}
+\tableofcontents
+
+\mainmatter%
+
+\WyrdChapter[label=chap:wyrd-intro]{The Wyrd Engine}{}{introduction}
+
+\part{The Wyrd Engine Mechanics}
+\WyrdChapter[label=chap:core]{Core Mechanics}{mechanics/core}{core}
+\WyrdChapter[label=chap:toolbox]{The Wyrd Engine Toolbox}{mechanics/toolbox}{toolbox}
+\WyrdChapter[label=chap:combat]{Combat}{mechanics/combat}{combat}
+\WyrdChapter[label=chap:magic]{Magic}{mechanics/magic}{magic}
+%\import{chapters/mechanics/gear}{gear} -- high-tech gear?
+\WyrdChapter[label=chap:races]{Races \& Creatures}{mechanics/races-and-creatures}{races-and-creatures}
+
+\part{One-Shots}
+% \include{chapters/one-shots/crafting-one-shots}
+
+\part{Episodic Play}
+\WyrdChapter[label=chap:crafting-episodic-campaignes]{Episodic Settings}{episodic}{crafting-episodic-play}
+\WyrdChapter[label=chap:grand-casebook]{The Grand Casebook}{episodic/grand-casebook}{grand-casebook}
+
+\part{Campaigns}
+
+
+\printindex
+
+\end{document}
