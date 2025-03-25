@@ -6,7 +6,20 @@
       #2
     \fi
 }
-\NewDocumentEnvironment{WyrdExplanation}{O{}}
+
+
+\NewDocumentCommand{\BeginBoxPage}{}{%
+  \end{multicols}%
+  \clearpage
+}
+
+\NewDocumentCommand{\EndBoxPage}{}{%
+  \clearpage
+  \begin{multicols}{2}%
+}
+
+
+\NewDocumentEnvironment{Example}{O{}}
 {
     \begin{DndReadAloud}{}
     \InsertIfNonEmpty{#1}{\subsubsection*{#1}}
@@ -15,97 +28,55 @@
     \end{DndReadAloud}
 }
 
-\NewDocumentEnvironment{WyrdExample}{O{}}
-{
-    \begin{DndReadAloud}{}
-    \InsertIfNonEmpty{#1}{\subsubsection*{#1}}
-}
-{
-    \end{DndReadAloud}
-}
 
-\NewDocumentEnvironment{WyrdComment}{m}
-{
-    \begin{DndComment}{#1}
-}
-{
-    \end{DndComment}
-}
 
-\NewDocumentEnvironment{WyrdGmTips}{o}
-{
-    \begin{DndComment}[#1]{Game Master Tip}
-}
-{
-    \end{DndComment}
-}
-
-% Define keys for WyrdSidebar
+% Define keys for boxes
 \pgfkeys{
-    /WyrdSidebar/.is family, /WyrdSidebar,
+    /WyrdBox/.is family, /WyrdBox,
     background/.initial = DmgSlateGray, % Default: DmgSlateGray
-    float/.initial = !ht, % Default: right
 }
 
-\NewDocumentEnvironment{WyrdSidebar}{O{} m}
+\NewDocumentEnvironment{WyrdBox}{O{} m}
 {
-    \pgfkeys{/WyrdSidebar, #1}
-    \begin{DndSidebar}[%
-        float=\pgfkeysvalueof{/WyrdSidebar/float},%
-        color=\pgfkeysvalueof{/WyrdSidebar/background}%
-        ]%
+    \pgfkeys{/WyrdBox, #1}
+    \begin{DndSidebar}[color=\pgfkeysvalueof{/WyrdBox/background}]%
         {#2}
 }
 {
     \end{DndSidebar}
 }
 
-\NewDocumentEnvironment{WyrdExampleSidebar}{O{} m}
+\NewDocumentEnvironment{CommentBox}{O{} m}
 {
-    \begin{WyrdSidebar}[#1]{#2}
+    \begin{WyrdBox}[#1]{#2}
 }
 {
-    \end{WyrdSidebar}
+    \end{WyrdBox}
+}
+
+\NewDocumentEnvironment{GmTips}{o}
+{
+    \begin{CommentBox}[#1]{Game Master Tip}
+}
+{
+    \end{CommentBox}
 }
 
 \colorlet{WyrdNPCColor}{PhbLightGreen}
 \pgfkeys{
     /WyrdNPC/.is family, /WyrdNPC,
+    name/.initial = {},
     description/.initial = Example Character,
     background/.initial = WyrdNPCColor,
-    float/.initial = !ht,
 }
-\NewDocumentEnvironment{WyrdNPC}{O{} m}
+\NewDocumentEnvironment{NPC}{O{} m}
 {
     \pgfkeys{/WyrdNPC, #1}
-    \begin{WyrdSidebar}[%
-        float=\pgfkeysvalueof{/WyrdNPC/float},%
-        background=\pgfkeysvalueof{/WyrdNPC/background}%
-    ]{\pgfkeysvalueof{/WyrdNPC/description}}
+    \begin{WyrdBox}[background=\pgfkeysvalueof{/WyrdNPC/background}]{\pgfkeysvalueof{/WyrdNPC/description}}
         \subsection*{#2}
 }
 {
-    \end{WyrdSidebar}
-}
-
-\pgfkeys{
-    /WyrdFullNPC/.is family, /WyrdFullNPC,
-    name/.initial = {},
-    description/.initial = {},
-    background/.initial = WyrdNPCColor,
-    float/.initial = !ht,
-}
-\NewDocumentEnvironment{WyrdFullNPC}{O{} m}
-{
-    \pgfkeys{/WyrdFullNPC, #1}
-    \begin{WyrdNPC}[%
-        float=\pgfkeysvalueof{/WyrdFullNPC/float},%
-        description=\pgfkeysvalueof{/WyrdFullNPC/description}%
-        ]%
-        {\pgfkeysvalueof{/WyrdFullNPC/name}}
-}
-{
-    \end{WyrdNPC}
+    \end{WyrdBox}
 }
 
 %% Heading for setting chapters
