@@ -90,11 +90,11 @@
 }
 
 %% Heading for scenarios inside setting chapters
-\NewDocumentEnvironment{WyrdScenarioHeading}{m}
+\NewDocumentEnvironment{WyrdScenarioHeading}{O{} m}
 {
     \newpage
     \begin{DndReadAloud}{Example Scenario}
-    \section{#1}
+    \section[#1]{#2}
 }
 {
     \end{DndReadAloud}
