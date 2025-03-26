@@ -116,3 +116,15 @@
 {
     \end{DndReadAloud}
 }
+
+\newcolumntype{Z}{>{\raggedright\arraybackslash}X}
+
+% New DescTable environment, modeled after DndTable
+% FIXME: I don't know why this doesn't work, but I can't be bothered with it right now
+\NewDocumentEnvironment{DescTable}{O{}}
+  {
+    \begin{DndTable}[header=#1]{lZ}
+  }
+  {
+    \end{DndTable}
+  }
