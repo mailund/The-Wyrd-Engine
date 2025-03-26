@@ -19,10 +19,10 @@
 }
 
 
-\NewDocumentEnvironment{Example}{O{}}
+\NewDocumentEnvironment{Example}{O{} m}
 {
-    \begin{DndReadAloud}{}
-    \InsertIfNonEmpty{#1}{\subsubsection*{#1}}
+    \begin{DndReadAloud}{#1}\raggedright
+    \InsertIfNonEmpty{#2}{\subsubsection*{#2}}
 }
 {
     \end{DndReadAloud}
