@@ -29,7 +29,24 @@
     \end{DndReadAloud}
 }
 
-
+\RenewDocumentCommand{\line}{o}{%
+  \item[\textbf{\IfValueTF{#1}{#1}{}}]\itshape
+}
+\NewDocumentEnvironment{ExampleGame}{m}
+  {
+    \begin{Example}{#1}
+    \begin{description}[
+      leftmargin=4.5em,
+      style=nextline,
+      labelsep=0.5em,
+      align=left,
+      font=\textbf
+    ]
+  }
+  {
+    \end{description}
+    \end{Example}
+  }
 
 % Define keys for boxes
 \pgfkeys{
