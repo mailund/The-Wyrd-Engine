@@ -12,13 +12,19 @@
 \begin{center}
   \includegraphics[width=\textwidth]{img/wyrd-logo}
 \end{center}
-\tableofcontents
+
+\begingroup
+  \maxdeadcycles=200 % optional, helps with some TOC edge cases
+  \hbadness=10000     % suppress underfull hbox warnings
+  \vbadness=10000     % suppress underfull vbox warnings (optional)
+  \tableofcontents
+\endgroup
 
 \mainmatter%
 
 \WyrdChapter[label=chap:wyrd-intro]{The Wyrd Engine}{}{introduction}
 
-\part{The Wyrd Engine Mechanics}
+\part[The Mechanics]{The Wyrd Engine Mechanics}
 \WyrdChapter[label=chap:core]{Core Mechanics}{mechanics/core}{core}
 \WyrdChapter[label=chap:toolbox]{The Wyrd Engine Toolbox}{mechanics/toolbox}{toolbox}
 \WyrdChapter[label=chap:combat]{Combat}{mechanics/combat}{combat}
