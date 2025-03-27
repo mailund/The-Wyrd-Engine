@@ -1,109 +1,509 @@
+% !TeX root = ../../../wyrd.tex
 
 \begin{WyrdSettingHeading}
     \WyrdCapLine{L}{ondon}, 1896. A city of gaslit streets, towering factories, and secrets lurking in the shadows. This is an era of progress, where steam and steel reshape the world—but beneath the veneer of industry and refinement, the old mysteries remain. The line between science and the supernatural is thinner than most would dare to believe.
 
     \raggedright
-    You are part of The Grand Society of Inquiry, a clandestine organisation of detectives, scholars, and unconventional thinkers dedicated to unravelling the mysteries the world would rather forget. The police may handle mundane crimes, but when the case is impossible, when the authorities turn a blind eye, or when the answers defy reason, that is where you come in.
+    You are part of The Grand Society of Inquiry, a clandestine organisation of detectives, scholars, and unconventional thinkers dedicated to unravelling the mysteries the world would rather forget. The police may handle mundane crimes, but when a case is impossible, when the authorities turn a blind eye, or when the answers defy reason, that is where you come in.
 
     The aristocracy hides more than it reveals. The city's underworld knows whispers of truths the elite wish to bury. Strange happenings unfold in laboratories, occult circles, and long-forgotten ruins. It is your job to investigate, to bring truth to light—whether the world is ready for it or not.
 
-    You will encounter murderers whose motives defy logic, inventions beyond their time, secret societies vying for power, and horrors that exist just beyond the veil of reason. Some mysteries should never be solved, but you have chosen to chase the truth regardless.
+    You will encounter murderers whose motives defy logic, inventions beyond their time, secret societies vying for power, and horrors that exist just beyond the veil of reason. Some mysteries should never be solved—but you have chosen to chase the truth regardless.
 
     London may not thank you for what you uncover. The truth is rarely comforting. But if not you, then who?
 
     So, tell me: What mystery has found its way to your doorstep tonight?
 \end{WyrdSettingHeading}
 
-\section{The Setting}
+\section{Introduction}
 
-London in 1896 is a city of contradictions. At its heart lies a tension between progress and tradition, the rational and the arcane. Airships drift over soot-covered rooftops, automata assist in the factories, and steam-powered cabs rattle through the cobbled streets. Yet for all these marvels of industry, old fears still lurk in the fog. Ancient horrors persist in forgotten crypts, and whispers of the occult echo in gentlemen’s clubs and back alley gatherings.
+\textit{The Grand Casebook} is both a setting and a toolkit for running episodic investigations in a world of steam-powered wonders, occult secrets, and unsolved mysteries. Set in a fictionalised London in the year 1896, the stories told here blend elements of classic detective fiction, gothic horror, and speculative science. At the heart of it all is the Grand Society of Inquiry, a secretive organisation dedicated to uncovering truths that others fear to face.
 
-This is a world where gaslight barely holds back the darkness, where rational minds struggle to explain the inexplicable. The Grand Casebook embraces the interplay between Victorian-era crime fiction, steampunk ingenuity, and the gothic supernatural.
+This chapter serves as a guide for running stories in this world. Within, you'll find an overview of the setting, key factions, and recurring threats. It offers guidance for players creating characters within this shared universe, and for GMs constructing compelling mysteries. Each scenario is self-contained, making it ideal for one-shots or rotating player groups—but taken together, the cases reveal a wider world of intrigue, danger, and creeping dread.
+
+\newcolumn
+Expect:
+\begin{itemize}
+    \item Rich, gaslit atmosphere full of secrets and contradictions
+    \item Investigations that challenge reason and morality
+    \item Encounters with both human depravity and supernatural horror
+    \item A flexible structure that supports drop-in/drop-out episodic play
+\end{itemize}
+
+Whether you’re a veteran investigator or a newcomer to the shadows, this chapter provides all the tools you need to begin your journey into London’s most perilous enigmas.
+
+\medskip
+\noindent
+\textit{Read on, and mind the fog—it tends to linger near the bodies.}
+
+\section[The World of the Grand Casebook]{The World of the\\ Grand Casebook}
+
+London in 1896 is a city of contradictions. At its heart lies a tension between progress and tradition, the rational and the arcane. Airships drift over soot-covered rooftops, automata assist in the factories, and steam-powered cabs rattle through cobbled streets. Yet for all these marvels of industry, old fears still linger in the fog. Ancient horrors persist in forgotten crypts, and whispers of the occult echo in gentlemen’s clubs and back-alley gatherings.
+
+This is a world where gaslight barely holds back the darkness, where rational minds struggle to explain the inexplicable. The Grand Casebook embraces the interplay between Victorian-era crime fiction, steampunk ingenuity, and gothic supernatural horror.
+
+\subsection{Technology and Magic}
+
+London in 1896 stands at the precipice of modernity. Steam-powered inventions, mechanical marvels, and new sciences have transformed daily life for many of the city's citizens. Airships cross the Thames, pneumatic tubes shuttle messages through walls, and automata clatter away in factories and households alike. The line between miracle and machine is increasingly blurred, and the pace of progress shows no signs of slowing.
+
+Yet beneath this veneer of industrial achievement lies something older—and far stranger.
+
+\textbf{Technology} in the world of \textit{The Grand Casebook} is advanced, but not unbounded. Engineers and inventors push beyond the limits of Victorian science, crafting devices that seem miraculous yet remain grounded in gears, steam, and brass logic. Devices such as:
+\begin{itemize}
+    \item Aetheric resonators that detect unseen energies
+    \item Self-writing pens linked to voice-capturing cylinders
+    \item Steam-powered prosthetics with semi-autonomous reflexes
+    \item Clockwork spiders used for surveillance and sabotage
+\end{itemize}
+While the upper classes marvel at these wonders, many working-class Londoners view them with suspicion or unease.
+
+\textbf{Magic}, on the other hand, is not publicly acknowledged. It exists in the margins—rumours whispered in taverns, symbols etched into cellar doors, or strange phenomena dismissed as mass delusion. Most Londoners scoff at the idea of the supernatural, even as they shudder when crossing graveyards alone or burn sage to ward off nightmares.
+
+Occult knowledge is rare and often dangerous. Practitioners speak of ley lines, dream-keys, and veiled realities that slip through cracks in the waking world. True magic is subtle, costly, and often maddening. Examples might include:
+\begin{itemize}
+    \item A mesmerist who can force confessions through whispered suggestion
+    \item A cursed mirror that reflects a different version of the past
+    \item Blood-ink sigils that reveal invisible messages only at dusk
+    \item Seances that summon not the dead—but something wearing their voice
+\end{itemize}
+
+The \textbf{Grand Society of Inquiry} stands at the intersection of these forces. Some members pursue strange sciences; others study grimoires or collect arcane relics. Most tread cautiously, for they know too well that the boundary between invention and invocation is perilously thin.
+
+\textit{In this world, truth wears a mechanical face and a hidden name—and it is up to the investigators to uncover both.}
 
 \subsection{The Grand Society of Inquiry}
 
-Founded in the wake of the Crimean War, The Grand Society of Inquiry was established by a coalition of scholars, detectives, and adventurers who recognised that certain mysteries lay beyond the reach of conventional authorities. Though their official purpose is to investigate "unusual" occurrences, they are as much a secret society as an investigative body. Their members come from all walks of life—former police officers, rogue academics, disgraced aristocrats, and those who have glimpsed the supernatural and can never return to ignorance.
+Founded in the wake of the Crimean War, The Grand Society of Inquiry was established by a coalition of scholars, detectives, and adventurers who recognised that certain mysteries lay beyond the reach of conventional authorities. Though their official purpose is to investigate “unusual” occurrences, they function as much as a secret society as they do an investigative agency. Its members hail from all walks of life—former police officers, rogue academics, disgraced aristocrats, and those who have glimpsed the supernatural and can never return to ignorance.
 
-The Society operates in secrecy, liaising with those who have knowledge of the unseen world—whether they be alchemists, mesmerists, or reformed criminals. Their headquarters, a sprawling archive hidden beneath a London bookshop, contains a wealth of esoteric knowledge that only a select few are permitted to access.
+The Society operates in secrecy, liaising with those who possess forbidden knowledge—whether they be alchemists, mesmerists, or reformed criminals. Their headquarters, a sprawling archive hidden beneath a London bookshop, contains a vast trove of esoteric knowledge accessible only to a select few.
 
 \subsection{The Powers That Be}
 
-While the Society pursues truth, others work to obscure it. Various factions hold sway over London, each with their own stake in its mysteries:
+While the Society pursues truth, others work to obscure it. Various factions hold sway over London, each with their own interest in the city’s secrets:
 
 \begin{itemize}
-    \item \textbf{Scotland Yard:} The official enforcers of law and order, most officers dismiss the supernatural, though a handful of seasoned inspectors have learned otherwise. The Yard tolerates the Society only when their interests align.
-    \item \textbf{The Ministry of Esoteric Affairs:} A shadowy government branch that monitors supernatural activity. Their agents operate with impunity, and their goals often clash with those of the Society.
-    \item \textbf{The Order of the Silver Dawn:} An occultist cabal that seeks power through ritual and ancient knowledge. Some claim their origins stretch back to the alchemists of the Elizabethan court.
-    \item \textbf{The Industrial Magnates:} The great industrialists of London have their own secrets, from illicit experiments to unspeakable dealings with forces beyond human comprehension.
-    \item \textbf{The Underworld Syndicates:} Smugglers and thieves have always known the truth—London's alleys and docks are haunted by more than mere criminals.
+    \item \textbf{Scotland Yard:} The official enforcers of law and order. Most officers dismiss the supernatural, though a handful of seasoned inspectors know better. The Yard tolerates the Society only when their interests align.
+    
+    \item \textbf{The Ministry of Esoteric Affairs:} A clandestine government branch tasked with monitoring supernatural activity. Their agents operate with impunity, and their motives often clash with the Society’s.
+    
+    \item \textbf{The Order of the Silver Dawn:} An occultist cabal that seeks power through ritual and ancient knowledge. Some whisper their origins stretch back to the Elizabethan court.
+    
+    \item \textbf{The Industrial Magnates:} The city’s great industrialists have secrets of their own—from illicit experiments to pacts with entities beyond comprehension.
+    
+    \item \textbf{The Underworld Syndicates:} Smugglers and thieves have always known that London’s alleys and docks are haunted by more than mere criminals.
 \end{itemize}
 
-\subsection{Types of Play}
+\section[Playing in the Grand Casebook]{Playing in the\\ Grand Casebook}
 
-The Grand Casebook is structured as an episodic mystery-driven setting, where each session presents a new case to unravel. While overarching plots may weave through multiple cases, each game is designed to be a self-contained investigation. The types of mysteries players may face include:
+The Grand Casebook is structured as an episodic, mystery-driven setting. Each session presents a new case to unravel, though overarching plots may weave between episodes. Every game is designed as a standalone investigation, with varying player characters and threats. Types of mysteries include:
 
 \begin{itemize}
     \item \textbf{Classic Crime:} Murders, thefts, and conspiracies with unexpected twists.
-    \item \textbf{Scientific Anomalies:} Unstable inventions, rogue automata, and the consequences of reckless experimentation.
-    \item \textbf{Supernatural Encounters:} Hauntings, curses, and beings that should not exist.
-    \item \textbf{Political Intrigue:} Power struggles within the aristocracy, blackmail, and espionage.
-    \item \textbf{Exploratory Adventures:} Venturing into forgotten catacombs, abandoned asylums, or hidden laboratories.
+    \item \textbf{Scientific Anomalies:} Rogue automata, unstable inventions, or experiments gone awry.
+    \item \textbf{Supernatural Encounters:} Hauntings, curses, and otherworldly horrors.
+    \item \textbf{Political Intrigue:} Blackmail, espionage, and aristocratic conspiracies.
+    \item \textbf{Exploratory Adventures:} Forgotten asylums, hidden laboratories, and haunted ruins.
 \end{itemize}
 
 \subsection{Character Roles}
 
-Players take on the roles of Society members, each bringing unique skills to the investigative team. Some possible roles include:
+Players take on the roles of Society agents, each bringing unique skills and perspectives to the investigative team. Sample archetypes include:
 
 \begin{itemize}
-    \item \textbf{The Detective:} A seasoned investigator skilled in deduction and intuition.
-    \item \textbf{The Scientist:} A brilliant mind on the cutting edge of technological advancements.
-    \item \textbf{The Occultist:} A scholar of the esoteric, familiar with arcane lore.
-    \item \textbf{The Rogue:} A streetwise operative connected to the city’s underbelly.
-    \item \textbf{The Aristocrat:} A well-connected socialite whose influence opens doors.
-    \item \textbf{The Soldier:} A combat-trained veteran, ready to handle more physical threats.
+    \item \textbf{The Detective:} A seasoned investigator with a sharp mind and keen eye for detail.
+    \item \textbf{The Scientist:} A genius innovator whose inventions often outpace their safety.
+    \item \textbf{The Occultist:} A scholar of forbidden knowledge, versed in ritual and arcane lore.
+    \item \textbf{The Rogue:} A streetwise scoundrel with contacts in the city’s underworld.
+    \item \textbf{The Aristocrat:} A socialite with access to influential circles and hidden secrets.
+    \item \textbf{The Soldier:} A hardened veteran, able to face danger head-on.
 \end{itemize}
 
-\subsection{Rule Adaptations for This Setting}
+\subsection{Creating Connections}
 
-The Grand Casebook modifies standard play to suit its unique blend of investigation, steampunk technology, and gothic horror. Some adjustments include:
+Though each case in \textit{The Grand Casebook} may introduce a different roster of investigators, shared history and interpersonal ties enrich the narrative and help players engage more deeply with one another. These connections don't need to be elaborate—they might stem from a single case, a whispered rumour, or a common enemy.
+
+Here are a few ways to establish meaningful links between characters:
 
 \begin{itemize}
-    \item \textbf{Stress and Wounds:} Psychological stress plays a more significant role, with lingering mental consequences affecting future investigations. You can leave out stresses and wounds entirely for most mystery adventures and simply act out any confrontation.
-    \item \textbf{Tools of the Trade:} Players may access specialised investigative tools, such as clockwork analysers, ectoplasmic detectors, or enchanted relics.
-    \item \textbf{Mystery Structure:} Cases follow a structured flow, focusing on gathering clues, making deductions, and confronting the truth.
-    \item \textbf{Supernatural Threats:} Unnatural foes require specific knowledge or preparations to overcome, emphasising research as much as combat.
+    \item \textbf{Shared Cases:} The investigators have worked together before. Perhaps one covered for the other's mistake, or they both saw something they swore never to speak of again.
+    
+    \item \textbf{Mentorships and Rivalries:} One character may have trained another, or they may have taken opposing stances in a past inquiry. Old rivalries can add drama to even the most routine investigation.
+    
+    \item \textbf{Family or Academic Ties:} Some investigators may be siblings, cousins, or former colleagues at a university or academy—connected by blood, scandal, or shared disgrace.
+    
+    \item \textbf{Secrets and Debts:} One character knows something the other must keep hidden. Or perhaps a favour was granted years ago—and the time has come to repay it.
+    
+    \item \textbf{Unfinished Business:} A case from the past remains unresolved, and its shadow looms over the current investigation. What went wrong, and who bears the blame?
 \end{itemize}
 
+To help generate quick connections, consider the following sample bonds:
 
-%% TODO: more world building
+\begin{itemize}
+    \item \textit{“You were the only witness to what I saw that night—and you promised to never speak of it.”}
+    \item \textit{“We once faced something inhuman together. We haven’t spoken since.”}
+    \item \textit{“I saved your life in a fire. You’ve never asked how I knew to be there.”}
+    \item \textit{“We both tried to warn them, and they laughed. Now the laughter has stopped.”}
+    \item \textit{“You were meant to take the case. I took it instead, and someone died.”}
+\end{itemize}
 
-\section{Adventures}
+Players are encouraged to create new bonds at the beginning of each session or case. Even if characters change from one mystery to the next, those connections ensure that each team feels like part of a larger web—a living archive of shared secrets, triumphs, and regrets.
 
-The following adventures are aimed at 3-5 players and should take 2-4 hours to play. 
+\subsection{Setting Rules}
+
+The Grand Casebook modifies standard play to reflect its distinctive tone. Consider the following adjustments:
+
+\begin{itemize}
+    \item \textbf{Stress and Wounds:} Psychological stress plays a prominent role, with lingering trauma from particularly harrowing encounters. In less action-heavy scenarios, stress and wounds may be omitted entirely in favour of roleplay.
+    
+    \item \textbf{Tools of the Trade:} Players may use unique investigative gadgets such as aetheric spectrometers, spirit lenses, or sonic decoding rods.
+    
+    \item \textbf{Mystery Structure:} Adventures focus on gathering evidence, piecing together clues, confronting suspects, and unveiling the truth—sometimes at a cost.
+    
+    \item \textbf{Supernatural Threats:} Some threats cannot be overcome by force alone and require specific rituals, research, or cunning to defeat.
+\end{itemize}
+
+\subsection{Running the Casebook}
+
+\noindent
+\textit{The Grand Casebook} is designed for episodic, mystery-driven play. Each scenario presents a self-contained case that can be resolved within a single session, though connections between investigations may form a broader narrative arc. Whether you're running a one-shot or a full campaign, the goal is to deliver tense, atmospheric stories that blend deduction, drama, and the uncanny.
+
+\subsubsection*{Tone and Style}
+
+Mysteries in this setting walk the line between gothic horror and rational inquiry. While some cases may seem purely mundane at first glance, others hint at deeper, more unsettling truths. Even when a case has a supernatural core, the horror should feel restrained and eerie rather than overtly fantastical.
+
+Embrace ambiguity. Some answers should remain half-glimpsed, half-understood. Let players uncover fragments of truth, and decide for themselves whether they’ve truly solved the mystery—or simply stopped it from spreading.
+
+\subsubsection*{Structure of a Case}
+
+Most scenarios follow a common rhythm:
+
+\begin{enumerate}
+    \item \textbf{The Hook:} A murder, anomaly, or strange event draws the investigators in.
+    \item \textbf{Initial Clues:} Clues and NPCs point in several possible directions. Dead ends, red herrings, and cryptic statements build tension.
+    \item \textbf{The Descent:} As the truth emerges, the tone shifts. Strange phenomena escalate. Players must make difficult choices.
+    \item \textbf{The Confrontation:} The truth is revealed or confronted. It may be stopped, understood, or escaped—but not always cleanly.
+    \item \textbf{Aftermath:} Each case leaves ripples—on the world, on the characters, and on the unseen forces watching from beyond.
+\end{enumerate}
+
+\begin{CommentBox}{Episodic Play and Continuity}
+    Each case is self-contained, but recurring characters, unresolved threads, and subtle callbacks help create a richer world. Let players choose how much continuity they want—some groups may prefer standalone cases, while others enjoy a growing conspiracy in the shadows.
+\end{CommentBox}
+
+\subsubsection*{Pacing and Player Choice}
+
+Don’t railroad players toward a single solution. Instead, present a web of clues and allow the group to connect them in their own way. Keep scenes focused—each should either reveal something, raise a question, or increase tension. Let the story breathe between moments of revelation and danger.
+
+Use quick NPC sketches, recurring motifs (a black carriage, an out-of-place clock, a phrase that recurs), and sensory detail to evoke the setting.
+
+\subsubsection*{Consequences Matter}
+
+This setting thrives on ambiguity and moral tension. Solving a case may not mean saving everyone. Sometimes the wrong person goes free. Sometimes knowing the truth is worse than ignorance. Let the players’ decisions shape future cases, and don’t be afraid to revisit old threads in unexpected ways.
+
+\subsubsection*{Mixing Horror and Mystery}
+
+Mystery is about uncovering what’s hidden. Horror is about what should remain hidden. When blended, these genres create a powerful effect: the sense that knowing too much carries its own price. Use this interplay to your advantage. Offer tantalising truths—but ensure some doors are better left closed.
+
+
+\end{multicols}
+\newpage
+\section{Key NPCs}
+
+%% FIXME: Add profiles for core NPCs—rival detectives, recurring allies, shadowy antagonists. Use LaTeX character formatting if needed.
+
+\newpage
+\section{Example PCs}
+
+\begin{description}
+    \item[Dr Alistair Hargrave (page \pageref{pc:alistair-hargrave})] --- A haunted physician turned occult researcher. Once a man of science, now a seeker of forbidden knowledge, Hargrave investigates unnatural afflictions with steady hands and a fractured soul.
+
+    \item[Eleanor "Ellie" Fairchild (page \pageref{pc:eleanor-fairchild})] --- A fearless investigative journalist with a sharp tongue and sharper instincts. Known for exposing high-society corruption, Ellie uses charm and determination to uncover the truths others want buried.
+
+    \item[Jonathan "Jack" Blackwood (page \pageref{pc:jack-blackwood})] --- A disgraced noble turned private investigator. Jack moves between London's underbelly and drawing rooms with equal ease, wielding secrets like daggers as he hunts for redemption—or revenge.
+
+    \item[Margaret "Maggie" Holloway (page \pageref{pc:maggie-holloway})] --- A brilliant and manipulative criminal psychologist. Maggie sees through people with terrifying ease, using intellect, charm, and psychological insight to bend others to her will.
+
+    \item[Genevieve "Ginny" Harcourt (page \pageref{pc:ginny-harcourt})] --- A rogue intelligence agent and steampunk spy. Armed with gadgets, disguises, and a mind for intrigue, Ginny operates outside the law to expose the powerful and vanish before the dust settles.
+\end{description}
+    
+\newpage
+
+\begin{WyrdCharacterSheet}
+    {Dr Alistair Hargrave} 
+    {“Some afflictions cannot be cured, only contained.”}
+    \label{pc:alistair-hargrave}
+
+    Once a man of science and reason, Dr Alistair Hargrave now treads the blurred line between medicine and the arcane. What began as a pursuit of healing has become a descent into hidden truths that defy biology—and sanity. Calm, precise, and increasingly haunted, Hargrave seeks to understand what lies beyond the edges of knowledge… even if it consumes him.
+
+    \subsection{Background}
+    Hargrave trained as a physician and researcher, once celebrated for his cutting-edge theories. But patients began whispering of dreams, disappearances, and impossible recoveries. A single case—a child who spoke in tongues not found in any human language—shattered his trust in reason. Since then, he’s walked a solitary path, one paved with questions best left unasked.
+
+    \subsection{Appearance}
+    Neatly dressed in a weathered frock coat, spectacles perched on a tired face. His hands are steady, his expression detached. A stethoscope hangs beside a worn leather satchel filled with instruments for both surgery and séance.
+
+    \subsection{Personality}
+    Brilliant, methodical, and burdened by knowledge. Hargrave is driven to discover, even when discovery cuts deep. He keeps his emotions buried beneath a surgeon’s calm—but nightmares press ever closer to the surface.
+
+    \subsection{Connection to the Casebook}
+    His research into “unusual afflictions” brought him into contact with the Grand Society of Inquiry. Though not a formal member, he is often consulted when a case involves biology gone wrong—or something pretending to be biology.
+
+    \subsection{Goals}
+    To identify, isolate, and if possible, contain the unnatural. Whether his goal is to save humanity or himself remains unclear—even to him.
+
+    \begin{WyrdStatsBlock}[profile=img/characters/alistair_hargrave]
+
+        \begin{SkillsBox}
+            \Expert & Lore \\
+            \Skilled & Investigate, Will \\
+            \Novice & Rapport, Crafts, Shoot, Empathy
+        \end{SkillsBox}
+
+        \begin{TraitsBox}
+            \item[Scientific Method] — +2 to Investigate when analysing evidence, conducting experiments, or applying rational deduction.
+            \item[Occult Intuition] — Once per session, substitute Lore for any other skill when interpreting the supernatural.
+            \item[Steady Hands, Sharp Mind] — +2 to Crafts when performing delicate work or acting under extreme pressure.
+        \end{TraitsBox}
+
+        \begin{GearBox}
+            \item[Electro-Aetheric Analyzer] — +2 to Lore when detecting or analysing supernatural phenomena; extended use may cause hallucinations.
+            \item[Pocket Revolver] — +2 to Shoot in close-quarters conflict; discreet and reliable.
+            \item[Notebook of the Unknown] — +2 to Lore when researching entities or events, though prolonged study risks psychological strain.
+        \end{GearBox}
+
+        \DamageBox
+
+    \end{WyrdStatsBlock}
+\end{WyrdCharacterSheet}
+
+\newpage
+
+%% FIXME: Add pre-generated character sheets or examples using your WyrdCharacterSheet format.
+\begin{WyrdCharacterSheet}
+    {Eleanor "Ellie" Fairchild} 
+    {“Fear won't stop me. Lies won't fool me. Power won't silence me.”}
+    \label{pc:eleanor-fairchild}
+
+    Eleanor "Ellie" Fairchild is an investigative journalist with a reputation for uncovering the truth—especially the kind others would prefer stayed buried. Armed with charm, wit, and a steel resolve, Ellie chases leads through high society soirées and back-alley whispers alike. She’s not just looking for a story—she’s looking for justice.
+
+    \subsection{Background}
+    Ellie made her name exposing corruption in Parliament and industry alike. Her column in the underground press made waves until it was abruptly shut down after a scandal she never got to print. She suspects powerful hands buried the truth, and now she works freelance, answering only to herself—and the stories that need telling.
+
+    \subsection{Appearance}
+    Stylish but practical—blouses with hidden pockets, corsets that conceal notebooks, and gloves perfect for opening locked doors. Her sharp green eyes miss nothing, and her confident posture keeps her one step ahead of suspicion.
+
+    \subsection{Personality}
+    Fearless, driven, and cunning. Ellie knows when to press for answers and when to play coy. She believes that stories can save lives—or ruin them—and she’s not afraid to take that gamble. Her charm is real, but so is her steel.
+
+    \subsection{Connection to the Casebook}
+    A recent letter warned her off a lead she hadn’t yet begun to chase—about strange disappearances tied to the Society of Inquiry. Now she’s chasing the sender as much as the story.
+
+    \subsection{Goals}
+    Expose the forces manipulating the truth. Whether it’s a secret society or something older, she’ll dig until she hits the nerve—and print it, no matter the cost.
+
+    \begin{WyrdStatsBlock}[profile=img/characters/eleanor_fairchild]
+
+        \begin{SkillsBox}
+            \Expert & Investigate \\
+            \Skilled & Rapport, Empathy \\
+            \Novice & Contacts, Notice, Will, Stealth
+        \end{SkillsBox}
+
+        \begin{TraitsBox}
+            \item[Follow the Lead] — +2 to Investigate when pursuing a major story or unraveling a cover-up.
+            \item[Silver-Tongued Reporter] — Once per session, substitute Rapport for Deceive when gathering information.
+            \item[Ink Over Iron] — +2 to Will when resisting intimidation, coercion, or supernatural manipulation.
+        \end{TraitsBox}
+
+        \begin{GearBox}
+            \item[Press Credentials] — +2 to Rapport when convincing someone to talk on the record.
+            \item[Lockpicking Kit] — +2 to Stealth when breaking into offices or restricted archives.
+            \item[Hidden Notes and Records] — +2 to Investigate when reviewing past leads or building a case.
+        \end{GearBox}
+
+        \DamageBox
+
+    \end{WyrdStatsBlock}
+\end{WyrdCharacterSheet}
+
+\newpage
+
+\begin{WyrdCharacterSheet}
+    {Jonathan "Jack" Blackwood} 
+    {“Justice? That’s for men with clean hands. I settle for truth.”}
+    \label{pc:jack-blackwood}
+
+    Once a privileged nobleman, now a disgraced investigator, Jonathan "Jack" Blackwood navigates the shadows of the same society that cast him out. Suave, jaded, and sharper than ever, he deals in secrets—especially the kind that destroy reputations. Though the city turned its back on him, Jack learned to thrive in its alleys, clubs, and drawing rooms alike.
+
+    \subsection{Background}
+    Born into aristocracy, Jack lived a life of comfort until scandal drove him from polite society. The details remain elusive, but whispers of cover-ups and betrayal follow him still. He now works as a private investigator, using his knowledge of the elite to expose their sins—and perhaps, someday, redeem his own.
+
+    \subsection{Appearance}
+    Trim and refined, but with a weariness in his eyes that betrays years of hard truth. Always impeccably dressed, though his coat bears the wear of back alleys and long nights. He moves with confidence, but not the kind that comes from wealth—it’s the confidence of survival.
+
+    \subsection{Personality}
+    Witty and worldly, Jack is equal parts cynic and romantic. He sees the rot beneath the city’s glittering mask but keeps a code of honour all the same. His charm is effortless, but his past is heavy, and it never stays buried for long.
+
+    \subsection{Connection to the Casebook}
+    The Society sometimes turns to Jack when an investigation involves the upper crust. His ability to blend into ballrooms or brothels alike makes him a valuable—if reluctant—asset.
+
+    \subsection{Goals}
+    To uncover the truth behind his exile and hold the guilty accountable—if not in court, then in kind. And if that truth damns him too? So be it.
+
+    \begin{WyrdStatsBlock}[profile=img/characters/jack_blackwood]
+
+        \begin{SkillsBox}
+            \Expert & Investigate \\
+            \Skilled & Rapport, Notice \\
+            \Novice & Deceive, Stealth, Will, Contacts
+        \end{SkillsBox}
+
+        \begin{TraitsBox}
+            \item[Aristocratic Charm] — +2 to Rapport when dealing with upper-class individuals or navigating elite social circles.
+            \item[A Shadow Among Shadows] — Once per session, use Stealth to escape pursuit in crowds or dimly lit environments.
+            \item[Secrets Kept, Secrets Sold] — +2 to Contacts when dealing with informants or acquiring blackmail material.
+        \end{TraitsBox}
+
+        \begin{GearBox}
+            \item[Forged Identity Papers] — +2 to Deceive when infiltrating parties, clubs, or restricted events.
+            \item[Hidden Dagger] — +2 to Stealth when concealing a weapon or retrieving it undetected.
+            \item[The Ledger of Secrets] — +2 to Investigate when researching aristocratic corruption or tracing hidden transactions.
+        \end{GearBox}
+
+        \DamageBox
+
+    \end{WyrdStatsBlock}
+\end{WyrdCharacterSheet}
+
+\newpage
+
+\begin{WyrdCharacterSheet}
+    {Margaret "Maggie" Holloway} 
+    {“Every mind has a door. I simply know how to open them.”}
+    \label{pc:maggie-holloway}
+
+    Maggie Holloway is a master manipulator wrapped in charm and poise. A criminal psychologist of rare brilliance, she dissects people the way others read poetry—elegantly, and without mercy. Whether uncovering a motive or planting a seed of doubt, she always knows what to say—and when silence will say more.
+
+    \subsection{Background}
+    Maggie rose to prominence as a forensic psychologist, consulting for both the courts and the clandestine. Her insight made her enemies, her confidence made her dangerous. Officially, she "stepped away" from academia. Unofficially, she's still invited to solve the kinds of puzzles most professionals refuse to touch.
+
+    \subsection{Appearance}
+    Always impeccably dressed in tailored black, Maggie's presence is commanding without being loud. Her voice is soft but sharp, her eyes calm but invasive. She speaks like she already knows what you're about to say.
+
+    \subsection{Personality}
+    Intelligent, composed, and subtly dangerous. She prefers manipulation to confrontation and keeps her emotions in a locked box. While her methods are unsettling, her results are undeniable.
+
+    \subsection{Connection to the Casebook}
+    Maggie consults for the Grand Society when cases require psychological nuance—or when suspects are best broken with words rather than force. She rarely seeks out mysteries, but they often find her.
+
+    \subsection{Goals}
+    To study the darker corners of the human mind—and use that knowledge as both scalpel and sword. Whether her motives are pure is a matter of perspective.
+
+    \begin{WyrdStatsBlock}[profile=img/characters/maggie_holloway]
+
+        \begin{SkillsBox}
+            \Expert & Empathy \\
+            \Skilled & Rapport, Investigate \\
+            \Novice & Deceive, Will, Contacts, Notice
+        \end{SkillsBox}
+
+        \begin{TraitsBox}
+            \item[Mind Games] — +2 to Empathy when analysing emotional states or hidden motives.
+            \item[Persuasive Whisper] — Once per session, use Empathy in place of Rapport to subtly influence a target.
+            \item[Puppet Master] — +2 to Deceive when manipulating someone into action against their interest.
+        \end{TraitsBox}
+
+        \begin{GearBox}
+            \item[Psychological Dossier] — +2 to Investigate when reviewing notes or case files on a subject’s behaviour.
+            \item[Silver Locket] — +2 to Rapport when forging emotional connections through shared memories or vulnerability.
+            \item[A Hidden Letter] — +2 to Contacts when calling in favours from influential acquaintances.
+        \end{GearBox}
+
+        \DamageBox
+
+    \end{WyrdStatsBlock}
+\end{WyrdCharacterSheet}
+
+\newpage
+
+\begin{WyrdCharacterSheet}
+    {Genevieve "Ginny" Harcourt} 
+    {“Secrets are just another kind of weapon.”}
+    \label{pc:ginny-harcourt}
+
+    Once a decorated agent of the Crown, Ginny Harcourt now moves through the shadows of the Empire, answerable to no one. Betrayed and disavowed, she has turned her considerable talents toward subterfuge, sabotage, and secrets. Her enemies never see her coming—only the aftermath.
+
+    \subsection{Background}
+    A brilliant operative with a reputation for infiltration and extraction, Ginny was betrayed by her handlers and left for dead after uncovering secrets too dangerous for the Empire to admit. She now works as a rogue agent, unravelling conspiracies with a mixture of charm, cunning, and clever engineering.
+
+    \subsection{Appearance}
+    Always dressed for movement, with hidden tools stitched into every layer. Her presence shifts to suit her role—noblewoman, servant, smuggler, spy. Her eyes are sharp, her smile misleading, and her pockets full of tricks.
+
+    \subsection{Personality}
+    Coldly efficient, but never without style. Ginny calculates three moves ahead and keeps her heart locked behind iron discipline. Trust is rare. Precision is everything.
+
+    \subsection{Connection to the Casebook}
+    The Grand Society occasionally requires the skills of someone who doesn’t officially exist. Ginny helps with the cases no one else is allowed to know about.
+
+    \subsection{Goals}
+    To uncover the truth behind her betrayal and dismantle the power structures that let it happen—one secret at a time.
+
+    \begin{WyrdStatsBlock}[profile=img/characters/ginny_harcourt]
+
+        \begin{SkillsBox}
+            \Expert & Deceive \\
+            \Skilled & Stealth, Investigate \\
+            \Novice & Burglary, Contacts, Crafts, Notice
+        \end{SkillsBox}
+
+        \begin{TraitsBox}
+            \item[Master of Disguise] — +2 to Deceive when impersonating others or assuming a false identity.
+            \item[Escape Artist] — Once per session, declare an escape plan was already prepared—automatically succeed at leaving danger behind.
+            \item[Tinker’s Friend] — Use Crafts instead of Burglary when bypassing security systems or traps.
+        \end{TraitsBox}
+
+        \begin{GearBox}
+            \item[Hidden Blade] — +2 to Fight when striking from stealth or ambush.
+            \item[Encrypted Communicator] — +2 to Contacts when sending or receiving secure messages.
+            \item[Grappling Hook Gauntlet] — +2 to Athletics when climbing or fleeing through vertical terrain.
+        \end{GearBox}
+
+        \DamageBox
+
+    \end{WyrdStatsBlock}
+\end{WyrdCharacterSheet}
+
+\newpage
+\section[Case Files: The Scenarios]{Case Files: The Scenarios}
+
+The following adventures are designed for 3–5 players and typically run between 2–4 hours.
+
+\begin{multicols}{2}
 
 \subsection{The Call to Adventure}
 
-At the heart of every investigation lies The Grand Society of Inquiry, an esteemed and enigmatic organisation dedicated to the relentless pursuit of truth. Operating from the opulent halls of the Grand Hall, the society boasts a network of detectives, scholars, and specialists, each possessing a unique skill set vital to solving the most perplexing cases.
+At the heart of every investigation lies the Grand Society of Inquiry, an esteemed and enigmatic organisation dedicated to the relentless pursuit of truth. Operating from the opulent halls of the Grand Hall, the Society employs a network of investigators, scholars, and specialists—each summoned based on their particular expertise.
 
-When a new case emerges, summons are discreetly dispatched to those deemed most suited for the task at hand. These messages—delivered via courier, pneumatic tube, or even through more esoteric means—call upon select members to assemble and uncover the mystery that awaits. No two groups are ever quite the same, for the \textbf{Grand Analytical Engine}, a vast and intricate steam-powered construct housed in the depths of the Grand Hall, determines the composition of each investigative team.
+When a new case arises, messages are discreetly dispatched via courier, pneumatic tube, or stranger means. These summons are determined by the \textbf{Grand Analytical Engine}, a vast, steam-powered machine housed in the Grand Hall’s lower levels. This device analyses a multitude of factors—past case data, personnel availability, skill profiles—and selects an ideal investigative team for each assignment.
 
 \begin{CommentBox}{Framing The Call to Adventure}
-	The setup for starting adventures is typical for episodic games where the players can vary from session to session. Having an explanation for why the characters vary from case to case means that no further in-game explanation is needed.
+    This framing device helps explain varying character rosters from session to session. The Grand Analytical Engine provides an in-universe reason for episodic play with a rotating cast.
 \end{CommentBox}
+\end{multicols}
 
-%% TODO: Something about the shared structure to the adventures here (the form of mystery adventures)
+\subsection{Cases}
 
-%% TODO: get this ito the world description
+The list that follows is but a tiny fraction of the cases that have crossed the Grand Analytical Engine’s path. Each case is a self-contained mystery, but they can be played in any order. The only requirement is that players must be willing to accept the call to adventure.
+\begin{description}
+    \item[The Murder at the Brass Orchid] --- FIXME description
+    \item[The Clockmaker's Deception] --- FIXME description
+\end{description}
 
-%The Grand Analytical Engine
-%
-%This marvel of engineering, a hybrid of Babbage’s Analytical Engine and the finest advancements in mechanical computation, processes a staggering wealth of information. Data is fed into its whirring mechanisms by archivists and clerks, cross-referencing past cases, skills, and affiliations. The result: a meticulously curated team, assembled not by human intuition, but by the cold, logical precision of brass gears and punched cards. Whether by fate or by cold calculation, those summoned are invariably drawn into intrigue, danger, and the pursuit of justice.
 
+
+\newpage
+\begin{multicols}{2}
 
 \subimport{murder-at-the-brass-orchid}{murder-at-the-brass-orchid}
-%% FIXME: proper importing
 \subimport{./}{clockmakers-deception}
 \subimport{./}{the-silent-courier}
 
-
-%% TODO: Add three more adventures
+%% TODO: Add three more scenarios to round out the first volume of the Grand Casebook.

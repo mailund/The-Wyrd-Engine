@@ -2,7 +2,7 @@
 
 \NewDocumentEnvironment{WyrdCharacterSheet}{m m}
 {
-    \onecolumn
+    %\onecolumn
     \section*{#1}
     \textit{#2}
     \vspace{\baselineskip}
@@ -10,7 +10,7 @@
     \begin{paracol}{2}
 }{
     \end{paracol}
-    \twocolumn
+    %\twocolumn
 }
 
 \pgfkeys{/wyrdstats/.is family, /wyrdstats,
@@ -33,7 +33,7 @@
     \ifx\WyrdStatsProfile\@empty
       % Profile is empty: do nothing
     \else
-      \includegraphics[width=0.9\linewidth]{\WyrdStatsProfile}
+      \includegraphics[width=0.7\linewidth]{\WyrdStatsProfile}\vspace{\baselineskip}
     \fi
   \end{center}
 }
