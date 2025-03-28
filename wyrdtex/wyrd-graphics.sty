@@ -5,7 +5,11 @@
 % Bottom Image Command
 \newcommand{\WyrdFooterImage}[1]{
     \thispagestyle{empty}
-    \AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth]{#1}}}
+    \begingroup
+    \setbox0=\vbox{
+      \AddToShipoutPictureBG*{\AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#1}}}
+    }
+    \endgroup
 }
 
 % Top Image Command
