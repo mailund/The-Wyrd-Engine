@@ -4,6 +4,7 @@
 \RequirePackage{array}
 \RequirePackage{afterpage}
 \RequirePackage[english]{babel}
+\RequirePackage[sc]{mathpazo}
 \RequirePackage{balance}
 \RequirePackage{calc}
 \RequirePackage[singlelinecheck=false]{caption}
@@ -12,6 +13,7 @@
 \RequirePackage{environ}
 \RequirePackage{eso-pic}
 \RequirePackage{fontawesome}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{ifoddpage}
@@ -37,7 +39,7 @@
 \captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
 \DndSetThemeColor[DmgSlateGray]
 
-
+\input{wyrd-toc.sty}
 \input{wyrd-text-processing.sty}
 \input{wyrd-graphics.sty} 
 \input{wyrd-references.sty}

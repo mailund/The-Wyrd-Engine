@@ -1,0 +1,50 @@
+% \usepackage{titletoc} -- already loaded in dndbook
+
+% Set TOC depth: show up to \section
+\setcounter{tocdepth}{1}
+
+% ---- TOC Part Entry ----
+\titlecontents{part}
+  [0pt]
+  {%
+    \addvspace{.1in}%
+    \DndFontTocPart
+  }
+  {\partname~\thecontentslabel:~}
+  {}
+  {}
+  [%
+    \addvspace{-.03in}%
+    \titleline{\color{titlegold}\titlerule[1pt]}%
+    \addvspace{.05in}%
+  ]
+
+% ---- TOC Chapter Entry ----
+\titlecontents{chapter}
+  [0pt]
+  {%
+    \addvspace{.1in}%
+    \DndFontTocChapter
+  }
+  {\tocchapapp~\thecontentslabel:~}
+  {}
+  {\titlerule*{.}\contentspage}
+
+% ---- TOC Section Entry ----
+\titlecontents{section}
+  [0pt]
+  {%
+    \DndFontTocSection
+  }
+  {\thecontentslabel:~}
+  {}
+  {\titlerule*{.}\contentspage}
+
+% ---- Handle Appendix Chapter Labels ----
+\makeatletter
+\renewcommand\tocchapapp{\tocchapterabbreviationname}
+\g@addto@macro\appendix{%
+  \addtocontents{toc}{\protect\renewcommand{\protect\@chapapp}{\appendixname}}%
+  \addtocontents{toc}{\protect\renewcommand{\protect\tocchapapp}{\appendixname}}%
+}
+\makeatother
