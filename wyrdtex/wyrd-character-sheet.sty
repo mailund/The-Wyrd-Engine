@@ -2,7 +2,6 @@
 
 \NewDocumentEnvironment{WyrdCharacterSheet}{m m}
 {
-    %\onecolumn
     \section*{#1}
     \textit{#2}
     \vspace{\baselineskip}
@@ -10,7 +9,7 @@
     \begin{paracol}{2}
 }{
     \end{paracol}
-    %\twocolumn
+    \clearpage
 }
 
 \pgfkeys{/wyrdstats/.is family, /wyrdstats,
