@@ -1,5 +1,8 @@
 \documentclass[nodeprecatedcode,bg=print]{dndbook}
 \usepackage{wyrd}
+\usepackage{microtype}
+
+
 
 \tracingpages=1
 \tracingoutput=1
@@ -18,7 +21,10 @@
   \includegraphics[width=\textwidth]{img/wyrd-logo}
 \end{center}
 
+\begingroup
+\sloppy
 \tableofcontents
+\endgroup
 
 \mainmatter%
 
@@ -26,7 +32,7 @@
 
 \part[The Mechanics]{The Wyrd Engine Mechanics}
 \WyrdChapter[label=chap:core]{Core Mechanics}{mechanics/core}{core}
-\WyrdChapter[label=chap:toolbox]{The Wyrd Engine Toolbox}{mechanics/toolbox}{toolbox}
+\WyrdChapter[label=chap:toolbox]{The Wyrd Toolbox}{mechanics/toolbox}{toolbox}
 \WyrdChapter[label=chap:combat]{Combat}{mechanics/combat}{combat}
 \WyrdChapter[label=chap:magic]{Magic}{mechanics/magic}{magic}
 %\import{chapters/mechanics/gear}{gear} -- high-tech gear?
