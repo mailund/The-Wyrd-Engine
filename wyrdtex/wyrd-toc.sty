@@ -2,6 +2,7 @@
 
 % Set TOC depth: show up to \section
 \setcounter{tocdepth}{1}
+%\contentsmargin{2.5em}
 
 % ---- TOC Part Entry ----
 \titlecontents{part}
@@ -28,7 +29,7 @@
   }
   {\tocchapapp~\thecontentslabel:~}
   {}
-  {\titlerule*{.}\contentspage}
+  {\titlerule*[0.5em]{.}\DndFontTocSection\contentspage}  % ← DOTS + PAGE NUMBER
 
 % ---- TOC Section Entry ----
 \titlecontents{section}
@@ -38,13 +39,4 @@
   }
   {\thecontentslabel:~}
   {}
-  {\titlerule*{.}\contentspage}
-
-% ---- Handle Appendix Chapter Labels ----
-\makeatletter
-\renewcommand\tocchapapp{\tocchapterabbreviationname}
-\g@addto@macro\appendix{%
-  \addtocontents{toc}{\protect\renewcommand{\protect\@chapapp}{\appendixname}}%
-  \addtocontents{toc}{\protect\renewcommand{\protect\tocchapapp}{\appendixname}}%
-}
-\makeatother
+  {\titlerule*[0.5em]{.}\contentspage}  % ← DOTS + PAGE NUMBER
