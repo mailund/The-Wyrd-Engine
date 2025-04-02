@@ -1,0 +1,48 @@
+\documentclass[nodeprecatedcode,bg=print]{dndbook}
+\usepackage{wyrd}
+\raggedright
+\pagestyle{empty}
+
+\begin{document}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge\DndFontPart Tables}\\
+    \vspace{1em}
+\end{center}
+\vspace*{\fill}
+
+\renewcommand{\arraystretch}{2} % Optional: makes rows taller
+\subsection{Success at Difficulty Levels}
+\begin{DndTable}{lrrrr}
+    \Large \textbf{Difficulty} & \Large \textbf{0} & \Large \textbf{+1} & \Large \textbf{+2} & \Large \textbf{+3} \\
+    % \hline
+    \Large\Trivial     & \Large 98.8\% & \Large 100.0\% & \Large 100.0\% & \Large 100.0\% \\
+    \Large\Simple      & \Large 93.8\% & \Large  98.8\% & \Large 100.0\% & \Large 100.0\% \\
+    \Large\Easy        & \Large 81.5\% & \Large  93.8\% & \Large  98.8\% & \Large 100.0\% \\
+    \Large\Basic       & \Large 61.7\% & \Large  81.5\% & \Large  93.8\% & \Large 98.8\% \\
+    \Large\Challenging & \Large 38.7\% & \Large  61.7\% & \Large  81.5\% & \Large 93.8\% \\
+    \Large\Difficult   & \Large 18.5\% & \Large  38.7\% & \Large  61.7\% & \Large 81.5\% \\
+    \Large\Formidable  & \Large  6.2\% & \Large  18.5\% & \Large  38.7\% & \Large 61.7\% \\
+    \Large\Arduous     & \Large  1.2\% & \Large   6.2\% & \Large  18.5\% & \Large 38.7\% \\
+    \Large\Extreme     & \Large  -     & \Large   1.2\% & \Large   6.2\% & \Large 18.5\% \\
+    \Large\Legendary   & \Large  -     & \Large   -     & \Large   1.2\% & \Large  6.2\% \\
+    \Large\Impossible  & \Large  -     & \Large  -     &  \Large  -     &  \Large  1.2\% \\
+\end{DndTable}
+
+\vspace*{\fill}
+
+\subsection{Damage Probability}
+\begin{DndTable}{lrrrrrrr}
+    \Large\textbf{Rel. Level} & \Large\textbf{0} & \Large\textbf{1} & \Large\textbf{2} & \Large\textbf{3} & \Large\textbf{4} & \Large\textbf{5} & \Large\textbf{6+} \\
+    \Large -3 &  \Large 93.6\% &  \Large  4.1\% &  \Large  1.7\% & \Large  0.5\% & \Large  0.1\% & \Large  - &   - \Large\\
+    \Large -2 &  \Large 85.9\% &  \Large  7.7\% &  \Large  4.1\% & \Large  1.7\% & \Large  0.5\% & \Large  0.1\% & \Large  - \\
+    \Large -1 &  \Large 73.9\% &  \Large 11.9\% &  \Large  7.7\% & \Large  4.1\% & \Large  1.7\% & \Large  0.5\% & \Large  0.1\% \\
+    \Large +0 &  \Large 58.4\% &  \Large 15.5\% &  \Large 11.9\% & \Large  7.7\% & \Large  4.1\% & \Large  1.7\% & \Large  0.6\% \\
+    \Large +1 &  \Large 41.6\% &  \Large 16.9\% &  \Large 15.5\% & \Large 11.9\% & \Large  7.7\% & \Large  4.1\% & \Large  2.3\% \\
+    \Large +2 &  \Large 26.1\% &  \Large 15.5\% &  \Large 16.9\% & \Large 15.5\% & \Large 11.9\% & \Large  7.7\% & \Large  6.4\% \\
+    \Large +3 &  \Large 14.1\% &  \Large 11.9\% &  \Large 15.5\% & \Large 16.9\% & \Large 15.5\% & \Large 11.9\% & \Large 14.1\% \\
+\end{DndTable}
+
+\vspace*{\fill}
+\end{document}
