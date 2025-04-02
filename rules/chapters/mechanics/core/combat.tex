@@ -91,38 +91,20 @@ If the defender has a higher score than or equal to the attacker, the attack is 
 	\end{itemize}
 \end{Example}
 
-Any damage inflicted must be soaked up by either \textbf{Fatigue} or \textbf{Wounds}. Each player has four \emph{Fatigue boxes}, \FatigueBoxes, and five \emph{Wounds boxes} where the wounds are split into three categories: three \textbf{Mild Wounds} (\MildWounds), two \textbf{Moderate Wounds} (\ModerateWounds), and one \textbf{Severe Wounds} (\SevereWounds). These boxes, combined, are where a character can soak up damage.
+Any damage inflicted must be soaked up by either \textbf{Fatigue} or \textbf{Wounds}. By default, each player has three \emph{Fatigue boxes}, \FatigueBoxes, and three \emph{Wounds boxes} where the wounds are split into three categories: one \textbf{Mild Wound} (\MildWounds), one \textbf{Moderate Wound} (\ModerateWounds), and one \textbf{Severe Wound} (\SevereWounds). NPCs can have different distributions of stress boxes and different settings can have different defaults for player characters. These boxes, combined, are where a character can soak up damage.
 
 \DamageBox
 
-When a character sustains \Damage, the damage dealt is converted one-to-one into these stress and wound boxes. Stress is soaked up by the boxes top-to-bottom; the fatigue boxes will soak up the first four points of stress. After that, the following three stress points are inflicted as mild wounds, the next two as moderate wounds, and finally, the character suffers a severe wound. If all stress boxes are ticked off, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
+When a character sustains \Damage, the damage dealt is converted one-to-one into these stress and wound boxes. Stress is soaked up by the boxes top-to-bottom; the fatigue boxes will soak up the first three points of stress. After that, the following stress point is inflicted as a mild wound, the next as a moderate wound, and finally, the character suffers a severe wound. If all stress boxes are ticked off, and the character takes further damage, the character is \textbf{out of action} (see \textsc{Death and the End of Combat} on page~\pagereftext{core:death}).
 
-%% Example of a character taking stress damage
-% \begin{NPC}{Captain Elias Mercer}
-% 	\emph{A daring sky pirate and master pilot, Elias Mercer is a rogue smuggler with a reputation for getting the job done—no matter how dangerous. Once a decorated naval officer, he now flies under his own banner, evading bounty hunters, rival captains, and the law alike. He lives by one rule: a captain never abandons his crew.}
-  
-% 	\vspace{0.5\baselineskip}
+For characters with more than one of a given wound type, the wound boxes are ticked off the way fatigue boxes are, from left to right. If, for example, a monster has three \textbf{Fatigue}, three \textbf{Mild Wounds} and two \textbf{Moderate Wounds} and suffers 4 stresses, it would tick off all three fatigue boxes and one mild wound. If it then suffered 3 more stresses, it would tick off the remaining two mild wounds and one moderate wound.
 
-% 	\begin{SkillsBox}
-% 		\Expert  & Pilot \\
-% 		\Skilled & Shoot, Deception \\
-% 		\Novice  & Athletics, Awareness, Combat \\
-% 	\end{SkillsBox}
-  
-% 	\begin{TraitsBox}
-% 	  \item[Always One Step Ahead] — \emph{Gain a bonus when avoiding pursuit or laying traps.}
-% 	  \item[A Captain Never Abandons His Crew] — \emph{Once per session, resist an effect that would separate him from his crew.}
-% 	  \item[Knows Every Trick in the Book] — \emph{Can reroll a failed Deception test when lying or fast-talking.}
-% 	\end{TraitsBox}
-  
-% 	\DamageBox
-%   \end{NPC}
   
 \begin{Example}{Example: Fatigue Damage}
-	As Captain Elias Mercer crouches in the engine room, setting the last charge to sabotage the enemy airship, he is caught off guard by a patrolling crew member. A swift jab to the ribs and a pistol whip to the shoulder deal \textbf{+3} damage. With no previous injuries, the damage is absorbed entirely by his fatigue boxes. 
+	As Captain Elias Mercer crouches in the engine room, setting the last charge to sabotage the enemy airship, he is caught off guard by a patrolling crew member. A swift jab to the ribs and a pistol whip to the shoulder deal \textbf{+2} damage. With no previous injuries, the damage is absorbed entirely by his fatigue boxes ticking off two of them
 	
 	\vspace{0.5\baselineskip}
-	\DamageBox[fatigue=3]
+	\DamageBox[fatigue=2]
 
 	\noindent
 	Gritting his teeth, he shoves the attacker aside and makes his escape—knowing the real danger will come when the explosives detonate.
@@ -138,28 +120,30 @@ When you tick off fatigue boxes, the damage has no noticeable effect. Fatigue is
     \textbf{Severe Wound}   & -3 to relevant skill rolls \\
 \end{DndTable}
 
-When taking a wound of any of the three kinds, the player and Game Master decide on which relevant skills or traits are affected by the wound. The \textbf{-2} and \textbf{-3} penalties for \textbf{Moderate} and \textbf{Severe} Wounds can be split among multiple skills as long as the total penalty remains the same. Any future rolls involving those skills or traits will have the penalty applied until the wound is healed (see \textsc{Healing and Recovery}~\pagereftext{core:healing}). Additional wounds of the same kind do not add additional penalties when using the core rules.
+When taking a wound of any of the three kinds, the player and Game Master decide on which relevant skills or traits are affected by the wound. The \textbf{-2} and \textbf{-3} penalties for \textbf{Moderate} and \textbf{Severe} Wounds can be split among multiple skills as long as the total penalty remains the same. Any future rolls involving those skills or traits will have the penalty applied until the wound is healed (see \textsc{Healing and Recovery}~\pagereftext{core:healing}). 
+
+For characters or creatures with multiple of the same type of wounds, additional wounds of the same kind do not add additional penalties when using the core rules.
 
 \begin{Example}{Example: Wound Damage}
 	While fleeing the engine room, Captain Mercer, the enemy he knocked aside, recovers, reaches for his gun, and fires off a shot (\FudgeRes{++-0} + \textbf{Shoot (+1)} for an \Attack of \textbf{+2}). Mercer attempts to duck (\FudgeRes{+--0} + \textbf{Atheletics (+1)} for a \Defend of \textbf{0}). The difference is a \Damage of \textbf{+2}.
 	
-	Mercer only has one fatigue box left, so one of the damage points goes into a \textbf{Mild} wound, and the player and GM decide that the bullet graces Captain Mercer's shoulder, which would affect the \textbf{Athletics} skill.
+	Mercer only has one fatigue box left, so one of the damage points goes into his \textbf{Mild} wound, and the player and GM decide that the bullet graces Captain Mercer's shoulder, which would affect the \textbf{Athletics} skill.
 	
 	\vspace{0.5\baselineskip}
-	\DamageBox[fatigue=4,mild=1,mildtext=\textbf{Athletics (-1)}]
+	\DamageBox[fatigue=3,mild=1,mildtext=\textbf{Athletics (-1)}]
 
 	Taking the wound in his strides, he exits the room and continues his escape.
 \end{Example}
 
-As long as a character has any damage is in a wound category, the penalty applies. Additional stress to a wound category that is already marked does not add additional penalties. Penalties from different categories can stack, however.
+When a character takes a wound with a penalty greater than one, the player and GM decide how to split the penalty between skills. The player can choose to apply the penalty to a single skill or split it between multiple skills. The total penalty must equal the wound's severity.
 
 \begin{Example}{Example: Wound Damage}
-	Captain Mercer rushes to the railing of the airship to throw himself off before the explosive device he planted detonates. The interruption in the engine room, unfortunately, has delayed him too long. The second he jumps, the bomb detonates. The shockwave hits his back with a whooping \textbf{+3} of damage. He can absorb two with his remaining \textbf{Mild} wounds, but one will go into his \textbf{Moderate} wounds. The \textbf{Moderate} wounds give him a penalty of \textbf{-2}, which he and the GM decide to split between \textbf{Atheletics} and \textbf{Awareness} (reasoning that getting blown up is likely to affect Mercer both physically and mentally).
+	Captain Mercer rushes to the railing of the airship to throw himself off before the explosive device he planted detonates. The interruption in the engine room, unfortunately, has delayed him too long. The second he jumps, the bomb detonates. The shockwave hits his back with a \textbf{+1} of damage. His Fatigue and Mild Wound are already ticked off, so he has to take the damage to his \textbf{Moderate Wound}. The \textbf{Moderate Wound} give him a penalty of \textbf{-2}, which he and the GM decide to split between \textbf{Atheletics} and \textbf{Awareness} (reasoning that getting blown up is likely to affect Mercer both physically and mentally).
 	
 	\vspace{0.5\baselineskip}
 	\DamageBox[%
-		fatigue=4,%
-		mild=3,%
+		fatigue=3,%
+		mild=1,%
 		mildtext=\textbf{Athletics (-1)},%
 		moderate=1,%
 		moderatetext=\textbf{Athletics (-1), Awareness (-1)}%
@@ -169,7 +153,79 @@ As long as a character has any damage is in a wound category, the penalty applie
 	The two penalties to \textbf{Athletics} stack, so any roll involving \textbf{Athletics} will have a \textbf{-2} penalty.
 \end{Example}
 
-If all stress boxes are filled, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
+As long as a character has any damage is in a wound category, the penalty applies. Additional stress to a wound category that is already marked does not add additional penalties. Penalties from different categories can stack, however.
+
+\begin{Example}{Example: Monster With Multiple Wounds}
+	The players confront a swamp-dwelling horror known as the Hollow Maw. This creature has three \textbf{Fatigue} boxes, \textbf{two Mild Wounds}, \textbf{two Moderate Wounds}, and \textbf{one Severe Wound}. It starts the fight uninjured.
+
+	\vspace{0.5\baselineskip}
+	\DamageBox[%
+		totalfatigue=3,%
+		totalmild=2,%
+		totalmoderate=2,%
+		totalsevere=1%
+	]
+
+	\noindent\textbf{Round 1:}  
+	A quick spell from the party’s mage lashes the creature with burning light for \textbf{+3} damage. The Hollow Maw absorbs this with its three \textbf{Fatigue} boxes.
+
+	\vspace{0.5\baselineskip}
+	\DamageBox[%
+		totalfatigue=3,%
+		totalmild=2,%
+		totalmoderate=2,%
+		totalsevere=1,%
+		fatigue=3%
+	]
+
+	\noindent\textbf{Round 2:}  
+	The fighter drives a spear into the beast’s flank, scoring a hit that deals \textbf{+1} damage. With its fatigue exhausted, the damage now overflows into wounds and we mark one \textbf{Mild Wound}. The GM decides the mild wound impairs its ability to lurch forward.
+
+	\vspace{0.5\baselineskip}
+	\DamageBox[%
+		totalfatigue=3,%
+		totalmild=2,%
+		totalmoderate=2,%
+		totalsevere=1,%
+		fatigue=3,%
+		mild=1,%
+		mildtext=\textbf{Movement (-1)}%
+	]
+
+	\noindent\textbf{Round 3:} 
+	The barbarian charges in, swinging a massive axe for \textbf{+3} of damage. This ticks the second \textbf{Mild Wound} and both \textbf{Moderate Wounds}. The GM rules that the creature is now disoriented all its senses are impaired.
+
+	\vspace{0.5\baselineskip}
+	\DamageBox[%
+		totalfatigue=3,%
+		totalmild=2,%
+		totalmoderate=2,%
+		totalsevere=1,%
+		fatigue=3,%
+		mild=2,%
+		moderate=2,%
+		mildtext=\textbf{Movement (-1)},%
+		moderatetext=\textbf{Senses (-2)}%
+	]
+
+	Even though we have ticked two mild and two moderate wounds, we have only added one -1 penalty for both mild wounds and one -2 for both moderate wounds.
+
+	\textbf{Round 4:}  
+	A lucky shot from the gunslinger pierces part of the creature’s exposed back, causing \textbf{+3} damage. The Hollow Maw only has one (severe) wound left, which is not enough to soak up three damage, so it is now taken \textbf{out of action}.
+
+	\vspace{0.5\baselineskip}
+	\DamageBox[%
+		fatigue=3,%
+		mild=2,%
+		mildtext=\textbf{Movement (-1)},%
+		moderate=2,%
+		moderatetext=\textbf{Senses (-2)},%
+		severe=1,%
+		severetext=\textbf{All Actions (-3)}%
+	]
+\end{Example}
+
+If all stress boxes are filled, and take further damage, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
 
 
 \subsection{Healing and Recovery}\label{core:healing}
@@ -203,7 +259,7 @@ Instead of simply attacking, players can use tactical manoeuvres:
 \subsection{Weapons and Gear in Combat}
 Weapons do not deal numeric damage but affect combat through \textbf{Traits}. Weapon traits work the same way as any gear trait and can be used when attacking or defending.
 
-\begin{Example}{Types of Weapon Traits}
+\begin{Example}{Examples of Weapon Traits}
 	\begin{itemize}
     	\item \textbf{Weapons with Traits} grant \textbf{+2} in relevant situations (e.g., “Mastercrafted Rapier” gives +2 to Fight in duels).
 	    \item \textbf{Firearms} can inflict instant Wounds if the shot is well-placed.
