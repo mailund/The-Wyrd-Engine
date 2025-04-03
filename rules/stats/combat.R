@@ -16,7 +16,7 @@ base_fudge <- tribble(
 )
 
 # Range of attacker skill levels relative to defender
-skill_diffs <- -3:3
+skill_diffs <- -4:6
 
 # Function to compute damage distribution
 compute_damage_distribution <- function(skill_diff) {
@@ -43,7 +43,7 @@ all_distributions <- map_dfr(skill_diffs, compute_damage_distribution)
 # Collapse damage ≥ 6 into "6+" and convert to percentage
 collapsed_distributions <- all_distributions %>%
   mutate(
-    damage = if_else(damage >= 6, "6+", as.character(damage)),
+    damage = if_else(damage >= 7, "7+", as.character(damage)),
     probability = round(probability * 100, 1)
   ) %>%
   group_by(skill_diff, damage) %>%
@@ -66,7 +66,7 @@ print(wide_table, n = Inf)
 # Create DnD-style LaTeX table from your wide_table
 format_dnd_table <- function(data) {
   # Ensure correct column order
-  damage_columns <- c("0", "1", "2", "3", "4", "5", "6+")
+  damage_columns <- c("0", "1", "2", "3", "4", "5", "6", "7+")
   data <- data %>%
     select(skill_diff, all_of(damage_columns))
   
@@ -100,3 +100,87 @@ format_dnd_table <- function(data) {
 }
 
 format_dnd_table(wide_table)
+
+
+
+
+collapsed_distributions_grouped <- collapsed_distributions %>%
+  mutate(
+    damage_group = case_when(
+      damage %in% c("1", "2") ~ "1–2",
+      damage %in% c("3", "4") ~ "3–4",
+      damage %in% c("5", "6") ~ "5–6",
+      TRUE ~ as.character(damage)
+    )
+  ) %>%
+  group_by(skill_diff, damage_group) %>%
+  summarise(probability = sum(probability), .groups = "drop") %>%
+  mutate(
+    damage_group = factor(
+      damage_group,
+      levels = c("0", "1–2", "3–4", "5–6", "7+")
+    ),
+    skill_diff = factor(skill_diff, levels = sort(unique(as.numeric(as.character(skill_diff)))))
+  )
+collapsed_distributions_grouped <- collapsed_distributions_grouped %>%
+  mutate(
+    skill_diff_label = if_else(as.numeric(as.character(skill_diff)) >= 0,
+                               paste0("+", as.character(skill_diff)),
+                               as.character(skill_diff))
+  )
+
+# Get unique skill diffs and generate proper labels
+skill_order <- sort(unique(as.numeric(as.character(collapsed_distributions_grouped$skill_diff))))
+skill_labels <- ifelse(skill_order >= 0, paste0("+", skill_order), as.character(skill_order))
+
+# Reassign labels with correct ordering
+collapsed_distributions_grouped <- collapsed_distributions_grouped %>%
+  mutate(
+    skill_diff_label = factor(
+      if_else(as.numeric(as.character(skill_diff)) >= 0,
+              paste0("+", skill_diff),
+              as.character(skill_diff)),
+      levels = skill_labels
+    )
+  )
+
+
+signed_labeller <- function(variable, value) {
+  ifelse(value > 0, paste0("+", value), as.character(value))
+}
+
+ggplot(collapsed_distributions_grouped, aes(x = damage_group, y = probability, fill = I("#58180D"))) +
+  geom_col(width = 0.7, show.legend = FALSE) +
+  facet_grid(skill_diff_label ~ .) +
+  labs(
+    title = "Damage Distribution by Attack - Defense Difference",
+    x = "Damage Dealt",
+    y = "Probability"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text = element_text(face = "bold"),
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank()
+  )
+
+
+
+prob_any_damage <- collapsed_distributions_grouped %>%
+  group_by(skill_diff) %>%
+  summarise(prob_damage = sum(probability[damage_group != "0"]))
+prob_any_damage
+
+damage_values <- c("0" = 0, "1–2" = 1.5, "3–4" = 3.5, "5–6" = 5.5, "7+" = 7)
+
+expected_damage <- collapsed_distributions_grouped %>%
+  mutate(damage_value = damage_values[as.character(damage_group)]) %>%
+  group_by(skill_diff) %>%
+  summarise(expected_damage = sum(probability * damage_value / 100))
+expected_damage
+
+
+
