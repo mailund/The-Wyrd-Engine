@@ -1,34 +1,94 @@
 % !TeX root = ../../../wyrd.tex
 
 
+\WyrdCapLine{T}{he} core combat system outlined previously is sufficient for settings where combat isn’t a significant focus. In Agatha Christie-style mysteries, detailed combat rules would only clutter gameplay.
 
-\WyrdCapLine{T}{he} core combat system, as described in the previous chapter, will suffice for any setting where combat is not a large part of the play. There is next to no combat in Agatha Christie's novels, so we don't need detailed combat mechanics in a setting modelled around such types of crime mysteries. They would only get in the way.
+However, the importance and style of combat vary greatly between settings. Some games favour \textbf{quick, brutal encounters}, where a precise sniper shot or assassin’s blade swiftly ends a confrontation. Others emphasize \textbf{heroic, extended battles}, featuring characters bravely facing overwhelming odds.
 
-However, the role of combat in a game can vary significantly depending on the setting, the importance of combat in a given scenario, and the style of action you wish to create. Some settings favour \textbf{quick, brutal encounters}, where a single well-placed shot from a sniper or the swift blade of an assassin can end a fight in an instant. In contrast, other games may emphasise \textbf{heroic, drawn-out battles}, where warriors clash against hordes of monsters, trading blows in a struggle for survival.
+The \textbf{tone and pacing of combat} should align with your game’s themes. A gritty setting might make injuries devastating and every choice critical, while a cinematic action game might allow daring heroics, letting characters survive improbable scenarios.
 
-The \textbf{tone and pacing of combat} should reflect the themes of your game. In a gritty, realistic setting, injuries may be devastating, making every decision in combat critical. A high-action cinematic game, on the other hand, may allow characters to withstand multiple attacks, diving through gunfire or dueling atop a burning airship without immediate risk of death.
+Players seeking \textbf{tactical complexity} may enjoy detailed positioning, cover, and resource management, rewarding careful planning. Alternatively, a more \textbf{freeform style} abstracts combat into dramatic narrative exchanges.
 
-For those who prefer \textbf{tactical complexity}, combat may involve detailed positioning, cover mechanics, and resource management, rewarding careful planning and teamwork. Alternatively, a more \textbf{freeform approach} might abstract combat into a series of dramatic exchanges, focusing on storytelling rather than strict mechanics.
+Furthermore, combat can significantly shape character development and storytelling. The outcomes of battles—both victories and defeats—can profoundly influence character arcs, relationships, and the broader narrative. A character who narrowly survives a deadly encounter might grapple with newfound fears or vulnerabilities, adding emotional depth to your story.
 
-No matter the approach, \wyrd provides a flexible combat system that can be adjusted to suit your narrative and playstyle. That is the topic of this chapter.
+Additionally, combat encounters present opportunities for memorable narrative moments. A tense standoff, a heroic last stand, or a daring escape can become pivotal scenes that players recall long after the game ends. Thoughtfully designed combat can thus enrich the overall storytelling experience, providing dramatic stakes and moments of intense emotional engagement.
+
+No matter your preferred style, \wyrd provides adaptable combat mechanics to suit your story and gameplay. That flexibility is the focus of this chapter.
 
 
-\section{Dealing damage}
-\section{Recovery}
 
-%% FIXME: most of what you can vary is the number of stress and wound boxes, how severe the penalties are for wounds, and how quickly you heal.
+\section{Combat Statistics}
+
+Combat outcomes in \wyrd depend primarily on the skill difference between attackers and defenders, though dice rolls introduce some variability. Table \pagereftext{tbl:damage-probability} shows probabilities of inflicting damage based on skill disparities, expected damage per round, and average rounds needed to inflict 7+ damage (taking out a core character). The graphic on this page visually illustrates these probabilities.
+
+\Graph[Damage per Attacker-Defender levels]{stats/damage_distribution.png}
+
+Skill differences dominate combat outcomes by design. Equal skills favour defenders slightly, making prolonged stalemates common. A character significantly outmatched (four levels lower) has negligible chances of success, whereas a character significantly superior (four levels higher) has a substantial likelihood (41.5\%) of defeating the opponent swiftly (1.6 rounds on average).
+
+This emphasis on skills over randomness ensures predictable yet engaging gameplay, reinforcing the strategic importance of positioning and skill management across all aspects of the game.
+
+\section{Making Combat Interesting}
+
+Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances simplicity with optional strategic depth by utilizing the same active opposition mechanics found elsewhere in the game: the attacker’s roll minus the defender’s roll directly determines damage.
+
+Characters and gear traits influence outcomes significantly, modelling weapon effectiveness, defensive capabilities, and situational advantages realistically and intuitively.
+
+Strategically, players should seek combat conditions that leverage their traits while minimizing their opponents’.
+
+Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct attacks to accumulate bonuses for future strikes or defences. Defensive bonuses apply immediately upon the next attack received, presenting risk if wasted against a weak strike, while attack bonuses remain unused until deployed, creating strategic decision-making around timing and preparation. Players must balance between immediate action and building up strength for decisive, powerful moves, adding meaningful choices and tension to combat encounters.
+
+%% FIXME: give some examples of combat maneuvers
+
+
+\section{Weapons and Armour}
+
+
+\section{Designing Combat Encounters}
+
+
 
 
 \end{multicols}
-\begin{DndTable}[header=Damage probability by relative skill level]{lrrrrrrr}
-    \textbf{Rel. Level} & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6+} \\
-    -3 &  93.6\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% &   - &   - \\
-    -2 &  85.9\% &   7.7\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% &   - \\
-    -1 &  73.9\% &  11.9\% &   7.7\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% \\
-    +0 &  58.4\% &  15.5\% &  11.9\% &   7.7\% &   4.1\% &   1.7\% &   0.6\% \\
-    +1 &  41.6\% &  16.9\% &  15.5\% &  11.9\% &   7.7\% &   4.1\% &   2.3\% \\
-    +2 &  26.1\% &  15.5\% &  16.9\% &  15.5\% &  11.9\% &   7.7\% &   6.4\% \\
-    +3 &  14.1\% &  11.9\% &  15.5\% &  16.9\% &  15.5\% &  11.9\% &  14.1\% \\
+\clearpage
+\begin{DndTable}[header=Damage probability by relative skill level]{crrrrrrrr}\label{tbl:damage-probability}
+    \textbf{Attack - Defence} & \textbf{0 stress} & \textbf{1 stress} & \textbf{2 stress} & \textbf{3 stress} & \textbf{4 stress} & \textbf{5 stress} & \textbf{6 stress} & \textbf{7+ stress} \\
+    -4 &  97.6\% &   1.7\% &   0.5\% &   0.1\% &   - &   - &   - &   - \\
+    -3 &  93.6\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% &   - &   - &   - \\
+    -2 &  85.9\% &   7.7\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% &   - &   - \\
+    -1 &  73.9\% &  11.9\% &   7.7\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% &   - \\
+     0 &  58.4\% &  15.5\% &  11.9\% &   7.7\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% \\
+    +1 &  41.6\% &  16.9\% &  15.5\% &  11.9\% &   7.7\% &   4.1\% &   1.7\% &   0.6\% \\
+    +2 &  26.1\% &  15.5\% &  16.9\% &  15.5\% &  11.9\% &   7.7\% &   4.1\% &   2.3\% \\
+    +3 &  14.1\% &  11.9\% &  15.5\% &  16.9\% &  15.5\% &  11.9\% &   7.7\% &   6.4\% \\
+    +4 &   6.4\% &   7.7\% &  11.9\% &  15.5\% &  16.9\% &  15.5\% &  11.9\% &  14.1\% \\
+    +5 &   2.4\% &   4.1\% &   7.7\% &  11.9\% &  15.5\% &  16.9\% &  15.5\% &  26.0\% \\
+    +6 &   0.7\% &   1.7\% &   4.1\% &   7.7\% &  11.9\% &  15.5\% &  16.9\% &  41.5\% \\
 \end{DndTable}
+
+% skill_diff prob_damage
+% <fct>            <dbl>
+% 1 -4                 2.3
+% 2 -3                 6.4
+% 3 -2                14.1
+% 4 -1                26  
+% 5 0                 41.5
+% 6 1                 58.4
+% 7 2                 73.9
+% 8 3                 85.8
+% 9 4                 93.5
+% 10 5                 97.6
+% 11 6                 99.3
+
+\begin{DndTable}[header=Expected Damage in One Round]{lrrrrrrrrrrr}
+    \textbf{Attacker - Defender} & \textbf{-4} & \textbf{-3} & \textbf{-2} & \textbf{-1} & \textbf{0} & \textbf{+1} & \textbf{+2} & \textbf{+3} & \textbf{+4} & \textbf{+5} & \textbf{+6} \\
+    \textbf{Expected Damage}     & 0.0365      & 0.108       & 0.260       & 0.530        & 0.950       & 1.53        & 2.26         & 3.07         & 3.92         & 4.74         & 5.46      \\
+\end{DndTable}
+
+
+\begin{DndTable}[header=Expected Rounds to Accumulate 7+ Damage]{lrrrrrrrrrrr}
+    \textbf{Attacker - Defender} & \textbf{-4} & \textbf{-3} & \textbf{-2} & \textbf{-1} & \textbf{0} & \textbf{+1} & \textbf{+2} & \textbf{+3} & \textbf{+4} & \textbf{+5} & \textbf{+6} \\
+    \textbf{Expected Rounds}            & 210.5      & 89.3      & 40.3      & 19.3      & 11.1     & 5.5      & 3.8      & 2.8      & 2.3      & 1.9      & 1.6      \\
+\end{DndTable}
+
 
 \begin{multicols}{2}
