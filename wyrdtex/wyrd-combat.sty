@@ -84,12 +84,14 @@
     severe/.initial=0,
     mildtext/.initial=\underline{\hspace{3cm}}, % Default to underline
     moderatetext/.initial=\underline{\hspace{3cm}},
-    severetext/.initial=\underline{\hspace{3cm}}
+    severetext/.initial=\underline{\hspace{3cm}},
+    title/.initial=Stress % <-- NEW: default title
 }
 
+% No longer define a fixed damageboxstyle with a static title
+% Instead, pass title dynamically from \DamageBox command
 \tcbset{
-  damageboxstyle/.style={
-    title=Stress,
+  damageboxbase/.style={
     boxrule=0.6pt,
     shadow=small,
     width=\linewidth,
@@ -101,30 +103,13 @@
   }
 }
 
-\NewDocumentCommand{\DamxxageBox}{O{}}{%
-    \pgfkeys{/DamageBox, #1}%
-    \begin{center}
-        \begin{tcolorbox}[damageboxstyle]
-        \begin{tabular}{@{}l l@{} l@{}}
-            \textbf{Fatigue:}  & 
-                \FatigueBoxes[\pgfkeysvalueof{/DamageBox/fatigue}][\pgfkeysvalueof{/DamageBox/totalfatigue}] \\ 
-            \textbf{Mild:}    & 
-                \MildWounds[\pgfkeysvalueof{/DamageBox/mild}][\pgfkeysvalueof{/DamageBox/totalmild}] & 
-            \pgfkeysvalueof{/DamageBox/mildtext} \\
-            \textbf{Mod:}     & 
-                \ModerateWounds[\pgfkeysvalueof{/DamageBox/moderate}][\pgfkeysvalueof{/DamageBox/totalmoderate}] & 
-            \pgfkeysvalueof{/DamageBox/moderatetext} \\
-            \textbf{Severe:}  & 
-                \SevereWounds[\pgfkeysvalueof{/DamageBox/severe}][\pgfkeysvalueof{/DamageBox/totalsevere}] & 
-            \pgfkeysvalueof{/DamageBox/severetext}
-        \end{tabular}
-    \end{tcolorbox}\end{center}
-}
-
 \NewDocumentCommand{\DamageBox}{O{}}{%
     \pgfkeys{/DamageBox, #1}%
     \begin{center}
-    \begin{tcolorbox}[damageboxstyle]
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=\pgfkeysvalueof{/DamageBox/title}
+    ]
     \begin{tabular}{@{}l l@{} l@{}}
         % Fatigue
         \ifnum\numexpr\pgfkeysvalueof{/DamageBox/totalfatigue}\relax>0

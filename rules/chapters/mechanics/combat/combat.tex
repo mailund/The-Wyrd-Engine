@@ -23,9 +23,9 @@ Combat outcomes in \wyrd depend primarily on the skill difference between attack
 
 \Graph[Damage per Attacker-Defender levels]{stats/damage_distribution.png}
 
-Skill differences dominate combat outcomes by design. Equal skills favour defenders slightly, making prolonged stalemates common. A character significantly outmatched (four levels lower) has negligible chances of success, whereas a character significantly superior (four levels higher) has a substantial likelihood (41.5\%) of defeating the opponent swiftly (1.6 rounds on average).
+Skill differences dominate combat outcomes by design. Each round favours the defender slightly (since ties do not deal damage). Within multiple rounds, the character with initiative attacks first, giving them a slight edge as well. Small differences in skill levels (1-2 levels) can have a large effect. A difference where the attacker has one level higher than the defender will not substantially shorten a combat --- it is expected to cut the rounds by half, from 11.1 to 5.5 --- but the probability of a character with +1 in attack and 0 in defence defeating a character with 0 in both attack and defence is 87.6\% compared to only 53.0\% if the two were evenly matched.
 
-This emphasis on skills over randomness ensures predictable yet engaging gameplay, reinforcing the strategic importance of positioning and skill management across all aspects of the game. The long expected combat for equally skilled characters is also intentional. It prevents unfortunate characters from being eliminated in a single blown, reducing the randomness of combat. It does, however, mean that combat can be drawn out if the only combat actions are attacks and defending. But it generally shouldn't be.
+This emphasis on skills over randomness ensures predictable yet engaging gameplay, reinforcing the strategic importance of positioning and skill management. Any combat bonuses, for either attack or defence, can swing the battle. The long expected combat for equally skilled characters is also intentional. It prevents unfortunate characters from being eliminated in a single blown, reducing the randomness of combat. It does, however, mean that combat can be drawn out if the only combat actions are attacks and defending. But it generally shouldn't be.
 
 
 
@@ -76,6 +76,8 @@ Notation \textbf{Pn(A,D)} should be read as player \emph{n} has attack skills \e
 
 For all tables, we have not taken into account the effect of wound penalties or the use of combat maneuvers.
 
+The tables are not intended to be used as a reference during play, but rather to give you an idea of the expected outcomes of combat. This can help the GM design combat encounters that are challenging but not impossible for the players.
+
 \vspace{\baselineskip}
 \hrule
 \begin{multicols}{2}
@@ -88,13 +90,177 @@ For all tables, we have not taken into account the effect of wound penalties or 
 
 \section{Making Combat Interesting}
 
-Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances the active opposition mechanics used elsewhere, for both determining when an attack is successful and how much damage is inflicted, with a few additional mechanics to keep combat engaging. And these mechanics are well known as well: using traits and gears to obtain offensive or defensive bonuses, and using combat manoeuvres as \textbf{boosts} to gain additional advantages.
+Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances the active opposition mechanics used elsewhere, for both determining when an attack is successful and how much damage is inflicted, with a few additional mechanics to keep combat engaging. And these mechanics are well known as well: \textbf{using traits and gear} to obtain offensive or defensive bonuses, and using combat manoeuvres as \textbf{boosts} to gain additional advantages.
 
-Characters and gear traits influence outcomes significantly, modelling weapon effectiveness, defensive capabilities, and situational advantages realistically and intuitively.
+But before we consider applying these mechanics in combat, let us consider the alternative which is to let characters slug it out with no modifiers. This is a valid option, but it can lead to combat being a simple exercise in rolling dice and adding numbers, and unless the two characters are evenly matched, the outcome is strongly skewed in one direction or the other.
 
-Strategically, players should seek combat conditions that leverage their traits while minimizing their opponents’.
+We will use the example of \emph{Anna the Assassin} and \emph{Brian the Barbarian} to illustrate this. Both characters have a \textbf{+1 Fight} skill, which they use for both attacking and defending. Initially, they are evenly matched, so the outcome of their combat is almost entirely dependent on the dice rolls, with only a slight advantage to the player with the initiative, in this case Anna.
 
-Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct attacks to accumulate bonuses for future strikes or defences. Defensive bonuses apply immediately upon the next attack received, presenting risk if wasted against a weak strike, while attack bonuses remain unused until deployed, creating strategic decision-making around timing and preparation. Players must balance between immediate action and building up strength for decisive, powerful moves, adding meaningful choices and tension to combat encounters.
+\begin{Example}{Combat without modifiers}
+    \emph{Anna the Assassin} jumps on top of her table at the \emph{Rusty Dagger Tavern}, blades gleaming in the flickering lantern light. Across the room, \emph{Brian the Barbarian} rises with a growl, knocking over his ale as he draws his enormous axe. 
+
+    Anna has the initiative and attacks first. She rolls a \FudgeRes{+0--} = \textbf{-1} and Brian rolls a \FudgeRes{++--} = \textbf{0}. They both add their \textbf{Fight +1} but they cancel out. Since Anna's attack is below Brian's defence, she does not inflict damage. 
+
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[0][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[0][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    Brian retaliates with his own attack, rolling a \FudgeRes{++00} = \textbf{+2} against Anna's defence of \FudgeRes{+00-} = \textbf{0}. This time the attack is successful, and Brian inflicts \textbf{2 damage} on Anna.
+   
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[2][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[0][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    Now it is Anna's turn again. She rolls a \FudgeRes{++00} = \textbf{+2} against Brian's defence of \FudgeRes{++0-} = \textbf{+1}. This time, Anna's attack causes \textbf{1 damage} to Brian.
+
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[2][3] & \MildWounds[0][1] & \ModerateWounds[0][1] &\SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[1][3] & \MildWounds[0][1] & \ModerateWounds[0][1] &\SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    Now Brian swings his axe again, rolling a \FudgeRes{+00-} = \textbf{0} against Anna's defence of \FudgeRes{+++0} = \textbf{+3}. The attack is smaller than the defence, so Brian does not inflict any damage.
+
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[2][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[1][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+\end{Example}
+
+We could go on here, and there is close to a 50\% chance for both of the opponents to win, so some uncertainty in the outcome, but it is not very exciting to play out a battle this way.
+
+We can vary the situation slightly using just traits. Anna the Assassin has a \textbf{Blade of the Night} trait that gives her a +2 bonus to attack rolls in the dark.
+
+\begin{Example}{Exploiting Traits}
+    \emph{Anna the Assassin} followed \emph{Brian the Barbarian} as he left the \emph{Rusty Dagger Tavern}, waiting for the right moment to strike. As Brian stepped into the dark alley to releave himself, Anna leapt from the shadows.
+
+    The GM judges that the alley is dark enough for Anna to use her \textbf{Blade of the Night} trait, giving her a +2 bonus to attack rolls.
+
+    She rolls a \FudgeRes{++00} = \textbf{+2} and adds her trait \textbf{+2}. Brian's defence is \FudgeRes{++0-} = \textbf{+1}. The difference is \textbf{+3}, so Anna inflicts \textbf{3 damage} on Brian.
+
+    \vspace{0.5\baselineskip}
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[0][3] & \MildWounds[0][1] & \ModerateWounds[0][1] &\SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[3][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    Brian, now aware of Anna's presence, retaliates with a roar. He rolls a \FudgeRes{++0-} = \textbf{+1} against Anna's defence of \FudgeRes{+00-} = \textbf{0}. Anna's trait is only applicable for attacks, so she cannot add it here. The difference is \textbf{+1}, so Brian inflicts \textbf{1 damage} on Anna.
+
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[1][3] & \MildWounds[0][1] &\ModerateWounds[0][1] &\SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[3][3] & \MildWounds[0][1] &\ModerateWounds[0][1] &\SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    Anna attacks again, rolling a \FudgeRes{++0-} = \textbf{+1} and adds \textbf{+2} for an attack of \textbf{+3} against Brian's defence of \FudgeRes{++0-} = \textbf{+1}. The difference is \textbf{+2}.
+
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[1][3] & \MildWounds[0][1] & \ModerateWounds[0][1] &\SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[3][3] &\MildWounds[1][1] &\ModerateWounds[1][1] &\SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    At this point, Brian conceeds the fight.
+\end{Example}
+
+It is not that adding traits to make the battle more uneven also makes it more interesting --- if anything, it makes it less interesting since the chance of the outclassed character winning is so low. But at least such a combat encounter is over quickly, and the players can move on to the next scene. The point is not that skill or trait bonuses adds excitement to combat, however, but the use of traits and gear can make choosing the battlefield, the time and place, a strategicly important decision, which \emph{can} add excitement to combat.
+
+\subsection{Changing the Battlefield}
+
+Once a combat encounter is underway, the players might not be able to change the conditions to activate a trait, but sometimes they can --- if Anna and Brian were fighting in the tavern and Anna had the chance to throw the room into darkness, for example. If the players \emph{can} change the conditions they are fighting in, then that becomes a tactical goal. Increasing the attack or defence stats by one or two levels can be a significant advantage, and the players should be encouraged to use their traits and gear to gain that advantage.
+
+\begin{Example}{Changing the Battlefield}
+    \emph{Anna the Assassin} and \emph{Brian the Barbarian} find themselves locked in combat inside the \emph{Rusty Dagger Tavern}. The room is lit by swaying oil-lamps, and Anna's \textbf{Blade of the Night} trait—granting +2 to attacks in the dark—is currently useless.
+
+    Anna decides to act. On her turn, instead of attacking, she uses an action to snuff out the main lantern by flipping a table into it. The GM calls for an \textbf{Athletics} \DL{2} check. Anna rolls \FudgeRes{+0+-} = \textbf{+1} and adds it to her \textbf{Athletics +2} skill. The lantern crashes to the floor, plunging the room into shadow.
+
+    Brian roars in frustration and swings blindly, rolling a \FudgeRes{+00-} = \textbf{0}, but Anna defends with \FudgeRes{+++0} = \textbf{+3}, easily dodging in the darkness.
+
+    Now it's Anna’s turn. With the room dark, her \textbf{Blade of the Night} activates. She attacks, rolling \FudgeRes{++0-} = \textbf{+1}, adds +2 from the trait, for a total of \textbf{+3}. Brian defends with \FudgeRes{+0--} = \textbf{-1}, giving Anna a difference of \textbf{+4}.
+
+    \vspace{0.5\baselineskip}
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Damage Boxes
+    ]
+    \begin{tabular}{@{}l l@{ } l@{ } l@{ } l@{ }}
+        \textbf{Anna the Assassin} & \FatigueBoxes[0][3] & \MildWounds[0][1] & \ModerateWounds[0][1] & \SevereWounds[0][1] \\
+        \textbf{Brian the Barbarian} & \FatigueBoxes[3][3] & \MildWounds[1][1] & \ModerateWounds[0][1] & \SevereWounds[0][1]
+    \end{tabular}
+    \end{tcolorbox}
+
+    Realising he's completely outmatched in the dark, Brian stumbles toward the door, seeking light—or surrender.
+\end{Example}
+
+
+\subsection{Combat Maneuvers}
+
+If the players cannot invoke their existing traits (or the traits of their gear), then they can still use combat maneuvers to gain bonuses to their attacks or defences.
+
+Combat maneuvers are special actions that can be used to gain a temporary advantage in combat. If you are changing the battlefield to gain a bonus from a trait, you already posses the trait, but you need to change the situation to gain the bonus. Traits are narrow in scope, and not all situations will enable you to exploit them, even after taking actions to change the battlefield. Combat maneuvers are always available, however. At any time, you can spend an action to perform a combat maneuver, which will give you a bonus to your next attack or defence, but unlike traits, combat maneuver bonuses are transient and lost as soon as you use them, or as soon as an attempt to increase them fails.
+
+In any round, instead of attacking, a character can
+\begin{itemize}
+    \item Do an \textbf{attack} combat maneuver to gain a \textbf{+2 bonus} to their next attack.
+    \item Do a \textbf{defend} combat maneuver to gain a \textbf{+2 bonus} to their next defence.
+\end{itemize}
+
+Bonuses accumulated until they are used, or until the character fails a combat maneuver, in which case the entire accumulated bonus is lost. The two bonuses accumulate independently, and a failed maneuver does not affect the other bonus.
+
+Doing a combat maneuver works like normal opposition rolls. A character should always be allowed to use theh skill they use for attacking or defending against a difficulty level of \textbf{2}, with \textbf{ties reducing the bonus to +1}, but the GM should also allow inventive players to use other skills if they can justify it. In that case, the GM should judge whether the opposition roll is passive or active and set appropriate difficulty levels for passive rolls. In the case of ties, the GM should judge whether the tie is a success or a failure, and what the consequences are, i.e., whether a tie reduces the bonus to +1 or whether it is a failure that doesn't remove the accumulated bonus.
+
+\begin{Example}{Attack Combat Maneuvers}
+    \emph{Anna the Assassin} is sneaking up on \emph{Brian the Barbarian}. She intends to jump him, which would be an attack, but her player figures that if she sneaks up close and stabs him in the back, she should get an attack bonus. The GM aggrees, but requires an active opposition roll, Anna's \textbf{Stealth} against Brian's \textbf{Notice}. Upon success, she will get a +2 bonus to her stab attack, but on failure or a tie Brian would get to attack with initiative.
+
+    Anna rolls a \FudgeRes{++00} = \textbf{+2} and adds her \textbf{Stealth +2} against Brian's \FudgeRes{++0-} + \textbf{Notice +1}. The total is \textbf{+4} against \textbf{+2}, so the roll is a success, so she gains a +2 bonus to her next attack, an attack she immidiately makes.
+
+    Anna attacks, rolling a \FudgeRes{++0-} = \textbf{+1} and adds her \textbf{Fight +1} and the \textbf{+2 bonus} from the combat maneuver for a total of \textbf{+4}. Brian defends with \FudgeRes{+000} = \textbf{+1} plus his \textbf{Fight +1} for a total of \textbf{+2}, giving Anna a difference of \textbf{+2}.
+\end{Example}
+
+This example shows that you can use a normal opposition roll to gain a combat maneuver bonus. Strictly speaking, the combat hadn't started yet, but preparing for battle is a valid combat maneuver, and the GM should allow it.
+
+\begin{Example}{Defence Combat Maneuvers}
+    \emph{Brian the Barbarian}, screaming from being stabbed in the back, throws himself behind a dumbster, trying to take cover. 
+
+    This is a \textbf{defend} combat maneuver --- he is doing the action instead of attacking -- and Brian will use his \textbf{Athletics +2} against a \textbf{+2} difficulty level. He rolls \FudgeRes{++00} = \textbf{+2} and adds his \textbf{Athletics +2} for a total of \textbf{+4}, so he succeeds and gets a +2 bonus to his next defence.
+    
+    Anna attacks and rolls a \FudgeRes{+++-} = \textbf{+2} and adds her \textbf{Fight +1} for a total of \textbf{+3} (she no longer has the bonus she used for her stealth attack). Brian rolls \FudgeRes{++0-} + \textbf{Fight +1} plus the \textbf{+2} defence bonus for a total of \textbf{+4}. Being in cover behind the dumpster saved him from the attack.
+\end{Example}
 
 %% FIXME: give some examples of combat maneuvers
 
@@ -104,6 +270,6 @@ Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct 
 
 \section{Designing Combat Encounters}
 
-
+%% Settings where traits can be brought into play
 
 
