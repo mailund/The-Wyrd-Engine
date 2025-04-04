@@ -25,11 +25,11 @@ Combat outcomes in \wyrd depend primarily on the skill difference between attack
 
 Skill differences dominate combat outcomes by design. Equal skills favour defenders slightly, making prolonged stalemates common. A character significantly outmatched (four levels lower) has negligible chances of success, whereas a character significantly superior (four levels higher) has a substantial likelihood (41.5\%) of defeating the opponent swiftly (1.6 rounds on average).
 
-This emphasis on skills over randomness ensures predictable yet engaging gameplay, reinforcing the strategic importance of positioning and skill management across all aspects of the game.
+This emphasis on skills over randomness ensures predictable yet engaging gameplay, reinforcing the strategic importance of positioning and skill management across all aspects of the game. The long expected combat for equally skilled characters is also intentional. It prevents unfortunate characters from being eliminated in a single blown, reducing the randomness of combat. It does, however, mean that combat can be drawn out if the only combat actions are attacks and defending. But it generally shouldn't be.
 
 \section{Making Combat Interesting}
 
-Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances simplicity with optional strategic depth by utilizing the same active opposition mechanics found elsewhere in the game: the attacker’s roll minus the defender’s roll directly determines damage.
+Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances the active opposition mechanics used elsewhere, for both determining when an attack is successful and how much damage is inflicted, with a few additional mechanics to keep combat engaging. And these mechanics are well known as well: using traits and gears to obtain offensive or defensive bonuses, and using combat manoeuvres as \textbf{boosts} to gain additional advantages.
 
 Characters and gear traits influence outcomes significantly, modelling weapon effectiveness, defensive capabilities, and situational advantages realistically and intuitively.
 
@@ -65,20 +65,6 @@ Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct 
     +6 &   0.7\% &   1.7\% &   4.1\% &   7.7\% &  11.9\% &  15.5\% &  16.9\% &  41.5\% \\
 \end{DndTable}
 
-% skill_diff prob_damage
-% <fct>            <dbl>
-% 1 -4                 2.3
-% 2 -3                 6.4
-% 3 -2                14.1
-% 4 -1                26  
-% 5 0                 41.5
-% 6 1                 58.4
-% 7 2                 73.9
-% 8 3                 85.8
-% 9 4                 93.5
-% 10 5                 97.6
-% 11 6                 99.3
-
 \begin{DndTable}[header=Expected Damage in One Round]{lrrrrrrrrrrr}
     \textbf{Attacker - Defender} & \textbf{-4} & \textbf{-3} & \textbf{-2} & \textbf{-1} & \textbf{0} & \textbf{+1} & \textbf{+2} & \textbf{+3} & \textbf{+4} & \textbf{+5} & \textbf{+6} \\
     \textbf{Expected Damage}     & 0.0365      & 0.108       & 0.260       & 0.530        & 0.950       & 1.53        & 2.26         & 3.07         & 3.92         & 4.74         & 5.46      \\
@@ -89,6 +75,21 @@ Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct 
     \textbf{Attacker - Defender} & \textbf{-4} & \textbf{-3} & \textbf{-2} & \textbf{-1} & \textbf{0} & \textbf{+1} & \textbf{+2} & \textbf{+3} & \textbf{+4} & \textbf{+5} & \textbf{+6} \\
     \textbf{Expected Rounds}            & 210.5      & 89.3      & 40.3      & 19.3      & 11.1     & 5.5      & 3.8      & 2.8      & 2.3      & 1.9      & 1.6      \\
 \end{DndTable}
+
+
+\begin{DndTable}[header=Probability of player with initiative winning]{lrrrrrrrrr}
+    &  \textbf{P2(0,0)} & \textbf{P2(0,1)} & \textbf{P2(0,2)} & \textbf{P2(1,0)} & \textbf{P2(1,1)} & \textbf{P2(1,2)} & \textbf{P2(2,0)} & \textbf{P2(2,1)} & \textbf{P2(2,2)}  \\
+    \textbf{P1(0,0):} &  53.0\% &   9.3\% &   0.1\% &  17.6\% &   1.2\% &   0.0\% &   4.8\% &   0.2\% &   0.0\% \\
+    \textbf{P1(0,1):} &  92.3\% &  51.2\% &   2.7\% &  53.0\% &   9.3\% &   0.1\% &  17.6\% &   1.2\% &   0.0\% \\
+    \textbf{P1(0,2):} &  99.9\% &  97.5\% &  50.4\% &  92.3\% &  51.2\% &   2.7\% &  53.0\% &   9.3\% &   0.1\% \\
+    \textbf{P1(1,0):} &  87.6\% &  53.0\% &   9.3\% &  56.2\% &  17.6\% &   1.2\% &  27.0\% &   4.8\% &   0.2\% \\
+    \textbf{P1(1,1):} &  99.2\% &  92.3\% &  51.2\% &  87.6\% &  53.0\% &   9.3\% &  56.2\% &  17.6\% &   1.2\% \\
+    \textbf{P1(1,2):} & 100.0\% &  99.9\% &  97.5\% &  99.2\% &  92.3\% &  51.2\% &  87.6\% &  53.0\% &   9.3\% \\
+    \textbf{P1(2,0):} &  97.7\% &  87.6\% &  53.0\% &  85.0\% &  56.2\% &  17.6\% &  60.9\% &  27.0\% &   4.8\% \\
+    \textbf{P1(2,1):} &  99.9\% &  99.2\% &  92.3\% &  97.7\% &  87.6\% &  53.0\% &  85.0\% &  56.2\% &  17.6\% \\
+    \textbf{P1(2,2):} & 100.0\% & 100.0\% &  99.9\% &  99.9\% &  99.2\% &  92.3\% &  97.7\% &  87.6\% &  53.0\% \\
+\end{DndTable}
+Notation \textbf{Pn(A,D)} should be read as player \emph{n} has attack skills \emph{A} and defence skills \emph{D}. Player 1 has the initiative and attacks first. Evenly matched, the player that attacks first has a slight advantage.
 
 
 \begin{multicols}{2}
