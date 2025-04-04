@@ -27,30 +27,11 @@ Skill differences dominate combat outcomes by design. Equal skills favour defend
 
 This emphasis on skills over randomness ensures predictable yet engaging gameplay, reinforcing the strategic importance of positioning and skill management across all aspects of the game. The long expected combat for equally skilled characters is also intentional. It prevents unfortunate characters from being eliminated in a single blown, reducing the randomness of combat. It does, however, mean that combat can be drawn out if the only combat actions are attacks and defending. But it generally shouldn't be.
 
-\section{Making Combat Interesting}
-
-Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances the active opposition mechanics used elsewhere, for both determining when an attack is successful and how much damage is inflicted, with a few additional mechanics to keep combat engaging. And these mechanics are well known as well: using traits and gears to obtain offensive or defensive bonuses, and using combat manoeuvres as \textbf{boosts} to gain additional advantages.
-
-Characters and gear traits influence outcomes significantly, modelling weapon effectiveness, defensive capabilities, and situational advantages realistically and intuitively.
-
-Strategically, players should seek combat conditions that leverage their traits while minimizing their opponents’.
-
-Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct attacks to accumulate bonuses for future strikes or defences. Defensive bonuses apply immediately upon the next attack received, presenting risk if wasted against a weak strike, while attack bonuses remain unused until deployed, creating strategic decision-making around timing and preparation. Players must balance between immediate action and building up strength for decisive, powerful moves, adding meaningful choices and tension to combat encounters.
-
-%% FIXME: give some examples of combat maneuvers
-
-
-\section{Weapons and Armour}
-
-
-\section{Designing Combat Encounters}
-
-
 
 
 \end{multicols}
 \clearpage
-\begin{DndTable}[header=Damage probability by relative skill level]{crrrrrrrr}\label{tbl:damage-probability}
+\begin{DndTable}[header=Damage probability by relative skill level (Attack - Defence)]{crrrrrrrr}\label{tbl:damage-probability}
     \textbf{Attack - Defence} & \textbf{0 stress} & \textbf{1 stress} & \textbf{2 stress} & \textbf{3 stress} & \textbf{4 stress} & \textbf{5 stress} & \textbf{6 stress} & \textbf{7+ stress} \\
     -4 &  97.6\% &   1.7\% &   0.5\% &   0.1\% &   - &   - &   - &   - \\
     -3 &  93.6\% &   4.1\% &   1.7\% &   0.5\% &   0.1\% &   - &   - &   - \\
@@ -76,6 +57,7 @@ Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct 
     \textbf{Expected Rounds}            & 210.5      & 89.3      & 40.3      & 19.3      & 11.1     & 5.5      & 3.8      & 2.8      & 2.3      & 1.9      & 1.6      \\
 \end{DndTable}
 
+The expected damage is the average damage that a player can expect to inflict in one round of combat, assuming that the player has the initiative and attacks first. The expected rounds to accumulate 7+ damage is the average number of rounds that it would take for a player to inflict 7+ damage on an opponent, assuming that the player has the initiative and attacks first.
 
 \begin{DndTable}[header=Probability of player with initiative winning]{lrrrrrrrrr}
     &  \textbf{P2(0,0)} & \textbf{P2(0,1)} & \textbf{P2(0,2)} & \textbf{P2(1,0)} & \textbf{P2(1,1)} & \textbf{P2(1,2)} & \textbf{P2(2,0)} & \textbf{P2(2,1)} & \textbf{P2(2,2)}  \\
@@ -89,7 +71,39 @@ Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct 
     \textbf{P1(2,1):} &  99.9\% &  99.2\% &  92.3\% &  97.7\% &  87.6\% &  53.0\% &  85.0\% &  56.2\% &  17.6\% \\
     \textbf{P1(2,2):} & 100.0\% & 100.0\% &  99.9\% &  99.9\% &  99.2\% &  92.3\% &  97.7\% &  87.6\% &  53.0\% \\
 \end{DndTable}
-Notation \textbf{Pn(A,D)} should be read as player \emph{n} has attack skills \emph{A} and defence skills \emph{D}. Player 1 has the initiative and attacks first. Evenly matched, the player that attacks first has a slight advantage.
 
+Notation \textbf{Pn(A,D)} should be read as player \emph{n} has attack skills \emph{A} and defence skills \emph{D}. Player 1 has the initiative and attacks first. Evenly matched, the player that attacks first has a slight advantage. The probability that the second player wins is one minus the probability that the first player wins.
 
+For all tables, we have not taken into account the effect of wound penalties or the use of combat maneuvers.
+
+\vspace{\baselineskip}
+\hrule
 \begin{multicols}{2}
+
+
+
+
+
+
+
+\section{Making Combat Interesting}
+
+Combat shouldn’t merely be a predictable dice-rolling exercise. \wyrd balances the active opposition mechanics used elsewhere, for both determining when an attack is successful and how much damage is inflicted, with a few additional mechanics to keep combat engaging. And these mechanics are well known as well: using traits and gears to obtain offensive or defensive bonuses, and using combat manoeuvres as \textbf{boosts} to gain additional advantages.
+
+Characters and gear traits influence outcomes significantly, modelling weapon effectiveness, defensive capabilities, and situational advantages realistically and intuitively.
+
+Strategically, players should seek combat conditions that leverage their traits while minimizing their opponents’.
+
+Tactically, \wyrd introduces combat manoeuvres: actions taken instead of direct attacks to accumulate bonuses for future strikes or defences. Defensive bonuses apply immediately upon the next attack received, presenting risk if wasted against a weak strike, while attack bonuses remain unused until deployed, creating strategic decision-making around timing and preparation. Players must balance between immediate action and building up strength for decisive, powerful moves, adding meaningful choices and tension to combat encounters.
+
+%% FIXME: give some examples of combat maneuvers
+
+
+\section{Weapons and Armour}
+
+
+\section{Designing Combat Encounters}
+
+
+
+
