@@ -167,6 +167,7 @@ ggplot(collapsed_distributions_grouped, aes(x = damage_group, y = probability, f
     axis.text.y = element_blank()
   )
 
+ggsave("damage_distribution.png", width = 6, height = 10)
 
 
 prob_any_damage <- collapsed_distributions_grouped %>%

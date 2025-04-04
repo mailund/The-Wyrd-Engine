@@ -15,9 +15,9 @@
 \section{Basic Combat in The Wyrd Engine}
 \index{Combat}
 
-The role of combat varies by setting, scenario, and playstyle. Some games favour \textbf{quick, brutal encounters}, where a single shot or swift blade ends a fight instantly, while others emphasise \textbf{heroic battles} against overwhelming foes. The \textbf{tone and pacing} should reflect the game's themes—whether it’s gritty realism, where injuries are severe, or cinematic action, where characters endure incredible feats. Combat may be \textbf{tactically complex}, rewarding careful planning, or more \textbf{freeform}, focusing on dramatic exchanges over strict mechanics. \wyrd offers a flexible system to suit different narratives. For combat mechanics and customisation, see \fullchapref{chap:combat}.
+The role of combat varies by setting, scenario, and playstyle. Some games favour \textbf{quick, brutal encounters}, where a single shot or swift blade ends a fight instantly, while others emphasise \textbf{heroic battles} against overwhelming foes. The \textbf{tone and pacing} should reflect the game's themes—whether it’s gritty realism, where injuries are severe, or cinematic action, where characters endure incredible feats. Combat may be \textbf{tactically complex}, rewarding careful planning, or more \textbf{freeform}, focusing on dramatic exchanges over strict mechanics. \wyrd offers a flexible system to suit different narratives. For detailed combat mechanics and customisation, see \fullchapref{chap:combat}.
 
-Basic combat in \wyrd, as described in this chapter, is designed to be \textbf{fast and cinematic}. Most combat encounters resolve within a few quick rounds of opposition rolls, keeping the action moving without bogging down in excessive mechanics. At the same time, characters are relatively hard to take out. In real life, a single blow, stab, or gunshot wound is enough to kill a person, but in the combat rules in this chapter, taking out a character will take a few rounds unless the opponent is super-human in capabilities.
+Basic combat in \wyrd, as described in this chapter, is designed to be \textbf{fast and cinematic}. Most combat encounters resolve within a few quick combat maneuvers and rounds of opposition rolls, keeping the action moving without bogging down in excessive mechanics. At the same time, characters are relatively hard to take out. In real life, a single blow, stab, or gunshot wound is enough to kill a person, but in the combat rules in this chapter, taking out a character will take a few rounds unless the opponent is super-human in capabilities.
 
 The combat rules do not distinguish between physical and mental combat. If your setting involves psychic or magic attacks, the wounds characters can suffer might all be on the inside, but the game mechanics will be the same as physical combat.
 
@@ -39,7 +39,7 @@ Combat follows a structured yet flexible turn order:
 
 On their turn, a character can do the following:
 \begin{itemize}
-    \item \textbf{One primary action} (Attack, defend, use an item, complex manoeuvre)
+    \item \textbf{One primary action} (Attack, defend, use an item, create an advantage using an offensive or defensive manoeuvre)
     \item \textbf{One minor action} (Draw a weapon, reposition, open a door, shout a command)
     \item \textbf{Free actions} (Speaking briefly, minor environmental interactions)
 \end{itemize}
@@ -228,20 +228,10 @@ As long as a character has any damage is in a wound category, the penalty applie
 If all stress boxes are filled, and take further damage, the character is out of action. What this means is up to the GM, but games are usually more fun if player characters live to fight another day. For one-shot games, it is okay to kill off characters towards the end of the session, but don't do it early in the game.
 
 
-\subsection{Healing and Recovery}\label{core:healing}
-\index{Healing}\index{Recovery}
-
-\begin{itemize}
-    \item \textbf{Fatigue} clears at the end of a scene.
-    \item \textbf{Mild Wounds} require a short rest (a few hours) or first aid.
-    \item \textbf{Moderate Wounds} require days of rest or professional medical care.
-    \item \textbf{Severe Wounds} require weeks of rest, surgery, or supernatural healing (if applicable).
-\end{itemize}
-
-When healing wounds, \emph{all} marked wound boxes are cleared at the same time. They are healed in parallel, so a character with both \textbf{Mild} and \textbf{Moderate} wounds will have the mild wounds healed the following day (regardless of how many wounds are ticked) and the moderate wounds after a week (with no delay because the mild wounds were healing at the same time).
-
 \subsection{Combat Maneuvers}
-Instead of simply attacking, players can use tactical manoeuvres:
+Instead of simply attacking, players can use tactical manoeuvres. Simply slugging it out, with attacks and defence opposition rolls, makes for long and tedious combat. Two equally matched characters are expected to need more than ten rounds before on is taken out (see table \pagereftext{tbl:damage-probability}) and there is little excitement in that.
+
+Instead, players can use their skills to create advantages for themselves or their allies, or to hinder their enemies. This is done by using a skill roll to create an advantage or disadvantage in the combat situation. Instead of attacking, a character can use the action to add a bonus to their next attack of defence roll, adding a \textbf{+2} to the next roll. This is done by rolling \textbf{4dF + skill} and comparing the result to the GM's target number (which as usual depends on what the character is trying to achieve). If the roll is successful, the character can add a \textbf{+2} bonus to their next attack or defence roll.
 
 \begin{Example}{Combat Maneuvers}
 	\begin{itemize}\raggedright
@@ -257,6 +247,22 @@ Instead of simply attacking, players can use tactical manoeuvres:
 \wyrd does not have rules for all the myriad ways actions can be used in combat. However, the GM should generally convert an action into either an unopposed or opposed obstacle and let the outcome affect bonuses and penalties for future dice rolls. Using manoeuvres gives players a way to use skills besides the obvious combat skills (e.g. \textbf{Fight} or \textbf{Shoot}) as part of a combat encounter. A character with poor combat skills, with little chance of effectively dealing damage, might use other skills to stack up bonuses until an effective attack is possible.
 
 If a manoeuvre attempt fails, all accumulated bonuses of that form, attack of defence, are lost. The risk of losing accumulated bonuses prevents combat from turning into one long string of manoeuvres.
+
+Combat manoeuvres adds a little bit of tactical depth to combat, without making it too complicated. Players can use their skills to create advantages for themselves or their allies, or to hinder their enemies. There is strategy in deciding when to build bonuses and when to attack, and since bonuses are always used at the next attack or defence rolls, characters can team up to let a weak attack from one character defuse built up defense bonuses, making the defender vulnerable to the next attack that might have built up sufficient bonuses to be an effective kill.
+
+
+\subsection{Healing and Recovery}\label{core:healing}
+\index{Healing}\index{Recovery}
+
+\begin{itemize}
+    \item \textbf{Fatigue} clears at the end of a scene.
+    \item \textbf{Mild Wounds} require a short rest (a few hours) or first aid.
+    \item \textbf{Moderate Wounds} require days of rest or professional medical care.
+    \item \textbf{Severe Wounds} require weeks of rest, surgery, or supernatural healing (if applicable).
+\end{itemize}
+
+When healing wounds, \emph{all} marked wound boxes are cleared at the same time. They are healed in parallel, so a character with both \textbf{Mild} and \textbf{Moderate} wounds will have the mild wounds healed the following day (regardless of how many wounds are ticked) and the moderate wounds after a week (with no delay because the mild wounds were healing at the same time).
+
 
 \subsection{Weapons and Gear in Combat}
 Weapons do not deal numeric damage but affect combat through \textbf{Traits}. Weapon traits work the same way as any gear trait and can be used when attacking or defending.
@@ -275,7 +281,6 @@ When a weapon's \textbf{Trait} adds to the attack of a character, it will indire
 	\begin{itemize}
     	\item \textbf{Fine Dueling Sabre} – \textit{+2 to Fight when dueling.}
 	    \item \textbf{Hidden Derringer} – \textit{Once per scene, draw a concealed firearm unnoticed.}
-	    \item \textbf{Reinforced Cane} – \textit{Can be used as both a weapon and a defensive tool.}
 	\end{itemize}
 \end{Example}
 
@@ -296,6 +301,7 @@ If you do consider the last wound as essentially death, you might still allow:
 \end{GmTips}
 
 
+\newcolumn
 \subsection{Conceding the Fight}\index{Conceding}\label{core:conceding}
 
 Taking damage until every \textbf{Stress} and \textbf{Wound} box is filled isn’t the only way to lose a fight. Aside from relentless automatons or mindless undead, few combatants fight to the bitter end if they can avoid it. Most will choose survival over certain death, whether that means surrendering, retreating, or negotiating terms. Even when capture is worse than death, most characters will attempt to escape rather than throw their lives away in a hopeless battle.
@@ -307,10 +313,16 @@ By conceding, players trade mechanical defeat for \textbf{a more dramatic and su
 Combat ends when one side is defeated, flees, or surrenders. Survivors must then deal with the consequences of their wounds, the choices they made, and the path ahead.
 
 \begin{GmTips}
-	Avoid fights to the death if you can avoid them. Sometimes, the real story begins when the players choose to live. If they decide to retreat, create a scenario where escape comes at a steep price: perhaps a vengeful enemy is set on their trail, or a priceless artefact slips into the hands of their foes. 
-	
-	The same goes for foes. You can let the players kill their enemies if that is what the story calls for, but having enemies escape---to inform their superiors about the players' plans or to return with backup later---can be far more interesting.
-	
-	Remember, death is merely the final chapter of a battle, but the consequences that haunt the survivors can turn a simple conflict into a rich, unfolding saga.
+	Avoid fights to the death when possible—sometimes the real story begins when players choose to live. If they retreat, make escape costly: a vengeful pursuer, a lost artefact, or new complications.
+
+	Letting enemies flee can be even more compelling. Survivors may warn allies, regroup, or return with reinforcements. 
+
+	Death ends a fight; consequences deepen the story.
 \end{GmTips}
 
+\WyrdFooterImage{img/pageart/victorian-fighters-cropped}
+
+%% Hack for balancing columns
+\end{multicols}
+\newpage
+\begin{multicols}{2}
