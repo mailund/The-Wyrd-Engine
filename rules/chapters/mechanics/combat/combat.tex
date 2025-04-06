@@ -101,6 +101,7 @@ We will use the example of \emph{Anna the Assassin} and \emph{Brian the Barbaria
 
     Anna has the initiative and attacks first. She rolls a \FudgeRes{+0--} = \textbf{-1} and Brian rolls a \FudgeRes{++--} = \textbf{0}. They both add their \textbf{Fight +1} but they cancel out. Since Anna's attack is below Brian's defence, she does not inflict damage. 
 
+    \vspace{0.5\baselineskip}
     \begin{tcolorbox}[
         damageboxbase,
         title=Damage Boxes
@@ -262,14 +263,249 @@ This example shows that you can use a normal opposition roll to gain a combat ma
     Anna attacks and rolls a \FudgeRes{+++-} = \textbf{+2} and adds her \textbf{Fight +1} for a total of \textbf{+3} (she no longer has the bonus she used for her stealth attack). Brian rolls \FudgeRes{++0-} + \textbf{Fight +1} plus the \textbf{+2} defence bonus for a total of \textbf{+4}. Being in cover behind the dumpster saved him from the attack.
 \end{Example}
 
-%% FIXME: give some examples of combat maneuvers
+Even with combat manoeuvres, there is still a risk that a fight may drag on, with one character steadily building up attack bonuses while the other accumulates defensive ones—leaving their relative positions unchanged. This is mitigated somewhat by the chance of losing a bonus when a manoeuvre fails.
 
+The base difficulty of \DL{2} means a character with a relevant skill of \textbf{+1} will only succeed about a third of the time (38.7\%), while a character with \textbf{+2} will succeed just under two-thirds of the time (61.7\%). Success is far from guaranteed, and the risk of failure—and losing the bonus—is significant. As a result, the tactic of simply stacking bonuses is not a reliable long-term strategy.
+
+However, the ability to use non-combat skills to perform manoeuvres allows characters to play to their strengths—if they can be creative and the GM permits it. This opens up new tactical options for players, which is the true purpose of combat manoeuvres. They are not just a way to gain bonuses to attack or defence, but a tool for players to engage the system creatively and leverage a broader range of skills to gain the upper hand in combat.
+
+When multiple characters are involved in combat, maneuvers also add a layer of tactical complexity. If two characters are attacking a third, the defender is effectively prevented from building up defence bonuses. The defence bonus they have will be expended on the first attack, so the attackers can decide to have one build up attack bonuses while the other attacks, and the defender cannot build a defence bonus against the boosted attack that will eventually come.
+
+In larger battles, deciding who fights who, and how to use combat maneuvers, can be a tactical decision. If the players are fighting a group of enemies, they can choose to attack one at a time, or they can split up and attack multiple enemies at once. Their choices will determine how they can build up their own bonuses and what choices their opponents can make for their own combat maneuvers.
 
 \section{Weapons and Armour}
+
+Gear traits can enhance combat just like any other opposition rolls, and it’s natural to model weapons and armour as such traits. Fists are less effective than knives, which are in turn less effective than swords. Similarly, leather armour offers less protection than chainmail, which is weaker than full plate.
+
+The level of detail you apply depends on the setting and how often combat arises in your game. In a setting where combat is rare, you might avoid complex rules altogether. But if combat is a central part of the game, then weapon and armour choice can become an important part of both character identity and tactical planning.
+
+Below are examples of how gear traits can be used to model the effectiveness of different weapons and armour across different settings. These examples are not exhaustive but should serve as a helpful baseline. 
+
+\begin{CommentBox}{A note of caution}
+    Adding bonuses to weapons and armour can easily lead to an arms race. If every opponent and player continually escalates their gear bonuses, you may end up with excessive bookkeeping but no meaningful change to the gameplay. To avoid this, ensure players face enemies both less and more well-equipped than themselves. Gaining a powerful weapon to overcome a challenge can make for a compelling story—but simply scaling weapons in parallel with enemies leads to stagnation.
+\end{CommentBox}
+
+\subsection{Weapons}
+
+Weapons can be modelled as gear traits that provide a bonus to attack rolls. Light weapons may grant +1, while heavier or more advanced weapons may grant +2 or more. However, excessive stacking of bonuses should be avoided—encourage variety in use and tactical application instead.
+
+\subsubsection*{Fantasy}
+
+\begin{itemize}
+  \item \textbf{Unarmed / Improvised Weapon (0)} – Fists, chairs, tankards.
+  \item \textbf{Dagger / Club (+1)} – Small, quick weapons that are easy to conceal or use in close quarters.
+  \item \textbf{Sword / Axe / Spear (+2)} – Standard martial weapons with a reliable combat bonus.
+  \item \textbf{Greatsword / Polearm (+3)} – Two-handed or powerful weapons with greater reach or impact.
+  \item \textbf{Legendary Weapon (+4)} – Rare magical or mythic weapons with narrative weight. These should be plot-relevant.
+\end{itemize}
+
+\subsubsection*{Modern}
+
+\begin{itemize}
+  \item \textbf{Fist / Stun Baton (0)} – Non-lethal or improvised.
+  \item \textbf{Knife / Pistol (+1)} – Standard sidearms or melee tools.
+  \item \textbf{Shotgun / Assault Rifle (+2)} – Tactical weapons for combat scenarios.
+  \item \textbf{Sniper Rifle / Heavy Weapon (+3)} – Long-range or high-calibre weapons; often slower or bulkier.
+  \item \textbf{Prototype or Military-Grade Weapon (+4)} – Restricted or experimental tech, used sparingly.
+\end{itemize}
+
+\subsubsection*{Sci-Fi}
+
+\begin{itemize}
+  \item \textbf{Plasma Dagger / Energy Whip (+1)} – Futuristic melee weapons.
+  \item \textbf{Laser Rifle / Gauss Gun (+2)} – Common energy weapons with precise or powerful shots.
+  \item \textbf{Plasma Cannon / Anti-Matter Lance (+3)} – Devastating weapons, difficult to wield or maintain.
+  \item \textbf{Relic of the Ancients (+4)} – Rare and potent alien or ancient technology, central to plot arcs.
+\end{itemize}
+
+\subsection{Armour}
+
+Armour provides a bonus to defence rolls, reducing the chance of taking damage. Unlike weapons, armour often comes with trade-offs—such as reduced mobility, attention-drawing bulk, or limited availability in certain settings.
+
+\subsubsection*{Fantasy}
+
+\begin{itemize}
+  \item \textbf{None / Clothing (0)} – Offers no real protection.
+  \item \textbf{Leather Armour (+1)} – Light, flexible, and common among rogues or rangers.
+  \item \textbf{Chainmail / Scale Armour (+2)} – Heavier protection at the cost of agility.
+  \item \textbf{Plate Armour (+3)} – Full-body protection, often worn by elite knights.
+  \item \textbf{Enchanted Armour (+4)} – Rare magical items that may confer additional narrative effects.
+\end{itemize}
+
+\subsubsection*{Modern}
+
+\begin{itemize}
+  \item \textbf{None / Casual Wear (0)} – No protective value.
+  \item \textbf{Kevlar Vest (+1)} – Light ballistic protection against small arms.
+  \item \textbf{Tactical Body Armour (+2)} – Offers improved coverage and resistance.
+  \item \textbf{Bomb Suit / Riot Gear (+3)} – Maximum protection, but heavy and cumbersome.
+  \item \textbf{Prototype Armour (+4)} – Advanced gear from research labs or special forces.
+\end{itemize}
+
+\subsubsection*{Sci-Fi}
+
+\begin{itemize}
+  \item \textbf{Nano-Weave Undersuit (+1)} – Flexible and stylish, useful for infiltration or agents.
+  \item \textbf{Combat Exosuit (+2)} – Reinforced armour with HUD and power support.
+  \item \textbf{Powered Armour (+3)} – Heavy-duty suits with strength amplification and shielding.
+  \item \textbf{Void Armour (+4)} – Ancient or alien tech that defies conventional damage.
+\end{itemize}
+
+
+
+\section{Fighting Styles}
+
+Not all combatants fight the same way. Some rely on brute strength, others on speed, cunning, or honed discipline. In \wyrd, you can represent different forms of combat using \textbf{fighting styles}—distinct techniques, schools, or traditions that combine specific skills, weapons, and tactics into recognisable approaches to battle.
+
+Fighting styles can be purely narrative, or they can provide mechanical bonuses when used strategically. A style may work well against some opponents but poorly against others, introducing a natural system of strengths and weaknesses—like rock-paper-scissors, but more flexible and open to creative interpretation.
+
+Fighting styles can be expressed using \textbf{traits}, or defined narratively by the GM and players. Some styles may grant a bonus in certain situations (e.g., against heavy armour, while surrounded, or in darkness), while others are designed to counter particular styles or skills.
+
+\subsection*{Combining Skills and Weapons}
+
+In a flexible system like \wyrd, fighting styles can be built by combining different skills with specific types of gear. Some examples:
+
+\begin{itemize}
+  \item A duelist might use \textbf{Rapport} with a rapier, turning insults and flourishes into distractions that act as boosts.
+  \item A berserker could rely on \textbf{Physique} and heavy weapons to overwhelm foes, gaining bonuses when ignoring defence or attacking multiple opponents.
+  \item A street brawler might combine \textbf{Deceive} with improvised weapons to create unexpected openings or feints.
+  \item A monk could use \textbf{Will} to resist pain and channel inner focus into precise strikes.
+\end{itemize}
+
+The GM should encourage players to define how their fighting style works and reward creative combinations that match the character’s concept. A style should inform tactics and scene flavour, not just provide flat bonuses.
+
+\subsection*{Style Counters and Technique Matchups}
+
+To create a richer tactical space, you may define style interactions—some fighting styles are naturally strong or weak against others. For example:
+
+\begin{itemize}
+  \item \textbf{Iron Wall Style} (shield and spear, defensive posture) is effective against aggressive melee attackers but struggles against agile ranged foes.
+  \item \textbf{Whispering Fang} (dagger and cloak, deception-based) excels at breaking enemy focus but is vulnerable to disciplined or intuitive fighters.
+  \item \textbf{Stone Fist Boxing} (brute-force strikes) overpowers finesse-based styles but lacks adaptability against tricksters or feints.
+  \item \textbf{Storm Serpent Form} (fluid motion, staff work) can counter slower styles, but is disrupted by grapplers or sudden aggressive charges.
+\end{itemize}
+
+These interactions do not need precise mechanics. Instead, treat them as situational modifiers, boosts, or justification for compelling outcomes in contested rolls. If one style clearly counters another in the fiction, grant the player a temporary boost or invoke a free aspect reflecting the advantage.
+
+\subsection*{Style as Trait}
+
+You may formalise a fighting style as a trait, such as:
+
+\begin{itemize}
+  \item \textbf{Trained in the Windblade School} — Gain +2 to create an advantage when using twin blades in open spaces.
+  \item \textbf{Master of Red Lotus Fist} — Once per scene, ignore one point of damage when fighting unarmed.
+  \item \textbf{Practitioner of the Twelve Strikes} — Gain a boost when successfully predicting and countering a known style.
+\end{itemize}
+
+As with other gear and character traits, these bonuses should be conditional and narratively grounded. A style becomes more meaningful when it shapes how a character approaches combat, not just what numbers they use.
+
+\subsection*{Creating Your Own Styles}
+
+Encourage players to invent styles suited to the setting. In a fantasy world, schools of swordplay may rival one another like noble houses. In modern settings, street-fighting techniques might evolve from urban subcultures. In sci-fi, martial forms might be adapted to zero-gravity or cybernetic bodies.
+
+The goal is not to add complexity, but depth. A good fighting style helps define a character, enriches combat scenes, and offers opportunities for drama, rivalry, and growth.
 
 
 \section{Designing Combat Encounters}
 
-%% Settings where traits can be brought into play
+A good combat scene is more than a series of dice rolls. It should feel dynamic, cinematic, and full of opportunities for player creativity. In \wyrd, combat works best when it serves the story, engages the players' imagination, and gives everyone a chance to use their unique abilities. If every fight ends up as two characters exchanging blows until one runs out of boxes, something important is missing.
 
+This section offers guidance on how to build more compelling encounters—ones that are not only balanced and mechanically interesting but also rich with narrative possibilities.
+
+\subsection*{Leverage Traits and Narrative Hooks}
+
+The simplest way to make combat more engaging is to ensure that the players’ traits are relevant. Each trait represents a part of the character’s identity or background. Design encounters where players can bring these traits into play:
+
+\begin{itemize}
+  \item A stormy rooftop chase where a trait like \textbf{Born on the Streets} might apply.
+  \item A duel before a crowd where \textbf{Performer at Heart} can earn boosts through showmanship.
+  \item A darkened tomb where a character with \textbf{Eyes Adjusted to the Dark} gains a crucial edge.
+\end{itemize}
+
+Encourage players to look for narrative justification to invoke their traits, and create situations where the fiction invites those connections. Even a simple skirmish can become memorable if it feels personal.
+
+\subsection*{Terrain as a Tactical Resource}
+
+Combat becomes more than trading attacks when the environment offers opportunities—and dangers.
+
+Design the battlefield with features that can be used to gain advantage, such as:
+
+\begin{itemize}
+  \item \textbf{Cover}: Crates, statues, or vehicles that provide defensive bonuses.
+  \item \textbf{Hazards}: Fires, cliffs, swinging chains, or unstable walkways that add tension.
+  \item \textbf{Interactive objects}: Chandeliers, levers, crumbling walls, or magical artefacts.
+  \item \textbf{Elevation or bottlenecks}: Platforms, narrow bridges, or spiral staircases that favour certain tactics.
+\end{itemize}
+
+Include aspects or situational advantages the players can discover or create—like “Loose Floorboards” or “Broken Balcony”—to encourage experimentation. Let clever use of the terrain grant boosts, free invokes, or even shift the course of battle.
+
+\subsection*{Opponents With Personality}
+
+Enemies should do more than just roll to hit. Make each foe feel unique by giving them:
+
+\begin{itemize}
+  \item \textbf{A defining trait or tactic}: e.g. “Shields of the Moon Guard” may always defend in formation.
+  \item \textbf{A specific goal}: Instead of fighting to the death, maybe the villain is trying to escape, complete a ritual, or delay the players.
+  \item \textbf{A weakness to discover}: An enemy may be immune to standard attacks but vulnerable to clever tactics or specific effects.
+  \item \textbf{A dramatic flair}: Use monologues, emotional stakes, or surprise reinforcements to raise tension.
+\end{itemize}
+
+Opponents should also be capable of using the environment and creating their own advantages. A good enemy might throw a lantern to ignite the room, or use a grappling hook to flee across a rooftop.
+
+\subsection*{Goals Beyond “Defeat All Enemies”}
+
+If every combat ends when the last opponent falls, fights can feel repetitive. Introduce alternative or secondary objectives:
+
+\begin{itemize}
+  \item \textbf{Survive for a number of rounds} until backup arrives.
+  \item \textbf{Protect a location or NPC} from waves of enemies.
+  \item \textbf{Reach a lever, seal, or portal} while under fire.
+  \item \textbf{Delay the enemy ritual} long enough for an ally to complete their task.
+  \item \textbf{Retrieve an item} from the battlefield and escape.
+\end{itemize}
+
+Victory conditions that shift mid-fight—such as an enemy revealing a second form or reinforcements arriving—can also create surprise and momentum.
+
+\subsection*{Use Boosts and Temporary Aspects}
+
+Encourage players and enemies to create \textbf{boosts} and \textbf{temporary aspects}. These fleeting advantages make the flow of combat feel more dynamic and tactical.
+
+Examples:
+\begin{itemize}
+  \item \textbf{Disarmed!} — After a clever create advantage action.
+  \item \textbf{Pinned Behind Cover} — Created with a well-placed shot.
+  \item \textbf{Thrown Off Balance} — A boost from a successful feint or trip.
+\end{itemize}
+
+By rewarding clever play with tangible benefits—even short-lived ones—you make the moment-to-moment action of combat more engaging.
+
+\subsection*{Let the Players Shape the Fight}
+
+Combat should never feel like the GM is simply executing a script. Let players influence the battlefield, shift the stakes, and change the conditions. Encourage actions like:
+
+\begin{itemize}
+  \item \textbf{Creating distractions} to split enemy forces.
+  \item \textbf{Changing the environment}, such as plunging a room into darkness or collapsing a walkway.
+  \item \textbf{Calling on allies} mid-fight through a trait or resource.
+  \item \textbf{Escalating the situation}, e.g. drawing more guards, triggering alarms, or starting fires.
+\end{itemize}
+
+A combat scene becomes exciting when everyone at the table contributes ideas, builds on each other’s moves, and feels like they’re shaping the outcome together.
+
+\subsection*{Escalation and Pacing}
+
+Even well-designed fights can become stale if they drag on too long. Keep things moving by:
+
+\begin{itemize}
+  \item Tracking the fight’s \textbf{emotional stakes}—what changes if the players win or lose?
+  \item Introducing \textbf{timed complications}, such as a door that must be unlocked while fighting.
+  \item Raising the tension with \textbf{mid-combat twists}: reinforcements, betrayal, an unexpected monster.
+  \item Letting enemies \textbf{retreat or surrender} if the tide turns.
+\end{itemize}
+
+Think of each combat as a narrative beat, not just a mechanical challenge. If the outcome no longer matters or the momentum is lost, consider wrapping up the scene with a concession or a dramatic finish.
+
+\subsection*{Combat as a Conversation}
+
+Finally, remember that combat in \wyrd is not a war game—it’s a storytelling conversation. The dice add suspense, but the story is what gives the fight meaning. The best combat encounters aren't just about who hits harder, but who risks something, who grows, and what changes because of it.
 
