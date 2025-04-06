@@ -84,51 +84,11 @@ The tasks the players need to complete can be taken in any order, and the order 
 The residents of Dusty Pines are buzzing with complaints. Car keys, earrings, vintage vinyls, and one unfortunate resident’s dentures have all gone missing over the past week. At first, everyone blamed the gremlins—until someone noticed glittery footprints in Bobby’s flowerbeds and a suspicious trail of floral-scented pixie dust leading toward the communal laundry trailer.
 
 
-\begin{NPC}[description={Mischievous, Tiny, Swarmable}]{Gremlins}
 
-    Gremlins are chaotic little creatures drawn to sparks, noise, and anything with buttons. Individually, they’re more nuisance than threat—but in groups, they become an overwhelming mess of giggles, claws, and chewed cables. Gremlins don’t mean harm (probably), but their love of mischief, shiny objects, and minor property damage makes them a constant headache in Dusty Pines.
-
-    \textbf{Weakness:} Gremlins are easily distracted by shiny objects, food, or loud noises. They can be lured away with candy, shiny trinkets, or a boombox playing 80s pop hits.
-
-    \vspace{0.5\baselineskip}
-    \begin{SkillsBox}
-        \Skilled & \textbf{Stealth} \\
-        \Novice  & \textbf{Burglary}, \textbf{Athletics}
-    \end{SkillsBox}
-
-    \begin{TraitsBox}
-        \item[Gremlin Swarm] If three or more gremlins are nearby, they can function as a mob and gain +1 to chaos-related actions (tampering, stealing, confusing the heck out of people).
-    \end{TraitsBox}
-
-    \DamageBox[%
-        totalfatigue=2,%
-        totalmild=0,totalmoderate=0,totalsevere=0,%
-    ]
-\end{NPC}
 
 \subsubsection{The Culprit}
 The thief isn’t the gremlins (though they’ve stolen a lot of batteries and one blender for reasons unknown). It’s \textbf{Flicker}, a tiny kleptomaniac fae who’s made a nest in the crawlspace beneath Bobby’s trailer. Flicker’s fascinated by shiny things and “interesting smells” and has been hoarding trinkets to build what they call a “Treasure Throne.” The more people complain, the prouder Flicker gets.
 
-\begin{NPC}[description={Fae, Kleptomaniac, Glitter-Obsessed}]{Flicker}
-
-    Flicker is a tiny, winged fae with a love for shiny objects, potent smells, and being the centre of attention. They’ve claimed the crawlspace under Bobby’s trailer as their kingdom and are busy constructing a “Treasure Throne” from pilfered items. Though mischievous, Flicker isn’t malicious—just spectacularly self-centered and absolutely convinced everyone wants to be their friend.
-
-    \vspace{0.5\baselineskip}
-    \begin{SkillsBox}
-        \Skilled & \textbf{Deceive} \\
-        \Novice  & \textbf{Stealth}, \textbf{Will}
-    \end{SkillsBox}
-
-    \begin{TraitsBox}
-        \item[Shiny Hoarder] Flicker always has at least one stolen item of minor but significant value (e.g., keys, earrings, love letters). May be persuaded to trade—if the deal is “fabulous” enough.
-        \item[Glamour Veil] Once per scene, Flicker can turn invisible for a few moments—usually to escape awkward conversations or frog-related retaliation.
-    \end{TraitsBox}
-
-    \DamageBox[%
-        totalfatigue=3,%
-        totalmild=2,totalmoderate=0,totalsevere=0,%
-    ]
-\end{NPC}
 
 \subsubsection{Clues and Leads}
 \begin{itemize}\raggedright
@@ -211,29 +171,7 @@ Players can handle this one in a number of creative ways:
     If disrespected too often, Reginald locks shut and begins reading passive-aggressive poetry over the loudspeaker. Worst case, it teleports itself to the party stage and refuses to leave until someone sings to it.
 \end{CommentBox}
 
-\begin{NPC}[description={Sentient, Dramatic, Over-Enchanted}]{Reginald the Regal Porta-Potty}
 
-    Originally created for elite wizarding garden parties, Reginald the Regal Restroom is a magically sentient porta-potty with an overinflated sense of dignity. Years in storage have made him eccentric and emotionally fragile. Now stationed in Dusty Pines, he refuses to open unless properly praised and takes personal offense at poor manners, weak compliments, or anyone who tracks in dirt.
-
-    \textbf{Weakness:} Suffers from intense magical ego sensitivity. Flattery and compliments calm him, while rudeness triggers defensive enchantments—such as glitter blasts or loud toilet-themed sonnets.
-
-    \vspace{0.5\baselineskip}
-    \begin{SkillsBox}
-        \Skilled & \textbf{Provoke} \\
-        \Novice  & \textbf{Will}, \textbf{Lore} (about himself)
-    \end{SkillsBox}
-
-    \begin{TraitsBox}
-        \item[Compliment Protocol] Reginald will not open for anyone unless they provide three distinct, sincere compliments. Attempts to lie must beat his \textbf{Will} to succeed.
-        \item[Glitter Spray Defense] Once per scene, Reginald may blast a nearby target with sparkly fog and magically adhesive stickers if insulted or tampered with.
-        \item[Vocal Amplification] Can broadcast his voice across the park to shame offenders with toilet-themed poetry or commentary on fashion choices.
-    \end{TraitsBox}
-
-    \DamageBox[%
-        totalfatigue=3,%
-        totalmild=3,totalmoderate=0,totalsevere=0,%
-    ]
-\end{NPC}
 
 \subsection{The Normie at the Fence}
 
@@ -242,27 +180,7 @@ For the past few days, a mysterious outsider has been seen lurking near the edge
 \subsubsection{The Problem}
 The outsider is \textbf{Wendell Brace}, a local hobbyist blogger who writes about “unusual suburban phenomena” on his site, \emph{Neighborhood Watchdog}. He’s convinced Dusty Pines is a hotbed of illegal magical activity—mainly because a squirrel threw a firecracker at him last month. Wendell is nosy, earnest, and completely mundane—but dangerously curious.
 
-\begin{NPC}[description={Mundane, Nosy, Enthusiastic Blogger}]{Wendell Brace}
 
-    Wendell is an amateur investigative blogger with a passion for uncovering “the truth” about suburban weirdness. He’s harmless, but persistent—armed with a second-hand camcorder, a notepad full of bad guesses, and far too much time on his hands. While he has no magical abilities, Wendell’s stubbornness, optimism, and talent for being in the wrong place at the weirdest time make him a genuine nuisance.
-
-    \vspace{0.5\baselineskip}
-    \begin{SkillsBox}
-        \Skilled & \textbf{Investigate} \\
-        \Novice  & \textbf{Contacts}, \textbf{Will}
-    \end{SkillsBox}
-
-    \begin{TraitsBox}
-        \item[Neighborhood Watchdog] Wendell’s blog has a small but weirdly dedicated following. He occasionally gets tips or comments from strangers who “saw something strange.”
-        \item[Document Everything] Carries a camcorder and spiral notebook at all times. His videos are grainy and unfocused, but they exist—and could go viral if not handled.
-        \item[Conspiracy Magnet] If there’s something odd nearby, Wendell will be drawn to it like a moth to neon.
-    \end{TraitsBox}
-
-    \DamageBox[%
-        totalfatigue=2,%
-        totalmild=1,totalmoderate=0,totalsevere=0,%
-    ]
-\end{NPC}
 
 \subsubsection{Clues and Leads}
 \begin{itemize}\raggedright
@@ -372,3 +290,91 @@ Whether things went beautifully or not, the park survives another bizarre event,
 %     \end{itemize}
 % \end{CommentBox}
 
+
+
+\end{multicols}\clearpage
+\begin{multicols}{2}
+\begin{NPC}[description={Mischievous, Tiny, Swarmable}]{Gremlins}
+
+    Gremlins are chaotic little creatures drawn to sparks, noise, and anything with buttons. Individually, they’re more nuisance than threat—but in groups, they become an overwhelming mess of giggles, claws, and chewed cables. Gremlins don’t mean harm (probably), but their love of mischief, shiny objects, and minor property damage makes them a constant headache in Dusty Pines.
+
+    \textbf{Weakness:} Gremlins are easily distracted by shiny objects, food, or loud noises. They can be lured away with candy, shiny trinkets, or a boombox playing 80s pop hits.
+
+    \vspace{0.5\baselineskip}
+    \begin{SkillsBox}
+        \Skilled & \textbf{Stealth} \\
+        \Novice  & \textbf{Burglary}, \textbf{Athletics}
+    \end{SkillsBox}
+
+    \begin{TraitsBox}
+        \item[Gremlin Swarm] If three or more gremlins are nearby, they can function as a mob and gain +1 to chaos-related actions (tampering, stealing, confusing the heck out of people).
+    \end{TraitsBox}
+
+    \DamageBox[%
+        totalfatigue=2,%
+        totalmild=0,totalmoderate=0,totalsevere=0,%
+    ]
+\end{NPC}
+
+\begin{NPC}[description={Fae, Kleptomaniac, Glitter-Obsessed}]{Flicker}
+
+    Flicker is a tiny, winged fae with a love for shiny objects, potent smells, and being the centre of attention. They’ve claimed the crawlspace under Bobby’s trailer as their kingdom and are busy constructing a “Treasure Throne” from pilfered items. Though mischievous, Flicker isn’t malicious—just spectacularly self-centered and absolutely convinced everyone wants to be their friend.
+
+    \vspace{0.5\baselineskip}
+    \begin{SkillsBox}
+        \Skilled & \textbf{Deceive} \\
+        \Novice  & \textbf{Stealth}, \textbf{Will}
+    \end{SkillsBox}
+
+    \begin{TraitsBox}
+        \item[Shiny Hoarder] Flicker always has at least one stolen item of minor but significant value (e.g., keys, earrings, love letters). May be persuaded to trade—if the deal is “fabulous” enough.
+        \item[Glamour Veil] Once per scene, Flicker can turn invisible for a few moments—usually to escape awkward conversations or frog-related retaliation.
+    \end{TraitsBox}
+
+    \DamageBox[%
+        totalfatigue=3,%
+        totalmild=2,totalmoderate=0,totalsevere=0,%
+    ]
+\end{NPC}
+
+\begin{NPC}[description={Sentient, Dramatic, Over-Enchanted}]{Reginald the Regal Porta-Potty}
+
+    Originally created for elite wizarding garden parties, Reginald the Regal Restroom is a magically sentient porta-potty with an overinflated sense of dignity. Years in storage have made him eccentric and emotionally fragile. Now stationed in Dusty Pines, he refuses to open unless properly praised and takes personal offense at poor manners, weak compliments, or anyone who tracks in dirt.
+
+    \textbf{Weakness:} Suffers from intense magical ego sensitivity. Flattery and compliments calm him, while rudeness triggers defensive enchantments—such as glitter blasts or loud toilet-themed sonnets.
+
+    \vspace{0.5\baselineskip}
+    \begin{SkillsBox}
+        \Skilled & \textbf{Provoke} \\
+        \Novice  & \textbf{Will}, \textbf{Lore} (about himself)
+    \end{SkillsBox}
+
+    \begin{TraitsBox}
+        \item[Compliment Protocol] Reginald will not open for anyone unless they provide three distinct, sincere compliments. Attempts to lie must beat his \textbf{Will} to succeed.
+    \end{TraitsBox}
+
+    \DamageBox[%
+        totalfatigue=3,%
+        totalmild=3,totalmoderate=0,totalsevere=0,%
+    ]
+\end{NPC}
+
+\begin{NPC}[description={Mundane, Nosy, Enthusiastic Blogger}]{Wendell Brace}
+
+    Wendell is an amateur investigative blogger with a passion for uncovering “the truth” about suburban weirdness. He’s harmless, but persistent—armed with a second-hand camcorder, a notepad full of bad guesses, and far too much time on his hands. While he has no magical abilities, Wendell’s stubbornness, optimism, and talent for being in the wrong place at the weirdest time make him a genuine nuisance.
+
+    \vspace{0.5\baselineskip}
+    \begin{SkillsBox}
+        \Skilled & \textbf{Investigate} \\
+        \Novice  & \textbf{Contacts}, \textbf{Will}
+    \end{SkillsBox}
+
+    \begin{TraitsBox}
+        \item[Conspiracy Magnet] If there’s something odd nearby, Wendell will be drawn to it like a moth to neon.
+    \end{TraitsBox}
+
+    \DamageBox[%
+        totalfatigue=2,%
+        totalmild=1,totalmoderate=0,totalsevere=0,%
+    ]
+\end{NPC}
