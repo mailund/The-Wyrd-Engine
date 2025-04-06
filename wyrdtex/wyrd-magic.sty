@@ -1,0 +1,35 @@
+% Define WyrdSpellBlock style, similar to DamageBox
+\tcbset{
+  wyrdspellstyle/.style={
+    boxrule=0.6pt,
+    shadow=small,
+    width=\linewidth,
+    fonttitle=\bfseries,
+    colbacktitle=DmgLavender,
+    coltitle=black,
+    colback=white!90,
+    colframe=black,
+  }
+}
+
+% New environment for spell display
+\NewDocumentEnvironment{WyrdSpellBlock}{}{%
+  %\begin{tcolorbox}[wyrdspellstyle,title=Effects]
+  \begin{description}[
+      leftmargin=2.5em,
+      style=nextline,
+      labelsep=0.2em,
+      align=left,
+      font=\textbf
+    ]\raggedright
+}{%
+  \end{description}
+  %\end{tcolorbox}
+}
+
+\NewDocumentEnvironment{WyrdSpell}{o m}
+  {
+    \subsubsection{#2 (\textsc{#1})}
+  }
+  {
+  }
