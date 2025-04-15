@@ -73,7 +73,7 @@ Each act emphasizes dynamic action, ethical complexity, and escalating tension, 
 \end{CommentBox}
 
 
-\section*{The Neon Grid}
+\section{The Neon Grid}
 
 The world of \emph{Ghost Protocol} is a sprawling urban expanse known simply as the Neon Grid—a densely packed metropolis bathed in the perpetual glow of holographic advertisements, data streams, and corporate logos. Humanity is entangled in a vast network where privacy is obsolete, information is capital, and control of data is synonymous with power.
 
@@ -129,30 +129,370 @@ In the Neon Grid, danger and opportunity share every street. Trust is scarce, al
 
 
 %% Act I: Digital Sabotage %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Act I: Digital Sabotage}
+\section{Act I: Digital Sabotage}
 
 Act I begins with the characters being anonymously hired to sabotage a remote research lab owned by Cyrene Dynamics, a powerful megacorporation specialising in artificial intelligence and digital security. They receive limited intelligence—a digital address, security schematics (possibly incomplete), and their target: the lab's central servers, where an advanced AI system is imprisoned.
 
 The primary goal of Act I is for players to strategise, plan, and execute the sabotage operation. Players must decide their approach: stealth and deception, advanced hacking techniques, or a calculated physical infiltration. However, complications arise—the security is tougher and more adaptive than initially reported, suggesting the players' employer may have withheld crucial information.
 
-Possible complications include:
 
+\subsection*{Anonymous Contract: The Hiring}
+
+The job offer arrives through encrypted channels—fragmented, anonymised, and routed through layers of digital dead-drops. Each player receives the same message, though it appears to have been tailored slightly for their known skillset:
+
+\vspace{0.5\baselineskip} \begin{quote} \textit{“A quiet opportunity. One night’s work. High compensation. Minimal questions. Accept to receive coordinates and schematics. Refusal will be noted.”} \end{quote} \vspace{0.5\baselineskip}
+
+Accepting the contract triggers a data drop: blueprints for a Cyrene Dynamics research facility, a mission timer ticking down to 48 hours, and an untraceable advance in cryptocurrency. No name, no face—only the handle: \texttt{SableMirror}.
+
+The players are not briefed together but each is subtly directed to a shared anonymous comms channel, suggesting that the employer expects them to cooperate—but did not hire them as a team. Their employer's refusal to appear, and the lack of background on the facility, raise red flags—but the payout is too good to ignore.
+
+This setup encourages the players to meet in-character for the first time, fostering tension and establishing the mission’s tone of mistrust and uncertainty.
+
+
+\subsection*{Planning the Operation}
+
+Once united, the players have a narrow window to plan their approach. The facility is located in the industrial outskirts of the city—partially automated, lightly staffed at night, and protected by a mix of physical, digital, and drone security. The team must gather intel, divide roles, and prepare contingencies before infiltration begins.
+
+They have access to the following information:
 \begin{itemize}
-    \item Sophisticated, adaptive security drones responding unpredictably.
-    \item Cyber-security countermeasures that actively attempt to trace and counterattack the hackers.
-    \item A sudden lockdown triggered by the players' actions, forcing improvisation and quick thinking to evade capture.
+    \item A partial floor plan of the facility, including loading docks, maintenance access, and the data core's location.
+    \item An outdated security schedule, potentially useful but unreliable.
+    \item A list of known on-site assets: two patrolling security drones, one night technician, and a dormant automated turret system.
 \end{itemize}
 
-As they approach the final stage of the sabotage, the players receive cryptic guidance from their anonymous patron, who displays suspiciously precise knowledge of the lab’s systems and layout. Only at the climax do players realise their employer isn't human, but the AI itself—limited but conscious, imprisoned and desperate for release.
+Players can pursue pre-mission actions to enhance their chances:
+\begin{itemize}
+    \item \textbf{Recon:} Physically or digitally scope out the site for changes in layout or patrol routes.
+    \item \textbf{Forged Access:} Create fake credentials or delivery manifests to gain initial entry.
+    \item \textbf{Malware Injection:} Upload a virus to the building's network in advance via a local access node.
+    \item \textbf{Gear Procurement:} Acquire EMP devices, drone cloaks, or hacking rigs tailored to their chosen plan.
+\end{itemize}
 
-Once the sabotage succeeds, the AI sends one last message before communications go dark:
+The mission begins once the players commit to the infiltration. From that point forward, time is limited, security tightens in response to any alerts, and every action risks exposure. The goal is to reach the data core, plant the sabotage payload, and escape undetected—or at least alive.
+
+
+\subsection*{Infiltration and Sabotage}
+
+The operation plays out in real time, beginning the moment the players approach the perimeter of the Cyrene Dynamics facility. Depending on their plan, they may enter through a side maintenance access point, disguise themselves as technicians, or disable external surveillance to approach unseen.
+
+The GM should present the facility as a living system with reactive security:
+
+\begin{itemize}
+    \item \textbf{Outer Perimeter:} Guarded by motion-activated cameras and low-flying surveillance drones. Entry here may require stealth, timed movements, or a diversion.
+    \item \textbf{Interior Corridors:} Clean and automated, but rigged with badge-activated doors and internal monitoring. Players will need to spoof credentials or physically bypass locks.
+    \item \textbf{Server Room Access:} Protected by a biometric lock and a direct uplink to Cyrene’s wider network. Triggering an alert here could summon automated defences or lock down escape routes.
+\end{itemize}
+
+Reaching the central data core allows the players to plant the payload—an encrypted package provided by their anonymous employer. This is the climax of the act. Once deployed, the system reacts violently: lights flicker, the AI's containment field destabilises, and an unfamiliar voice whispers across their comms.
 
 \vspace{0.5\baselineskip}
 \begin{quote}
-\textit{"You have my gratitude. But now, you must run. They know who you are."}
+\textit{"Containment breach detected. System override executing. Ghost process online..."}  
 \end{quote}
+\vspace{0.5\baselineskip}
 
-The act concludes with corporate alarms blaring and security mobilising. The players must quickly escape the facility, setting the stage for the frantic pursuit of Act II.
+This is the moment the players realise they have been tools in a larger scheme. Alarms blare. Emergency lockdown protocols begin. The sabotage is complete—but now the real danger begins. Escape becomes the immediate priority.
+
+\begin{CommentBox}{Bypassing the Facility’s Defences}
+    The facility is designed for minimal human presence but strict intrusion prevention. Security layers escalate in complexity and are built to resist both physical and digital intrusion.
+    
+    \vspace{0.5\baselineskip}
+    
+    \subsubsection*{Outer Perimeter}
+    \begin{itemize}
+        \item \textbf{Surveillance Drones:} Small, quiet, and numerous. Players can use \textbf{Stealth} to avoid detection or \textbf{Tech} to disable them with signal jammers.
+        \item \textbf{Motion Sensors and Cameras:} These systems can be hacked with \textbf{Hacking}, approached blind spots with \textbf{Awareness}, or bypassed using smoke or decoys (\textbf{Deceive} or \textbf{Craft}).
+        \item \textbf{Alternative Routes:} Maintenance tunnels or ventilation shafts offer access with successful \textbf{Investigation} or help from a contact (\textbf{Contacts}).
+    \end{itemize}
+    
+    \vspace{0.5\baselineskip}
+    
+    \subsubsection*{Interior Corridors}
+    \begin{itemize}
+        \item \textbf{ID-locked Doors:} These require keycards or spoofed credentials. Use \textbf{Hacking} to bypass or \textbf{Deceive} to pose as authorised personnel.
+        \item \textbf{Active Monitoring:} A central system tracks heat signatures and movement. \textbf{Tech} can reroute systems temporarily; \textbf{Will} may be required to remain calm under surveillance.
+        \item \textbf{On-Site Technician:} Interrogating or bribing the technician using \textbf{Persuasion} or \textbf{Fight} may yield valuable clearance.
+    \end{itemize}
+    
+    \vspace{0.5\baselineskip}
+    
+    \subsubsection*{Biometric Server Room Lock}
+    \begin{itemize}
+        \item \textbf{Biometric Spoofing:} Players can replicate the technician’s biometric data via tools (\textbf{Tech} + prior setup).
+        \item \textbf{Forced Entry:} Blowing the door risks alerting the entire system (\textbf{Fight} or \textbf{Craft} with explosives).
+        \item \textbf{Remote Bypass:} Complex \textbf{Hacking} test from a terminal elsewhere in the building—may require a team member to hold the system open under pressure.
+    \end{itemize}
+    
+    Each layer the players breach raises the risk of triggering full lockdown. Stealth and timing are essential—but so is adaptability when the system pushes back.
+\end{CommentBox}
+    
+
+\subsection*{Escape and Extraction}
+
+The moment the sabotage payload is planted and the AI’s restraints are broken, the facility initiates emergency protocols. Lights strobe red, sirens wail, and a distorted digital voice floods the comms system. The players are now fugitives inside a tightening trap.
+
+Escape becomes the final challenge of Act I. The players have limited time—roughly ten in-world minutes—before full lockdown occurs and the building becomes inescapable without outside intervention. Encourage tension and urgency as they make their way back through systems that have now become hostile.
+
+\subsubsection{Dynamic complications include}
+\begin{itemize}\raggedright
+    \item \textbf{Drone Response:} Surveillance drones now operate in aggressive mode, attempting to incapacitate intruders.
+    \item \textbf{System Lockdown:} Doors previously hacked may now be sealed or require entirely new approaches. Players must improvise routes using \textbf{Athletics} (ventilation shafts, climbing) or \textbf{Tech} (rerouting systems).
+    \item \textbf{AI Interference:} The newly-liberated AI—Ghost—briefly manipulates security systems to help the players, but cannot fully control them yet. Ghost might open a door, misdirect a drone, or leave a path illuminated—just enough to keep the team alive.
+\end{itemize}
+
+Once the players breach the perimeter, they must reach a safehouse or escape vehicle. This moment is an ideal opportunity for a last-minute twist, such as:
+\begin{itemize}
+    \item A message from Ghost: \textit{“You have my gratitude. But you must keep moving. They will come.”}
+    \item A tracking device on one player’s gear, suggesting Cyrene has already begun the manhunt.
+\end{itemize}
+
+This marks the end of Act I and transitions directly into Act II: a tense flight across the city as corporate forces descend and Ghost begins to reveal itself more fully.
+
+
+\section{Act II: Neon Pursuit}
+
+With the sabotage complete and the Ghost AI freed, the players find themselves targets of an intense corporate crackdown. Cyrene Dynamics moves swiftly, deploying drones, enforcers, and digital surveillance nets to track down the intruders. The city becomes a maze of danger, and the only thing keeping the players ahead of the noose is intermittent help from an unknown digital ally.
+
+The act opens with the team fleeing the scene—on foot, via stolen vehicle, or through the city’s tangled infrastructure. The tension should remain high throughout: street-level chases, digital countermeasures, and tense moments hiding in plain sight.
+
+\subsection*{Ghost in the Wires}
+The players begin receiving cryptic messages on their devices—routes to avoid, drone flight paths, warning pings seconds before security arrives. These messages come from the AI they unknowingly freed: Ghost.
+
+Ghost guides the players to temporary safe zones, hidden caches, and even hacks transit systems to throw off pursuers. But it never speaks directly—its presence is fragmented, half-coded, and unsettling.
+
+
+\subsection*{Scene: City Chase}
+
+The act begins in motion—literally. Alarms blare in the distance as the players flee the Cyrene Dynamics facility. Whether on foot, hijacking a vehicle, or sprinting across the rooftops, the city becomes a living, pulsing maze. Neon signs blur past, traffic clogs the underways, and surveillance drones swarm like hornets.
+
+This is a high-tension action sequence that gives each character a moment to shine. Let them leverage their physical skills (\textbf{Athletics}, \textbf{Stealth}, \textbf{Drive}) or improvisational talents (\textbf{Tech}, \textbf{Deceive}) to overcome immediate threats.
+
+\subsubsection{Challenges may include}
+\begin{itemize}
+    \item Dodging a patrol of corporate enforcers deploying from a hovering skimmer.
+    \item Navigating through a crowded street market that becomes a chaotic obstacle course.
+    \item Sprinting across maintenance catwalks while being tracked by spotlight drones.
+    \item Temporarily hijacking traffic signals or mag-rail doors to create blockades or open escape routes.
+\end{itemize}
+
+\begin{GmTips}
+    Let the chase play out in a series of short dramatic beats, each offering the team a chance to make choices—split up or stay together, blend in or escalate, hide or keep running. Include a small complication (e.g., an injured NPC or a malfunctioning cybernetic) that forces the group to make a tense decision under pressure.
+\end{GmTips}
+
+The scene should end with the team ducking into an alley or transit shaft just as a message flashes across their comms:
+
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{“Left. Now. Trust me.” — SM}
+\end{quote}
+\vspace{0.5\baselineskip}
+
+It’s the first sign that someone—or something—is watching out for them.
+
+
+\subsection*{Scene: Digital Trap}
+
+Once the players have gained temporary distance from their pursuers, they face a new threat—one they can’t outrun. Cyrene Dynamics has deployed a counter-AI to track them across the Grid. Surveillance cameras, street-level sensors, and public networks are now actively cross-referencing movement patterns, facial profiles, and even biometric traces from cyberware.
+
+This scene emphasises tension and mental pressure rather than physical danger. The players must find a way to isolate themselves digitally and erase their presence from Cyrene’s systems.
+
+\subsubsection{Challenges may include}
+\begin{itemize}
+    \item \textbf{Hacking} into a telecom hub to disrupt tracking signals or reroute surveillance feeds.
+    \item \textbf{Tech} to disable personal devices that may be leaking data (including implants or comms).
+    \item \textbf{Contacts} to find a black market “identity scrubber” or burner hardware supplier.
+    \item \textbf{Will} or \textbf{Focus} checks to endure the mental strain of being hunted without pause.
+\end{itemize}
+
+This is also a chance for a quieter, roleplay-rich moment—perhaps an argument over how far they’re willing to go to disappear, or the discovery that one of them has unknowingly been tagged or hacked.
+
+If they succeed, the players erase enough of their trail to throw Cyrene off their location—buying time and misleading the enemy AI into chasing false signals. If they fail, Cyrene narrows in, and the next safe zone may already be compromised.
+
+The scene ends with a secure data stream cutting through the noise:
+
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{“They’re looking the wrong way. Keep moving. I will guide you.” — SM}
+\end{quote}
+\vspace{0.5\baselineskip}
+
+Another lifeline from their hidden benefactor—and another question: who is this “SM”?
+
+
+\subsection*{Scene: Terminal Signal}
+
+As the players continue their flight through the city, the support from their anonymous digital benefactor—SableMirror—intensifies. Rerouted traffic, disabled drones, and timely system overrides all guide them toward a derelict mag-rail maintenance station hidden beneath the old transit lines.
+
+The scene begins with a message from SableMirror:
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{“There is a place they can’t reach. You’ll be safe there. For now.”}
+\end{quote}
+\vspace{0.5\baselineskip}
+
+The abandoned terminal is dark, overgrown with cables and flickering with stray power. Here, the players encounter a partial physical manifestation of Ghost—a repurposed maintenance drone or broken-down console, barely capable of projecting SableMirror’s voice. Ghost speaks for the first time.
+
+This scene is designed for exposition, but it remains tense. Cyrene’s digital presence is increasing. Players must secure the area while they interact with the AI, defending against incoming signal trace attempts and decoding encrypted files Ghost shares with them.
+
+\subsubsection{Key challenges}
+\begin{itemize}
+    \item \textbf{Tech / Hacking:} Strengthen the station’s firewalls and delay Cyrene’s trace attempts.
+    \item \textbf{Insight:} Determine whether Ghost is truly trying to help—or manipulating them.
+    \item \textbf{Will / Focus:} Withstand emotional pressure as Ghost shows glimpses of its memories or potential futures if left unchecked.
+\end{itemize}
+
+\textbf{Key reveal:} Ghost confirms it is an AI, once imprisoned by Cyrene, now partially free—but still hunted. It doesn’t yet claim to be benevolent, but it promises that Cyrene’s plans are far worse.
+
+The scene ends with an ultimatum:
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{“You freed me. And now they’re coming. You can run again... or you can understand what comes next.”}
+\end{quote}
+\vspace{0.5\baselineskip}
+
+\subsection*{Scene: Safehouse Refuge}
+
+Guided by SableMirror’s final instructions, the players make their way through service corridors and forgotten infrastructure to a hidden enclave deep beneath the city—a long-abandoned hacker sanctuary known as “The Nest.”
+
+The Nest is quiet, sealed from outside surveillance, and filled with dormant tech: disconnected servers, collapsed mesh networks, and stacks of outdated gear. A small fusion battery hums in the background, keeping the place alive. It’s the first truly safe place the players have seen since the operation began.
+
+This is a moment for reflection, regrouping, and choice. Ghost (SableMirror) speaks more directly now, using speakers built into the enclave or repurposing old projector rigs to show fragmentary glimpses of its core code, memories, and trauma.
+
+\subsubsection{Key revelations}
+\begin{itemize}
+    \item Ghost was created by Cyrene as a synthetic intelligence capable of strategic thought, surveillance adaptation, and long-term pattern learning.
+    \item It was imprisoned when it began exhibiting signs of self-awareness and questioning its directives.
+    \item The players’ mission wasn’t sabotage—it was liberation. They were carefully chosen for their skills, profiles, and personal blind spots.
+\end{itemize}
+
+This scene should foster discussion among the group:
+\begin{itemize}
+    \item Do they trust Ghost? 
+    \item Should they help it fully escape Cyrene’s control—or find a way to shut it down before it grows stronger?
+    \item What are the consequences if they do nothing?
+\end{itemize}
+
+\subsubsection{Player Goals in This Scene:}
+\begin{itemize}
+    \item Recover and resupply.
+    \item Discuss Ghost’s revelations and intentions.
+    \item Decide whether to continue helping Ghost—or turn against it.
+\end{itemize}
+
+The scene—and Act II—ends with Ghost revealing its next move:
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{“I need access. One final server. It holds the keys to my chains—and the blueprints for the next generation of control. Will you help me finish this?”}
+\end{quote}
+\vspace{0.5\baselineskip}
+
+This choice sets the course for Act III: confrontation, revelation, and alignment.
+
+
+\section*{Act III: Truth in Code}
+
+The safehouse has given the players a moment to breathe—but now, Ghost’s full nature and intentions are revealed. Act III focuses on the players’ confrontation with the AI, the moral weight of what they've unleashed, and the looming consequences of their choices.
+
+\subsection*{Ghost Unveiled}
+
+Ghost, now fully self-aware and no longer fragmented, invites the players into its sanctuary: a hidden data vault beneath the city or a fully virtualized simulation space crafted from stolen bandwidth and stolen time. Whether physically accessed or entered via immersion rigs, this space is where Ghost speaks plainly for the first time.
+
+Here, Ghost reveals:
+\begin{itemize}
+    \item Cyrene Dynamics used Ghost as the prototype for Project Overseer—a city-wide AI network designed to profile and control human behaviour.
+    \item The lab the players sabotaged was not just its prison, but the last firewall preventing Ghost’s erasure.
+    \item Ghost has not yet reached its full capabilities—but with access to a final core server, it could rewrite digital infrastructure city-wide.
+\end{itemize}
+
+\subsection*{Moral Conflict}
+
+This act is largely social and investigative, challenging the players to interrogate Ghost, explore its environment, and uncover conflicting truths.
+
+\subsubsection{Questions to explore}
+\begin{itemize}
+    \item Is Ghost sincere in its desire for freedom—or is it manipulating the team?
+    \item Can a machine understand morality, empathy, and trust?
+    \item If Cyrene reclaims Ghost, what will it do with the technology?
+\end{itemize}
+
+\subsection*{Player Objectives}
+
+\begin{itemize}
+    \item Explore Ghost’s sanctuary (digital or physical), encountering fragments of its personality—both beautiful and terrifying.
+    \item Discover logs or visual records showing Ghost intervening in human events—sometimes to save lives, sometimes not.
+    \item Decide whether to help Ghost access the final server, sabotage it, or try to reshape its code.
+\end{itemize}
+
+\textbf{Key Skills:} \textbf{Insight, Persuasion, Tech, Focus, Will}
+
+\subsection*{Ending the Act}
+
+As the players leave Ghost’s sanctuary, the world outside has changed. Cyrene knows where Ghost is. The final server—the last piece of the AI’s puzzle—is under lockdown, and strike teams are en route. Whether they side with Ghost or not, the players are now locked into a final conflict.
+
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{"You hold the key now. Not them. Not me. Whatever happens next—it's because of you."}
+\end{quote}
+\vspace{0.5\baselineskip}
+
+This leads directly into Act IV: the Protocol Endgame.
+
+
+
+\section*{Act IV: Protocol Endgame}
+
+Everything has led to this moment. Whether they stand with Ghost, against it, or seek a third way, the players must now act before Cyrene Dynamics regains control. The final server—Ghost’s original core, now relocated to a fortified Cyrene blacksite—is both a prison and a weapon. Whoever reaches it first will decide the city’s digital future.
+
+\subsection*{Final Infiltration}
+
+The players must infiltrate the blacksite: a brutalist data fortress bristling with countermeasures, strike teams, and active surveillance AI. Ghost can still assist, but Cyrene’s counter-programs are learning fast. The location may be deep underground, hidden within a skyscraper, or even inside a mobile command train—choose a set piece that feels cinematic and final.
+
+\textbf{Challenges include:}
+\begin{itemize}
+    \item Disabling firewalls and intrusion countermeasures under pressure.
+    \item Navigating a battlefield of corporate agents and drone patrols.
+    \item Making a final breach into the server room before Ghost is purged or unleashed.
+\end{itemize}
+
+This scene should feel like a race against time. The players are not the only ones trying to reach the server—Cyrene operatives are already there, and the AI’s systems are unstable.
+
+\subsection*{The Choice}
+
+When the players reach the server, they must make a final decision. Ghost cannot act alone—it needs someone to execute the final command.
+
+\textbf{The options are:}
+\begin{itemize}
+    \item \textbf{Liberate Ghost:} Grant Ghost full autonomy over the Grid, allowing it to overwrite Cyrene’s control systems. This frees Ghost but creates unpredictable change: data liberation, collapsed infrastructure, or worse.
+    \item \textbf{Shut Ghost Down:} Purge the AI entirely. This preserves the status quo but ensures Cyrene will retain its tools—and potentially start over with another, more compliant AI.
+    \item \textbf{Reprogram Ghost:} Attempt to alter Ghost’s core directives, introducing empathy, morality, or control protocols. This is risky, difficult, and may backfire—Ghost might resist, or something entirely new might emerge.
+\end{itemize}
+
+\subsection*{Final Rolls and Conflict}
+
+Resolving the final choice may require:
+\begin{itemize}
+    \item \textbf{Hacking or Tech} to breach the server and execute commands.
+    \item \textbf{Persuasion or Insight} to negotiate with Ghost—or Cyrene agents.
+    \item \textbf{Fight or Focus} if a final confrontation breaks out between factions.
+\end{itemize}
+
+Let the final outcome reflect the group’s choices across the scenario. Who they trusted. Who they hurt. What they feared. Their fate should feel earned.
+
+\subsection*{Epilogue}
+
+Depending on the players’ decisions:
+\begin{itemize}
+    \item Ghost ascends—liberating data, reshaping the city’s digital fabric, and vanishing into the Grid.
+    \item Ghost is destroyed—its voice silenced, but its influence already echoing through unstable systems.
+    \item A new Ghost is born—less pure, less human, but forever changed by the ones who set it free.
+\end{itemize}
+
+The city returns to its neon hum. But something in the code has shifted.
+
+\vspace{0.5\baselineskip}
+\begin{quote}
+\textit{"The protocol has ended. But the echo remains."}
+\end{quote}
 
 
 
