@@ -74,15 +74,17 @@
 }
 
 
-\NewDocumentEnvironment{SkillsBox}{}{%
+%% SkillsBox Environment with Optional Title Argument
+\NewDocumentEnvironment{SkillsBox}{O{Skills}}{%
   \begin{center}
-    \begin{tcolorbox}[skillsbox]
+    \begin{tcolorbox}[skillsbox, title=#1]
       \begin{tabular}{@{}l >{\raggedright\arraybackslash}p{0.6\linewidth}}
 }{
       \end{tabular}
     \end{tcolorbox}
   \end{center}
 }
+
 \NewDocumentEnvironment{ExpertSkills}{}{
   \Expert: & 
 }{

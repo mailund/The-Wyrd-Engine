@@ -138,3 +138,18 @@
     \end{tcolorbox}
     \end{center}
 }
+
+\NewDocumentCommand{\ManaBox}{O{}}{%
+    \pgfkeys{/DamageBox, #1}%
+    \begin{center}
+    \begin{tcolorbox}[
+        damageboxbase,
+        title=Mana
+    ]
+    \begin{tabular}{@{}l l@{} l@{}}
+        % Fatigue
+        \textbf{Mana:}  & \FatigueBoxes[\pgfkeysvalueof{/DamageBox/fatigue}][5] \\
+    \end{tabular}
+    \end{tcolorbox}
+    \end{center}
+}
